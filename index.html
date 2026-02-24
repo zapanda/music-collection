@@ -63,6 +63,11 @@
   .genre-modal-close{background:none;border:1px solid var(--border);color:var(--text-dim);width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:color .15s,border-color .15s;flex-shrink:0}
   .genre-modal-close:hover{color:var(--text);border-color:var(--text-mid)}
 
+  .genre-search-wrap{padding:12px 24px;border-bottom:1px solid var(--border);flex-shrink:0}
+  .genre-search-input{width:100%;background:var(--bg3);color:var(--text);border:1px solid var(--border);padding:8px 12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color .15s}
+  .genre-search-input:focus{border-color:var(--amber-dim)}
+  .genre-search-input::placeholder{color:var(--text-dim)}
+
   .genre-modal-body{padding:20px 24px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
   .genre-section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--text-dim);text-transform:uppercase;margin-bottom:10px}
   .genre-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
@@ -293,6 +298,11 @@
       <div class="logic-hint" id="logicHint">match any selected genre</div>
       <button class="genre-modal-close" onclick="closeGenreModal()">✕</button>
     </div>
+    <div class="genre-search-wrap">
+      <input class="genre-search-input" id="genreSearchInput" type="text"
+        placeholder="Type to find and select genres…"
+        oninput="onGenreSearch(this.value)">
+    </div>
     <div class="genre-modal-body" id="genreModalBody"></div>
     <div class="genre-modal-footer">
       <div class="genre-selected-count" id="genreSelectedCount">None selected</div>
@@ -420,7 +430,9 @@ function buildDecades() {
 }
 
 // ── GENRE MODAL ───────────────────────────────────────────
-function buildGenreModal() {
+function buildGenreModal(filter) {
+  const q = (filter || '').toLowerCase().trim();
+
   // Collect all normalised tags, separating broad genres from styles
   const broadSet = new Set();
   const styleSet = new Set();
@@ -429,12 +441,19 @@ function buildGenreModal() {
     (r.genres || []).forEach(g => broadSet.add(g));
     (r.styles || []).forEach(s => styleSet.add(s));
   }
-
-  // Remove any style that's also a broad genre (avoid duplication)
   for (const g of broadSet) styleSet.delete(g);
 
-  const broadSorted = [...broadSet].sort();
-  const styleSorted = [...styleSet].sort();
+  // Filter by search string if present
+  const filterTag = t => !q || t.includes(q) || displayTag(t).toLowerCase().includes(q);
+
+  const broadSorted = [...broadSet].filter(filterTag).sort();
+  const styleSorted = [...styleSet].filter(filterTag).sort();
+
+  // If searching, auto-select all visible matches
+  if (q) {
+    [...broadSorted, ...styleSorted].forEach(t => pendingGenres.add(t));
+    updateGenreCount();
+  }
 
   let html = '';
 
@@ -456,8 +475,16 @@ function buildGenreModal() {
     html += `</div>`;
   }
 
+  if (!broadSorted.length && !styleSorted.length) {
+    html = `<div style="color:var(--text-dim);font-family:'DM Mono',monospace;font-size:12px;padding:12px 0">No genres match "${esc(filter)}"</div>`;
+  }
+
   document.getElementById('genreModalBody').innerHTML = html;
   updateGenreCount();
+}
+
+function onGenreSearch(value) {
+  buildGenreModal(value);
 }
 
 function togglePill(el, tag) {
@@ -480,9 +507,12 @@ function updateGenreCount() {
 function openGenreModal() {
   // Copy current applied selection into pending
   pendingGenres = new Set(selectedGenres);
-  buildGenreModal();
+  document.getElementById('genreSearchInput').value = '';
+  buildGenreModal('');
   document.getElementById('genreOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+  // Focus the search input after transition
+  setTimeout(() => document.getElementById('genreSearchInput').focus(), 220);
 }
 
 function closeGenreModal() {
@@ -496,8 +526,8 @@ function closeGenreIfOverlay(e) {
 
 function clearGenreSelection() {
   pendingGenres.clear();
-  document.querySelectorAll('.genre-pill.selected').forEach(p => p.classList.remove('selected'));
-  updateGenreCount();
+  const q = document.getElementById('genreSearchInput').value;
+  buildGenreModal(q);
 }
 
 function applyGenreFilter() {
