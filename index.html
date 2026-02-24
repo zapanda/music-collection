@@ -24,7 +24,6 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -59,11 +58,7 @@
     flex-shrink: 0;
   }
 
-  .site-title span {
-    color: var(--text-dim);
-    font-style: italic;
-    font-size: 15px;
-  }
+  .site-title span { color: var(--text-dim); font-style: italic; font-size: 15px; }
 
   .header-count {
     font-family: 'DM Mono', monospace;
@@ -72,12 +67,7 @@
     letter-spacing: 0.08em;
   }
 
-  .header-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+  .header-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
 
   .btn-surprise {
     background: var(--amber);
@@ -111,19 +101,15 @@
 
   /* ─── FILTERS ─── */
   .filters-bar {
-    padding: 20px 40px;
+    padding: 16px 40px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     border-bottom: 1px solid var(--border);
     flex-wrap: wrap;
   }
 
-  .filter-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  .filter-group { display: flex; align-items: center; gap: 8px; }
 
   .filter-label {
     font-family: 'DM Mono', monospace;
@@ -155,14 +141,8 @@
     background-position: right 10px center;
   }
 
-  select:focus, .search-input:focus {
-    border-color: var(--amber-dim);
-  }
-
-  .search-input {
-    width: 220px;
-    cursor: text;
-  }
+  select:focus, .search-input:focus { border-color: var(--amber-dim); }
+  .search-input { width: 200px; cursor: text; }
 
   .filter-active-count {
     font-family: 'DM Mono', monospace;
@@ -172,8 +152,7 @@
   }
 
   .btn-clear {
-    background: none;
-    border: none;
+    background: none; border: none;
     color: var(--text-dim);
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -185,10 +164,14 @@
 
   .btn-clear:hover { color: var(--red); }
 
+  /* ─── STARS ─── */
+  .stars { display: flex; gap: 2px; line-height: 1; }
+  .star { font-size: 11px; color: #2e2a22; }
+  .star.on { color: #c8922a; }
+  .stars-empty .star { opacity: 0.18; }
+
   /* ─── GRID ─── */
-  .grid-container {
-    padding: 32px 40px;
-  }
+  .grid-container { padding: 32px 40px; }
 
   .album-grid {
     display: grid;
@@ -196,22 +179,12 @@
     gap: 24px;
   }
 
-  .album-card {
-    cursor: pointer;
-    group: true;
-    animation: fadeIn 0.3s ease both;
-  }
+  .album-card { cursor: pointer; animation: fadeIn 0.3s ease both; }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-
-  .album-card:nth-child(1) { animation-delay: 0.02s; }
-  .album-card:nth-child(2) { animation-delay: 0.04s; }
-  .album-card:nth-child(3) { animation-delay: 0.06s; }
-  .album-card:nth-child(4) { animation-delay: 0.08s; }
-  .album-card:nth-child(5) { animation-delay: 0.10s; }
 
   .album-thumb-wrap {
     position: relative;
@@ -223,8 +196,7 @@
 
   .album-thumb-wrap::after {
     content: '';
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
     opacity: 0;
     transition: opacity 0.2s;
@@ -233,8 +205,7 @@
   .album-card:hover .album-thumb-wrap::after { opacity: 1; }
 
   .album-thumb {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
     display: block;
@@ -242,546 +213,249 @@
 
   .album-card:hover .album-thumb { transform: scale(1.04); }
 
-  .no-art {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg3);
-  }
-
-  .no-art-inner {
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    background: var(--surface);
-    border: 3px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .vinyl-hole {
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-    background: var(--bg);
-    border: 2px solid var(--border);
-  }
+  .no-art { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg3); }
+  .no-art-inner { width: 60%; height: 60%; border-radius: 50%; background: var(--surface); border: 3px solid var(--border); display: flex; align-items: center; justify-content: center; }
+  .vinyl-hole { width: 20%; height: 20%; border-radius: 50%; background: var(--bg); border: 2px solid var(--border); }
 
   .format-badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+    position: absolute; top: 8px; right: 8px;
     background: rgba(14,12,10,0.85);
     color: var(--amber);
     font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    padding: 3px 6px;
-    z-index: 1;
+    font-size: 9px; letter-spacing: 0.1em;
+    padding: 3px 6px; z-index: 1;
     backdrop-filter: blur(4px);
   }
 
+  .badge-1001 {
+    position: absolute; bottom: 8px; left: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px; letter-spacing: 0.06em;
+    padding: 3px 6px; z-index: 1;
+    backdrop-filter: blur(4px);
+    border: 1px solid;
+  }
+
+  .badge-1001.book { background: rgba(14,12,10,0.85); color: #e8b04a; border-color: #6b4e16; }
+  .badge-1001.user { background: rgba(14,12,10,0.85); color: var(--text-mid); border-color: var(--border); }
+
   .album-artist {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    color: var(--amber);
-    text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 10px; letter-spacing: 0.06em;
+    color: var(--amber); text-transform: uppercase;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     margin-bottom: 3px;
   }
 
   .album-title {
     font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--text);
-    line-height: 1.3;
+    font-size: 14px; font-weight: 400;
+    color: var(--text); line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 5px;
   }
 
-  .album-year {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--text-dim);
-    margin-top: 3px;
-  }
+  .album-year { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); margin-bottom: 4px; }
+  .card-stars { margin-top: 2px; }
 
-  /* ─── EMPTY STATE ─── */
-  .empty-state {
-    text-align: center;
-    padding: 80px 40px;
-    color: var(--text-dim);
-  }
+  /* ─── LOADING / EMPTY ─── */
+  .empty-state { text-align: center; padding: 80px 40px; color: var(--text-dim); }
+  .empty-state h3 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 400; font-style: italic; color: var(--text-mid); margin-bottom: 12px; }
+  .empty-state p { font-size: 14px; line-height: 1.6; }
 
-  .empty-state h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--text-mid);
-    margin-bottom: 12px;
-  }
-
-  .empty-state p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  /* ─── LOADING STATE ─── */
-  .loading-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    gap: 20px;
-    color: var(--text-dim);
-  }
+  .loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; gap: 20px; color: var(--text-dim); }
 
   .loading-vinyl {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 60px; height: 60px; border-radius: 50%;
     background: var(--surface);
-    border: 6px solid var(--border);
-    border-top-color: var(--amber);
-    animation: spin 1s linear infinite;
-    position: relative;
+    border: 6px solid var(--border); border-top-color: var(--amber);
+    animation: spin 1s linear infinite; position: relative;
   }
 
   .loading-vinyl::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    content: ''; position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--bg);
-    border: 2px solid var(--border);
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--border);
   }
 
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  .loading-text {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    animation: pulse 1.5s ease-in-out infinite;
-  }
+  .loading-text { font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.08em; animation: pulse 1.5s ease-in-out infinite; }
 
-  @keyframes pulse {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
-  }
+  @keyframes pulse { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
 
   /* ─── DETAIL MODAL ─── */
   .modal-overlay {
-    position: fixed;
-    inset: 0;
+    position: fixed; inset: 0;
     background: rgba(0,0,0,0.85);
     z-index: 200;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     padding: 24px;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0; pointer-events: none;
     transition: opacity 0.2s;
     backdrop-filter: blur(4px);
   }
 
-  .modal-overlay.open {
-    opacity: 1;
-    pointer-events: all;
-  }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
 
   .modal {
     background: var(--bg2);
     border: 1px solid var(--border);
-    max-width: 760px;
-    width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    transform: translateY(16px);
-    transition: transform 0.2s;
-    scrollbar-width: thin;
-    scrollbar-color: var(--border) transparent;
+    max-width: 800px; width: 100%;
+    max-height: 90vh; overflow-y: auto;
+    display: grid; grid-template-columns: 300px 1fr;
+    transform: translateY(16px); transition: transform 0.2s;
+    scrollbar-width: thin; scrollbar-color: var(--border) transparent;
   }
 
   .modal-overlay.open .modal { transform: translateY(0); }
 
-  .modal-art-col {
-    position: relative;
-    background: var(--surface);
-  }
+  .modal-art-col { position: relative; background: var(--surface); flex-shrink: 0; }
+  .modal-art { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+  .modal-no-art { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--bg3); }
+  .modal-no-art-inner { width: 60%; height: 60%; border-radius: 50%; background: var(--surface); border: 6px solid var(--border); display: flex; align-items: center; justify-content: center; }
+  .modal-vinyl-hole { width: 22%; height: 22%; border-radius: 50%; background: var(--bg); border: 3px solid var(--border); }
 
-  .modal-art {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    display: block;
-  }
+  .modal-art-badges { position: absolute; bottom: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; }
 
-  .modal-no-art {
-    width: 100%;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg3);
-  }
-
-  .modal-no-art-inner {
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    background: var(--surface);
-    border: 6px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .modal-vinyl-hole {
-    width: 22%;
-    height: 22%;
-    border-radius: 50%;
-    background: var(--bg);
-    border: 3px solid var(--border);
-  }
-
-  .modal-meta-col {
-    padding: 32px 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
+  .modal-meta-col { padding: 32px 28px; display: flex; flex-direction: column; overflow-y: auto; }
 
   .modal-close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
+    position: absolute; top: 12px; right: 12px;
     background: rgba(0,0,0,0.6);
-    border: 1px solid var(--border);
-    color: var(--text-dim);
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 14px;
-    transition: color 0.15s, border-color 0.15s;
-    z-index: 1;
+    border: 1px solid var(--border); color: var(--text-dim);
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 14px;
+    transition: color 0.15s, border-color 0.15s; z-index: 1;
   }
 
   .modal-close:hover { color: var(--text); border-color: var(--text-mid); }
 
-  .modal-format-badge {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    color: var(--amber);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
+  .modal-format-badge { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--amber); text-transform: uppercase; margin-bottom: 8px; }
+  .modal-artist { font-family: 'Playfair Display', serif; font-size: 14px; font-style: italic; color: var(--text-mid); margin-bottom: 4px; line-height: 1.4; }
+  .modal-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 14px; }
 
-  .modal-artist {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    font-style: italic;
-    color: var(--text-mid);
-    margin-bottom: 4px;
-    line-height: 1.4;
-  }
+  /* Rating block */
+  .modal-rating-block { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
 
-  .modal-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.2;
-    margin-bottom: 16px;
-  }
+  .modal-my-rating { display: flex; align-items: center; gap: 6px; }
+  .modal-my-rating-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; }
+  .modal-my-rating .stars .star { font-size: 15px; }
 
-  .modal-divider {
-    height: 1px;
-    background: var(--border);
-    margin: 16px 0;
+  .modal-global-rating {
+    font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim);
+    border-left: 1px solid var(--border); padding-left: 14px;
   }
+  .modal-global-rating span { color: var(--text-mid); }
 
-  .modal-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 16px;
-  }
-
-  .tag {
+  /* Review */
+  .modal-review {
     background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text-mid);
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    padding: 4px 8px;
+    border-left: 2px solid var(--amber-dim);
+    padding: 12px 14px; margin-bottom: 14px;
+    font-size: 13px; color: var(--text-mid);
+    line-height: 1.6; font-style: italic;
   }
+  .modal-review-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 6px; font-style: normal; display: block; }
 
+  .modal-divider { height: 1px; background: var(--border); margin: 14px 0; }
+
+  .modal-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .tag { background: var(--surface); border: 1px solid var(--border); color: var(--text-mid); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.06em; padding: 4px 8px; }
   .tag.genre { color: var(--amber); border-color: var(--amber-dim); }
 
-  .modal-info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px 16px;
-    margin-bottom: 16px;
-  }
+  .modal-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; margin-bottom: 14px; }
+  .info-item-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 2px; }
+  .info-item-value { font-size: 13px; color: var(--text); font-weight: 400; }
 
-  .info-item {}
-
-  .info-item-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    margin-bottom: 2px;
-  }
-
-  .info-item-value {
-    font-size: 13px;
-    color: var(--text);
-    font-weight: 400;
-  }
-
-  .modal-tracklist-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  .tracklist {
-    list-style: none;
-    flex: 1;
-    overflow-y: auto;
-  }
-
-  .tracklist li {
-    display: grid;
-    grid-template-columns: 28px 1fr auto;
-    gap: 8px;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 12px;
-    align-items: baseline;
-  }
-
+  .modal-tracklist-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 10px; }
+  .tracklist { list-style: none; }
+  .tracklist li { display: grid; grid-template-columns: 28px 1fr auto; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; align-items: baseline; }
   .tracklist li:last-child { border-bottom: none; }
-
-  .track-pos {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--text-dim);
-  }
-
+  .track-pos { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); }
   .track-title { color: var(--text); }
-  .track-duration {
+  .track-duration { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); }
+
+  .modal-1001-link {
+    display: inline-block; margin-top: 16px;
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--text-dim);
+    font-size: 10px; letter-spacing: 0.08em;
+    color: var(--amber-dim); text-decoration: none;
+    border-bottom: 1px solid var(--amber-dim);
+    transition: color 0.15s, border-color 0.15s;
   }
+  .modal-1001-link:hover { color: var(--amber); border-color: var(--amber); }
 
   /* ─── UPDATE MODAL ─── */
   .update-overlay {
-    position: fixed;
-    inset: 0;
+    position: fixed; inset: 0;
     background: rgba(0,0,0,0.9);
     z-index: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     padding: 24px;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0; pointer-events: none;
     transition: opacity 0.2s;
   }
 
-  .update-overlay.open {
-    opacity: 1;
-    pointer-events: all;
-  }
+  .update-overlay.open { opacity: 1; pointer-events: all; }
 
   .update-modal {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    padding: 36px;
-    max-width: 480px;
-    width: 100%;
-    transform: translateY(16px);
-    transition: transform 0.2s;
+    background: var(--bg2); border: 1px solid var(--border);
+    padding: 36px; max-width: 500px; width: 100%;
+    transform: translateY(16px); transition: transform 0.2s;
+    max-height: 90vh; overflow-y: auto;
   }
 
   .update-overlay.open .update-modal { transform: translateY(0); }
 
-  .update-modal h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
+  .update-modal h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
+  .update-modal p { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 20px; }
 
-  .update-modal p {
-    font-size: 13px;
-    color: var(--text-mid);
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-
-  .update-modal label {
-    display: block;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
+  .update-modal label { display: block; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 8px; }
 
   .token-input {
-    width: 100%;
-    background: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--border);
-    padding: 10px 14px;
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    outline: none;
-    margin-bottom: 20px;
-    transition: border-color 0.15s;
+    width: 100%; background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); padding: 10px 14px;
+    font-family: 'DM Mono', monospace; font-size: 12px;
+    outline: none; margin-bottom: 20px; transition: border-color 0.15s;
   }
-
   .token-input:focus { border-color: var(--amber-dim); }
 
-  .update-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
+  .update-actions { display: flex; gap: 10px; align-items: center; }
 
-  .btn-fetch {
-    background: var(--amber);
-    color: #0e0c0a;
-    border: none;
-    padding: 10px 22px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    transition: background 0.15s;
-  }
-
+  .btn-fetch { background: var(--amber); color: #0e0c0a; border: none; padding: 10px 22px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; letter-spacing: 0.04em; transition: background 0.15s; }
   .btn-fetch:hover { background: var(--amber-light); }
   .btn-fetch:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  .btn-cancel {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text-dim);
-    padding: 9px 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    cursor: pointer;
-    transition: color 0.15s, border-color 0.15s;
-  }
-
+  .btn-cancel { background: none; border: 1px solid var(--border); color: var(--text-dim); padding: 9px 16px; font-family: 'DM Sans', sans-serif; font-size: 13px; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
   .btn-cancel:hover { color: var(--text); border-color: var(--text-mid); }
 
-  .progress-area {
-    margin-top: 20px;
-    display: none;
-  }
+  .progress-area { margin-top: 20px; display: none; }
+  .progress-bar-wrap { height: 2px; background: var(--border); margin-bottom: 8px; }
+  .progress-bar-fill { height: 100%; background: var(--amber); transition: width 0.3s; width: 0%; }
+  .progress-text { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim); }
 
-  .progress-bar-wrap {
-    height: 2px;
-    background: var(--border);
-    margin-bottom: 8px;
+  .match-stats {
+    margin-top: 12px; padding: 10px 12px;
+    background: var(--bg3); border: 1px solid var(--border);
+    font-family: 'DM Mono', monospace; font-size: 11px;
+    color: var(--text-dim); line-height: 1.9; display: none;
   }
+  .match-stats span { color: var(--amber); }
 
-  .progress-bar-fill {
-    height: 100%;
-    background: var(--amber);
-    transition: width 0.3s;
-    width: 0%;
-  }
+  .download-area { margin-top: 16px; padding: 16px; background: var(--surface); border: 1px solid var(--green); display: none; }
+  .download-area p { font-size: 12px; color: var(--text-mid); margin-bottom: 12px; }
+  .download-area ol { font-size: 12px; color: var(--text-mid); line-height: 1.8; padding-left: 18px; margin-bottom: 14px; }
 
-  .progress-text {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--text-dim);
-  }
-
-  .download-area {
-    margin-top: 16px;
-    padding: 16px;
-    background: var(--surface);
-    border: 1px solid var(--green);
-    display: none;
-  }
-
-  .download-area p {
-    font-size: 12px;
-    color: var(--text-mid);
-    margin-bottom: 12px;
-  }
-
-  .download-area ol {
-    font-size: 12px;
-    color: var(--text-mid);
-    line-height: 1.8;
-    padding-left: 18px;
-    margin-bottom: 14px;
-  }
-
-  .btn-download {
-    background: var(--green);
-    color: #fff;
-    border: none;
-    padding: 9px 18px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.15s;
-    display: inline-block;
-    text-decoration: none;
-  }
-
+  .btn-download { background: var(--green); color: #fff; border: none; padding: 9px 18px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: opacity 0.15s; display: inline-block; text-decoration: none; }
   .btn-download:hover { opacity: 0.85; }
 
-  .error-text {
-    color: var(--red);
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    margin-top: 12px;
-    display: none;
-  }
+  .error-text { color: var(--red); font-family: 'DM Mono', monospace; font-size: 11px; margin-top: 12px; display: none; }
 
   /* ─── SCROLLBAR ─── */
   ::-webkit-scrollbar { width: 4px; }
@@ -791,22 +465,20 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 700px) {
     header { padding: 16px 20px; flex-wrap: wrap; }
-    .filters-bar { padding: 16px 20px; }
+    .filters-bar { padding: 12px 20px; }
     .grid-container { padding: 20px; }
     .album-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
     .modal { grid-template-columns: 1fr; }
     .modal-art-col { max-height: 260px; overflow: hidden; }
-    .modal-art { width: 100%; height: 260px; }
-    .modal-no-art { height: 260px; }
+    .modal-art { width: 100%; height: 260px; aspect-ratio: unset; }
+    .modal-no-art { height: 260px; aspect-ratio: unset; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div>
-    <div class="site-title">zapanda<span>'s collection</span></div>
-  </div>
+  <div class="site-title">zapanda<span>'s collection</span></div>
   <div class="header-count" id="headerCount">— records</div>
   <div class="header-right">
     <button class="btn-surprise" onclick="surpriseMe()">✦ Surprise Me</button>
@@ -836,9 +508,30 @@
     </select>
   </div>
   <div class="filter-group">
+    <span class="filter-label">Rating</span>
+    <select id="filterRating" onchange="applyFilters()">
+      <option value="">Any rating</option>
+      <option value="5">★★★★★ only</option>
+      <option value="4">★★★★+ and up</option>
+      <option value="3">★★★+ and up</option>
+      <option value="rated">Rated only</option>
+      <option value="unrated">Unrated only</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">List</span>
+    <select id="filterList" onchange="applyFilters()">
+      <option value="">All records</option>
+      <option value="book">1001 book albums</option>
+      <option value="user">Community picks</option>
+      <option value="none">Not in 1001 list</option>
+    </select>
+  </div>
+  <div class="filter-group">
     <span class="filter-label">Sort</span>
     <select id="filterSort" onchange="applyFilters()">
       <option value="date_added">Recently Added</option>
+      <option value="rating_desc">My Rating ↓</option>
       <option value="year_asc">Year ↑</option>
       <option value="year_desc">Year ↓</option>
       <option value="artist">Artist A–Z</option>
@@ -854,7 +547,7 @@
   <div id="mainContent"></div>
 </div>
 
-<!-- ─── DETAIL MODAL ─── -->
+<!-- DETAIL MODAL -->
 <div class="modal-overlay" id="detailOverlay" onclick="closeDetailIfOverlay(event)">
   <div class="modal" id="detailModal">
     <div class="modal-art-col" id="modalArtCol">
@@ -864,28 +557,29 @@
   </div>
 </div>
 
-<!-- ─── UPDATE MODAL ─── -->
+<!-- UPDATE MODAL -->
 <div class="update-overlay" id="updateOverlay">
   <div class="update-modal">
     <h2>Update Collection</h2>
-    <p>Enter your Discogs User Token to fetch your latest collection. Your token stays in this browser session only — it's never stored or sent anywhere except Discogs.</p>
+    <p>Fetches your Discogs collection and enriches it with your ratings and reviews from 1001albumsgenerator — automatically, in one step. Your Discogs token is used only for this session.</p>
     <label for="tokenInput">Discogs User Token</label>
-    <input class="token-input" type="password" id="tokenInput" placeholder="Paste your token here…">
+    <input class="token-input" type="password" id="tokenInput" placeholder="Paste your Discogs token here…">
     <div class="update-actions">
-      <button class="btn-fetch" id="fetchBtn" onclick="fetchCollection()">Fetch Collection</button>
+      <button class="btn-fetch" id="fetchBtn" onclick="fetchCollection()">Fetch &amp; Merge</button>
       <button class="btn-cancel" onclick="closeUpdateModal()">Cancel</button>
     </div>
     <div class="progress-area" id="progressArea">
       <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
-      <div class="progress-text" id="progressText">Fetching page 1…</div>
+      <div class="progress-text" id="progressText">Starting…</div>
     </div>
+    <div class="match-stats" id="matchStats"></div>
     <div class="download-area" id="downloadArea">
-      <p><strong style="color:#4a8a5a">✓ Collection fetched successfully.</strong> Download the file below, then add it to your GitHub repository.</p>
+      <p><strong style="color:#4a8a5a">✓ Done!</strong> Download the file and drag it into your GitHub repository to update the app.</p>
       <ol>
         <li>Click "Download collection.json" below</li>
         <li>Go to your GitHub repository</li>
         <li>Click "Add file" → "Upload files"</li>
-        <li>Drag the downloaded file in (it will replace the old one)</li>
+        <li>Drag the file in — it replaces the old one</li>
         <li>Click "Commit changes"</li>
       </ol>
       <a class="btn-download" id="downloadLink" download="collection.json">Download collection.json</a>
@@ -895,7 +589,7 @@
 </div>
 
 <script>
-// ─── STATE ───────────────────────────────────────────────
+// ─── STATE ────────────────────────────────────────────────
 let allRecords = [];
 let filteredRecords = [];
 
@@ -905,8 +599,7 @@ async function init() {
   try {
     const resp = await fetch('collection.json');
     if (!resp.ok) throw new Error('not found');
-    const data = await resp.json();
-    allRecords = data;
+    allRecords = await resp.json();
     buildFilterOptions();
     applyFilters();
   } catch(e) {
@@ -914,7 +607,6 @@ async function init() {
   }
 }
 
-// ─── LOADING / EMPTY STATES ───────────────────────────────
 function showLoading() {
   document.getElementById('mainContent').innerHTML = `
     <div class="loading-state">
@@ -927,74 +619,89 @@ function showFirstRunState() {
   document.getElementById('mainContent').innerHTML = `
     <div class="empty-state">
       <h3>No collection loaded yet</h3>
-      <p>Click <strong style="color:var(--amber)">↻ Update Collection</strong> in the top right to fetch your Discogs collection.<br>
-      You'll need your Discogs User Token (Settings → Developers → Generate new token).</p>
+      <p>Click <strong style="color:var(--amber)">↻ Update Collection</strong> in the top right<br>
+      and paste your Discogs User Token to get started.</p>
     </div>`;
 }
 
-// ─── FILTER OPTION BUILDING ───────────────────────────────
-function buildFilterOptions() {
-  // Genres
-  const genres = [...new Set(allRecords.flatMap(r => r.genres || []))].sort();
-  const genreSel = document.getElementById('filterGenre');
-  genres.forEach(g => {
-    const o = document.createElement('option');
-    o.value = g; o.textContent = g;
-    genreSel.appendChild(o);
-  });
-
-  // Decades
-  const years = allRecords.map(r => r.year).filter(y => y && y > 1900);
-  const decades = [...new Set(years.map(y => Math.floor(y / 10) * 10))].sort();
-  const decadeSel = document.getElementById('filterDecade');
-  decades.forEach(d => {
-    const o = document.createElement('option');
-    o.value = d; o.textContent = `${d}s`;
-    decadeSel.appendChild(o);
-  });
+// ─── STARS ────────────────────────────────────────────────
+function renderStars(rating) {
+  // rating null = show faint ghost stars; 1-5 = filled
+  const isEmpty = (rating === null || rating === undefined);
+  const full = isEmpty ? 0 : Math.floor(rating);
+  let html = `<div class="stars${isEmpty ? ' stars-empty' : ''}">`;
+  for (let i = 1; i <= 5; i++) {
+    html += `<span class="star${!isEmpty && i <= full ? ' on' : ''}">★</span>`;
+  }
+  html += '</div>';
+  return html;
 }
 
-// ─── FILTER & SORT LOGIC ──────────────────────────────────
+// ─── FILTER OPTIONS ───────────────────────────────────────
+function buildFilterOptions() {
+  const genreSel = document.getElementById('filterGenre');
+  while (genreSel.options.length > 1) genreSel.remove(1);
+  const decadeSel = document.getElementById('filterDecade');
+  while (decadeSel.options.length > 1) decadeSel.remove(1);
+
+  const genres = [...new Set(allRecords.flatMap(r => r.genres || []))].sort();
+  genres.forEach(g => { const o = new Option(g, g); genreSel.add(o); });
+
+  const decades = [...new Set(
+    allRecords.map(r => r.year).filter(y => y && y > 1900).map(y => Math.floor(y/10)*10)
+  )].sort();
+  decades.forEach(d => { const o = new Option(`${d}s`, d); decadeSel.add(o); });
+}
+
+// ─── FILTER & SORT ────────────────────────────────────────
 function applyFilters() {
   const format = document.getElementById('filterFormat').value;
-  const genre = document.getElementById('filterGenre').value;
+  const genre  = document.getElementById('filterGenre').value;
   const decade = document.getElementById('filterDecade').value;
-  const sort = document.getElementById('filterSort').value;
+  const rating = document.getElementById('filterRating').value;
+  const list   = document.getElementById('filterList').value;
+  const sort   = document.getElementById('filterSort').value;
   const search = document.getElementById('searchInput').value.toLowerCase().trim();
 
   filteredRecords = allRecords.filter(r => {
     if (format && r.format !== format) return false;
-    if (genre && !(r.genres || []).includes(genre)) return false;
-    if (decade && (Math.floor((r.year || 0) / 10) * 10) !== parseInt(decade)) return false;
+    if (genre  && !(r.genres || []).includes(genre)) return false;
+    if (decade && (Math.floor((r.year||0)/10)*10) !== parseInt(decade)) return false;
+
+    if (rating === 'rated')   { if (!r.my_rating) return false; }
+    if (rating === 'unrated') { if (r.my_rating)  return false; }
+    if (rating === '5') { if ((r.my_rating||0) < 5) return false; }
+    if (rating === '4') { if ((r.my_rating||0) < 4) return false; }
+    if (rating === '3') { if ((r.my_rating||0) < 3) return false; }
+
+    if (list === 'book') { if (r.list_source !== 'book') return false; }
+    if (list === 'user') { if (r.list_source !== 'user') return false; }
+    if (list === 'none') { if (r.list_source)            return false; }
+
     if (search) {
-      const hay = `${r.artist} ${r.title}`.toLowerCase();
-      if (!hay.includes(search)) return false;
+      if (!`${r.artist} ${r.title}`.toLowerCase().includes(search)) return false;
     }
     return true;
   });
 
   filteredRecords.sort((a, b) => {
-    if (sort === 'date_added') return new Date(b.date_added) - new Date(a.date_added);
-    if (sort === 'year_asc') return (a.year || 0) - (b.year || 0);
-    if (sort === 'year_desc') return (b.year || 0) - (a.year || 0);
-    if (sort === 'artist') return (a.artist || '').localeCompare(b.artist || '');
-    if (sort === 'title') return (a.title || '').localeCompare(b.title || '');
+    if (sort === 'date_added')  return new Date(b.date_added) - new Date(a.date_added);
+    if (sort === 'rating_desc') return (b.my_rating||0) - (a.my_rating||0);
+    if (sort === 'year_asc')    return (a.year||0) - (b.year||0);
+    if (sort === 'year_desc')   return (b.year||0) - (a.year||0);
+    if (sort === 'artist')      return (a.artist||'').localeCompare(b.artist||'');
+    if (sort === 'title')       return (a.title||'').localeCompare(b.title||'');
     return 0;
   });
 
-  const total = allRecords.length;
-  const shown = filteredRecords.length;
+  const total = allRecords.length, shown = filteredRecords.length;
   document.getElementById('headerCount').textContent = `${total} records`;
-  document.getElementById('filterCount').textContent =
-    shown < total ? `${shown} of ${total}` : `${total} records`;
-
+  document.getElementById('filterCount').textContent = shown < total ? `${shown} of ${total}` : `${total} records`;
   renderGrid();
 }
 
 function clearFilters() {
-  document.getElementById('filterFormat').value = '';
-  document.getElementById('filterGenre').value = '';
-  document.getElementById('filterDecade').value = '';
+  ['filterFormat','filterGenre','filterDecade','filterRating','filterList'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('filterSort').value = 'date_added';
   document.getElementById('searchInput').value = '';
   applyFilters();
@@ -1002,36 +709,40 @@ function clearFilters() {
 
 // ─── RENDER GRID ──────────────────────────────────────────
 function renderGrid() {
-  if (filteredRecords.length === 0) {
+  if (!filteredRecords.length) {
     document.getElementById('mainContent').innerHTML = `
-      <div class="empty-state">
-        <h3>Nothing found</h3>
-        <p>Try adjusting the filters or clearing your search.</p>
-      </div>`;
+      <div class="empty-state"><h3>Nothing found</h3><p>Try adjusting your filters or clearing your search.</p></div>`;
     return;
   }
 
   const grid = document.createElement('div');
   grid.className = 'album-grid';
 
-  filteredRecords.forEach((record, i) => {
+  filteredRecords.forEach((r, i) => {
     const card = document.createElement('div');
     card.className = 'album-card';
-    card.style.animationDelay = `${Math.min(i * 0.015, 0.3)}s`;
-    card.onclick = () => openDetail(record);
+    card.style.animationDelay = `${Math.min(i*0.015, 0.3)}s`;
+    card.onclick = () => openDetail(r);
 
-    const thumb = record.thumb
-      ? `<img class="album-thumb" src="${record.thumb}" alt="${esc(record.title)}" loading="lazy" onerror="this.parentNode.innerHTML='${noArtInner()}'">`
-      : `<div class="no-art">${noArtInner()}</div>`;
+    const imgSrc = r.cover_image || r.thumb;
+    const thumbHtml = imgSrc
+      ? `<img class="album-thumb" src="${imgSrc}" alt="${esc(r.title)}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=no-art><div class=no-art-inner><div class=vinyl-hole></div></div></div>'">`
+      : `<div class="no-art"><div class="no-art-inner"><div class="vinyl-hole"></div></div></div>`;
+
+    let badgeHtml = '';
+    if (r.list_source === 'book') badgeHtml = `<div class="badge-1001 book">1001 ALBUMS</div>`;
+    else if (r.list_source === 'user') badgeHtml = `<div class="badge-1001 user">COMMUNITY PICK</div>`;
 
     card.innerHTML = `
       <div class="album-thumb-wrap">
-        ${thumb}
-        <div class="format-badge">${record.format || '?'}</div>
+        ${thumbHtml}
+        <div class="format-badge">${esc(r.format||'?')}</div>
+        ${badgeHtml}
       </div>
-      <div class="album-artist">${esc(record.artist)}</div>
-      <div class="album-title">${esc(record.title)}</div>
-      <div class="album-year">${record.year || '—'}</div>`;
+      <div class="album-artist">${esc(r.artist)}</div>
+      <div class="album-title">${esc(r.title)}</div>
+      <div class="album-year">${r.year||'—'}</div>
+      <div class="card-stars">${renderStars(r.my_rating ?? null)}</div>`;
 
     grid.appendChild(card);
   });
@@ -1040,68 +751,81 @@ function renderGrid() {
   document.getElementById('mainContent').appendChild(grid);
 }
 
-function noArtInner() {
-  return `<div class="no-art-inner"><div class="vinyl-hole"></div></div>`;
-}
-
-function esc(str) {
-  return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function esc(s) {
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 // ─── DETAIL MODAL ─────────────────────────────────────────
-function openDetail(record) {
+function openDetail(r) {
   const artCol = document.getElementById('modalArtCol');
   const metaCol = document.getElementById('modalMetaCol');
 
-  // Art
-  const artHtml = record.cover_image
-    ? `<img class="modal-art" src="${record.cover_image}" alt="${esc(record.title)}" onerror="this.outerHTML='<div class=modal-no-art><div class=modal-no-art-inner><div class=modal-vinyl-hole></div></div></div>'">`
+  const imgSrc = r.cover_image || r.thumb;
+  const artHtml = imgSrc
+    ? `<img class="modal-art" src="${imgSrc}" alt="${esc(r.title)}" onerror="this.outerHTML='<div class=modal-no-art><div class=modal-no-art-inner><div class=modal-vinyl-hole></div></div></div>'">`
     : `<div class="modal-no-art"><div class="modal-no-art-inner"><div class="modal-vinyl-hole"></div></div></div>`;
 
-  artCol.innerHTML = `<button class="modal-close" onclick="closeDetail()">✕</button>${artHtml}`;
+  let artBadge = '';
+  if (r.list_source === 'book') artBadge = `<div class="badge-1001 book">1001 ALBUMS</div>`;
+  else if (r.list_source === 'user') artBadge = `<div class="badge-1001 user">COMMUNITY PICK</div>`;
+
+  artCol.innerHTML = `<button class="modal-close" onclick="closeDetail()">✕</button>${artHtml}<div class="modal-art-badges">${artBadge}</div>`;
+
+  // Rating block
+  let ratingHtml = '';
+  if (r.my_rating || r.global_rating) {
+    const myPart = r.my_rating
+      ? `<div class="modal-my-rating"><span class="modal-my-rating-label">My rating</span>${renderStars(r.my_rating)}</div>`
+      : '';
+    const globalPart = r.global_rating
+      ? `<div class="modal-global-rating">community avg <span>${Number(r.global_rating).toFixed(2)} / 5</span></div>`
+      : '';
+    ratingHtml = `<div class="modal-rating-block">${myPart}${globalPart}</div>`;
+  }
+
+  // Review
+  const reviewHtml = r.my_review
+    ? `<div class="modal-review"><span class="modal-review-label">My review</span>${esc(r.my_review)}</div>`
+    : '';
 
   // Tags
-  const genres = (record.genres || []).map(g => `<span class="tag genre">${esc(g)}</span>`).join('');
-  const styles = (record.styles || []).map(s => `<span class="tag">${esc(s)}</span>`).join('');
+  const genres = (r.genres||[]).map(g=>`<span class="tag genre">${esc(g)}</span>`).join('');
+  const styles = (r.styles||[]).map(s=>`<span class="tag">${esc(s)}</span>`).join('');
+  const tagsHtml = (genres||styles) ? `<div class="modal-tags">${genres}${styles}</div>` : '';
 
   // Info grid
-  const dateAdded = record.date_added
-    ? new Date(record.date_added).toLocaleDateString('en-GB', {year:'numeric',month:'short',day:'numeric'})
+  const dateAdded = r.date_added
+    ? new Date(r.date_added).toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric'})
     : '—';
 
   // Tracklist
   let tracklistHtml = '';
-  if (record.tracklist && record.tracklist.length > 0) {
-    const items = record.tracklist.map(t =>
+  if (r.tracklist && r.tracklist.length) {
+    const items = r.tracklist.map(t =>
       `<li><span class="track-pos">${esc(t.position)}</span><span class="track-title">${esc(t.title)}</span><span class="track-duration">${esc(t.duration)}</span></li>`
     ).join('');
     tracklistHtml = `<div class="modal-divider"></div><div class="modal-tracklist-label">Tracklist</div><ul class="tracklist">${items}</ul>`;
   }
 
+  const linkHtml = r.reviews_url
+    ? `<a class="modal-1001-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ Community reviews on 1001albumsgenerator</a>`
+    : '';
+
   metaCol.innerHTML = `
-    <div class="modal-format-badge">${esc(record.format_full || record.format || '')}</div>
-    <div class="modal-artist">${esc(record.artist)}</div>
-    <div class="modal-title">${esc(record.title)}</div>
-    <div class="modal-tags">${genres}${styles}</div>
+    <div class="modal-format-badge">${esc(r.format_full||r.format||'')}</div>
+    <div class="modal-artist">${esc(r.artist)}</div>
+    <div class="modal-title">${esc(r.title)}</div>
+    ${ratingHtml}
+    ${reviewHtml}
+    ${tagsHtml}
     <div class="modal-info-grid">
-      <div class="info-item">
-        <div class="info-item-label">Year</div>
-        <div class="info-item-value">${record.year || '—'}</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">Label</div>
-        <div class="info-item-value">${esc(record.label || '—')}</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">Country</div>
-        <div class="info-item-value">${esc(record.country || '—')}</div>
-      </div>
-      <div class="info-item">
-        <div class="info-item-label">Added</div>
-        <div class="info-item-value">${dateAdded}</div>
-      </div>
+      <div class="info-item"><div class="info-item-label">Year</div><div class="info-item-value">${r.year||'—'}</div></div>
+      <div class="info-item"><div class="info-item-label">Label</div><div class="info-item-value">${esc(r.label||'—')}</div></div>
+      <div class="info-item"><div class="info-item-label">Country</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
+      <div class="info-item"><div class="info-item-label">Added</div><div class="info-item-value">${dateAdded}</div></div>
     </div>
-    ${tracklistHtml}`;
+    ${tracklistHtml}
+    ${linkHtml}`;
 
   document.getElementById('detailOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1118,17 +842,16 @@ function closeDetailIfOverlay(e) {
 
 // ─── SURPRISE ME ──────────────────────────────────────────
 function surpriseMe() {
-  if (filteredRecords.length === 0) return;
-  const pick = filteredRecords[Math.floor(Math.random() * filteredRecords.length)];
-  openDetail(pick);
+  if (!filteredRecords.length) return;
+  openDetail(filteredRecords[Math.floor(Math.random() * filteredRecords.length)]);
 }
 
 // ─── UPDATE MODAL ─────────────────────────────────────────
 function openUpdateModal() {
   document.getElementById('updateOverlay').classList.add('open');
-  document.getElementById('progressArea').style.display = 'none';
-  document.getElementById('downloadArea').style.display = 'none';
-  document.getElementById('errorText').style.display = 'none';
+  ['progressArea','downloadArea','matchStats','errorText'].forEach(id => {
+    document.getElementById(id).style.display = 'none';
+  });
   document.getElementById('progressFill').style.width = '0%';
   document.getElementById('fetchBtn').disabled = false;
 }
@@ -1137,140 +860,213 @@ function closeUpdateModal() {
   document.getElementById('updateOverlay').classList.remove('open');
 }
 
-// ─── FETCH FROM DISCOGS ───────────────────────────────────
+// ─── MATCHING ─────────────────────────────────────────────
+function norm(str) {
+  return (str||'')
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, ' ')
+    .replace(/\b(the|a|an)\b/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function build1001Map(history, source) {
+  const map = new Map();
+  for (const entry of (history||[])) {
+    const alb = entry.album;
+    if (!alb) continue;
+    const key = norm(alb.artist) + '||' + norm(alb.name);
+    map.set(key, {
+      my_rating:     entry.rating || null,
+      my_review:     entry.review || '',
+      global_rating: entry.globalRating || null,
+      genres:        alb.genres  || [],
+      styles:        alb.styles  || [],
+      year:          alb.releaseDate ? parseInt(alb.releaseDate) : null,
+      cover_image:   (alb.images && alb.images[0]) ? alb.images[0].url : '',
+      reviews_url:   alb.globalReviewsUrl || '',
+      list_source:   source,
+    });
+  }
+  return map;
+}
+
+function find1001Match(record, map) {
+  // 1. exact normalised key
+  const key1 = norm(record.artist) + '||' + norm(record.title);
+  if (map.has(key1)) return map.get(key1);
+
+  // 2. strip parenthetical suffixes from title (e.g. "Abbey Road (Remaster)")
+  const titleClean = record.title.replace(/\s*[\(\[].*?[\)\]]/g, '').trim();
+  const key2 = norm(record.artist) + '||' + norm(titleClean);
+  if (map.has(key2)) return map.get(key2);
+
+  // 3. fuzzy: same artist, high word-overlap on title
+  const normArtist = norm(record.artist);
+  const normTitle  = norm(titleClean);
+  const wordsA = new Set(normTitle.split(' ').filter(Boolean));
+  if (wordsA.size === 0) return null;
+
+  for (const [k, v] of map.entries()) {
+    const [ka, kt] = k.split('||');
+    if (ka !== normArtist) continue;
+    const wordsB = new Set(kt.split(' ').filter(Boolean));
+    const inter = [...wordsA].filter(w => wordsB.has(w)).length;
+    const union = new Set([...wordsA, ...wordsB]).size;
+    if (union > 0 && inter / union >= 0.75) return v;
+  }
+  return null;
+}
+
+// ─── FETCH & MERGE ────────────────────────────────────────
 async function fetchCollection() {
   const token = document.getElementById('tokenInput').value.trim();
-  if (!token) {
-    showError('Please enter your Discogs User Token.');
-    return;
-  }
+  if (!token) { showError('Please enter your Discogs User Token.'); return; }
 
-  const username = 'zapanda';
   document.getElementById('fetchBtn').disabled = true;
   document.getElementById('progressArea').style.display = 'block';
   document.getElementById('downloadArea').style.display = 'none';
+  document.getElementById('matchStats').style.display = 'none';
   document.getElementById('errorText').style.display = 'none';
 
   try {
-    // Step 1: get first page to find total
-    setProgress(0, 'Fetching page 1…');
+    // Step 1: 1001albumsgenerator (no auth needed, public API)
+    setProgress(0, 'Fetching 1001albumsgenerator ratings…');
+    const gen = await fetch('https://1001albumsgenerator.com/api/v1/projects/zapanda')
+      .then(r => { if (!r.ok) throw new Error('1001albumsgenerator API error'); return r.json(); });
+
+    const map1001 = new Map([
+      ...build1001Map(gen.history, 'book'),
+      ...build1001Map(gen.userAlbumHistory, 'user'),
+    ]);
+    setProgress(5, `Got ${map1001.size} rated albums. Fetching Discogs collection…`);
+
+    // Step 2: Discogs collection pages
     const firstPage = await discogsGet(
-      `https://api.discogs.com/users/${username}/collection/folders/0/releases?per_page=100&page=1`,
-      token
-    );
-    const total = firstPage.pagination.items;
+      `https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=1`, token);
     const pages = firstPage.pagination.pages;
     const allItems = [...firstPage.releases];
 
-    // Step 2: fetch remaining pages
     for (let p = 2; p <= pages; p++) {
-      const pct = Math.round(((p - 1) / pages) * 80);
-      setProgress(pct, `Fetching page ${p} of ${pages}…`);
+      setProgress(5 + Math.round(((p-1)/pages)*20), `Fetching Discogs page ${p} of ${pages}…`);
       const page = await discogsGet(
-        `https://api.discogs.com/users/${username}/collection/folders/0/releases?per_page=100&page=${p}`,
-        token
-      );
+        `https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=${p}`, token);
       allItems.push(...page.releases);
-      await sleep(300); // be polite to the API
+      await sleep(300);
     }
 
-    // Step 3: enrich each record with full release data (tracklist, country, etc.)
-    // We fetch release details in batches to respect rate limits
-    setProgress(80, `Enriching ${allItems.length} records with full details…`);
+    // Step 3: Enrich each record
     const enriched = [];
+    let matched = 0, withReview = 0;
+
     for (let i = 0; i < allItems.length; i++) {
-      const item = allItems[i];
-      const pct = 80 + Math.round((i / allItems.length) * 18);
-      if (i % 10 === 0) setProgress(pct, `Enriching record ${i+1} of ${allItems.length}…`);
-
+      const item  = allItems[i];
       const basic = item.basic_information;
-      let tracklist = [];
-      let country = '';
-      let fullFormatStr = '';
+      if (i % 10 === 0) setProgress(25 + Math.round((i/allItems.length)*70), `Processing ${i+1} of ${allItems.length}…`);
 
+      // Full Discogs release details (tracklist, country, format)
+      let tracklist = [], country = '', fullFormatStr = '';
       try {
         const rel = await discogsGet(`https://api.discogs.com/releases/${basic.id}`, token);
-        tracklist = (rel.tracklist || []).map(t => ({
-          position: t.position,
-          title: t.title,
-          duration: t.duration || ''
-        }));
+        tracklist = (rel.tracklist||[]).map(t => ({position:t.position, title:t.title, duration:t.duration||''}));
         country = rel.country || '';
-        fullFormatStr = (rel.formats || []).map(f => {
-          let s = f.name || '';
-          if (f.descriptions && f.descriptions.length) s += ' — ' + f.descriptions.join(', ');
+        fullFormatStr = (rel.formats||[]).map(f => {
+          let s = f.name||'';
+          if (f.descriptions&&f.descriptions.length) s += ' — ' + f.descriptions.join(', ');
           return s;
         }).join('; ');
-      } catch(e) {
-        // silently skip enrichment for this record
-      }
+      } catch(e) { /* skip */ }
 
-      // Determine top-level format label
-      const formatRaw = (basic.formats || []);
+      // Format label
       let formatLabel = '';
-      for (const f of formatRaw) {
-        const n = (f.name || '').toLowerCase();
-        if (n.includes('vinyl')) { formatLabel = 'Vinyl'; break; }
-        if (n.includes('cd')) { formatLabel = 'CD'; break; }
+      for (const f of (basic.formats||[])) {
+        const n = (f.name||'').toLowerCase();
+        if (n.includes('vinyl'))    { formatLabel = 'Vinyl'; break; }
+        if (n.includes('cd'))       { formatLabel = 'CD';    break; }
         if (n.includes('cassette')) { formatLabel = 'Cassette'; break; }
       }
-      if (!formatLabel) formatLabel = (formatRaw[0] && formatRaw[0].name) || '';
+      if (!formatLabel) formatLabel = (basic.formats||[])[0]?.name || '';
 
-      enriched.push({
+      const artist = (basic.artists||[]).map(a => a.name.replace(/ \(\d+\)$/, '')).join(', ');
+
+      const record = {
         id: basic.id,
         instance_id: item.instance_id,
-        artist: (basic.artists || []).map(a => a.name.replace(/ \(\d+\)$/, '')).join(', '),
-        title: basic.title,
-        year: basic.year || null,
-        thumb: basic.thumb || '',
-        cover_image: basic.cover_image || '',
-        genres: basic.genres || [],
-        styles: basic.styles || [],
-        label: (basic.labels || [])[0]?.name || '',
-        format: formatLabel,
-        format_full: fullFormatStr,
-        country: country,
-        date_added: item.date_added,
-        tracklist: tracklist
-      });
+        artist,
+        title:        basic.title,
+        year:         basic.year || null,
+        thumb:        basic.thumb || '',
+        cover_image:  basic.cover_image || '',
+        genres:       basic.genres || [],
+        styles:       basic.styles || [],
+        label:        (basic.labels||[])[0]?.name || '',
+        format:       formatLabel,
+        format_full:  fullFormatStr,
+        country,
+        date_added:   item.date_added,
+        tracklist,
+        my_rating:    null,
+        my_review:    '',
+        global_rating: null,
+        list_source:  null,
+        reviews_url:  '',
+      };
 
-      await sleep(200); // respect Discogs rate limit (60 req/min)
+      // Merge 1001gen data
+      const m = find1001Match(record, map1001);
+      if (m) {
+        matched++;
+        record.my_rating     = m.my_rating;
+        record.my_review     = m.my_review;
+        record.global_rating = m.global_rating;
+        record.list_source   = m.list_source;
+        record.reviews_url   = m.reviews_url;
+        if (m.my_review) withReview++;
+        // Prefer 1001gen metadata
+        if (m.genres && m.genres.length) record.genres = m.genres;
+        if (m.styles && m.styles.length) record.styles = m.styles;
+        if (m.year)  record.year = m.year;
+        if (m.cover_image) record.cover_image = m.cover_image; // higher-res Spotify art
+      }
+
+      enriched.push(record);
+      await sleep(200);
     }
 
-    setProgress(100, `Done! ${enriched.length} records loaded.`);
+    setProgress(100, 'Done!');
 
-    // Step 4: create downloadable JSON
-    const json = JSON.stringify(enriched, null, 2);
-    const blob = new Blob([json], {type: 'application/json'});
-    const url = URL.createObjectURL(blob);
-    document.getElementById('downloadLink').href = url;
+    // Show match stats
+    const statsEl = document.getElementById('matchStats');
+    statsEl.innerHTML = `
+      Discogs records: <span>${enriched.length}</span><br>
+      Matched to 1001albumsgenerator: <span>${matched}</span> (${Math.round(matched/enriched.length*100)}%)<br>
+      Records with your review: <span>${withReview}</span>`;
+    statsEl.style.display = 'block';
+
+    // Downloadable JSON
+    const blob = new Blob([JSON.stringify(enriched, null, 2)], {type:'application/json'});
+    document.getElementById('downloadLink').href = URL.createObjectURL(blob);
     document.getElementById('downloadArea').style.display = 'block';
 
-    // Also update the live app immediately
+    // Update live app immediately
     allRecords = enriched;
     buildFilterOptions();
     applyFilters();
 
   } catch(e) {
-    showError(`Error: ${e.message}. Check your token and try again.`);
+    showError(`Error: ${e.message}`);
     document.getElementById('fetchBtn').disabled = false;
   }
 }
 
+// ─── HELPERS ──────────────────────────────────────────────
 async function discogsGet(url, token) {
   const resp = await fetch(url, {
-    headers: {
-      'Authorization': `Discogs token=${token}`,
-      'User-Agent': 'ZapandaCollectionBrowser/1.0'
-    }
+    headers: { 'Authorization': `Discogs token=${token}`, 'User-Agent': 'ZapandaCollectionBrowser/1.0' }
   });
   if (!resp.ok) {
     if (resp.status === 401) throw new Error('Invalid token (401 Unauthorized)');
-    if (resp.status === 429) {
-      // rate limited — wait and retry
-      await sleep(2000);
-      return discogsGet(url, token);
-    }
+    if (resp.status === 429) { await sleep(2500); return discogsGet(url, token); }
     throw new Error(`Discogs returned ${resp.status}`);
   }
   return resp.json();
@@ -1283,8 +1079,7 @@ function setProgress(pct, text) {
 
 function showError(msg) {
   const el = document.getElementById('errorText');
-  el.textContent = msg;
-  el.style.display = 'block';
+  el.textContent = msg; el.style.display = 'block';
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -1294,7 +1089,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeDetail(); closeUpdateModal(); }
 });
 
-// ─── GO ───────────────────────────────────────────────────
 init();
 </script>
 </body>
