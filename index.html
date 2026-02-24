@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zapanda's collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0c0a;
+    --bg2: #161410;
+    --bg3: #1e1b17;
+    --surface: #242018;
+    --border: #2e2a22;
+    --amber: #c8922a;
+    --amber-light: #e8b04a;
+    --amber-dim: #6b4e16;
+    --text: #e8e0d0;
+    --text-dim: #7a7060;
+    --text-mid: #a89880;
+    --red: #c84a3a;
+    --green: #4a8a5a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ─── HEADER ─── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 28px 40px 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(14,12,10,0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  .site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--amber);
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+  }
+
+  .site-title span {
+    color: var(--text-dim);
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .header-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+  }
+
+  .header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-surprise {
+    background: var(--amber);
+    color: #0e0c0a;
+    border: none;
+    padding: 9px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: background 0.15s, transform 0.1s;
+  }
+
+  .btn-surprise:hover { background: var(--amber-light); transform: translateY(-1px); }
+  .btn-surprise:active { transform: translateY(0); }
+
+  .btn-update {
+    background: transparent;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .btn-update:hover { color: var(--text-mid); border-color: var(--text-dim); }
+
+  /* ─── FILTERS ─── */
+  .filters-bar {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .filter-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  select, .search-input {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 7px 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.15s;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  select {
+    padding-right: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a7060'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+
+  select:focus, .search-input:focus {
+    border-color: var(--amber-dim);
+  }
+
+  .search-input {
+    width: 220px;
+    cursor: text;
+  }
+
+  .filter-active-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--amber);
+    margin-left: auto;
+  }
+
+  .btn-clear {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    padding: 4px 8px;
+    transition: color 0.15s;
+  }
+
+  .btn-clear:hover { color: var(--red); }
+
+  /* ─── GRID ─── */
+  .grid-container {
+    padding: 32px 40px;
+  }
+
+  .album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+  }
+
+  .album-card {
+    cursor: pointer;
+    group: true;
+    animation: fadeIn 0.3s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .album-card:nth-child(1) { animation-delay: 0.02s; }
+  .album-card:nth-child(2) { animation-delay: 0.04s; }
+  .album-card:nth-child(3) { animation-delay: 0.06s; }
+  .album-card:nth-child(4) { animation-delay: 0.08s; }
+  .album-card:nth-child(5) { animation-delay: 0.10s; }
+
+  .album-thumb-wrap {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: var(--surface);
+    margin-bottom: 10px;
+  }
+
+  .album-thumb-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .album-card:hover .album-thumb-wrap::after { opacity: 1; }
+
+  .album-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .album-card:hover .album-thumb { transform: scale(1.04); }
+
+  .no-art {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg3);
+  }
+
+  .no-art-inner {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 3px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vinyl-hole {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--border);
+  }
+
+  .format-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(14,12,10,0.85);
+    color: var(--amber);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    padding: 3px 6px;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+  }
+
+  .album-artist {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--amber);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3px;
+  }
+
+  .album-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .album-year {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-top: 3px;
+  }
+
+  /* ─── EMPTY STATE ─── */
+  .empty-state {
+    text-align: center;
+    padding: 80px 40px;
+    color: var(--text-dim);
+  }
+
+  .empty-state h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-mid);
+    margin-bottom: 12px;
+  }
+
+  .empty-state p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ─── LOADING STATE ─── */
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    gap: 20px;
+    color: var(--text-dim);
+  }
+
+  .loading-vinyl {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 6px solid var(--border);
+    border-top-color: var(--amber);
+    animation: spin 1s linear infinite;
+    position: relative;
+  }
+
+  .loading-vinyl::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--border);
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loading-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* ─── DETAIL MODAL ─── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    max-width: 760px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    transform: translateY(16px);
+    transition: transform 0.2s;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .modal-overlay.open .modal { transform: translateY(0); }
+
+  .modal-art-col {
+    position: relative;
+    background: var(--surface);
+  }
+
+  .modal-art {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+  }
+
+  .modal-no-art {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg3);
+  }
+
+  .modal-no-art-inner {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 6px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-vinyl-hole {
+    width: 22%;
+    height: 22%;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--border);
+  }
+
+  .modal-meta-col {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.15s, border-color 0.15s;
+    z-index: 1;
+  }
+
+  .modal-close:hover { color: var(--text); border-color: var(--text-mid); }
+
+  .modal-format-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--amber);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .modal-artist {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-mid);
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+
+  .modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .modal-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 16px 0;
+  }
+
+  .modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .tag {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-mid);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding: 4px 8px;
+  }
+
+  .tag.genre { color: var(--amber); border-color: var(--amber-dim); }
+
+  .modal-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 16px;
+    margin-bottom: 16px;
+  }
+
+  .info-item {}
+
+  .info-item-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .info-item-value {
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .modal-tracklist-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .tracklist {
+    list-style: none;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .tracklist li {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    align-items: baseline;
+  }
+
+  .tracklist li:last-child { border-bottom: none; }
+
+  .track-pos {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+
+  .track-title { color: var(--text); }
+  .track-duration {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+
+  /* ─── UPDATE MODAL ─── */
+  .update-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+
+  .update-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .update-modal {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    padding: 36px;
+    max-width: 480px;
+    width: 100%;
+    transform: translateY(16px);
+    transition: transform 0.2s;
+  }
+
+  .update-overlay.open .update-modal { transform: translateY(0); }
+
+  .update-modal h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .update-modal p {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .update-modal label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .token-input {
+    width: 100%;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.15s;
+  }
+
+  .token-input:focus { border-color: var(--amber-dim); }
+
+  .update-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn-fetch {
+    background: var(--amber);
+    color: #0e0c0a;
+    border: none;
+    padding: 10px 22px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: background 0.15s;
+  }
+
+  .btn-fetch:hover { background: var(--amber-light); }
+  .btn-fetch:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .btn-cancel {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 9px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .btn-cancel:hover { color: var(--text); border-color: var(--text-mid); }
+
+  .progress-area {
+    margin-top: 20px;
+    display: none;
+  }
+
+  .progress-bar-wrap {
+    height: 2px;
+    background: var(--border);
+    margin-bottom: 8px;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--amber);
+    transition: width 0.3s;
+    width: 0%;
+  }
+
+  .progress-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .download-area {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--green);
+    display: none;
+  }
+
+  .download-area p {
+    font-size: 12px;
+    color: var(--text-mid);
+    margin-bottom: 12px;
+  }
+
+  .download-area ol {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.8;
+    padding-left: 18px;
+    margin-bottom: 14px;
+  }
+
+  .btn-download {
+    background: var(--green);
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .btn-download:hover { opacity: 0.85; }
+
+  .error-text {
+    color: var(--red);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    margin-top: 12px;
+    display: none;
+  }
+
+  /* ─── SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 700px) {
+    header { padding: 16px 20px; flex-wrap: wrap; }
+    .filters-bar { padding: 16px 20px; }
+    .grid-container { padding: 20px; }
+    .album-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+    .modal { grid-template-columns: 1fr; }
+    .modal-art-col { max-height: 260px; overflow: hidden; }
+    .modal-art { width: 100%; height: 260px; }
+    .modal-no-art { height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="site-title">zapanda<span>'s collection</span></div>
+  </div>
+  <div class="header-count" id="headerCount">— records</div>
+  <div class="header-right">
+    <button class="btn-surprise" onclick="surpriseMe()">✦ Surprise Me</button>
+    <button class="btn-update" onclick="openUpdateModal()">↻ Update Collection</button>
+  </div>
+</header>
+
+<div class="filters-bar">
+  <div class="filter-group">
+    <span class="filter-label">Format</span>
+    <select id="filterFormat" onchange="applyFilters()">
+      <option value="">All</option>
+      <option value="Vinyl">Vinyl</option>
+      <option value="CD">CD</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Genre</span>
+    <select id="filterGenre" onchange="applyFilters()">
+      <option value="">All genres</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Decade</span>
+    <select id="filterDecade" onchange="applyFilters()">
+      <option value="">All decades</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Sort</span>
+    <select id="filterSort" onchange="applyFilters()">
+      <option value="date_added">Recently Added</option>
+      <option value="year_asc">Year ↑</option>
+      <option value="year_desc">Year ↓</option>
+      <option value="artist">Artist A–Z</option>
+      <option value="title">Title A–Z</option>
+    </select>
+  </div>
+  <input class="search-input" type="text" id="searchInput" placeholder="Search artist or title…" oninput="applyFilters()">
+  <span class="filter-active-count" id="filterCount"></span>
+  <button class="btn-clear" onclick="clearFilters()">Clear</button>
+</div>
+
+<div class="grid-container">
+  <div id="mainContent"></div>
+</div>
+
+<!-- ─── DETAIL MODAL ─── -->
+<div class="modal-overlay" id="detailOverlay" onclick="closeDetailIfOverlay(event)">
+  <div class="modal" id="detailModal">
+    <div class="modal-art-col" id="modalArtCol">
+      <button class="modal-close" onclick="closeDetail()">✕</button>
+    </div>
+    <div class="modal-meta-col" id="modalMetaCol"></div>
+  </div>
+</div>
+
+<!-- ─── UPDATE MODAL ─── -->
+<div class="update-overlay" id="updateOverlay">
+  <div class="update-modal">
+    <h2>Update Collection</h2>
+    <p>Enter your Discogs User Token to fetch your latest collection. Your token stays in this browser session only — it's never stored or sent anywhere except Discogs.</p>
+    <label for="tokenInput">Discogs User Token</label>
+    <input class="token-input" type="password" id="tokenInput" placeholder="Paste your token here…">
+    <div class="update-actions">
+      <button class="btn-fetch" id="fetchBtn" onclick="fetchCollection()">Fetch Collection</button>
+      <button class="btn-cancel" onclick="closeUpdateModal()">Cancel</button>
+    </div>
+    <div class="progress-area" id="progressArea">
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
+      <div class="progress-text" id="progressText">Fetching page 1…</div>
+    </div>
+    <div class="download-area" id="downloadArea">
+      <p><strong style="color:#4a8a5a">✓ Collection fetched successfully.</strong> Download the file below, then add it to your GitHub repository.</p>
+      <ol>
+        <li>Click "Download collection.json" below</li>
+        <li>Go to your GitHub repository</li>
+        <li>Click "Add file" → "Upload files"</li>
+        <li>Drag the downloaded file in (it will replace the old one)</li>
+        <li>Click "Commit changes"</li>
+      </ol>
+      <a class="btn-download" id="downloadLink" download="collection.json">Download collection.json</a>
+    </div>
+    <div class="error-text" id="errorText"></div>
+  </div>
+</div>
+
+<script>
+// ─── STATE ───────────────────────────────────────────────
+let allRecords = [];
+let filteredRecords = [];
+
+// ─── INIT ─────────────────────────────────────────────────
+async function init() {
+  showLoading();
+  try {
+    const resp = await fetch('collection.json');
+    if (!resp.ok) throw new Error('not found');
+    const data = await resp.json();
+    allRecords = data;
+    buildFilterOptions();
+    applyFilters();
+  } catch(e) {
+    showFirstRunState();
+  }
+}
+
+// ─── LOADING / EMPTY STATES ───────────────────────────────
+function showLoading() {
+  document.getElementById('mainContent').innerHTML = `
+    <div class="loading-state">
+      <div class="loading-vinyl"></div>
+      <div class="loading-text">loading collection…</div>
+    </div>`;
+}
+
+function showFirstRunState() {
+  document.getElementById('mainContent').innerHTML = `
+    <div class="empty-state">
+      <h3>No collection loaded yet</h3>
+      <p>Click <strong style="color:var(--amber)">↻ Update Collection</strong> in the top right to fetch your Discogs collection.<br>
+      You'll need your Discogs User Token (Settings → Developers → Generate new token).</p>
+    </div>`;
+}
+
+// ─── FILTER OPTION BUILDING ───────────────────────────────
+function buildFilterOptions() {
+  // Genres
+  const genres = [...new Set(allRecords.flatMap(r => r.genres || []))].sort();
+  const genreSel = document.getElementById('filterGenre');
+  genres.forEach(g => {
+    const o = document.createElement('option');
+    o.value = g; o.textContent = g;
+    genreSel.appendChild(o);
+  });
+
+  // Decades
+  const years = allRecords.map(r => r.year).filter(y => y && y > 1900);
+  const decades = [...new Set(years.map(y => Math.floor(y / 10) * 10))].sort();
+  const decadeSel = document.getElementById('filterDecade');
+  decades.forEach(d => {
+    const o = document.createElement('option');
+    o.value = d; o.textContent = `${d}s`;
+    decadeSel.appendChild(o);
+  });
+}
+
+// ─── FILTER & SORT LOGIC ──────────────────────────────────
+function applyFilters() {
+  const format = document.getElementById('filterFormat').value;
+  const genre = document.getElementById('filterGenre').value;
+  const decade = document.getElementById('filterDecade').value;
+  const sort = document.getElementById('filterSort').value;
+  const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+  filteredRecords = allRecords.filter(r => {
+    if (format && r.format !== format) return false;
+    if (genre && !(r.genres || []).includes(genre)) return false;
+    if (decade && (Math.floor((r.year || 0) / 10) * 10) !== parseInt(decade)) return false;
+    if (search) {
+      const hay = `${r.artist} ${r.title}`.toLowerCase();
+      if (!hay.includes(search)) return false;
+    }
+    return true;
+  });
+
+  filteredRecords.sort((a, b) => {
+    if (sort === 'date_added') return new Date(b.date_added) - new Date(a.date_added);
+    if (sort === 'year_asc') return (a.year || 0) - (b.year || 0);
+    if (sort === 'year_desc') return (b.year || 0) - (a.year || 0);
+    if (sort === 'artist') return (a.artist || '').localeCompare(b.artist || '');
+    if (sort === 'title') return (a.title || '').localeCompare(b.title || '');
+    return 0;
+  });
+
+  const total = allRecords.length;
+  const shown = filteredRecords.length;
+  document.getElementById('headerCount').textContent = `${total} records`;
+  document.getElementById('filterCount').textContent =
+    shown < total ? `${shown} of ${total}` : `${total} records`;
+
+  renderGrid();
+}
+
+function clearFilters() {
+  document.getElementById('filterFormat').value = '';
+  document.getElementById('filterGenre').value = '';
+  document.getElementById('filterDecade').value = '';
+  document.getElementById('filterSort').value = 'date_added';
+  document.getElementById('searchInput').value = '';
+  applyFilters();
+}
+
+// ─── RENDER GRID ──────────────────────────────────────────
+function renderGrid() {
+  if (filteredRecords.length === 0) {
+    document.getElementById('mainContent').innerHTML = `
+      <div class="empty-state">
+        <h3>Nothing found</h3>
+        <p>Try adjusting the filters or clearing your search.</p>
+      </div>`;
+    return;
+  }
+
+  const grid = document.createElement('div');
+  grid.className = 'album-grid';
+
+  filteredRecords.forEach((record, i) => {
+    const card = document.createElement('div');
+    card.className = 'album-card';
+    card.style.animationDelay = `${Math.min(i * 0.015, 0.3)}s`;
+    card.onclick = () => openDetail(record);
+
+    const thumb = record.thumb
+      ? `<img class="album-thumb" src="${record.thumb}" alt="${esc(record.title)}" loading="lazy" onerror="this.parentNode.innerHTML='${noArtInner()}'">`
+      : `<div class="no-art">${noArtInner()}</div>`;
+
+    card.innerHTML = `
+      <div class="album-thumb-wrap">
+        ${thumb}
+        <div class="format-badge">${record.format || '?'}</div>
+      </div>
+      <div class="album-artist">${esc(record.artist)}</div>
+      <div class="album-title">${esc(record.title)}</div>
+      <div class="album-year">${record.year || '—'}</div>`;
+
+    grid.appendChild(card);
+  });
+
+  document.getElementById('mainContent').innerHTML = '';
+  document.getElementById('mainContent').appendChild(grid);
+}
+
+function noArtInner() {
+  return `<div class="no-art-inner"><div class="vinyl-hole"></div></div>`;
+}
+
+function esc(str) {
+  return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── DETAIL MODAL ─────────────────────────────────────────
+function openDetail(record) {
+  const artCol = document.getElementById('modalArtCol');
+  const metaCol = document.getElementById('modalMetaCol');
+
+  // Art
+  const artHtml = record.cover_image
+    ? `<img class="modal-art" src="${record.cover_image}" alt="${esc(record.title)}" onerror="this.outerHTML='<div class=modal-no-art><div class=modal-no-art-inner><div class=modal-vinyl-hole></div></div></div>'">`
+    : `<div class="modal-no-art"><div class="modal-no-art-inner"><div class="modal-vinyl-hole"></div></div></div>`;
+
+  artCol.innerHTML = `<button class="modal-close" onclick="closeDetail()">✕</button>${artHtml}`;
+
+  // Tags
+  const genres = (record.genres || []).map(g => `<span class="tag genre">${esc(g)}</span>`).join('');
+  const styles = (record.styles || []).map(s => `<span class="tag">${esc(s)}</span>`).join('');
+
+  // Info grid
+  const dateAdded = record.date_added
+    ? new Date(record.date_added).toLocaleDateString('en-GB', {year:'numeric',month:'short',day:'numeric'})
+    : '—';
+
+  // Tracklist
+  let tracklistHtml = '';
+  if (record.tracklist && record.tracklist.length > 0) {
+    const items = record.tracklist.map(t =>
+      `<li><span class="track-pos">${esc(t.position)}</span><span class="track-title">${esc(t.title)}</span><span class="track-duration">${esc(t.duration)}</span></li>`
+    ).join('');
+    tracklistHtml = `<div class="modal-divider"></div><div class="modal-tracklist-label">Tracklist</div><ul class="tracklist">${items}</ul>`;
+  }
+
+  metaCol.innerHTML = `
+    <div class="modal-format-badge">${esc(record.format_full || record.format || '')}</div>
+    <div class="modal-artist">${esc(record.artist)}</div>
+    <div class="modal-title">${esc(record.title)}</div>
+    <div class="modal-tags">${genres}${styles}</div>
+    <div class="modal-info-grid">
+      <div class="info-item">
+        <div class="info-item-label">Year</div>
+        <div class="info-item-value">${record.year || '—'}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-label">Label</div>
+        <div class="info-item-value">${esc(record.label || '—')}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-label">Country</div>
+        <div class="info-item-value">${esc(record.country || '—')}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-label">Added</div>
+        <div class="info-item-value">${dateAdded}</div>
+      </div>
+    </div>
+    ${tracklistHtml}`;
+
+  document.getElementById('detailOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetail() {
+  document.getElementById('detailOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeDetailIfOverlay(e) {
+  if (e.target === document.getElementById('detailOverlay')) closeDetail();
+}
+
+// ─── SURPRISE ME ──────────────────────────────────────────
+function surpriseMe() {
+  if (filteredRecords.length === 0) return;
+  const pick = filteredRecords[Math.floor(Math.random() * filteredRecords.length)];
+  openDetail(pick);
+}
+
+// ─── UPDATE MODAL ─────────────────────────────────────────
+function openUpdateModal() {
+  document.getElementById('updateOverlay').classList.add('open');
+  document.getElementById('progressArea').style.display = 'none';
+  document.getElementById('downloadArea').style.display = 'none';
+  document.getElementById('errorText').style.display = 'none';
+  document.getElementById('progressFill').style.width = '0%';
+  document.getElementById('fetchBtn').disabled = false;
+}
+
+function closeUpdateModal() {
+  document.getElementById('updateOverlay').classList.remove('open');
+}
+
+// ─── FETCH FROM DISCOGS ───────────────────────────────────
+async function fetchCollection() {
+  const token = document.getElementById('tokenInput').value.trim();
+  if (!token) {
+    showError('Please enter your Discogs User Token.');
+    return;
+  }
+
+  const username = 'zapanda';
+  document.getElementById('fetchBtn').disabled = true;
+  document.getElementById('progressArea').style.display = 'block';
+  document.getElementById('downloadArea').style.display = 'none';
+  document.getElementById('errorText').style.display = 'none';
+
+  try {
+    // Step 1: get first page to find total
+    setProgress(0, 'Fetching page 1…');
+    const firstPage = await discogsGet(
+      `https://api.discogs.com/users/${username}/collection/folders/0/releases?per_page=100&page=1`,
+      token
+    );
+    const total = firstPage.pagination.items;
+    const pages = firstPage.pagination.pages;
+    const allItems = [...firstPage.releases];
+
+    // Step 2: fetch remaining pages
+    for (let p = 2; p <= pages; p++) {
+      const pct = Math.round(((p - 1) / pages) * 80);
+      setProgress(pct, `Fetching page ${p} of ${pages}…`);
+      const page = await discogsGet(
+        `https://api.discogs.com/users/${username}/collection/folders/0/releases?per_page=100&page=${p}`,
+        token
+      );
+      allItems.push(...page.releases);
+      await sleep(300); // be polite to the API
+    }
+
+    // Step 3: enrich each record with full release data (tracklist, country, etc.)
+    // We fetch release details in batches to respect rate limits
+    setProgress(80, `Enriching ${allItems.length} records with full details…`);
+    const enriched = [];
+    for (let i = 0; i < allItems.length; i++) {
+      const item = allItems[i];
+      const pct = 80 + Math.round((i / allItems.length) * 18);
+      if (i % 10 === 0) setProgress(pct, `Enriching record ${i+1} of ${allItems.length}…`);
+
+      const basic = item.basic_information;
+      let tracklist = [];
+      let country = '';
+      let fullFormatStr = '';
+
+      try {
+        const rel = await discogsGet(`https://api.discogs.com/releases/${basic.id}`, token);
+        tracklist = (rel.tracklist || []).map(t => ({
+          position: t.position,
+          title: t.title,
+          duration: t.duration || ''
+        }));
+        country = rel.country || '';
+        fullFormatStr = (rel.formats || []).map(f => {
+          let s = f.name || '';
+          if (f.descriptions && f.descriptions.length) s += ' — ' + f.descriptions.join(', ');
+          return s;
+        }).join('; ');
+      } catch(e) {
+        // silently skip enrichment for this record
+      }
+
+      // Determine top-level format label
+      const formatRaw = (basic.formats || []);
+      let formatLabel = '';
+      for (const f of formatRaw) {
+        const n = (f.name || '').toLowerCase();
+        if (n.includes('vinyl')) { formatLabel = 'Vinyl'; break; }
+        if (n.includes('cd')) { formatLabel = 'CD'; break; }
+        if (n.includes('cassette')) { formatLabel = 'Cassette'; break; }
+      }
+      if (!formatLabel) formatLabel = (formatRaw[0] && formatRaw[0].name) || '';
+
+      enriched.push({
+        id: basic.id,
+        instance_id: item.instance_id,
+        artist: (basic.artists || []).map(a => a.name.replace(/ \(\d+\)$/, '')).join(', '),
+        title: basic.title,
+        year: basic.year || null,
+        thumb: basic.thumb || '',
+        cover_image: basic.cover_image || '',
+        genres: basic.genres || [],
+        styles: basic.styles || [],
+        label: (basic.labels || [])[0]?.name || '',
+        format: formatLabel,
+        format_full: fullFormatStr,
+        country: country,
+        date_added: item.date_added,
+        tracklist: tracklist
+      });
+
+      await sleep(200); // respect Discogs rate limit (60 req/min)
+    }
+
+    setProgress(100, `Done! ${enriched.length} records loaded.`);
+
+    // Step 4: create downloadable JSON
+    const json = JSON.stringify(enriched, null, 2);
+    const blob = new Blob([json], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    document.getElementById('downloadLink').href = url;
+    document.getElementById('downloadArea').style.display = 'block';
+
+    // Also update the live app immediately
+    allRecords = enriched;
+    buildFilterOptions();
+    applyFilters();
+
+  } catch(e) {
+    showError(`Error: ${e.message}. Check your token and try again.`);
+    document.getElementById('fetchBtn').disabled = false;
+  }
+}
+
+async function discogsGet(url, token) {
+  const resp = await fetch(url, {
+    headers: {
+      'Authorization': `Discogs token=${token}`,
+      'User-Agent': 'ZapandaCollectionBrowser/1.0'
+    }
+  });
+  if (!resp.ok) {
+    if (resp.status === 401) throw new Error('Invalid token (401 Unauthorized)');
+    if (resp.status === 429) {
+      // rate limited — wait and retry
+      await sleep(2000);
+      return discogsGet(url, token);
+    }
+    throw new Error(`Discogs returned ${resp.status}`);
+  }
+  return resp.json();
+}
+
+function setProgress(pct, text) {
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = text;
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorText');
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ─── KEYBOARD ─────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeDetail(); closeUpdateModal(); }
+});
+
+// ─── GO ───────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
