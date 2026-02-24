@@ -8,470 +8,206 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e0c0a;
-    --bg2: #161410;
-    --bg3: #1e1b17;
-    --surface: #242018;
-    --border: #2e2a22;
-    --amber: #c8922a;
-    --amber-light: #e8b04a;
-    --amber-dim: #6b4e16;
-    --text: #e8e0d0;
-    --text-dim: #7a7060;
-    --text-mid: #a89880;
-    --red: #c84a3a;
-    --green: #4a8a5a;
+    --bg:#0e0c0a; --bg2:#161410; --bg3:#1e1b17; --surface:#242018;
+    --border:#2e2a22; --amber:#c8922a; --amber-light:#e8b04a;
+    --amber-dim:#6b4e16; --text:#e8e0d0; --text-dim:#7a7060;
+    --text-mid:#a89880; --red:#c84a3a; --green:#4a8a5a;
   }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  /* ─── HEADER ─── */
-  header {
-    border-bottom: 1px solid var(--border);
-    padding: 28px 40px 24px;
-    display: flex;
-    align-items: baseline;
-    gap: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(14,12,10,0.95);
-    backdrop-filter: blur(12px);
-  }
-
-  .site-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--amber);
-    letter-spacing: 0.02em;
-    flex-shrink: 0;
-  }
-
-  .site-title span { color: var(--text-dim); font-style: italic; font-size: 15px; }
-
-  .header-count {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--text-dim);
-    letter-spacing: 0.08em;
-  }
-
-  .header-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-
-  .btn-surprise {
-    background: var(--amber);
-    color: #0e0c0a;
-    border: none;
-    padding: 9px 20px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    transition: background 0.15s, transform 0.1s;
-  }
-
-  .btn-surprise:hover { background: var(--amber-light); transform: translateY(-1px); }
-  .btn-surprise:active { transform: translateY(0); }
-
-  .btn-update {
-    background: transparent;
-    color: var(--text-dim);
-    border: 1px solid var(--border);
-    padding: 8px 14px;
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-    transition: color 0.15s, border-color 0.15s;
-  }
-
-  .btn-update:hover { color: var(--text-mid); border-color: var(--text-dim); }
-
-  /* ─── FILTERS ─── */
-  .filters-bar {
-    padding: 16px 40px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    border-bottom: 1px solid var(--border);
-    flex-wrap: wrap;
-  }
-
-  .filter-group { display: flex; align-items: center; gap: 8px; }
-
-  .filter-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-  }
-
-  select, .search-input {
-    background: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--border);
-    padding: 7px 12px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    outline: none;
-    transition: border-color 0.15s;
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-  }
-
-  select {
-    padding-right: 28px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a7060'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-  }
-
-  select:focus, .search-input:focus { border-color: var(--amber-dim); }
-  .search-input { width: 200px; cursor: text; }
-
-  .filter-active-count {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--amber);
-    margin-left: auto;
-  }
-
-  .btn-clear {
-    background: none; border: none;
-    color: var(--text-dim);
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    cursor: pointer;
-    letter-spacing: 0.06em;
-    padding: 4px 8px;
-    transition: color 0.15s;
-  }
-
-  .btn-clear:hover { color: var(--red); }
-
-  /* ─── STARS ─── */
-  .stars { display: flex; gap: 2px; line-height: 1; }
-  .star { font-size: 11px; color: #2e2a22; }
-  .star.on { color: #c8922a; }
-  .stars-empty .star { opacity: 0.18; }
-
-  /* ─── GRID ─── */
-  .grid-container { padding: 32px 40px; }
-
-  .album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 24px;
-  }
-
-  .album-card { cursor: pointer; animation: fadeIn 0.3s ease both; }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .album-thumb-wrap {
-    position: relative;
-    aspect-ratio: 1;
-    overflow: hidden;
-    background: var(--surface);
-    margin-bottom: 10px;
-  }
-
-  .album-thumb-wrap::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-
-  .album-card:hover .album-thumb-wrap::after { opacity: 1; }
-
-  .album-thumb {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    display: block;
-  }
-
-  .album-card:hover .album-thumb { transform: scale(1.04); }
-
-  .no-art { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg3); }
-  .no-art-inner { width: 60%; height: 60%; border-radius: 50%; background: var(--surface); border: 3px solid var(--border); display: flex; align-items: center; justify-content: center; }
-  .vinyl-hole { width: 20%; height: 20%; border-radius: 50%; background: var(--bg); border: 2px solid var(--border); }
-
-  .format-badge {
-    position: absolute; top: 8px; right: 8px;
-    background: rgba(14,12,10,0.85);
-    color: var(--amber);
-    font-family: 'DM Mono', monospace;
-    font-size: 9px; letter-spacing: 0.1em;
-    padding: 3px 6px; z-index: 1;
-    backdrop-filter: blur(4px);
-  }
-
-  .badge-1001 {
-    position: absolute; bottom: 8px; left: 8px;
-    font-family: 'DM Mono', monospace;
-    font-size: 8px; letter-spacing: 0.06em;
-    padding: 3px 6px; z-index: 1;
-    backdrop-filter: blur(4px);
-    border: 1px solid;
-  }
-
-  .badge-1001.book { background: rgba(14,12,10,0.85); color: #e8b04a; border-color: #6b4e16; }
-  .badge-1001.user { background: rgba(14,12,10,0.85); color: var(--text-mid); border-color: var(--border); }
-
-  .album-artist {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.06em;
-    color: var(--amber); text-transform: uppercase;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    margin-bottom: 3px;
-  }
-
-  .album-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px; font-weight: 400;
-    color: var(--text); line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-
-  .album-year { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); margin-bottom: 4px; }
-  .card-stars { margin-top: 2px; }
-
-  /* ─── LOADING / EMPTY ─── */
-  .empty-state { text-align: center; padding: 80px 40px; color: var(--text-dim); }
-  .empty-state h3 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 400; font-style: italic; color: var(--text-mid); margin-bottom: 12px; }
-  .empty-state p { font-size: 14px; line-height: 1.6; }
-
-  .loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; gap: 20px; color: var(--text-dim); }
-
-  .loading-vinyl {
-    width: 60px; height: 60px; border-radius: 50%;
-    background: var(--surface);
-    border: 6px solid var(--border); border-top-color: var(--amber);
-    animation: spin 1s linear infinite; position: relative;
-  }
-
-  .loading-vinyl::after {
-    content: ''; position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    width: 12px; height: 12px; border-radius: 50%;
-    background: var(--bg); border: 2px solid var(--border);
-  }
-
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .loading-text { font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.08em; animation: pulse 1.5s ease-in-out infinite; }
-
-  @keyframes pulse { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
-
-  /* ─── DETAIL MODAL ─── */
-  .modal-overlay {
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.85);
-    z-index: 200;
-    display: flex; align-items: center; justify-content: center;
-    padding: 24px;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.2s;
-    backdrop-filter: blur(4px);
-  }
-
-  .modal-overlay.open { opacity: 1; pointer-events: all; }
-
-  .modal {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    max-width: 800px; width: 100%;
-    max-height: 90vh; overflow-y: auto;
-    display: grid; grid-template-columns: 300px 1fr;
-    transform: translateY(16px); transition: transform 0.2s;
-    scrollbar-width: thin; scrollbar-color: var(--border) transparent;
-  }
-
-  .modal-overlay.open .modal { transform: translateY(0); }
-
-  .modal-art-col { position: relative; background: var(--surface); flex-shrink: 0; }
-  .modal-art { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
-  .modal-no-art { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--bg3); }
-  .modal-no-art-inner { width: 60%; height: 60%; border-radius: 50%; background: var(--surface); border: 6px solid var(--border); display: flex; align-items: center; justify-content: center; }
-  .modal-vinyl-hole { width: 22%; height: 22%; border-radius: 50%; background: var(--bg); border: 3px solid var(--border); }
-
-  .modal-art-badges { position: absolute; bottom: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; }
-
-  .modal-meta-col { padding: 32px 28px; display: flex; flex-direction: column; overflow-y: auto; }
-
-  .modal-close {
-    position: absolute; top: 12px; right: 12px;
-    background: rgba(0,0,0,0.6);
-    border: 1px solid var(--border); color: var(--text-dim);
-    width: 28px; height: 28px;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; font-size: 14px;
-    transition: color 0.15s, border-color 0.15s; z-index: 1;
-  }
-
-  .modal-close:hover { color: var(--text); border-color: var(--text-mid); }
-
-  .modal-format-badge { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--amber); text-transform: uppercase; margin-bottom: 8px; }
-  .modal-artist { font-family: 'Playfair Display', serif; font-size: 14px; font-style: italic; color: var(--text-mid); margin-bottom: 4px; line-height: 1.4; }
-  .modal-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 14px; }
-
-  /* Rating block */
-  .modal-rating-block { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
-
-  .modal-my-rating { display: flex; align-items: center; gap: 6px; }
-  .modal-my-rating-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; }
-  .modal-my-rating .stars .star { font-size: 15px; }
-
-  .modal-global-rating {
-    font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim);
-    border-left: 1px solid var(--border); padding-left: 14px;
-  }
-  .modal-global-rating span { color: var(--text-mid); }
-
-  /* Review */
-  .modal-review {
-    background: var(--surface);
-    border-left: 2px solid var(--amber-dim);
-    padding: 12px 14px; margin-bottom: 14px;
-    font-size: 13px; color: var(--text-mid);
-    line-height: 1.6; font-style: italic;
-  }
-  .modal-review-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 6px; font-style: normal; display: block; }
-
-  .modal-divider { height: 1px; background: var(--border); margin: 14px 0; }
-
-  .modal-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-  .tag { background: var(--surface); border: 1px solid var(--border); color: var(--text-mid); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.06em; padding: 4px 8px; }
-  .tag.genre { color: var(--amber); border-color: var(--amber-dim); }
-
-  .modal-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; margin-bottom: 14px; }
-  .info-item-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 2px; }
-  .info-item-value { font-size: 13px; color: var(--text); font-weight: 400; }
-
-  .modal-tracklist-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 10px; }
-  .tracklist { list-style: none; }
-  .tracklist li { display: grid; grid-template-columns: 28px 1fr auto; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; align-items: baseline; }
-  .tracklist li:last-child { border-bottom: none; }
-  .track-pos { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); }
-  .track-title { color: var(--text); }
-  .track-duration { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-dim); }
-
-  .modal-1001-link {
-    display: inline-block; margin-top: 16px;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.08em;
-    color: var(--amber-dim); text-decoration: none;
-    border-bottom: 1px solid var(--amber-dim);
-    transition: color 0.15s, border-color 0.15s;
-  }
-  .modal-1001-link:hover { color: var(--amber); border-color: var(--amber); }
-
-  /* ─── UPDATE MODAL ─── */
-  .update-overlay {
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 300;
-    display: flex; align-items: center; justify-content: center;
-    padding: 24px;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.2s;
-  }
-
-  .update-overlay.open { opacity: 1; pointer-events: all; }
-
-  .update-modal {
-    background: var(--bg2); border: 1px solid var(--border);
-    padding: 36px; max-width: 500px; width: 100%;
-    transform: translateY(16px); transition: transform 0.2s;
-    max-height: 90vh; overflow-y: auto;
-  }
-
-  .update-overlay.open .update-modal { transform: translateY(0); }
-
-  .update-modal h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 8px; }
-  .update-modal p { font-size: 13px; color: var(--text-mid); line-height: 1.6; margin-bottom: 20px; }
-
-  .update-modal label { display: block; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 8px; }
-
-  .token-input {
-    width: 100%; background: var(--surface); color: var(--text);
-    border: 1px solid var(--border); padding: 10px 14px;
-    font-family: 'DM Mono', monospace; font-size: 12px;
-    outline: none; margin-bottom: 20px; transition: border-color 0.15s;
-  }
-  .token-input:focus { border-color: var(--amber-dim); }
-
-  .update-actions { display: flex; gap: 10px; align-items: center; }
-
-  .btn-fetch { background: var(--amber); color: #0e0c0a; border: none; padding: 10px 22px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; letter-spacing: 0.04em; transition: background 0.15s; }
-  .btn-fetch:hover { background: var(--amber-light); }
-  .btn-fetch:disabled { opacity: 0.4; cursor: not-allowed; }
-
-  .btn-cancel { background: none; border: 1px solid var(--border); color: var(--text-dim); padding: 9px 16px; font-family: 'DM Sans', sans-serif; font-size: 13px; cursor: pointer; transition: color 0.15s, border-color 0.15s; }
-  .btn-cancel:hover { color: var(--text); border-color: var(--text-mid); }
-
-  .progress-area { margin-top: 20px; display: none; }
-  .progress-bar-wrap { height: 2px; background: var(--border); margin-bottom: 8px; }
-  .progress-bar-fill { height: 100%; background: var(--amber); transition: width 0.3s; width: 0%; }
-  .progress-text { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim); }
-
-  .match-stats {
-    margin-top: 12px; padding: 10px 12px;
-    background: var(--bg3); border: 1px solid var(--border);
-    font-family: 'DM Mono', monospace; font-size: 11px;
-    color: var(--text-dim); line-height: 1.9; display: none;
-  }
-  .match-stats span { color: var(--amber); }
-
-  .download-area { margin-top: 16px; padding: 16px; background: var(--surface); border: 1px solid var(--green); display: none; }
-  .download-area p { font-size: 12px; color: var(--text-mid); margin-bottom: 12px; }
-  .download-area ol { font-size: 12px; color: var(--text-mid); line-height: 1.8; padding-left: 18px; margin-bottom: 14px; }
-
-  .btn-download { background: var(--green); color: #fff; border: none; padding: 9px 18px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: opacity 0.15s; display: inline-block; text-decoration: none; }
-  .btn-download:hover { opacity: 0.85; }
-
-  .error-text { color: var(--red); font-family: 'DM Mono', monospace; font-size: 11px; margin-top: 12px; display: none; }
-
-  /* ─── SCROLLBAR ─── */
-  ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border); }
-
-  /* ─── RESPONSIVE ─── */
-  @media (max-width: 700px) {
-    header { padding: 16px 20px; flex-wrap: wrap; }
-    .filters-bar { padding: 12px 20px; }
-    .grid-container { padding: 20px; }
-    .album-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
-    .modal { grid-template-columns: 1fr; }
-    .modal-art-col { max-height: 260px; overflow: hidden; }
-    .modal-art { width: 100%; height: 260px; aspect-ratio: unset; }
-    .modal-no-art { height: 260px; aspect-ratio: unset; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh;overflow-x:hidden}
+
+  /* HEADER */
+  header{border-bottom:1px solid var(--border);padding:28px 40px 24px;display:flex;align-items:baseline;gap:20px;position:sticky;top:0;z-index:100;background:rgba(14,12,10,0.95);backdrop-filter:blur(12px)}
+  .site-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:var(--amber);letter-spacing:.02em;flex-shrink:0}
+  .site-title span{color:var(--text-dim);font-style:italic;font-size:15px}
+  .header-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim);letter-spacing:.08em}
+  .header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .btn-surprise{background:var(--amber);color:#0e0c0a;border:none;padding:9px 20px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.04em;transition:background .15s,transform .1s}
+  .btn-surprise:hover{background:var(--amber-light);transform:translateY(-1px)}
+  .btn-surprise:active{transform:translateY(0)}
+  .btn-update{background:transparent;color:var(--text-dim);border:1px solid var(--border);padding:8px 14px;font-family:'DM Mono',monospace;font-size:11px;cursor:pointer;letter-spacing:.06em;transition:color .15s,border-color .15s}
+  .btn-update:hover{color:var(--text-mid);border-color:var(--text-dim)}
+
+  /* FILTERS BAR */
+  .filters-bar{padding:16px 40px;display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+  .filter-group{display:flex;align-items:center;gap:8px}
+  .filter-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase}
+  select,.search-input{background:var(--surface);color:var(--text);border:1px solid var(--border);padding:7px 12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color .15s;appearance:none;-webkit-appearance:none;cursor:pointer}
+  select{padding-right:28px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a7060'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+  select:focus,.search-input:focus{border-color:var(--amber-dim)}
+  .search-input{width:200px;cursor:text}
+  .filter-active-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--amber);margin-left:auto}
+  .btn-clear{background:none;border:none;color:var(--text-dim);font-family:'DM Mono',monospace;font-size:11px;cursor:pointer;letter-spacing:.06em;padding:4px 8px;transition:color .15s}
+  .btn-clear:hover{color:var(--red)}
+
+  /* GENRE PICKER BUTTON */
+  .btn-genre-picker{background:var(--surface);color:var(--text);border:1px solid var(--border);padding:7px 28px 7px 12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:300;cursor:pointer;transition:border-color .15s;white-space:nowrap;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a7060'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+  .btn-genre-picker:hover{border-color:var(--amber-dim)}
+  .btn-genre-picker.active{border-color:var(--amber);color:var(--amber)}
+
+  /* GENRE MODAL */
+  .genre-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:250;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .2s;backdrop-filter:blur(4px)}
+  .genre-overlay.open{opacity:1;pointer-events:all}
+  .genre-modal{background:var(--bg2);border:1px solid var(--border);width:100%;max-width:680px;max-height:80vh;display:flex;flex-direction:column;transform:translateY(12px);transition:transform .2s}
+  .genre-overlay.open .genre-modal{transform:translateY(0)}
+
+  .genre-modal-header{padding:20px 24px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:14px;flex-shrink:0;flex-wrap:wrap}
+  .genre-modal-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:400;color:var(--text)}
+
+  .logic-toggle{display:flex;border:1px solid var(--border);overflow:hidden;flex-shrink:0}
+  .logic-btn{background:var(--surface);color:var(--text-dim);border:none;padding:5px 13px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;cursor:pointer;transition:background .15s,color .15s}
+  .logic-btn.active{background:var(--amber-dim);color:var(--amber-light)}
+  .logic-hint{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:.03em;margin-left:auto}
+
+  .genre-modal-close{background:none;border:1px solid var(--border);color:var(--text-dim);width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:color .15s,border-color .15s;flex-shrink:0}
+  .genre-modal-close:hover{color:var(--text);border-color:var(--text-mid)}
+
+  .genre-modal-body{padding:20px 24px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  .genre-section-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;color:var(--text-dim);text-transform:uppercase;margin-bottom:10px}
+  .genre-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+  .genre-pill{background:var(--surface);border:1px solid var(--border);color:var(--text-mid);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:300;padding:5px 11px;cursor:pointer;transition:background .12s,border-color .12s,color .12s;user-select:none}
+  .genre-pill:hover{border-color:var(--text-dim);color:var(--text)}
+  .genre-pill.selected{background:var(--amber-dim);border-color:var(--amber);color:var(--amber-light)}
+  .genre-pill.broad{font-size:13px;padding:6px 14px}
+
+  .genre-modal-footer{padding:14px 24px;border-top:1px solid var(--border);display:flex;align-items:center;gap:12px;flex-shrink:0}
+  .genre-selected-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim)}
+  .genre-selected-count span{color:var(--amber)}
+  .btn-genre-apply{background:var(--amber);color:#0e0c0a;border:none;padding:8px 20px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:background .15s;margin-left:auto}
+  .btn-genre-apply:hover{background:var(--amber-light)}
+  .btn-genre-clear-sel{background:none;border:none;color:var(--text-dim);font-family:'DM Mono',monospace;font-size:11px;cursor:pointer;transition:color .15s;padding:4px 0}
+  .btn-genre-clear-sel:hover{color:var(--red)}
+
+  /* STARS */
+  .stars{display:flex;gap:2px;line-height:1}
+  .star{font-size:11px;color:#2e2a22}
+  .star.on{color:#c8922a}
+  .stars-empty .star{opacity:.18}
+
+  /* GRID */
+  .grid-container{padding:32px 40px}
+  .album-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:24px}
+  .album-card{cursor:pointer;animation:fadeIn .3s ease both}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+  .album-thumb-wrap{position:relative;aspect-ratio:1;overflow:hidden;background:var(--surface);margin-bottom:10px}
+  .album-thumb-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.6) 100%);opacity:0;transition:opacity .2s}
+  .album-card:hover .album-thumb-wrap::after{opacity:1}
+  .album-thumb{width:100%;height:100%;object-fit:cover;transition:transform .3s ease;display:block}
+  .album-card:hover .album-thumb{transform:scale(1.04)}
+
+  .no-art{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--bg3)}
+  .no-art-inner{width:60%;height:60%;border-radius:50%;background:var(--surface);border:3px solid var(--border);display:flex;align-items:center;justify-content:center}
+  .vinyl-hole{width:20%;height:20%;border-radius:50%;background:var(--bg);border:2px solid var(--border)}
+
+  .format-badge{position:absolute;top:8px;right:8px;background:rgba(14,12,10,.85);color:var(--amber);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;padding:3px 6px;z-index:1;backdrop-filter:blur(4px)}
+  .badge-1001{position:absolute;bottom:8px;left:8px;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.06em;padding:3px 6px;z-index:1;backdrop-filter:blur(4px);border:1px solid}
+  .badge-1001.book{background:rgba(14,12,10,.85);color:#e8b04a;border-color:#6b4e16}
+  .badge-1001.user{background:rgba(14,12,10,.85);color:var(--text-mid);border-color:var(--border)}
+
+  .album-artist{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;color:var(--amber);text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:3px}
+  .album-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:400;color:var(--text);line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:5px}
+  .album-year{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim);margin-bottom:4px}
+  .card-stars{margin-top:2px}
+
+  /* LOADING / EMPTY */
+  .empty-state{text-align:center;padding:80px 40px;color:var(--text-dim)}
+  .empty-state h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;font-style:italic;color:var(--text-mid);margin-bottom:12px}
+  .empty-state p{font-size:14px;line-height:1.6}
+  .loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:50vh;gap:20px;color:var(--text-dim)}
+  .loading-vinyl{width:60px;height:60px;border-radius:50%;background:var(--surface);border:6px solid var(--border);border-top-color:var(--amber);animation:spin 1s linear infinite;position:relative}
+  .loading-vinyl::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--border)}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loading-text{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;animation:pulse 1.5s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+  /* DETAIL MODAL */
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .2s;backdrop-filter:blur(4px)}
+  .modal-overlay.open{opacity:1;pointer-events:all}
+  .modal{background:var(--bg2);border:1px solid var(--border);max-width:800px;width:100%;max-height:90vh;overflow-y:auto;display:grid;grid-template-columns:300px 1fr;transform:translateY(16px);transition:transform .2s;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  .modal-overlay.open .modal{transform:translateY(0)}
+  .modal-art-col{position:relative;background:var(--surface);flex-shrink:0}
+  .modal-art{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+  .modal-no-art{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--bg3)}
+  .modal-no-art-inner{width:60%;height:60%;border-radius:50%;background:var(--surface);border:6px solid var(--border);display:flex;align-items:center;justify-content:center}
+  .modal-vinyl-hole{width:22%;height:22%;border-radius:50%;background:var(--bg);border:3px solid var(--border)}
+  .modal-art-badges{position:absolute;bottom:12px;left:12px;display:flex;flex-direction:column;gap:6px}
+  .modal-meta-col{padding:32px 28px;display:flex;flex-direction:column;overflow-y:auto}
+  .modal-close{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);border:1px solid var(--border);color:var(--text-dim);width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:color .15s,border-color .15s;z-index:1}
+  .modal-close:hover{color:var(--text);border-color:var(--text-mid)}
+  .modal-format-badge{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--amber);text-transform:uppercase;margin-bottom:8px}
+  .modal-artist{font-family:'Playfair Display',serif;font-size:14px;font-style:italic;color:var(--text-mid);margin-bottom:4px;line-height:1.4}
+  .modal-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--text);line-height:1.2;margin-bottom:14px}
+  .modal-rating-block{display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+  .modal-my-rating{display:flex;align-items:center;gap:6px}
+  .modal-my-rating-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase}
+  .modal-my-rating .stars .star{font-size:15px}
+  .modal-global-rating{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim);border-left:1px solid var(--border);padding-left:14px}
+  .modal-global-rating span{color:var(--text-mid)}
+  .modal-review{background:var(--surface);border-left:2px solid var(--amber-dim);padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--text-mid);line-height:1.6;font-style:italic}
+  .modal-review-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:6px;font-style:normal;display:block}
+  .modal-divider{height:1px;background:var(--border);margin:14px 0}
+  .modal-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+  .tag{background:var(--surface);border:1px solid var(--border);color:var(--text-mid);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;padding:4px 8px}
+  .tag.genre{color:var(--amber);border-color:var(--amber-dim)}
+  .modal-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-bottom:14px}
+  .info-item-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:2px}
+  .info-item-value{font-size:13px;color:var(--text);font-weight:400}
+  .modal-tracklist-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:10px}
+  .tracklist{list-style:none}
+  .tracklist li{display:grid;grid-template-columns:28px 1fr auto;gap:8px;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px;align-items:baseline}
+  .tracklist li:last-child{border-bottom:none}
+  .track-pos{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim)}
+  .track-title{color:var(--text)}
+  .track-duration{font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim)}
+  .modal-1001-link{display:inline-block;margin-top:16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--amber-dim);text-decoration:none;border-bottom:1px solid var(--amber-dim);transition:color .15s,border-color .15s}
+  .modal-1001-link:hover{color:var(--amber);border-color:var(--amber)}
+
+  /* UPDATE MODAL */
+  .update-overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .2s}
+  .update-overlay.open{opacity:1;pointer-events:all}
+  .update-modal{background:var(--bg2);border:1px solid var(--border);padding:36px;max-width:500px;width:100%;transform:translateY(16px);transition:transform .2s;max-height:90vh;overflow-y:auto}
+  .update-overlay.open .update-modal{transform:translateY(0)}
+  .update-modal h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:var(--text);margin-bottom:8px}
+  .update-modal p{font-size:13px;color:var(--text-mid);line-height:1.6;margin-bottom:20px}
+  .update-modal label{display:block;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--text-dim);text-transform:uppercase;margin-bottom:8px}
+  .token-input{width:100%;background:var(--surface);color:var(--text);border:1px solid var(--border);padding:10px 14px;font-family:'DM Mono',monospace;font-size:12px;outline:none;margin-bottom:20px;transition:border-color .15s}
+  .token-input:focus{border-color:var(--amber-dim)}
+  .update-actions{display:flex;gap:10px;align-items:center}
+  .btn-fetch{background:var(--amber);color:#0e0c0a;border:none;padding:10px 22px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:.04em;transition:background .15s}
+  .btn-fetch:hover{background:var(--amber-light)}
+  .btn-fetch:disabled{opacity:.4;cursor:not-allowed}
+  .btn-cancel{background:none;border:1px solid var(--border);color:var(--text-dim);padding:9px 16px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;transition:color .15s,border-color .15s}
+  .btn-cancel:hover{color:var(--text);border-color:var(--text-mid)}
+  .progress-area{margin-top:20px;display:none}
+  .progress-bar-wrap{height:2px;background:var(--border);margin-bottom:8px}
+  .progress-bar-fill{height:100%;background:var(--amber);transition:width .3s;width:0%}
+  .progress-text{font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim)}
+  .match-stats{margin-top:12px;padding:10px 12px;background:var(--bg3);border:1px solid var(--border);font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim);line-height:1.9;display:none}
+  .match-stats span{color:var(--amber)}
+  .download-area{margin-top:16px;padding:16px;background:var(--surface);border:1px solid var(--green);display:none}
+  .download-area p{font-size:12px;color:var(--text-mid);margin-bottom:12px}
+  .download-area ol{font-size:12px;color:var(--text-mid);line-height:1.8;padding-left:18px;margin-bottom:14px}
+  .btn-download{background:var(--green);color:#fff;border:none;padding:9px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:opacity .15s;display:inline-block;text-decoration:none}
+  .btn-download:hover{opacity:.85}
+  .error-text{color:var(--red);font-family:'DM Mono',monospace;font-size:11px;margin-top:12px;display:none}
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar{width:4px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--border)}
+
+  /* RESPONSIVE */
+  @media(max-width:700px){
+    header{padding:16px 20px;flex-wrap:wrap}
+    .filters-bar{padding:12px 20px}
+    .grid-container{padding:20px}
+    .album-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px}
+    .modal{grid-template-columns:1fr}
+    .modal-art-col{max-height:260px;overflow:hidden}
+    .modal-art{width:100%;height:260px;aspect-ratio:unset}
+    .modal-no-art{height:260px;aspect-ratio:unset}
   }
 </style>
 </head>
@@ -497,9 +233,7 @@
   </div>
   <div class="filter-group">
     <span class="filter-label">Genre</span>
-    <select id="filterGenre" onchange="applyFilters()">
-      <option value="">All genres</option>
-    </select>
+    <button class="btn-genre-picker" id="genrePickerBtn" onclick="openGenreModal()">All genres</button>
   </div>
   <div class="filter-group">
     <span class="filter-label">Decade</span>
@@ -540,16 +274,37 @@
   </div>
   <input class="search-input" type="text" id="searchInput" placeholder="Search artist or title…" oninput="applyFilters()">
   <span class="filter-active-count" id="filterCount"></span>
-  <button class="btn-clear" onclick="clearFilters()">Clear</button>
+  <button class="btn-clear" onclick="clearFilters()">Clear all</button>
 </div>
 
 <div class="grid-container">
   <div id="mainContent"></div>
 </div>
 
+<!-- GENRE MODAL -->
+<div class="genre-overlay" id="genreOverlay" onclick="closeGenreIfOverlay(event)">
+  <div class="genre-modal">
+    <div class="genre-modal-header">
+      <div class="genre-modal-title">Filter by genre</div>
+      <div class="logic-toggle">
+        <button class="logic-btn active" id="logicOR" onclick="setLogic('OR')">OR</button>
+        <button class="logic-btn" id="logicAND" onclick="setLogic('AND')">AND</button>
+      </div>
+      <div class="logic-hint" id="logicHint">match any selected genre</div>
+      <button class="genre-modal-close" onclick="closeGenreModal()">✕</button>
+    </div>
+    <div class="genre-modal-body" id="genreModalBody"></div>
+    <div class="genre-modal-footer">
+      <div class="genre-selected-count" id="genreSelectedCount">None selected</div>
+      <button class="btn-genre-clear-sel" onclick="clearGenreSelection()">Clear</button>
+      <button class="btn-genre-apply" onclick="applyGenreFilter()">Apply</button>
+    </div>
+  </div>
+</div>
+
 <!-- DETAIL MODAL -->
 <div class="modal-overlay" id="detailOverlay" onclick="closeDetailIfOverlay(event)">
-  <div class="modal" id="detailModal">
+  <div class="modal">
     <div class="modal-art-col" id="modalArtCol">
       <button class="modal-close" onclick="closeDetail()">✕</button>
     </div>
@@ -561,7 +316,7 @@
 <div class="update-overlay" id="updateOverlay">
   <div class="update-modal">
     <h2>Update Collection</h2>
-    <p>Fetches your Discogs collection and enriches it with your ratings and reviews from 1001albumsgenerator — automatically, in one step. Your Discogs token is used only for this session.</p>
+    <p>Fetches your Discogs collection and enriches it with ratings and reviews from 1001albumsgenerator — in one step. Your Discogs token is used only for this session.</p>
     <label for="tokenInput">Discogs User Token</label>
     <input class="token-input" type="password" id="tokenInput" placeholder="Paste your Discogs token here…">
     <div class="update-actions">
@@ -574,7 +329,7 @@
     </div>
     <div class="match-stats" id="matchStats"></div>
     <div class="download-area" id="downloadArea">
-      <p><strong style="color:#4a8a5a">✓ Done!</strong> Download the file and drag it into your GitHub repository to update the app.</p>
+      <p><strong style="color:#4a8a5a">✓ Done!</strong> Download and upload to GitHub to update the app.</p>
       <ol>
         <li>Click "Download collection.json" below</li>
         <li>Go to your GitHub repository</li>
@@ -589,21 +344,43 @@
 </div>
 
 <script>
-// ─── STATE ────────────────────────────────────────────────
+// ── STATE ─────────────────────────────────────────────────
 let allRecords = [];
 let filteredRecords = [];
+let selectedGenres = new Set();   // normalised tag strings currently applied
+let pendingGenres  = new Set();   // selections in-modal before Apply
+let genreLogic = 'OR';            // 'OR' | 'AND'
 
-// ─── INIT ─────────────────────────────────────────────────
+// ── TAG NORMALISATION ─────────────────────────────────────
+// Converts "Heavy-Metal", "heavy metal", "heavy-metal" → "heavy metal"
+// Returns display form as Title Case
+function normTag(str) {
+  return (str || '').toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+function displayTag(normStr) {
+  return normStr.replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// ── INIT ──────────────────────────────────────────────────
 async function init() {
   showLoading();
   try {
     const resp = await fetch('collection.json');
     if (!resp.ok) throw new Error('not found');
     allRecords = await resp.json();
-    buildFilterOptions();
+    normaliseAllTags();
+    buildDecades();
     applyFilters();
   } catch(e) {
     showFirstRunState();
+  }
+}
+
+// Normalise genres and styles on every record at load time so everything is consistent
+function normaliseAllTags() {
+  for (const r of allRecords) {
+    r.genres = [...new Set((r.genres || []).map(normTag))];
+    r.styles = [...new Set((r.styles || []).map(normTag))];
   }
 }
 
@@ -619,44 +396,140 @@ function showFirstRunState() {
   document.getElementById('mainContent').innerHTML = `
     <div class="empty-state">
       <h3>No collection loaded yet</h3>
-      <p>Click <strong style="color:var(--amber)">↻ Update Collection</strong> in the top right<br>
-      and paste your Discogs User Token to get started.</p>
+      <p>Click <strong style="color:var(--amber)">↻ Update Collection</strong> in the top right<br>and paste your Discogs User Token to get started.</p>
     </div>`;
 }
 
-// ─── STARS ────────────────────────────────────────────────
+// ── STARS ─────────────────────────────────────────────────
 function renderStars(rating) {
-  // rating null = show faint ghost stars; 1-5 = filled
   const isEmpty = (rating === null || rating === undefined);
   const full = isEmpty ? 0 : Math.floor(rating);
   let html = `<div class="stars${isEmpty ? ' stars-empty' : ''}">`;
-  for (let i = 1; i <= 5; i++) {
-    html += `<span class="star${!isEmpty && i <= full ? ' on' : ''}">★</span>`;
-  }
-  html += '</div>';
-  return html;
+  for (let i = 1; i <= 5; i++) html += `<span class="star${!isEmpty && i <= full ? ' on' : ''}">★</span>`;
+  return html + '</div>';
 }
 
-// ─── FILTER OPTIONS ───────────────────────────────────────
-function buildFilterOptions() {
-  const genreSel = document.getElementById('filterGenre');
-  while (genreSel.options.length > 1) genreSel.remove(1);
+// ── BUILD DECADES ─────────────────────────────────────────
+function buildDecades() {
   const decadeSel = document.getElementById('filterDecade');
   while (decadeSel.options.length > 1) decadeSel.remove(1);
-
-  const genres = [...new Set(allRecords.flatMap(r => r.genres || []))].sort();
-  genres.forEach(g => { const o = new Option(g, g); genreSel.add(o); });
-
   const decades = [...new Set(
     allRecords.map(r => r.year).filter(y => y && y > 1900).map(y => Math.floor(y/10)*10)
   )].sort();
-  decades.forEach(d => { const o = new Option(`${d}s`, d); decadeSel.add(o); });
+  decades.forEach(d => decadeSel.add(new Option(`${d}s`, d)));
 }
 
-// ─── FILTER & SORT ────────────────────────────────────────
+// ── GENRE MODAL ───────────────────────────────────────────
+function buildGenreModal() {
+  // Collect all normalised tags, separating broad genres from styles
+  const broadSet = new Set();
+  const styleSet = new Set();
+
+  for (const r of allRecords) {
+    (r.genres || []).forEach(g => broadSet.add(g));
+    (r.styles || []).forEach(s => styleSet.add(s));
+  }
+
+  // Remove any style that's also a broad genre (avoid duplication)
+  for (const g of broadSet) styleSet.delete(g);
+
+  const broadSorted = [...broadSet].sort();
+  const styleSorted = [...styleSet].sort();
+
+  let html = '';
+
+  if (broadSorted.length) {
+    html += `<div class="genre-section-label">Genres</div><div class="genre-pills">`;
+    for (const t of broadSorted) {
+      const sel = pendingGenres.has(t) ? ' selected' : '';
+      html += `<div class="genre-pill broad${sel}" data-tag="${t}" onclick="togglePill(this,'${t}')">${displayTag(t)}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (styleSorted.length) {
+    html += `<div class="genre-section-label">Styles &amp; Subgenres</div><div class="genre-pills">`;
+    for (const t of styleSorted) {
+      const sel = pendingGenres.has(t) ? ' selected' : '';
+      html += `<div class="genre-pill${sel}" data-tag="${t}" onclick="togglePill(this,'${t}')">${displayTag(t)}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  document.getElementById('genreModalBody').innerHTML = html;
+  updateGenreCount();
+}
+
+function togglePill(el, tag) {
+  if (pendingGenres.has(tag)) {
+    pendingGenres.delete(tag);
+    el.classList.remove('selected');
+  } else {
+    pendingGenres.add(tag);
+    el.classList.add('selected');
+  }
+  updateGenreCount();
+}
+
+function updateGenreCount() {
+  const n = pendingGenres.size;
+  const el = document.getElementById('genreSelectedCount');
+  el.innerHTML = n === 0 ? 'None selected' : `<span>${n}</span> genre${n > 1 ? 's' : ''} selected`;
+}
+
+function openGenreModal() {
+  // Copy current applied selection into pending
+  pendingGenres = new Set(selectedGenres);
+  buildGenreModal();
+  document.getElementById('genreOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeGenreModal() {
+  document.getElementById('genreOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeGenreIfOverlay(e) {
+  if (e.target === document.getElementById('genreOverlay')) closeGenreModal();
+}
+
+function clearGenreSelection() {
+  pendingGenres.clear();
+  document.querySelectorAll('.genre-pill.selected').forEach(p => p.classList.remove('selected'));
+  updateGenreCount();
+}
+
+function applyGenreFilter() {
+  selectedGenres = new Set(pendingGenres);
+  closeGenreModal();
+  updateGenreButton();
+  applyFilters();
+}
+
+function updateGenreButton() {
+  const btn = document.getElementById('genrePickerBtn');
+  if (selectedGenres.size === 0) {
+    btn.textContent = 'All genres';
+    btn.classList.remove('active');
+  } else {
+    const preview = [...selectedGenres].slice(0, 2).map(displayTag).join(', ');
+    btn.textContent = selectedGenres.size > 2 ? `${preview} +${selectedGenres.size - 2}` : preview;
+    btn.classList.add('active');
+  }
+}
+
+function setLogic(mode) {
+  genreLogic = mode;
+  document.getElementById('logicOR').classList.toggle('active', mode === 'OR');
+  document.getElementById('logicAND').classList.toggle('active', mode === 'AND');
+  document.getElementById('logicHint').textContent =
+    mode === 'OR' ? 'match any selected genre' : 'match all selected genres';
+}
+
+// ── FILTER & SORT ─────────────────────────────────────────
 function applyFilters() {
   const format = document.getElementById('filterFormat').value;
-  const genre  = document.getElementById('filterGenre').value;
   const decade = document.getElementById('filterDecade').value;
   const rating = document.getElementById('filterRating').value;
   const list   = document.getElementById('filterList').value;
@@ -665,7 +538,6 @@ function applyFilters() {
 
   filteredRecords = allRecords.filter(r => {
     if (format && r.format !== format) return false;
-    if (genre  && !(r.genres || []).includes(genre)) return false;
     if (decade && (Math.floor((r.year||0)/10)*10) !== parseInt(decade)) return false;
 
     if (rating === 'rated')   { if (!r.my_rating) return false; }
@@ -678,9 +550,17 @@ function applyFilters() {
     if (list === 'user') { if (r.list_source !== 'user') return false; }
     if (list === 'none') { if (r.list_source)            return false; }
 
-    if (search) {
-      if (!`${r.artist} ${r.title}`.toLowerCase().includes(search)) return false;
+    // Genre filter with AND/OR logic
+    if (selectedGenres.size > 0) {
+      const allTags = [...(r.genres||[]), ...(r.styles||[])];
+      if (genreLogic === 'OR') {
+        if (!allTags.some(t => selectedGenres.has(t))) return false;
+      } else {
+        if (![...selectedGenres].every(g => allTags.includes(g))) return false;
+      }
     }
+
+    if (search && !`${r.artist} ${r.title}`.toLowerCase().includes(search)) return false;
     return true;
   });
 
@@ -701,13 +581,16 @@ function applyFilters() {
 }
 
 function clearFilters() {
-  ['filterFormat','filterGenre','filterDecade','filterRating','filterList'].forEach(id => document.getElementById(id).value = '');
+  ['filterFormat','filterDecade','filterRating','filterList'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('filterSort').value = 'date_added';
   document.getElementById('searchInput').value = '';
+  selectedGenres.clear();
+  pendingGenres.clear();
+  updateGenreButton();
   applyFilters();
 }
 
-// ─── RENDER GRID ──────────────────────────────────────────
+// ── RENDER GRID ───────────────────────────────────────────
 function renderGrid() {
   if (!filteredRecords.length) {
     document.getElementById('mainContent').innerHTML = `
@@ -755,9 +638,9 @@ function esc(s) {
   return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ─── DETAIL MODAL ─────────────────────────────────────────
+// ── DETAIL MODAL ──────────────────────────────────────────
 function openDetail(r) {
-  const artCol = document.getElementById('modalArtCol');
+  const artCol  = document.getElementById('modalArtCol');
   const metaCol = document.getElementById('modalMetaCol');
 
   const imgSrc = r.cover_image || r.thumb;
@@ -771,34 +654,28 @@ function openDetail(r) {
 
   artCol.innerHTML = `<button class="modal-close" onclick="closeDetail()">✕</button>${artHtml}<div class="modal-art-badges">${artBadge}</div>`;
 
-  // Rating block
+  // Rating
   let ratingHtml = '';
   if (r.my_rating || r.global_rating) {
     const myPart = r.my_rating
-      ? `<div class="modal-my-rating"><span class="modal-my-rating-label">My rating</span>${renderStars(r.my_rating)}</div>`
-      : '';
+      ? `<div class="modal-my-rating"><span class="modal-my-rating-label">My rating</span>${renderStars(r.my_rating)}</div>` : '';
     const globalPart = r.global_rating
-      ? `<div class="modal-global-rating">community avg <span>${Number(r.global_rating).toFixed(2)} / 5</span></div>`
-      : '';
+      ? `<div class="modal-global-rating">community avg <span>${Number(r.global_rating).toFixed(2)} / 5</span></div>` : '';
     ratingHtml = `<div class="modal-rating-block">${myPart}${globalPart}</div>`;
   }
 
   // Review
   const reviewHtml = r.my_review
-    ? `<div class="modal-review"><span class="modal-review-label">My review</span>${esc(r.my_review)}</div>`
-    : '';
+    ? `<div class="modal-review"><span class="modal-review-label">My review</span>${esc(r.my_review)}</div>` : '';
 
-  // Tags
-  const genres = (r.genres||[]).map(g=>`<span class="tag genre">${esc(g)}</span>`).join('');
-  const styles = (r.styles||[]).map(s=>`<span class="tag">${esc(s)}</span>`).join('');
+  // Tags — display normalised tags in Title Case
+  const genres = (r.genres||[]).map(g=>`<span class="tag genre">${esc(displayTag(g))}</span>`).join('');
+  const styles = (r.styles||[]).map(s=>`<span class="tag">${esc(displayTag(s))}</span>`).join('');
   const tagsHtml = (genres||styles) ? `<div class="modal-tags">${genres}${styles}</div>` : '';
 
-  // Info grid
   const dateAdded = r.date_added
-    ? new Date(r.date_added).toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric'})
-    : '—';
+    ? new Date(r.date_added).toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric'}) : '—';
 
-  // Tracklist
   let tracklistHtml = '';
   if (r.tracklist && r.tracklist.length) {
     const items = r.tracklist.map(t =>
@@ -808,24 +685,20 @@ function openDetail(r) {
   }
 
   const linkHtml = r.reviews_url
-    ? `<a class="modal-1001-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ Community reviews on 1001albumsgenerator</a>`
-    : '';
+    ? `<a class="modal-1001-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ Community reviews on 1001albumsgenerator</a>` : '';
 
   metaCol.innerHTML = `
     <div class="modal-format-badge">${esc(r.format_full||r.format||'')}</div>
     <div class="modal-artist">${esc(r.artist)}</div>
     <div class="modal-title">${esc(r.title)}</div>
-    ${ratingHtml}
-    ${reviewHtml}
-    ${tagsHtml}
+    ${ratingHtml}${reviewHtml}${tagsHtml}
     <div class="modal-info-grid">
       <div class="info-item"><div class="info-item-label">Year</div><div class="info-item-value">${r.year||'—'}</div></div>
       <div class="info-item"><div class="info-item-label">Label</div><div class="info-item-value">${esc(r.label||'—')}</div></div>
       <div class="info-item"><div class="info-item-label">Country</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
       <div class="info-item"><div class="info-item-label">Added</div><div class="info-item-value">${dateAdded}</div></div>
     </div>
-    ${tracklistHtml}
-    ${linkHtml}`;
+    ${tracklistHtml}${linkHtml}`;
 
   document.getElementById('detailOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -840,34 +713,25 @@ function closeDetailIfOverlay(e) {
   if (e.target === document.getElementById('detailOverlay')) closeDetail();
 }
 
-// ─── SURPRISE ME ──────────────────────────────────────────
+// ── SURPRISE ME ───────────────────────────────────────────
 function surpriseMe() {
   if (!filteredRecords.length) return;
   openDetail(filteredRecords[Math.floor(Math.random() * filteredRecords.length)]);
 }
 
-// ─── UPDATE MODAL ─────────────────────────────────────────
+// ── UPDATE MODAL ──────────────────────────────────────────
 function openUpdateModal() {
   document.getElementById('updateOverlay').classList.add('open');
-  ['progressArea','downloadArea','matchStats','errorText'].forEach(id => {
-    document.getElementById(id).style.display = 'none';
-  });
+  ['progressArea','downloadArea','matchStats','errorText'].forEach(id => document.getElementById(id).style.display = 'none');
   document.getElementById('progressFill').style.width = '0%';
   document.getElementById('fetchBtn').disabled = false;
 }
 
-function closeUpdateModal() {
-  document.getElementById('updateOverlay').classList.remove('open');
-}
+function closeUpdateModal() { document.getElementById('updateOverlay').classList.remove('open'); }
 
-// ─── MATCHING ─────────────────────────────────────────────
+// ── MATCHING ──────────────────────────────────────────────
 function norm(str) {
-  return (str||'')
-    .toLowerCase()
-    .replace(/[^a-z0-9 ]/g, ' ')
-    .replace(/\b(the|a|an)\b/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return (str||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\b(the|a|an)\b/g,'').replace(/\s+/g,' ').trim();
 }
 
 function build1001Map(history, source) {
@@ -880,8 +744,8 @@ function build1001Map(history, source) {
       my_rating:     entry.rating || null,
       my_review:     entry.review || '',
       global_rating: entry.globalRating || null,
-      genres:        alb.genres  || [],
-      styles:        alb.styles  || [],
+      genres:        (alb.genres||[]).map(normTag),
+      styles:        (alb.styles||[]).map(normTag),
       year:          alb.releaseDate ? parseInt(alb.releaseDate) : null,
       cover_image:   (alb.images && alb.images[0]) ? alb.images[0].url : '',
       reviews_url:   alb.globalReviewsUrl || '',
@@ -892,56 +756,47 @@ function build1001Map(history, source) {
 }
 
 function find1001Match(record, map) {
-  // 1. exact normalised key
   const key1 = norm(record.artist) + '||' + norm(record.title);
   if (map.has(key1)) return map.get(key1);
 
-  // 2. strip parenthetical suffixes from title (e.g. "Abbey Road (Remaster)")
-  const titleClean = record.title.replace(/\s*[\(\[].*?[\)\]]/g, '').trim();
+  const titleClean = record.title.replace(/\s*[\(\[].*?[\)\]]/g,'').trim();
   const key2 = norm(record.artist) + '||' + norm(titleClean);
   if (map.has(key2)) return map.get(key2);
 
-  // 3. fuzzy: same artist, high word-overlap on title
   const normArtist = norm(record.artist);
-  const normTitle  = norm(titleClean);
-  const wordsA = new Set(normTitle.split(' ').filter(Boolean));
-  if (wordsA.size === 0) return null;
-
+  const wordsA = new Set(norm(titleClean).split(' ').filter(Boolean));
+  if (!wordsA.size) return null;
   for (const [k, v] of map.entries()) {
     const [ka, kt] = k.split('||');
     if (ka !== normArtist) continue;
     const wordsB = new Set(kt.split(' ').filter(Boolean));
     const inter = [...wordsA].filter(w => wordsB.has(w)).length;
-    const union = new Set([...wordsA, ...wordsB]).size;
-    if (union > 0 && inter / union >= 0.75) return v;
+    const union = new Set([...wordsA,...wordsB]).size;
+    if (union > 0 && inter/union >= 0.75) return v;
   }
   return null;
 }
 
-// ─── FETCH & MERGE ────────────────────────────────────────
+// ── FETCH & MERGE ─────────────────────────────────────────
 async function fetchCollection() {
   const token = document.getElementById('tokenInput').value.trim();
   if (!token) { showError('Please enter your Discogs User Token.'); return; }
 
   document.getElementById('fetchBtn').disabled = true;
   document.getElementById('progressArea').style.display = 'block';
-  document.getElementById('downloadArea').style.display = 'none';
-  document.getElementById('matchStats').style.display = 'none';
-  document.getElementById('errorText').style.display = 'none';
+  ['downloadArea','matchStats','errorText'].forEach(id => document.getElementById(id).style.display = 'none');
 
   try {
-    // Step 1: 1001albumsgenerator (no auth needed, public API)
     setProgress(0, 'Fetching 1001albumsgenerator ratings…');
     const gen = await fetch('https://1001albumsgenerator.com/api/v1/projects/zapanda')
-      .then(r => { if (!r.ok) throw new Error('1001albumsgenerator API error'); return r.json(); });
+      .then(r => { if(!r.ok) throw new Error('1001albumsgenerator API error'); return r.json(); });
 
     const map1001 = new Map([
       ...build1001Map(gen.history, 'book'),
       ...build1001Map(gen.userAlbumHistory, 'user'),
     ]);
-    setProgress(5, `Got ${map1001.size} rated albums. Fetching Discogs collection…`);
+    setProgress(5, `Got ${map1001.size} rated albums. Fetching Discogs…`);
 
-    // Step 2: Discogs collection pages
     const firstPage = await discogsGet(
       `https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=1`, token);
     const pages = firstPage.pagination.pages;
@@ -955,78 +810,55 @@ async function fetchCollection() {
       await sleep(300);
     }
 
-    // Step 3: Enrich each record
     const enriched = [];
     let matched = 0, withReview = 0;
 
     for (let i = 0; i < allItems.length; i++) {
-      const item  = allItems[i];
-      const basic = item.basic_information;
+      const item = allItems[i], basic = item.basic_information;
       if (i % 10 === 0) setProgress(25 + Math.round((i/allItems.length)*70), `Processing ${i+1} of ${allItems.length}…`);
 
-      // Full Discogs release details (tracklist, country, format)
       let tracklist = [], country = '', fullFormatStr = '';
       try {
         const rel = await discogsGet(`https://api.discogs.com/releases/${basic.id}`, token);
-        tracklist = (rel.tracklist||[]).map(t => ({position:t.position, title:t.title, duration:t.duration||''}));
+        tracklist = (rel.tracklist||[]).map(t=>({position:t.position,title:t.title,duration:t.duration||''}));
         country = rel.country || '';
-        fullFormatStr = (rel.formats||[]).map(f => {
+        fullFormatStr = (rel.formats||[]).map(f=>{
           let s = f.name||'';
-          if (f.descriptions&&f.descriptions.length) s += ' — ' + f.descriptions.join(', ');
+          if(f.descriptions&&f.descriptions.length) s += ' — '+f.descriptions.join(', ');
           return s;
         }).join('; ');
-      } catch(e) { /* skip */ }
+      } catch(e){}
 
-      // Format label
       let formatLabel = '';
       for (const f of (basic.formats||[])) {
         const n = (f.name||'').toLowerCase();
-        if (n.includes('vinyl'))    { formatLabel = 'Vinyl'; break; }
-        if (n.includes('cd'))       { formatLabel = 'CD';    break; }
-        if (n.includes('cassette')) { formatLabel = 'Cassette'; break; }
+        if(n.includes('vinyl')){formatLabel='Vinyl';break}
+        if(n.includes('cd')){formatLabel='CD';break}
+        if(n.includes('cassette')){formatLabel='Cassette';break}
       }
-      if (!formatLabel) formatLabel = (basic.formats||[])[0]?.name || '';
+      if (!formatLabel) formatLabel = (basic.formats||[])[0]?.name||'';
 
-      const artist = (basic.artists||[]).map(a => a.name.replace(/ \(\d+\)$/, '')).join(', ');
-
+      const artist = (basic.artists||[]).map(a=>a.name.replace(/ \(\d+\)$/,'')).join(', ');
       const record = {
-        id: basic.id,
-        instance_id: item.instance_id,
-        artist,
-        title:        basic.title,
-        year:         basic.year || null,
-        thumb:        basic.thumb || '',
-        cover_image:  basic.cover_image || '',
-        genres:       basic.genres || [],
-        styles:       basic.styles || [],
-        label:        (basic.labels||[])[0]?.name || '',
-        format:       formatLabel,
-        format_full:  fullFormatStr,
-        country,
-        date_added:   item.date_added,
-        tracklist,
-        my_rating:    null,
-        my_review:    '',
-        global_rating: null,
-        list_source:  null,
-        reviews_url:  '',
+        id:basic.id, instance_id:item.instance_id, artist, title:basic.title,
+        year:basic.year||null, thumb:basic.thumb||'', cover_image:basic.cover_image||'',
+        genres:(basic.genres||[]).map(normTag), styles:(basic.styles||[]).map(normTag),
+        label:(basic.labels||[])[0]?.name||'', format:formatLabel, format_full:fullFormatStr,
+        country, date_added:item.date_added, tracklist,
+        my_rating:null, my_review:'', global_rating:null, list_source:null, reviews_url:'',
       };
 
-      // Merge 1001gen data
       const m = find1001Match(record, map1001);
       if (m) {
         matched++;
-        record.my_rating     = m.my_rating;
-        record.my_review     = m.my_review;
-        record.global_rating = m.global_rating;
-        record.list_source   = m.list_source;
-        record.reviews_url   = m.reviews_url;
+        record.my_rating = m.my_rating; record.my_review = m.my_review;
+        record.global_rating = m.global_rating; record.list_source = m.list_source;
+        record.reviews_url = m.reviews_url;
         if (m.my_review) withReview++;
-        // Prefer 1001gen metadata
-        if (m.genres && m.genres.length) record.genres = m.genres;
-        if (m.styles && m.styles.length) record.styles = m.styles;
-        if (m.year)  record.year = m.year;
-        if (m.cover_image) record.cover_image = m.cover_image; // higher-res Spotify art
+        if (m.genres&&m.genres.length) record.genres = m.genres;
+        if (m.styles&&m.styles.length) record.styles = m.styles;
+        if (m.year) record.year = m.year;
+        if (m.cover_image) record.cover_image = m.cover_image;
       }
 
       enriched.push(record);
@@ -1034,23 +866,22 @@ async function fetchCollection() {
     }
 
     setProgress(100, 'Done!');
-
-    // Show match stats
     const statsEl = document.getElementById('matchStats');
-    statsEl.innerHTML = `
-      Discogs records: <span>${enriched.length}</span><br>
+    statsEl.innerHTML = `Discogs records: <span>${enriched.length}</span><br>
       Matched to 1001albumsgenerator: <span>${matched}</span> (${Math.round(matched/enriched.length*100)}%)<br>
       Records with your review: <span>${withReview}</span>`;
     statsEl.style.display = 'block';
 
-    // Downloadable JSON
-    const blob = new Blob([JSON.stringify(enriched, null, 2)], {type:'application/json'});
+    const blob = new Blob([JSON.stringify(enriched, null, 2)],{type:'application/json'});
     document.getElementById('downloadLink').href = URL.createObjectURL(blob);
     document.getElementById('downloadArea').style.display = 'block';
 
-    // Update live app immediately
     allRecords = enriched;
-    buildFilterOptions();
+    normaliseAllTags();
+    buildDecades();
+    selectedGenres.clear();
+    pendingGenres.clear();
+    updateGenreButton();
     applyFilters();
 
   } catch(e) {
@@ -1059,34 +890,27 @@ async function fetchCollection() {
   }
 }
 
-// ─── HELPERS ──────────────────────────────────────────────
 async function discogsGet(url, token) {
-  const resp = await fetch(url, {
-    headers: { 'Authorization': `Discogs token=${token}`, 'User-Agent': 'ZapandaCollectionBrowser/1.0' }
-  });
+  const resp = await fetch(url, {headers:{'Authorization':`Discogs token=${token}`,'User-Agent':'ZapandaCollectionBrowser/1.0'}});
   if (!resp.ok) {
-    if (resp.status === 401) throw new Error('Invalid token (401 Unauthorized)');
-    if (resp.status === 429) { await sleep(2500); return discogsGet(url, token); }
+    if(resp.status===401) throw new Error('Invalid token (401 Unauthorized)');
+    if(resp.status===429){await sleep(2500);return discogsGet(url,token)}
     throw new Error(`Discogs returned ${resp.status}`);
   }
   return resp.json();
 }
 
 function setProgress(pct, text) {
-  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressFill').style.width = pct+'%';
   document.getElementById('progressText').textContent = text;
 }
-
 function showError(msg) {
-  const el = document.getElementById('errorText');
-  el.textContent = msg; el.style.display = 'block';
+  const el = document.getElementById('errorText'); el.textContent = msg; el.style.display = 'block';
 }
+function sleep(ms) { return new Promise(r=>setTimeout(r,ms)); }
 
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-// ─── KEYBOARD ─────────────────────────────────────────────
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeDetail(); closeUpdateModal(); }
+  if (e.key === 'Escape') { closeDetail(); closeUpdateModal(); closeGenreModal(); }
 });
 
 init();
