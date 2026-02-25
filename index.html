@@ -333,12 +333,29 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 }
 .modal-overlay.open .modal{transform:translateY(0) scale(1)}
 
-.modal-art-col{position:relative;background:var(--surface);flex-shrink:0}
-.modal-art{width:100%;aspect-ratio:1;object-fit:cover;display:block}
-.modal-no-art{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--surface)}
+.modal-art-col{
+  background:var(--surface);flex-shrink:0;
+  display:flex;flex-direction:column;
+  overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent;
+}
+.modal-art{width:100%;aspect-ratio:1;object-fit:cover;display:block;flex-shrink:0}
+.modal-no-art{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:var(--surface);flex-shrink:0}
 .modal-no-art-disc{width:55%;height:55%;border-radius:50%;background:var(--surface2);border:3px solid var(--border2);display:flex;align-items:center;justify-content:center}
 .modal-no-art-hole{width:22%;height:22%;border-radius:50%;background:var(--bg3);border:2px solid var(--border)}
-.modal-art-badges{position:absolute;bottom:12px;left:12px;display:flex;flex-direction:column;gap:6px}
+.modal-art-badges{display:flex;flex-direction:column;gap:6px;padding:12px 12px 4px}
+.modal-art-links{padding:4px 12px 16px;display:flex;flex-direction:column;gap:6px}
+.modal-art-link{
+  display:flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:500;text-decoration:none;
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  padding:7px 11px;transition:color .15s,border-color .15s,background .15s;
+  color:var(--text-dim);background:var(--bg3);
+}
+.modal-art-link:hover{background:var(--surface2);color:var(--text);border-color:var(--border2)}
+.modal-art-link.discogs:hover{border-color:#dba63a;color:#dba63a}
+.modal-art-link.youtube:hover{border-color:#ff4444;color:#ff4444}
+.modal-art-link.spotify:hover{border-color:#1db954;color:#1db954}
+.modal-art-link.reviews:hover{border-color:var(--accent);color:var(--accent)}
 
 .modal-meta-col{padding:28px 26px;display:flex;flex-direction:column;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
 
@@ -577,10 +594,10 @@ select:focus,.search-input:focus{border-color:var(--accent)}
   .grid-container,.timeline-container{padding:20px}
   .album-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px}
   .month-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
-  .modal{grid-template-columns:1fr}
-  .modal-art-col{max-height:240px;overflow:hidden}
-  .modal-art{aspect-ratio:unset;height:240px}
-  .modal-no-art{aspect-ratio:unset;height:240px}
+  .modal{grid-template-columns:1fr;max-height:95vh}
+  .modal-art-col{max-height:320px}
+  .modal-art{aspect-ratio:unset;height:220px}
+  .modal-no-art{aspect-ratio:unset;height:220px}
 }
 </style>
 </head>
@@ -1019,7 +1036,24 @@ function openDetail(r) {
   if (r.list_source==='book') badge=`<div class="badge-1001 book">1001 ALBUMS</div>`;
   else if (r.list_source==='user') badge=`<div class="badge-1001 user">COMMUNITY PICK</div>`;
 
-  artCol.innerHTML = `<button class="modal-close" onclick="closeDetail()">✕</button>${artHtml}<div class="modal-art-badges">${badge}</div>`;
+  // Build links for left column
+  const q = encodeURIComponent(`${r.artist} ${r.title}`);
+  const discogsUrl = `https://www.discogs.com/release/${r.id}`;
+  const ytUrl      = `https://music.youtube.com/search?q=${q}`;
+  const spotifyUrl = `https://open.spotify.com/search/${q}`;
+  const reviewsLink = r.reviews_url
+    ? `<a class="modal-art-link reviews" href="${r.reviews_url}" target="_blank" rel="noopener">↗ 1001 Reviews</a>` : '';
+
+  artCol.innerHTML = `
+    <button class="modal-close" onclick="closeDetail()" style="position:absolute;top:12px;right:12px;z-index:2">✕</button>
+    ${artHtml}
+    <div class="modal-art-badges">${badge}</div>
+    <div class="modal-art-links">
+      <a class="modal-art-link discogs" href="${discogsUrl}" target="_blank" rel="noopener">⬡ Discogs</a>
+      <a class="modal-art-link youtube" href="${ytUrl}" target="_blank" rel="noopener">▶ YouTube Music</a>
+      <a class="modal-art-link spotify" href="${spotifyUrl}" target="_blank" rel="noopener">● Spotify</a>
+      ${reviewsLink}
+    </div>`;
 
   // Rating
   let ratingHtml='';
@@ -1049,31 +1083,11 @@ function openDetail(r) {
     trackHtml = `<div class="modal-divider"></div><div class="modal-tracklist-label">Tracklist</div><ul class="tracklist">${items}</ul>`;
   }
 
-  // External links row
-  const q = encodeURIComponent(`${r.artist} ${r.title}`);
-  const discogsUrl  = `https://www.discogs.com/release/${r.id}`;
-  const ytUrl       = `https://music.youtube.com/search?q=${q}`;
-  const spotifyUrl  = `https://open.spotify.com/search/${q}`;
-
-  const linksHtml = `
-    <div class="modal-links-row">
-      <a class="modal-ext-link discogs" href="${discogsUrl}" target="_blank" rel="noopener">
-        ⬡ Discogs
-      </a>
-      <a class="modal-ext-link youtube" href="${ytUrl}" target="_blank" rel="noopener">
-        ▶ YouTube Music
-      </a>
-      <a class="modal-ext-link spotify" href="${spotifyUrl}" target="_blank" rel="noopener">
-        ● Spotify
-      </a>
-      ${r.reviews_url ? `<a class="modal-ext-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ 1001 Reviews</a>` : ''}
-    </div>`;
-
+  // External links moved to art column above
   metaCol.innerHTML = `
     <div class="modal-format-badge">${esc(r.format_full||r.format||'')}</div>
     <div class="modal-artist">${esc(r.artist)}</div>
     <div class="modal-title">${esc(r.title)}</div>
-    ${linksHtml}
     ${ratingHtml}${reviewHtml}${tagsHtml}
     <div class="modal-info-grid">
       <div class="info-item"><div class="info-item-label">Year</div><div class="info-item-value">${r.year||'—'}</div></div>
@@ -1081,8 +1095,7 @@ function openDetail(r) {
       <div class="info-item"><div class="info-item-label">Pressing</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
       <div class="info-item"><div class="info-item-label">Added</div><div class="info-item-value">${dateAdded}</div></div>
     </div>
-    ${trackHtml}
-    ${linksHtml}`;
+    ${trackHtml}`;
 
   document.getElementById('detailOverlay').classList.add('open');
   document.body.style.overflow='hidden';
