@@ -1222,6 +1222,10 @@ function find1001Match(record,map) {
 }
 
 // ── FETCH & MERGE ─────────────────────────────────────────
+const DETAIL_DELAY   = 1200;  // ms between each release detail request — safely under 60 req/min
+const PAGE_DELAY     = 500;   // ms between collection page requests
+const RETRY_DELAYS   = [3000, 6000, 12000]; // exponential backoff for failed detail requests
+
 async function fetchCollection() {
   const token=document.getElementById('tokenInput').value.trim();
   if (!token){showError('Please enter your Discogs User Token.');return}
@@ -1231,42 +1235,83 @@ async function fetchCollection() {
   ['downloadArea','matchStats','errorText'].forEach(id=>document.getElementById(id).style.display='none');
 
   try {
+    // ── Step 1: 1001albumsgenerator (fast, no rate limit) ──
     setProgress(0,'Fetching 1001albumsgenerator ratings…');
     const gen=await fetch('https://1001albumsgenerator.com/api/v1/projects/zapanda')
       .then(r=>{if(!r.ok) throw new Error('1001albumsgenerator API error');return r.json()});
-
     const map1001=new Map([...build1001Map(gen.history,'book'),...build1001Map(gen.userAlbumHistory,'user')]);
-    setProgress(5,`Got ${map1001.size} rated albums. Fetching Discogs…`);
+    setProgress(5,`Got ${map1001.size} rated albums. Fetching Discogs collection pages…`);
 
-    const first=await discogsGet(`https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=1`,token);
+    // ── Step 2: Discogs collection pages ──
+    const first=await discogsGet(
+      `https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=1`,token);
     const pages=first.pagination.pages;
     const allItems=[...first.releases];
 
     for (let p=2;p<=pages;p++){
-      setProgress(5+Math.round(((p-1)/pages)*20),`Fetching Discogs page ${p} of ${pages}…`);
-      const pg=await discogsGet(`https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=${p}`,token);
+      setProgress(5+Math.round(((p-1)/pages)*10),`Fetching collection page ${p} of ${pages}…`);
+      const pg=await discogsGet(
+        `https://api.discogs.com/users/zapanda/collection/folders/0/releases?per_page=100&page=${p}`,token);
       allItems.push(...pg.releases);
-      await sleep(300);
+      await sleep(PAGE_DELAY);
     }
 
-    const enriched=[]; let matched=0,withReview=0;
+    // ── Step 3: Full release detail for each record ──
+    // Each request is spaced 1200ms apart (50 req/min) to stay comfortably under
+    // Discogs' 60 req/min limit. Failed requests are retried up to 3 times with
+    // exponential backoff before being recorded as failures.
+    const enriched=[]; let matched=0, withReview=0, enrichFailed=0;
+    const total=allItems.length;
 
-    for (let i=0;i<allItems.length;i++){
+    // Estimate time remaining
+    const estMinutes = Math.round((total * DETAIL_DELAY) / 60000);
+    setProgress(15,`Enriching ${total} records (~${estMinutes} min). Please keep this tab open…`);
+
+    for (let i=0;i<total;i++){
       const item=allItems[i], basic=item.basic_information;
-      if(i%10===0) setProgress(25+Math.round((i/allItems.length)*70),`Processing ${i+1} of ${allItems.length}…`);
 
+      // Progress: 15% → 95% across the enrichment phase
+      const pct=15+Math.round((i/total)*80);
+      const remaining=Math.round(((total-i)*DETAIL_DELAY)/60000);
+      setProgress(pct,`Enriching ${i+1} of ${total} — ~${remaining} min remaining`);
+
+      // Fetch full release details with retry on failure
       let tracklist=[],country='',fullFormatStr='';
-      try {
-        const rel=await discogsGet(`https://api.discogs.com/releases/${basic.id}`,token);
-        tracklist=(rel.tracklist||[]).map(t=>({position:t.position,title:t.title,duration:t.duration||''}));
-        country=rel.country||'';
-        fullFormatStr=(rel.formats||[]).map(f=>{let s=f.name||'';if(f.descriptions?.length)s+=' — '+f.descriptions.join(', ');return s}).join('; ');
-      }catch(e){}
+      let enriched_ok=false;
 
+      for (let attempt=0; attempt<=RETRY_DELAYS.length; attempt++){
+        try {
+          const rel=await discogsGet(`https://api.discogs.com/releases/${basic.id}`,token);
+          tracklist=(rel.tracklist||[])
+            .filter(t=>t.type_==='track'||!t.type_) // skip headings/sections
+            .map(t=>({position:t.position,title:t.title,duration:t.duration||''}));
+          country=rel.country||'';
+          fullFormatStr=(rel.formats||[]).map(f=>{
+            let s=f.name||'';
+            if(f.descriptions?.length) s+=' — '+f.descriptions.join(', ');
+            return s;
+          }).join('; ');
+          enriched_ok=true;
+          break; // success — stop retrying
+        } catch(e) {
+          if (attempt < RETRY_DELAYS.length) {
+            // Transient failure — wait and retry
+            setProgress(pct,`Enriching ${i+1} of ${total} — retrying (attempt ${attempt+2})…`);
+            await sleep(RETRY_DELAYS[attempt]);
+          } else {
+            // All retries exhausted — record as failure and move on
+            enrichFailed++;
+          }
+        }
+      }
+
+      // Build format label from basic_information (always available)
       let fmt='';
       for(const f of (basic.formats||[])){
         const n=(f.name||'').toLowerCase();
-        if(n.includes('vinyl')){fmt='Vinyl';break}if(n.includes('cd')){fmt='CD';break}if(n.includes('cassette')){fmt='Cassette';break}
+        if(n.includes('vinyl')){fmt='Vinyl';break}
+        if(n.includes('cd')){fmt='CD';break}
+        if(n.includes('cassette')){fmt='Cassette';break}
       }
       if(!fmt) fmt=(basic.formats||[])[0]?.name||'';
 
@@ -1278,8 +1323,10 @@ async function fetchCollection() {
         label:(basic.labels||[])[0]?.name||'', format:fmt, format_full:fullFormatStr,
         country, date_added:item.date_added, tracklist,
         my_rating:null, my_review:'', global_rating:null, list_source:null, reviews_url:'',
+        enriched: enriched_ok, // track whether detail fetch succeeded
       };
 
+      // Merge 1001albumsgenerator data
       const m=find1001Match(record,map1001);
       if(m){
         matched++;
@@ -1292,14 +1339,29 @@ async function fetchCollection() {
         if(m.year) record.year=m.year;
         if(m.cover_image) record.cover_image=m.cover_image;
       }
+
       enriched.push(record);
-      await sleep(200);
+
+      // Wait between requests (skip the wait after the last one)
+      if(i < total-1) await sleep(DETAIL_DELAY);
     }
 
     setProgress(100,'Done!');
+
+    // ── Summary stats ──
     const st=document.getElementById('matchStats');
-    st.innerHTML=`Discogs records: <span>${enriched.length}</span><br>Matched to 1001albumsgenerator: <span>${matched}</span> (${Math.round(matched/enriched.length*100)}%)<br>With your review: <span>${withReview}</span>`;
+    const failLine = enrichFailed > 0
+      ? `<br><span style="color:var(--red)">${enrichFailed} records failed to enrich</span> — re-run the update to retry them`
+      : `<br><span style="color:var(--green)">All ${enriched.length} records fully enriched ✓</span>`;
+    st.innerHTML=`
+      Discogs records: <span>${enriched.length}</span><br>
+      Matched to 1001albumsgenerator: <span>${matched}</span> (${Math.round(matched/enriched.length*100)}%)<br>
+      With your review: <span>${withReview}</span>
+      ${failLine}`;
     st.style.display='block';
+
+    // Clear token from input for security
+    document.getElementById('tokenInput').value='';
 
     const blob=new Blob([JSON.stringify(enriched,null,2)],{type:'application/json'});
     document.getElementById('downloadLink').href=URL.createObjectURL(blob);
@@ -1313,11 +1375,22 @@ async function fetchCollection() {
   } catch(e){ showError(`Error: ${e.message}`); document.getElementById('fetchBtn').disabled=false; }
 }
 
+// Fetch a Discogs URL with auth. Handles 429 rate-limit responses by waiting
+// and retrying. Other errors are thrown so the caller can handle them.
 async function discogsGet(url,token){
-  const r=await fetch(url,{headers:{'Authorization':`Discogs token=${token}`,'User-Agent':'ZapandaCollectionBrowser/1.0'}});
+  const r=await fetch(url,{headers:{
+    'Authorization':`Discogs token=${token}`,
+    'User-Agent':'ZapandaCollectionBrowser/1.0'
+  }});
   if(!r.ok){
-    if(r.status===401) throw new Error('Invalid token (401)');
-    if(r.status===429){await sleep(2500);return discogsGet(url,token)}
+    if(r.status===401) throw new Error('Invalid token — please check your Discogs token and try again.');
+    if(r.status===404) throw new Error(`Release not found (404): ${url}`);
+    if(r.status===429){
+      // Discogs told us explicitly we're over the limit — back off 5s and retry once
+      await sleep(5000);
+      return discogsGet(url,token);
+    }
+    // 5xx or other transient errors — throw so the caller's retry loop handles it
     throw new Error(`Discogs returned ${r.status}`);
   }
   return r.json();
