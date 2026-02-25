@@ -407,6 +407,13 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 }
 .modal-1001-link:hover{color:var(--accent);border-color:var(--accent)}
 
+.modal-links-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;margin-bottom:14px}
+.modal-ext-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:500;text-decoration:none;border:1px solid var(--border);border-radius:99px;padding:5px 12px;transition:color .15s,border-color .15s,background .15s;color:var(--text-dim)}
+.modal-ext-link:hover{border-color:var(--border2);background:var(--surface2);color:var(--text)}
+.modal-ext-link.discogs:hover{border-color:#dba63a;color:#dba63a}
+.modal-ext-link.youtube:hover{border-color:#ff4444;color:#ff4444}
+.modal-ext-link.spotify:hover{border-color:#1db954;color:#1db954}
+
 /* ── GENRE MODAL ── */
 .genre-overlay{
   position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:250;
@@ -1042,21 +1049,40 @@ function openDetail(r) {
     trackHtml = `<div class="modal-divider"></div><div class="modal-tracklist-label">Tracklist</div><ul class="tracklist">${items}</ul>`;
   }
 
-  const linkHtml = r.reviews_url
-    ? `<a class="modal-1001-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ Community reviews on 1001albumsgenerator</a>` : '';
+  // External links row
+  const q = encodeURIComponent(`${r.artist} ${r.title}`);
+  const discogsUrl  = `https://www.discogs.com/release/${r.id}`;
+  const ytUrl       = `https://music.youtube.com/search?q=${q}`;
+  const spotifyUrl  = `https://open.spotify.com/search/${q}`;
+
+  const linksHtml = `
+    <div class="modal-links-row">
+      <a class="modal-ext-link discogs" href="${discogsUrl}" target="_blank" rel="noopener">
+        ⬡ Discogs
+      </a>
+      <a class="modal-ext-link youtube" href="${ytUrl}" target="_blank" rel="noopener">
+        ▶ YouTube Music
+      </a>
+      <a class="modal-ext-link spotify" href="${spotifyUrl}" target="_blank" rel="noopener">
+        ● Spotify
+      </a>
+      ${r.reviews_url ? `<a class="modal-ext-link" href="${r.reviews_url}" target="_blank" rel="noopener">↗ 1001 Reviews</a>` : ''}
+    </div>`;
 
   metaCol.innerHTML = `
     <div class="modal-format-badge">${esc(r.format_full||r.format||'')}</div>
     <div class="modal-artist">${esc(r.artist)}</div>
     <div class="modal-title">${esc(r.title)}</div>
+    ${linksHtml}
     ${ratingHtml}${reviewHtml}${tagsHtml}
     <div class="modal-info-grid">
       <div class="info-item"><div class="info-item-label">Year</div><div class="info-item-value">${r.year||'—'}</div></div>
       <div class="info-item"><div class="info-item-label">Label</div><div class="info-item-value">${esc(r.label||'—')}</div></div>
-      <div class="info-item"><div class="info-item-label">Country</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
+      <div class="info-item"><div class="info-item-label">Pressing</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
       <div class="info-item"><div class="info-item-label">Added</div><div class="info-item-value">${dateAdded}</div></div>
     </div>
-    ${trackHtml}${linkHtml}`;
+    ${trackHtml}
+    ${linksHtml}`;
 
   document.getElementById('detailOverlay').classList.add('open');
   document.body.style.overflow='hidden';
