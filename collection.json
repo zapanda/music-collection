@@ -3920,6 +3920,81 @@
     "enriched": true
   },
   {
+    "id": 438489,
+    "instance_id": 2119513857,
+    "artist": "Led Zeppelin",
+    "title": "Led Zeppelin II",
+    "year": 1969,
+    "thumb": "https://i.discogs.com/qA0CSqvUQ7mBWY4PrgvVq6yVn0DSlxfnM5v_XiIhG-g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODQ4/OS0xNTQyMDU3ODk2/LTUyMjUuanBlZw.jpeg",
+    "cover_image": "https://i.scdn.co/image/84bdbd976b0a3a6b9d423f69c3e23915aa380f78",
+    "genres": [
+      "metal",
+      "rock"
+    ],
+    "styles": [
+      "hard rock",
+      "blues rock"
+    ],
+    "label": "Atlantic",
+    "format": "CD",
+    "format_full": "CD — Album, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2026-03-01T03:10:01-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Whole Lotta Love",
+        "duration": "5:34"
+      },
+      {
+        "position": "2",
+        "title": "What Is And What Should Never Be",
+        "duration": "4:44"
+      },
+      {
+        "position": "3",
+        "title": "The Lemon Song",
+        "duration": "6:19"
+      },
+      {
+        "position": "4",
+        "title": "Thank You",
+        "duration": "4:47"
+      },
+      {
+        "position": "5",
+        "title": "Heartbreaker",
+        "duration": "4:14"
+      },
+      {
+        "position": "6",
+        "title": "Living Loving Maid (She's Just A Woman)",
+        "duration": "2:39"
+      },
+      {
+        "position": "7",
+        "title": "Ramble On",
+        "duration": "4:23"
+      },
+      {
+        "position": "8",
+        "title": "Moby Dick",
+        "duration": "4:21"
+      },
+      {
+        "position": "9",
+        "title": "Bring It On Home",
+        "duration": "4:20"
+      }
+    ],
+    "my_rating": 3,
+    "my_review": "",
+    "global_rating": 4.1,
+    "list_source": "book",
+    "reviews_url": "https://1001albumsgenerator.com/albums/70lQYZtypdCALtFVlQAcvx/led-zeppelin-ii",
+    "enriched": true
+  },
+  {
     "id": 18861868,
     "instance_id": 1278485186,
     "artist": "Led Zeppelin",
@@ -5671,6 +5746,108 @@
     "enriched": true
   },
   {
+    "id": 1011179,
+    "instance_id": 2119515836,
+    "artist": "Billy Idol",
+    "title": "VH1 Storytellers",
+    "year": 2001,
+    "thumb": "https://i.discogs.com/NfwqQCrkf4bX6-d88BdYYU9qyigoPP9ZkIUB79fk6GQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTEx/NzktMTM2OTIxMDkz/MS00MzA2LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/4_kfecgIa536H6Kv96rRM6QniHOborPL676hOgwgF5A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTEx/NzktMTM2OTIxMDkz/MS00MzA2LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "acoustic",
+      "pop rock",
+      "punk",
+      "rockabilly",
+      "rock & roll"
+    ],
+    "label": "Capitol Records",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "UK & Europe",
+    "date_added": "2026-03-01T03:16:58-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Cradle Of Love",
+        "duration": "4:32"
+      },
+      {
+        "position": "2",
+        "title": "Don't Need A Gun",
+        "duration": "6:03"
+      },
+      {
+        "position": "3",
+        "title": "Flesh For Fantasy",
+        "duration": "6:50"
+      },
+      {
+        "position": "4",
+        "title": "White Wedding",
+        "duration": "3:48"
+      },
+      {
+        "position": "5",
+        "title": "Sweet Sixteen",
+        "duration": "5:01"
+      },
+      {
+        "position": "6",
+        "title": "To Be A Lover",
+        "duration": "3:58"
+      },
+      {
+        "position": "7",
+        "title": "Rebel Yell",
+        "duration": "5:11"
+      },
+      {
+        "position": "8",
+        "title": "Kiss Me Deadly",
+        "duration": "5:04"
+      },
+      {
+        "position": "9",
+        "title": "Eyes Without A Face",
+        "duration": "5:31"
+      },
+      {
+        "position": "10",
+        "title": "Dancing With Myself",
+        "duration": "4:59"
+      },
+      {
+        "position": "11",
+        "title": "Ready Steady Go",
+        "duration": "3:13"
+      },
+      {
+        "position": "12",
+        "title": "Blue Highway",
+        "duration": "5:43"
+      },
+      {
+        "position": "13",
+        "title": "Mony Mony",
+        "duration": "4:06"
+      },
+      {
+        "position": "14",
+        "title": "L.A. Woman",
+        "duration": "5:54"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 789219,
     "instance_id": 2045264147,
     "artist": "Blondie",
@@ -6490,8 +6667,8 @@
     "artist": "Bruce Springsteen",
     "title": "Tunnel Of Love",
     "year": 1987,
-    "thumb": "https://i.discogs.com/b4cxqgzLRsBuegauDR-smMMYcrMOXpNYBch_PWbhyLg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNzgz/NzQtMTY4NDA5Mzkw/NS04OTI0LnBuZw.jpeg",
-    "cover_image": "https://i.discogs.com/sbhGXQ0Jp7dDGs-QiOwJzJ_TSjVcbv9ryT19YCZ6QPg/rs:fit/g:sm/q:90/h:482/w:482/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNzgz/NzQtMTY4NDA5Mzkw/NS04OTI0LnBuZw.jpeg",
+    "thumb": "https://i.discogs.com/kg0tkXaPY8zxpNAgmw1t6Y_SXPoAdJmBOib4_voS_hA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNzgz/NzQtMTc3MjE2OTU4/My03ODM4LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/VtdiiPAl_LqPMLqhmRwdFZSwuM2adYn0zmlow_vIYGs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNzgz/NzQtMTc3MjE2OTU4/My03ODM4LmpwZWc.jpeg",
     "genres": [
       "rock"
     ],
@@ -8904,6 +9081,85 @@
     "global_rating": null,
     "list_source": null,
     "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 6750300,
+    "instance_id": 2119516060,
+    "artist": "Nas",
+    "title": "Illmatic",
+    "year": 1994,
+    "thumb": "https://i.discogs.com/6K-zuqwANNMCh9Ie047E9ry1uI12dYtB7O5Bg4mFVCw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTAz/MDAtMTUwODk1MzUx/Mi0yMjU0LmpwZWc.jpeg",
+    "cover_image": "https://i.scdn.co/image/d73bddce3c72fc809c86be2467d6a3adbb4d7e24",
+    "genres": [
+      "hip hop"
+    ],
+    "styles": [
+      "conscious",
+      "boom bap"
+    ],
+    "label": "Columbia",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-01T03:17:45-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "The Genesis",
+        "duration": "1:45"
+      },
+      {
+        "position": "2",
+        "title": "N.Y. State Of Mind",
+        "duration": "4:53"
+      },
+      {
+        "position": "3",
+        "title": "Life's A Bitch",
+        "duration": "3:30"
+      },
+      {
+        "position": "4",
+        "title": "The World Is Yours",
+        "duration": "4:50"
+      },
+      {
+        "position": "5",
+        "title": "Halftime",
+        "duration": "4:20"
+      },
+      {
+        "position": "6",
+        "title": "Memory Lane (Sittin' In Da Park)",
+        "duration": "4:08"
+      },
+      {
+        "position": "7",
+        "title": "One Love",
+        "duration": "5:25"
+      },
+      {
+        "position": "8",
+        "title": "One Time 4 Your Mind",
+        "duration": "3:18"
+      },
+      {
+        "position": "9",
+        "title": "Represent",
+        "duration": "4:12"
+      },
+      {
+        "position": "10",
+        "title": "It Ain't Hard To Tell",
+        "duration": "3:22"
+      }
+    ],
+    "my_rating": 3,
+    "my_review": "",
+    "global_rating": 3.6,
+    "list_source": "book",
+    "reviews_url": "https://1001albumsgenerator.com/albums/3kEtdS2pH6hKcMU9Wioob1/illmatic",
     "enriched": true
   },
   {
@@ -11557,6 +11813,95 @@
     "enriched": true
   },
   {
+    "id": 240100,
+    "instance_id": 2119515932,
+    "artist": "The Sisters Of Mercy",
+    "title": "Greatest Hits Volume One (A Slight Case Of Overbombing)",
+    "year": 1993,
+    "thumb": "https://i.discogs.com/ioYxcWvsaoM9g7qNSTeEcIbYxnMWrVXAoSu5DWLqVVo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDEw/MC0xMzQ4MDI1MTcx/LTIyMzIuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/U8gHUv8eNt2WJ9OngP6PgkHpkZmYbtQEjA6ywWhY0bc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDEw/MC0xMzQ4MDI1MTcx/LTIyMzIuanBlZw.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "goth rock",
+      "alternative rock"
+    ],
+    "label": "EastWest",
+    "format": "CD",
+    "format_full": "CD — Album, Compilation",
+    "country": "Europe",
+    "date_added": "2026-03-01T03:17:20-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Under The Gun",
+        "duration": "5:41"
+      },
+      {
+        "position": "2",
+        "title": "Temple Of Love (1992)",
+        "duration": "8:05"
+      },
+      {
+        "position": "3",
+        "title": "Vision Thing",
+        "duration": "7:33"
+      },
+      {
+        "position": "4",
+        "title": "Detonation Boulevard",
+        "duration": "3:48"
+      },
+      {
+        "position": "5",
+        "title": "Doctor Jeep",
+        "duration": "3:00"
+      },
+      {
+        "position": "6",
+        "title": "More",
+        "duration": "8:23"
+      },
+      {
+        "position": "7",
+        "title": "Lucretia My Reflection",
+        "duration": "8:43"
+      },
+      {
+        "position": "8",
+        "title": "Dominion / Mother Russia",
+        "duration": "7:01"
+      },
+      {
+        "position": "9",
+        "title": "This Corrosion",
+        "duration": "10:16"
+      },
+      {
+        "position": "10",
+        "title": "No Time To Cry",
+        "duration": "3:56"
+      },
+      {
+        "position": "11",
+        "title": "Walk Away",
+        "duration": "3:22"
+      },
+      {
+        "position": "12",
+        "title": "Body And Soul",
+        "duration": "3:30"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 31122380,
     "instance_id": 1813607226,
     "artist": "Agalloch",
@@ -12002,6 +12347,102 @@
     "enriched": true
   },
   {
+    "id": 418770,
+    "instance_id": 2119515540,
+    "artist": "The Cars",
+    "title": "The Cars Greatest Hits",
+    "year": 1985,
+    "thumb": "https://i.discogs.com/Obcvlg98R21_gc6LOoE1p-EeUnyeFNP8DXo3nbOivUY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxODc3/MC0xMjE0MjQwMTU2/LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/CTXBopZGmVSZ2fgzFQVsHrBmpHY362lTWsO9pdOqME4/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxODc3/MC0xMjE0MjQwMTU2/LmpwZWc.jpeg",
+    "genres": [
+      "electronic",
+      "rock"
+    ],
+    "styles": [
+      "new wave",
+      "pop rock",
+      "synth pop"
+    ],
+    "label": "Elektra",
+    "format": "CD",
+    "format_full": "CD — Compilation",
+    "country": "Germany",
+    "date_added": "2026-03-01T03:15:58-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Just What I Needed",
+        "duration": "3:44"
+      },
+      {
+        "position": "2",
+        "title": "Since You're Gone",
+        "duration": "3:30"
+      },
+      {
+        "position": "3",
+        "title": "You Might Think",
+        "duration": "3:04"
+      },
+      {
+        "position": "4",
+        "title": "Good Times Roll",
+        "duration": "3:44"
+      },
+      {
+        "position": "5",
+        "title": "Touch And Go",
+        "duration": "4:55"
+      },
+      {
+        "position": "6",
+        "title": "Drive",
+        "duration": "3:55"
+      },
+      {
+        "position": "7",
+        "title": "Tonight She Comes",
+        "duration": "3:52"
+      },
+      {
+        "position": "8",
+        "title": "My Best Friend's Girl",
+        "duration": "3:40"
+      },
+      {
+        "position": "9",
+        "title": "Heartbeat City",
+        "duration": "4:31"
+      },
+      {
+        "position": "10",
+        "title": "Let's Go",
+        "duration": "3:32"
+      },
+      {
+        "position": "11",
+        "title": "I'm Not The One",
+        "duration": "4:07"
+      },
+      {
+        "position": "12",
+        "title": "Magic",
+        "duration": "3:57"
+      },
+      {
+        "position": "13",
+        "title": "Shake It Up",
+        "duration": "3:35"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 3809481,
     "instance_id": 1583726392,
     "artist": "Tracy Chapman",
@@ -12351,7 +12792,7 @@
     "label": "Elevator Music (4)",
     "format": "CD",
     "format_full": "CD — Album, Stereo",
-    "country": "UK & Europe",
+    "country": "Europe",
     "date_added": "2024-01-06T07:07:32-08:00",
     "tracklist": [
       {
@@ -12410,9 +12851,19 @@
         "duration": "4:22"
       },
       {
-        "position": "12",
+        "position": "12.1",
         "title": "Peeping Tom",
-        "duration": "14:10"
+        "duration": "5:15"
+      },
+      {
+        "position": "12.2",
+        "title": "(silence)",
+        "duration": "5:00"
+      },
+      {
+        "position": "12.3",
+        "title": "Untitled",
+        "duration": "3:55"
       }
     ],
     "my_rating": null,
@@ -17470,7 +17921,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.49,
+    "global_rating": 3.48,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/3G36754KQVLyGuskraEAVA/portishead",
     "enriched": true
@@ -17487,8 +17938,6 @@
       "electronic"
     ],
     "styles": [
-      "downtempo",
-      "acid jazz",
       "trip hop"
     ],
     "label": "Go! Beat",
@@ -18262,6 +18711,89 @@
     "enriched": true
   },
   {
+    "id": 834196,
+    "instance_id": 2119513692,
+    "artist": "Damien Rice",
+    "title": "9",
+    "year": 2006,
+    "thumb": "https://i.discogs.com/J94_v2ZC9wYbVGZ41JRVgStYhcJkBI7haMjlJtltn6M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzNDE5/Ni0xNDU4NjkyMzkx/LTMyNzkuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/5bHhRY8Fs3CvWsLjqB4bsQRILD1SQywfEwY0t8bYVzA/rs:fit/g:sm/q:90/h:529/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzNDE5/Ni0xNDU4NjkyMzkx/LTMyNzkuanBlZw.jpeg",
+    "genres": [
+      "folk, world, & country"
+    ],
+    "styles": [
+      "folk rock"
+    ],
+    "label": "Heffa",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-01T03:09:26-08:00",
+    "tracklist": [
+      {
+        "position": "0",
+        "title": "9 Crimes (Demo)",
+        "duration": "3:35"
+      },
+      {
+        "position": "1",
+        "title": "9 Crimes",
+        "duration": "3:39"
+      },
+      {
+        "position": "2",
+        "title": "The Animals Were Gone",
+        "duration": "5:41"
+      },
+      {
+        "position": "3",
+        "title": "Elephant",
+        "duration": "5:57"
+      },
+      {
+        "position": "4",
+        "title": "Rootless Tree",
+        "duration": "4:22"
+      },
+      {
+        "position": "5",
+        "title": "Dogs",
+        "duration": "4:10"
+      },
+      {
+        "position": "6",
+        "title": "Coconut Skins",
+        "duration": "3:45"
+      },
+      {
+        "position": "7",
+        "title": "Me, My Yoke + I",
+        "duration": "5:57"
+      },
+      {
+        "position": "8",
+        "title": "Grey Room",
+        "duration": "5:43"
+      },
+      {
+        "position": "9",
+        "title": "Accidental Babies",
+        "duration": "6:33"
+      },
+      {
+        "position": "10",
+        "title": "Sleep Don't Weep",
+        "duration": "21:54"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 9027602,
     "instance_id": 1858870287,
     "artist": "Oasis",
@@ -18346,7 +18878,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.84,
+    "global_rating": 3.85,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0PTVq4kaAAuROnfvfA7bHG/whats-the-story-morning-glory",
     "enriched": true
@@ -20402,7 +20934,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.66,
+    "global_rating": 3.67,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5vBZRYu2GLA65nfxBvG1a7/the-joshua-tree",
     "enriched": true
@@ -31410,7 +31942,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.24,
+    "global_rating": 3.23,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5CZR6ljD0x9fTiS4mh9wMp/only-by-the-night",
     "enriched": true
@@ -33775,7 +34307,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.76,
+    "global_rating": 2.77,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -34130,7 +34662,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.76,
+    "global_rating": 2.77,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -35509,7 +36041,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.03,
+    "global_rating": 3.02,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2vERrKmV1XeTlGczwqs9ZU/barton-hollow",
     "enriched": true
@@ -37704,7 +38236,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.91,
+    "global_rating": 3.9,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1lZahjeu4AhPkg9JARZr5F/physical-graffiti",
     "enriched": true
@@ -37866,7 +38398,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.06,
+    "global_rating": 3.04,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/7acEciVtnuTzmwKptkjth5/fear-inoculum",
     "enriched": true
@@ -39667,7 +40199,7 @@
     ],
     "my_rating": 4,
     "my_review": "Massive album. Extremely well produced and written. \n\nSooo much groove and swing in the rhythm section. \nDown picking riff master Hetfield outdid himself on this one. All the riffs are classics at this point. They have punch, power and they hook you instantly. \n\nSolos are melodic and well thought out never too much and always complement the songs. Ver very well put together piece of music.\n\nSome filler (eg Holier than thou or The struggle within), but even that doesn't detract from the overall quality.\n",
-    "global_rating": 3.78,
+    "global_rating": 3.77,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/37lWyRxkf3wQHCOlXM5WfX/metallica",
     "enriched": true
@@ -42447,7 +42979,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.35,
+    "global_rating": 3.36,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6yWMN087PgSimbcVmHLEwG/aenima",
     "enriched": true

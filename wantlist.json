@@ -1,0 +1,835 @@
+[
+  {
+    "id": 7833185,
+    "artist": "Byron",
+    "title": "Perfect",
+    "year": 2011,
+    "thumb": "https://i.discogs.com/9YIOmtqK-c8EXn3Su3Vj4c0cWGyOH5c6j8F95OnG7Vg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MzMx/ODUtMTY4OTM2NjIy/NS0zMTIxLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/zp91wbt9IrO_GSDhRGIgvR88xOlS0K57oh-KsUQV9Eo/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MzMx/ODUtMTY4OTM2NjIy/NS0zMTIxLmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "acoustic",
+      "alternative rock"
+    ],
+    "label": "A&A Records",
+    "format": "CD",
+    "country": "",
+    "date_added": "2023-03-04T19:08:03-08:00"
+  },
+  {
+    "id": 24455792,
+    "artist": "Daft Punk",
+    "title": "Alive 2007",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/NOomqsPHwsrsXJj_KAmSXOParcSboTwznr56YG4yv_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+    "cover_image": "https://i.discogs.com/S5o-KKITGwHPKOUL7QfPRyjx0v6MCgubR04cA4ralC4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDU1/NzkyLTE2NjY1Mjcw/MjctMjEzOC5wbmc.jpeg",
+    "genres": [
+      "electronic"
+    ],
+    "styles": [
+      "house",
+      "french house"
+    ],
+    "label": "ADA (6)",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-07-22T10:50:32-07:00"
+  },
+  {
+    "id": 140098,
+    "artist": "Sage Francis",
+    "title": "Personal Journals",
+    "year": 2002,
+    "thumb": "https://i.discogs.com/qb-QQc-Z79E82fHzFSMfDge-Jh29ZmPWBXH9GN5IBBg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MDA5/OC0xNDUwMzc2MjUy/LTcxMDAuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/-L-HxG3EX_jTwfw_JMiicblkljRd8toTEd4c1Itg1t8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MDA5/OC0xNDUwMzc2MjUy/LTcxMDAuanBlZw.jpeg",
+    "genres": [
+      "hip hop"
+    ],
+    "styles": [
+      "conscious"
+    ],
+    "label": "Anticon",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-12-22T05:20:06-08:00"
+  },
+  {
+    "id": 29359297,
+    "artist": "Véhémence",
+    "title": "Ordalies",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/p-JvV4rEa7L_akLKO3uKy4IlPnawaTTWehQ5gnznIv0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MzU5/Mjk3LTE3MDQzNjQ4/NDctNjQ3Ni5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/rnSxXQn6rR0LZb-xGDnehZNLdOpKsvMMecw_Q0Z_rKo/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MzU5/Mjk3LTE3MDQzNjQ4/NDctNjQ3Ni5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Antiq Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:52:00-08:00"
+  },
+  {
+    "id": 24877178,
+    "artist": "Messa",
+    "title": "Belfry",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/RlhfXsauYwCQFtBAHeXRfJ48sL19iTHM9YQwiHvCe7Q/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODc3/MTc4LTE2NjcyNjc2/NzAtNzMxNS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/pXuwv3naLxwdJQAm3NXEMFL8JaYMM_gBaoIoVgBeXvY/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODc3/MTc4LTE2NjcyNjc2/NzAtNzMxNS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "stoner rock",
+      "doom metal"
+    ],
+    "label": "Aural Music",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:05:16-08:00"
+  },
+  {
+    "id": 378698,
+    "artist": "The Clash",
+    "title": "London Calling",
+    "year": 1979,
+    "thumb": "https://i.discogs.com/sQGHR7bsKRSWXXd3kY6Wvy1fbvhcID77QYcizw9hs10/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODY5/OC0xNDA3MTU4ODA5/LTI2MDguanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/T7wMC50rMiH2QWVaozi2rvDXSme7ZU3Lww2R9OLox7w/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3ODY5/OC0xNDA3MTU4ODA5/LTI2MDguanBlZw.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "punk",
+      "rock & roll",
+      "ska"
+    ],
+    "label": "CBS",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-12-27T14:47:47-08:00"
+  },
+  {
+    "id": 1939290,
+    "artist": "Paradise Lost",
+    "title": "Faith Divides Us - Death Unites Us",
+    "year": 2009,
+    "thumb": "https://i.discogs.com/F5luo2zzCyOHf8DmbavTW0AaiFm63HJhz02iCSeHHsg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzky/OTAtMTM1MTQyNzIw/MS03NDUxLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/sEOPes1-q8Z2MJ4sfmSecSW6VHDyToArQcvNQYjgsV8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzky/OTAtMTM1MTQyNzIw/MS03NDUxLmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "heavy metal"
+    ],
+    "label": "Century Media",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-02-22T04:36:03-08:00"
+  },
+  {
+    "id": 24018581,
+    "artist": "Negură Bunget",
+    "title": "OM",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/VrJt4JgK6yb78H9NRiWYykevpvUPsg2_2Q8YcKMNqTU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDE4/NTgxLTE2NTk2NTM0/NTItNDQ2MC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/ELTkaa1hqjFSdqvTmGqnyq5-kxv3hwQAIQvQ-KsXCoM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDE4/NTgxLTE2NTk2NTM0/NTItNDQ2MC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "dark ambient",
+      "black metal",
+      "experimental",
+      "avantgarde"
+    ],
+    "label": "Code666",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:56:15-08:00"
+  },
+  {
+    "id": 24564872,
+    "artist": "Alice In Chains",
+    "title": "Dirt",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/Y-UuYKJr4dDCUM2XB4I5K08noFjW8hIaSbTFjZx7eRI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTY0/ODcyLTE2NjQwMTY2/NTgtMzYyNy5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/mAVLiwf4iJsE9xbxBoWu34ZPXkiZh9m62XbORXGUkiY/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTY0/ODcyLTE2NjQwMTY2/NTgtMzYyNy5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "alternative metal",
+      "grunge",
+      "hard rock"
+    ],
+    "label": "Columbia",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-08-09T17:03:47-07:00"
+  },
+  {
+    "id": 14773940,
+    "artist": "White Ward",
+    "title": "Love Exchange Failure",
+    "year": 2020,
+    "thumb": "https://i.discogs.com/UlIRlfXyy2rnsfhNUSG-OGJfor1KTpgVZzm-4MIAYLw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Nzcz/OTQwLTE1ODEzNDYy/MDktMzI0OS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/vxZfooWqi2E0Mw_dazOlPkEX33AzG8-tvd1B-STINss/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Nzcz/OTQwLTE1ODEzNDYy/MDktMzI0OS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "avantgarde",
+      "atmospheric black metal",
+      "black metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:07:55-08:00"
+  },
+  {
+    "id": 30933321,
+    "artist": "Ulcerate",
+    "title": "Cutting The Throat Of God",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/GS1_CJE7-X-NwpOt9VmSXlxRk-hnkpaz4oL_YS6WcEQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwOTMz/MzIxLTE3MjAyMjgx/NTgtNTExOC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/jCgW6gEJe2OsOLAAl_OwQ31eS-UaVJ2uqaNv_BF527w/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwOTMz/MzIxLTE3MjAyMjgx/NTgtNTExOC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "technical death metal",
+      "progressive metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-12-22T02:36:18-08:00"
+  },
+  {
+    "id": 32485896,
+    "artist": "Aara",
+    "title": "Eiger",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/5Rll1HmWnAX2agYC6TDr8hHJUlruIdLq4hsXY8hmwQs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDg1/ODk2LTE3MzM0OTIy/OTctMTM3OS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/BOUD4zDCAPpYBkD0rGFHKJVd85WUyGw89l4eLjwY6E8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDg1/ODk2LTE3MzM0OTIy/OTctMTM3OS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "atmospheric black metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-08-09T16:59:57-07:00"
+  },
+  {
+    "id": 16216374,
+    "artist": "Véhémence",
+    "title": "Par Le Sang Versé",
+    "year": 2020,
+    "thumb": "https://i.discogs.com/3QWmKbxKyoSzA5i7OoE2hmIV-cg7hJrRncrpbP7u0Lc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjE2/Mzc0LTE2MDc2MDI3/OTItNzI0My5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/lV3vr574uwSaMyzLiRYsHa8hs-AHi6UOP9qcpCkLVRk/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjE2/Mzc0LTE2MDc2MDI3/OTItNzI0My5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T03:44:50-08:00"
+  },
+  {
+    "id": 1055571,
+    "artist": "Aesop Rock",
+    "title": "None Shall Pass",
+    "year": 2007,
+    "thumb": "https://i.discogs.com/zQR96Q43AiuBGvDj4On85JMlTzqnAokhU4p1ulufbag/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTU1/NzEtMTE4ODU3NjU0/NS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/DznGdcjw5Ex2Nyshq_Lej4jQJxK8lkHw5pNiK56KhXg/rs:fit/g:sm/q:90/h:445/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTU1/NzEtMTE4ODU3NjU0/NS5qcGVn.jpeg",
+    "genres": [
+      "hip hop"
+    ],
+    "styles": [],
+    "label": "Definitive Jux",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-06-26T16:16:29-07:00"
+  },
+  {
+    "id": 24682019,
+    "artist": "EL-P",
+    "title": "Fantastic Damage",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/hZDfrcIUYiDPIxXFeoxXIalqhSKg9i6OLHEvzCd3EIo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Njgy/MDE5LTE2NjU3ODE4/MDItNDcxMi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/LrNcRrW0MWdkMsA6B9T3VhTn0BtmJEU9nUL_vMIAXsg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Njgy/MDE5LTE2NjU3ODE4/MDItNDcxMi5qcGVn.jpeg",
+    "genres": [
+      "hip hop"
+    ],
+    "styles": [],
+    "label": "Fat Possum Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-06-28T08:58:06-07:00"
+  },
+  {
+    "id": 10157097,
+    "artist": "Blood Command",
+    "title": "Cult Drugs",
+    "year": 2017,
+    "thumb": "https://i.discogs.com/bieF_1o2j2LCpuGq24Zvxt70N0kiKtuvDiRrau7PSfA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTU3/MDk3LTE0OTMzMTI1/NTMtNDk5MS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/w7T_GQG-spl5W_9BmqtwRuo_lMtoka3AyPEeYbKjDA8/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTU3/MDk3LTE0OTMzMTI1/NTMtNDk5MS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "punk",
+      "hardcore"
+    ],
+    "label": "Fysisk Format",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-03-06T16:20:42-08:00"
+  },
+  {
+    "id": 1095269,
+    "artist": "Phoenix",
+    "title": "Aniversare 35",
+    "year": 1997,
+    "thumb": "https://i.discogs.com/jsbOyOF8VrygXKeDmPrqS5Ck2kSORxxOO_ML7SPoxSA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUy/NjktMTE5MTY3NTY0/Ni5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/fGKsCTOju68kCum-8NVk2LS587wq0UkNg9cQCurxW-s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTUy/NjktMTE5MTY3NTY0/Ni5qcGVn.jpeg",
+    "genres": [
+      "rock",
+      "pop",
+      "folk, world, & country"
+    ],
+    "styles": [
+      "folk rock",
+      "pop rock",
+      "prog rock"
+    ],
+    "label": "Genius CD",
+    "format": "CD",
+    "country": "",
+    "date_added": "2025-12-12T17:38:53-08:00"
+  },
+  {
+    "id": 4100552,
+    "artist": "Agalloch",
+    "title": "Ashes Against The Grain",
+    "year": 2011,
+    "thumb": "https://i.discogs.com/5iBlZ8ny_bIAFdiFwzJNzev_eceTtoLgjP4LKTpYhtQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDA1/NTItMTY1ODE5MDc5/NC05ODExLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/gG5H9JeMQeo_No4z35lBQWwPLmHHVSbW9PZFfP1Wv-E/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDA1/NTItMTY1ODE5MDc5/NC05ODExLmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "experimental",
+      "neofolk",
+      "atmospheric black metal"
+    ],
+    "label": "Grau",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:00:56-08:00"
+  },
+  {
+    "id": 5828931,
+    "artist": "Bölzer",
+    "title": "Aura",
+    "year": 2014,
+    "thumb": "https://i.discogs.com/beTmH7U-p2dWP-zTGdUyWaHPnOD0SHnp6VdwyU_UtOg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mjg5/MzEtMTY0NDMyMzUw/MC0yMjI5LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/PACM8aKkUaql2SdIWo7xzwiIp-Y3i6VTwqcjguzt4h8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mjg5/MzEtMTY0NDMyMzUw/MC0yMjI5LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Iron Bonehead Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:23:58-08:00"
+  },
+  {
+    "id": 15405750,
+    "artist": "Bokassa",
+    "title": "Divide & Conquer",
+    "year": 2020,
+    "thumb": "https://i.discogs.com/6jFVVNNb_k3JS0eogdZ68KN0_Z0CYeExpVxCSc8AS3Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDA1/NzUwLTE1OTEwMDk3/MDEtOTI1Mi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/nucaibhVqstRIKHnD9VZwawIRP1AYfnUWpGuc1G9snY/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDA1/NzUwLTE1OTEwMDk3/MDEtOTI1Mi5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "stoner rock",
+      "hardcore",
+      "punk"
+    ],
+    "label": "Kings Of Stonerpunk Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-03-06T16:19:09-08:00"
+  },
+  {
+    "id": 5346422,
+    "artist": "Sport Sângeros III",
+    "title": "Pentru Servă Și Teren",
+    "year": 2001,
+    "thumb": "https://i.discogs.com/C4ta8GQD_qbjYbl4HMvWrVXQZ4rjPm009dEW7yWnAQQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNDY0/MjItMTM5MTExMDIy/Ni0yNDc2LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/jGdFbHcm_Rn3EUnkjwZXi3EEVD8nOusbkDrCeBWCNZI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNDY0/MjItMTM5MTExMDIy/Ni0yNDc2LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "pop punk",
+      "ska",
+      "alternative rock"
+    ],
+    "label": "MediaPro Music",
+    "format": "CD",
+    "country": "",
+    "date_added": "2025-10-03T17:02:51-07:00"
+  },
+  {
+    "id": 33667065,
+    "artist": "Messa",
+    "title": "The Spin",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/HZd6LE1UsVDAO4S3wrzJAFIzwMowyNZZWREoun7tIGY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNjY3/MDY1LTE3NjA4OTQy/MTQtNzg5MC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/Wd_tDUZKilZkNjcnfMldeid_E029S0Z841f-XgBAOl4/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNjY3/MDY1LTE3NjA4OTQy/MTQtNzg5MC5qcGVn.jpeg",
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "styles": [
+      "doom metal",
+      "goth rock",
+      "deathrock",
+      "progressive metal",
+      "psychedelic rock"
+    ],
+    "label": "Metal Blade Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-08-09T16:58:29-07:00"
+  },
+  {
+    "id": 2179533,
+    "artist": "Rage Against The Machine",
+    "title": "The Battle Of Los Angeles",
+    "year": 2010,
+    "thumb": "https://i.discogs.com/yLy4o7Ym15iwl9C9eHIk-0iNeU9YxD5v5jYKkfnkMk4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNzk1/MzMtMTY0ODIxNTg2/MC0yMzAyLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/FxHXMKWHNleBeY7xnggb1hhNN2SFMRLXpuN1laUSOzk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNzk1/MzMtMTY0ODIxNTg2/MC0yMzAyLmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "alternative rock",
+      "funk metal"
+    ],
+    "label": "Music On Vinyl",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-02-24T18:05:01-08:00"
+  },
+  {
+    "id": 31184230,
+    "artist": "Glass Beams",
+    "title": "Mahal",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/76ky5_XpH8yLpF3gRs7sDPk-RDEPBgiMe8R7Cu65CIk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTg0/MjMwLTE3MjA2MjEy/ODQtNzc5NC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/oO1NenHPB3zIButyq_OROAEEWfaenhV-KfglCbXlnkQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTg0/MjMwLTE3MjA2MjEy/ODQtNzc5NC5qcGVn.jpeg",
+    "genres": [
+      "rock",
+      "funk / soul"
+    ],
+    "styles": [
+      "psychedelic rock",
+      "funk",
+      "fusion"
+    ],
+    "label": "Ninja Tune",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-08-09T17:07:31-07:00"
+  },
+  {
+    "id": 19524739,
+    "artist": "Musk Ox",
+    "title": "Inheritance",
+    "year": 2021,
+    "thumb": "https://i.discogs.com/xKwBIZEYowGMoEijbarELgIBqNlusGvRCd-Sb-vwsUc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/NzM5LTE2NDQxOTYy/NTEtNTY0OC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/je6vlDhGuaLkLE2V0KBjaidLXKeJFg_AaiNsNKzeBqM/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTI0/NzM5LTE2NDQxOTYy/NTEtNTY0OC5qcGVn.jpeg",
+    "genres": [
+      "folk, world, & country"
+    ],
+    "styles": [
+      "folk"
+    ],
+    "label": "Not On Label (Musk Ox Self-released)",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-12-22T05:52:32-08:00"
+  },
+  {
+    "id": 4909764,
+    "artist": "Carcass",
+    "title": "Surgical Steel",
+    "year": 2013,
+    "thumb": "https://i.discogs.com/_5_XcvGi3tMBWW9rBv-gSveRE43NM5MVGcBP6fYcXpo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MDk3/NjQtMTM4MDExMzU0/MS03MjExLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/as4I4vjJCFIFReqyvxuY6MCXefN5ZJvhrYk_SZULKIo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MDk3/NjQtMTM4MDExMzU0/MS03MjExLmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Nuclear Blast",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-01-27T03:42:47-08:00"
+  },
+  {
+    "id": 25797823,
+    "artist": "Immortal",
+    "title": "Pure Holocaust",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/RpBx0jJjy9o50-2gSRjT2AKoh10ii8xcuBY7LYwrnBk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Nzk3/ODIzLTE2NzM5ODMx/MTgtOTU4Ny5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/bElHeHgeoUQxAqAXvkyX32uYbDc6PrH2VJPuqyli7CM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Nzk3/ODIzLTE2NzM5ODMx/MTgtOTU4Ny5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Osmose Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-03-02T04:17:13-08:00"
+  },
+  {
+    "id": 12750156,
+    "artist": "Immortal",
+    "title": "At The Heart Of Winter",
+    "year": 2018,
+    "thumb": "https://i.discogs.com/Q-pVAjg8dpX-t9FC1CoVvVy9ols0e4_B_k4RiSN8PA0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzUw/MTU2LTE1NDIyMjEw/NDQtMTAzOS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/IbJYRUh7GNTGltzhqYv-BpSQ8ELNxgst-0la7X16X2c/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzUw/MTU2LTE1NDIyMjEw/NDQtMTAzOS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Osmose Productions",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-03-07T16:10:02-08:00"
+  },
+  {
+    "id": 21132019,
+    "artist": "Various",
+    "title": "Ostgut Ton | Fünfzehn + 1",
+    "year": 2021,
+    "thumb": "https://i.discogs.com/4nf85z0-40qadP9EViFlnUnG_pSJ4_UZlfKA7_hpSf0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMTMy/MDE5LTE2Mzc5NTE2/MDItOTY1MC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/cV7VM-wMdumdgtgq9WFYh7FU-GuPjOeIMGqnLoNUk6Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMTMy/MDE5LTE2Mzc5NTE2/MDItOTY1MC5qcGVn.jpeg",
+    "genres": [
+      "electronic"
+    ],
+    "styles": [
+      "techno",
+      "ambient",
+      "abstract",
+      "breaks",
+      "ebm",
+      "experimental"
+    ],
+    "label": "Ostgut Ton",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-01-13T06:25:53-08:00"
+  },
+  {
+    "id": 27812061,
+    "artist": "Skrillex",
+    "title": "Quest For Fire",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/JRCDcHSzXV0i0m3qMz74t1ibjaZZu7BgglEBmurzZ_0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODEy/MDYxLTE2OTEyNDAx/MTQtMTMwMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/sKZpmyb8qfRyxDdJ2kNQhoWzelJ2Oj5aSf56pckUwqU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODEy/MDYxLTE2OTEyNDAx/MTQtMTMwMC5qcGVn.jpeg",
+    "genres": [
+      "electronic",
+      "hip hop"
+    ],
+    "styles": [
+      "dubstep",
+      "drum n bass",
+      "electro",
+      "jungle",
+      "uk garage",
+      "grime",
+      "garage house"
+    ],
+    "label": "Owsla",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-12-25T05:36:48-08:00"
+  },
+  {
+    "id": 10315981,
+    "artist": "Iron Maiden",
+    "title": "Fear Of The Dark",
+    "year": 2017,
+    "thumb": "https://i.discogs.com/A37hEfLgkFfvXjofqVPNfUMH0yqbj5PFirYNfhEzRrU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzE1/OTgxLTE2Mjg0NzYz/NDMtOTE5NS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/l-dmqm8gq32M_POOeJ6GHf0pT1csVB7MboSpcd-JDU4/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzE1/OTgxLTE2Mjg0NzYz/NDMtOTE5NS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "heavy metal"
+    ],
+    "label": "Parlophone",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-03-06T01:23:04-08:00"
+  },
+  {
+    "id": 6367043,
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "year": 2014,
+    "thumb": "https://i.discogs.com/uCk_W4rDI7bs6tC8kMosYA4Nrsa27Vea3ZnFlX33ZQc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNjcw/NDMtMTQ0NzA5ODk2/NS03NzYwLmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/rAaw0sUBU8AXsaqUUbEigTDlUOwUmbStyX-E1q__MyM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNjcw/NDMtMTQ0NzA5ODk2/NS03NzYwLmpwZWc.jpeg",
+    "genres": [
+      "electronic"
+    ],
+    "styles": [
+      "house",
+      "techno",
+      "electro",
+      "disco",
+      "french house"
+    ],
+    "label": "Parlophone",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-03-23T18:28:07-07:00"
+  },
+  {
+    "id": 3961344,
+    "artist": "My Dying Bride",
+    "title": "A Map Of All Our Failures",
+    "year": 2012,
+    "thumb": "https://i.discogs.com/h1kbhw4rlgB78dg31yqYgAQGTbsuzJMW68sB0_IbhEc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NjEz/NDQtMTU5MDM0MzQ5/MS0zMTI3LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/c5XUZcTZCL5XYICsh2wbDI_DGcnmpUUyDZtgPVcmxvM/rs:fit/g:sm/q:90/h:600/w:582/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NjEz/NDQtMTU5MDM0MzQ5/MS0zMTI3LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "doom metal"
+    ],
+    "label": "Peaceville",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-03-05T09:05:38-08:00"
+  },
+  {
+    "id": 6127323,
+    "artist": "My Dying Bride",
+    "title": "The Dreadful Hours",
+    "year": 2014,
+    "thumb": "https://i.discogs.com/kgYIWnucFerPU10dmJ75dMWXotq4lmOf-vvyce90pTg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMjcz/MjMtMTY2NTEyNTY5/NC02OTk1LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/KLDmLwAhvx4IMqxgFJyahblU5Y_Vl_Nl5cMSl-kRCgQ/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMjcz/MjMtMTY2NTEyNTY5/NC02OTk1LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "doom metal"
+    ],
+    "label": "Peaceville",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-02-24T17:35:53-08:00"
+  },
+  {
+    "id": 26765768,
+    "artist": "Dødheimsgard",
+    "title": "Black Medium Current",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/b7FOR-F-2K_FEJp_LkPNg_Z4G0ddexitNzKRvt9WnGQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzY1/NzY4LTE2ODg3NDAy/NDYtNTYxNS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/kJ19Yu-FCC5YITYlWRO5Uu3oo3RsN0UYonUq276Fon0/rs:fit/g:sm/q:90/h:590/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NzY1/NzY4LTE2ODg3NDAy/NDYtNTYxNS5qcGVn.jpeg",
+    "genres": [
+      "electronic",
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "avantgarde"
+    ],
+    "label": "Peaceville",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-08-01T14:45:44-07:00"
+  },
+  {
+    "id": 33052227,
+    "artist": "Kendrick Lamar",
+    "title": "GNX",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/91iiJNeIXKEcssIxLb9k5OjWbK8cAM3jTsHzjPYzNnw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDUy/MjI3LTE3Mzg4OTkx/ODktNDkzMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/lezAobd90-o0kjeuzkFshknSyQjPby4CE9pLi0-G_Bw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDUy/MjI3LTE3Mzg4OTkx/ODktNDkzMC5qcGVn.jpeg",
+    "genres": [
+      "hip hop",
+      "funk / soul"
+    ],
+    "styles": [
+      "conscious",
+      "contemporary r&b",
+      "hardcore hip hop"
+    ],
+    "label": "pgLang",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-03-06T01:20:09-08:00"
+  },
+  {
+    "id": 12004382,
+    "artist": "Pink Floyd",
+    "title": "Pulse",
+    "year": 2018,
+    "thumb": "https://i.discogs.com/EafYEgeZqcuCV-kcf9eFcVqiwKx_C5IG4eEPt315Iq8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDA0/MzgyLTE1Mjk1OTM2/NTctOTE3Mi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/YeCh3bOZB5QcRxPiQf-VIc-zFxDQ08mDx-B7h1dVOK0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDA0/MzgyLTE1Mjk1OTM2/NTctOTE3Mi5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "psychedelic rock",
+      "prog rock"
+    ],
+    "label": "Pink Floyd Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-03-03T17:46:00-08:00"
+  },
+  {
+    "id": 11088399,
+    "artist": "Sepultura",
+    "title": "Roots",
+    "year": 2017,
+    "thumb": "https://i.discogs.com/02X1fAPl7UbLZ_N422EnKgdDm6PImN0IpLmuKwfpA2E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg4/Mzk5LTE2MTMwMjM2/NDctNTkyMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/MgeMe0tWEbWjVPyLHt76xCoeYUJJ1AgVrz8c1jbTJA0/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg4/Mzk5LTE2MTMwMjM2/NDctNTkyMC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "thrash",
+      "nu metal"
+    ],
+    "label": "Roadrunner Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-02-24T17:46:38-08:00"
+  },
+  {
+    "id": 33934431,
+    "artist": "Cryptopsy",
+    "title": "None So Vile",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/1zcMhRiWlrJkrTCiWDp5Q4hBH1ArQRtK1evHUz3sXGA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTM0/NDMxLTE3NDY4MDUz/NjQtMjM1MC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/nCtqTLv8hjQ9cWtkLu2NuySgt-6OA7HjRjHfJqsu6CQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzOTM0/NDMxLTE3NDY4MDUz/NjQtMjM1MC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Season Of Mist",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2026-01-27T03:43:42-08:00"
+  },
+  {
+    "id": 428062,
+    "artist": "War",
+    "title": "The World Is A Ghetto",
+    "year": 1972,
+    "thumb": "https://i.discogs.com/CmpSNg339Io1V49VaJH2U_7_gk7b_2bRGk_JTd4DAmQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyODA2/Mi0xNTM2NjA5ODk3/LTc0MjUuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/jlgmQ4T1D9EpUZBsAu_AhChrDehDuraEpzjBCgpnIF8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyODA2/Mi0xNTM2NjA5ODk3/LTc0MjUuanBlZw.jpeg",
+    "genres": [
+      "funk / soul"
+    ],
+    "styles": [
+      "funk"
+    ],
+    "label": "United Artists Records",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2024-02-16T03:25:16-08:00"
+  },
+  {
+    "id": 34400824,
+    "artist": "Patristic",
+    "title": "Catechesis",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/Ua5waf531bUgA-baE6vvWHkxVRPae4xB4sIbjPUje8o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NDAw/ODI0LTE3NTExNjA5/ODUtOTU1MS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/_WnhVeml3AoBALhZo2JUli6998hdsvBLV92RiIOK-go/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NDAw/ODI0LTE3NTExNjA5/ODUtOTU1MS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "death metal"
+    ],
+    "label": "Willowtip",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2025-08-09T17:01:17-07:00"
+  },
+  {
+    "id": 34762490,
+    "artist": "Blackbraid",
+    "title": "Blackbraid III",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/iSFAqQCajjMAShimcGw48_vQNDKuEjRcP_nI-A5-ie0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NzYy/NDkwLTE3NTQ3Nzgy/OTktMjgwNi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/n-4ISHuY2GLZJ50sW-DHx2OwF9zeOxXCeLQxSfkcRTE/rs:fit/g:sm/q:90/h:533/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NzYy/NDkwLTE3NTQ3Nzgy/OTktMjgwNi5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "atmospheric black metal"
+    ],
+    "label": "Wolf Mountain Productions",
+    "format": "CD",
+    "country": "",
+    "date_added": "2025-08-10T03:42:59-07:00"
+  },
+  {
+    "id": 10471009,
+    "artist": "Radiohead",
+    "title": "OK Computer OKNOTOK 1997 2017",
+    "year": 2017,
+    "thumb": "https://i.discogs.com/qsZFzPBUXMy2szkExN_IB9EM_LvTxSnSgsjDB6N8RxQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDcx/MDA5LTE0OTgxNDM1/NjYtMTEyNi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/ORDOcW8gyxAoTrX-dhu3X6BFrgvBaVinTRQmITK1ym8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDcx/MDA5LTE0OTgxNDM1/NjYtMTEyNi5qcGVn.jpeg",
+    "genres": [
+      "electronic",
+      "rock"
+    ],
+    "styles": [
+      "alternative rock",
+      "art rock",
+      "experimental"
+    ],
+    "label": "XL Recordings",
+    "format": "Vinyl",
+    "country": "",
+    "date_added": "2023-08-11T16:18:50-07:00"
+  }
+]

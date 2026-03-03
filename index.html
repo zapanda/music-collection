@@ -65,6 +65,24 @@ header{
   padding:3px 10px;border-radius:99px;
 }
 
+/* View / section switcher */
+.section-switch{
+  display:flex;background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:3px;gap:2px;
+}
+.section-btn{
+  background:none;border:none;
+  padding:5px 13px;border-radius:6px;
+  font-family:'Inter',sans-serif;
+  font-size:12px;font-weight:500;
+  color:var(--text-mid);cursor:pointer;
+  transition:background .15s,color .15s;
+  display:flex;align-items:center;gap:6px;
+}
+.section-btn.active{background:var(--surface2);color:var(--text)}
+
 /* View switcher */
 .view-switch{
   display:flex;background:var(--surface);
@@ -607,7 +625,16 @@ select:focus,.search-input:focus{border-color:var(--accent)}
   <div class="site-title">zapanda<span>'s collection</span></div>
   <div class="header-count" id="headerCount">— records</div>
 
-  <div class="view-switch">
+  <div class="section-switch">
+    <button class="section-btn active" id="btnSectionCollection" onclick="switchSection('collection')">
+      Collection
+    </button>
+    <button class="section-btn" id="btnSectionWantlist" onclick="switchSection('wantlist')">
+      Wantlist
+    </button>
+  </div>
+
+  <div class="view-switch" id="viewSwitch">
     <button class="view-btn active" id="btnGrid" onclick="switchView('grid')">
       <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1.5"/><rect x="9" y="1" width="6" height="6" rx="1.5"/><rect x="1" y="9" width="6" height="6" rx="1.5"/><rect x="9" y="9" width="6" height="6" rx="1.5"/></svg>
       Grid
@@ -685,6 +712,7 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 <!-- MAIN CONTENT AREA -->
 <div id="gridView" class="grid-container"><div id="mainContent"></div></div>
 <div id="timelineView" class="timeline-container" style="display:none"><div id="timelineContent"></div></div>
+<div id="wantlistView" class="grid-container" style="display:none"><div id="wantlistContent"></div></div>
 
 <!-- GENRE MODAL -->
 <div class="genre-overlay" id="genreOverlay" onclick="closeGenreIfOverlay(event)">
@@ -726,7 +754,7 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 <div class="update-overlay" id="updateOverlay">
   <div class="update-modal">
     <h2>Update Collection</h2>
-    <p>Fetches your Discogs collection and merges it with your ratings from 1001albumsgenerator. Your token is only used during this session.</p>
+    <p>Fetches your Discogs collection (and wantlist) and merges it with your ratings from 1001albumsgenerator. Your token is only used during this session.</p>
     <label for="tokenInput">Discogs User Token</label>
     <input class="token-input" type="password" id="tokenInput" placeholder="Paste your token here…">
     <div class="update-actions">
@@ -739,15 +767,15 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     </div>
     <div class="match-stats" id="matchStats"></div>
     <div class="download-area" id="downloadArea">
-      <p><strong style="color:var(--green)">✓ Done!</strong> Download and upload to GitHub to update the app.</p>
+      <p><strong style="color:var(--green)">✓ Done!</strong> Download the JSON files and add them to your repository to update the app.</p>
       <ol>
-        <li>Click "Download collection.json" below</li>
-        <li>Go to your GitHub repository</li>
-        <li>Click "Add file" → "Upload files"</li>
-        <li>Drag the file in — it replaces the old one</li>
-        <li>Click "Commit changes"</li>
+        <li>Click <strong>Download collection.json</strong> (and <strong>wantlist.json</strong> if you use the wantlist view)</li>
+        <li>Copy the files into your local repo next to <code>index.html</code></li>
+        <li>Use Git (in Cursor or your terminal) to commit the changes</li>
+        <li>Push the commit to GitHub so your deployed app sees the new data</li>
       </ol>
       <a class="btn-download" id="downloadLink" download="collection.json">Download collection.json</a>
+      <a class="btn-download" id="downloadWantlistLink" download="wantlist.json" style="margin-left:8px;display:none">Download wantlist.json</a>
     </div>
     <div class="error-text" id="errorText"></div>
   </div>
@@ -757,10 +785,14 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 // ── STATE ─────────────────────────────────────────────────
 let allRecords = [];
 let filteredRecords = [];
+let allWantlistRecords = [];
+let filteredWantlistRecords = [];
+let currentSection = 'collection';
 let currentView = 'grid';
 let selectedGenres = new Set();
 let pendingGenres  = new Set();
 let genreLogic = 'OR';
+let wantlistLoaded = false;
 
 // ── TAG NORMALISATION ─────────────────────────────────────
 function normTag(s){ return (s||'').toLowerCase().replace(/[-_]/g,' ').replace(/\s+/g,' ').trim() }
@@ -779,8 +811,33 @@ async function init() {
   } catch(e) { showFirstRunState(); }
 }
 
+async function initWantlist() {
+  if (wantlistLoaded) {
+    applyFilters();
+    return;
+  }
+  wantlistLoaded = true;
+  showWantlistLoading();
+  try {
+    const r = await fetch('wantlist.json');
+    if (!r.ok) throw new Error('not found');
+    allWantlistRecords = await r.json();
+    normaliseWantlistTags();
+    applyFilters();
+  } catch(e) {
+    showWantlistFirstRunState();
+  }
+}
+
 function normaliseAllTags() {
   for (const r of allRecords) {
+    r.genres = [...new Set((r.genres||[]).map(normTag))];
+    r.styles = [...new Set((r.styles||[]).map(normTag))];
+  }
+}
+
+function normaliseWantlistTags() {
+  for (const r of allWantlistRecords) {
     r.genres = [...new Set((r.genres||[]).map(normTag))];
     r.styles = [...new Set((r.styles||[]).map(normTag))];
   }
@@ -799,8 +856,44 @@ function showFirstRunState() {
     </div>`;
 }
 
-// ── VIEW SWITCHER ─────────────────────────────────────────
+function showWantlistLoading() {
+  document.getElementById('wantlistContent').innerHTML =
+    `<div class="loading-state"><div class="spinner"></div><div class="loading-text">Loading wantlist…</div></div>`;
+}
+
+function showWantlistFirstRunState() {
+  document.getElementById('wantlistContent').innerHTML = `
+    <div class="empty-state">
+      <h3>No wantlist loaded yet</h3>
+      <p>Add releases to your Discogs wantlist, then use <strong>↻ Update</strong> to download <strong>wantlist.json</strong> and place it in the repository root.</p>
+    </div>`;
+  document.getElementById('headerCount').textContent = `0 in wantlist`;
+  document.getElementById('filterCount').textContent = `0 in wantlist`;
+}
+
+// ── VIEW / SECTION SWITCHER ───────────────────────────────
+function switchSection(section) {
+  if (currentSection === section) return;
+  currentSection = section;
+
+  const isCollection = section === 'collection';
+  document.getElementById('btnSectionCollection').classList.toggle('active', isCollection);
+  document.getElementById('btnSectionWantlist').classList.toggle('active', !isCollection);
+
+  document.getElementById('viewSwitch').style.display = isCollection ? 'flex' : 'none';
+  document.getElementById('gridView').style.display = isCollection && currentView === 'grid' ? 'block' : 'none';
+  document.getElementById('timelineView').style.display = isCollection && currentView === 'timeline' ? 'block' : 'none';
+  document.getElementById('wantlistView').style.display = isCollection ? 'none' : 'block';
+
+  if (isCollection) {
+    applyFilters();
+  } else {
+    initWantlist();
+  }
+}
+
 function switchView(v) {
+  if (currentSection !== 'collection') return;
   currentView = v;
   document.getElementById('btnGrid').classList.toggle('active', v === 'grid');
   document.getElementById('btnTimeline').classList.toggle('active', v === 'timeline');
@@ -829,6 +922,11 @@ function buildDecades() {
 
 // ── FILTER & SORT ─────────────────────────────────────────
 function applyFilters() {
+  if (currentSection === 'wantlist') {
+    applyWantlistFilters();
+    return;
+  }
+
   const format = document.getElementById('filterFormat').value;
   const decade = document.getElementById('filterDecade').value;
   const rating = document.getElementById('filterRating').value;
@@ -874,6 +972,49 @@ function applyFilters() {
   else renderTimeline();
 }
 
+function applyWantlistFilters() {
+  const format = document.getElementById('filterFormat').value;
+  const decade = document.getElementById('filterDecade').value;
+  const sort   = document.getElementById('filterSort').value;
+  const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+  if (!allWantlistRecords.length) {
+    document.getElementById('headerCount').textContent = `0 in wantlist`;
+    document.getElementById('filterCount').textContent = `0 in wantlist`;
+    document.getElementById('wantlistContent').innerHTML =
+      `<div class="empty-state"><h3>No wantlist items</h3><p>Add releases to your Discogs wantlist and regenerate wantlist.json.</p></div>`;
+    return;
+  }
+
+  filteredWantlistRecords = allWantlistRecords.filter(r => {
+    if (format && r.format !== format) return false;
+    if (decade && (Math.floor((r.year||0)/10)*10) !== parseInt(decade)) return false;
+    if (selectedGenres.size > 0) {
+      const tags = [...(r.genres||[]),...(r.styles||[])];
+      if (genreLogic==='OR') { if (!tags.some(t=>selectedGenres.has(t))) return false }
+      else { if (![...selectedGenres].every(g=>tags.includes(g))) return false }
+    }
+    if (search && !`${r.artist} ${r.title}`.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  filteredWantlistRecords.sort((a,b) => {
+    if (sort==='date_added')  return new Date(b.date_added)-new Date(a.date_added);
+    if (sort==='rating_desc') return 0; // no ratings in wantlist by default
+    if (sort==='year_asc')    return (a.year||0)-(b.year||0);
+    if (sort==='year_desc')   return (b.year||0)-(a.year||0);
+    if (sort==='artist')      return (a.artist||'').localeCompare(b.artist||'');
+    if (sort==='title')       return (a.title||'').localeCompare(b.title||'');
+    return 0;
+  });
+
+  const total=allWantlistRecords.length, shown=filteredWantlistRecords.length;
+  document.getElementById('headerCount').textContent = `${total} in wantlist`;
+  document.getElementById('filterCount').textContent = shown<total ? `${shown} of ${total}` : `${total} in wantlist`;
+
+  renderWantlistGrid();
+}
+
 function clearFilters() {
   ['filterFormat','filterDecade','filterRating','filterList'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('filterSort').value='date_added';
@@ -895,6 +1036,19 @@ function renderGrid() {
   filteredRecords.forEach((r,i) => grid.appendChild(makeCard(r,i)));
   document.getElementById('mainContent').innerHTML = '';
   document.getElementById('mainContent').appendChild(grid);
+}
+
+function renderWantlistGrid() {
+  if (!filteredWantlistRecords.length) {
+    document.getElementById('wantlistContent').innerHTML =
+      `<div class="empty-state"><h3>Nothing found</h3><p>Try adjusting your filters.</p></div>`;
+    return;
+  }
+  const grid = document.createElement('div');
+  grid.className = 'album-grid';
+  filteredWantlistRecords.forEach((r,i) => grid.appendChild(makeWantlistCard(r,i)));
+  document.getElementById('wantlistContent').innerHTML = '';
+  document.getElementById('wantlistContent').appendChild(grid);
 }
 
 function makeCard(r, i, small=false) {
@@ -922,6 +1076,28 @@ function makeCard(r, i, small=false) {
     <div class="album-title">${esc(r.title)}</div>
     <div class="album-year">${r.year||'—'}</div>
     <div class="card-stars">${renderStars(r.my_rating??null)}</div>`;
+  return card;
+}
+
+function makeWantlistCard(r, i) {
+  const card = document.createElement('div');
+  card.className = 'album-card';
+  card.style.animationDelay = `${Math.min(i*0.012,0.25)}s`;
+  card.onclick = () => openDetail(r);
+
+  const img = r.cover_image||r.thumb;
+  const thumb = img
+    ? `<img class="album-thumb" src="${img}" alt="${esc(r.title)}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=no-art><div class=no-art-disc><div class=no-art-hole></div></div></div>'">`
+    : `<div class="no-art"><div class="no-art-disc"><div class="no-art-hole"></div></div></div>`;
+
+  card.innerHTML = `
+    <div class="album-thumb-wrap">
+      ${thumb}
+      <div class="format-badge">${esc(r.format||'?')}</div>
+    </div>
+    <div class="album-artist">${esc(r.artist)}</div>
+    <div class="album-title">${esc(r.title)}</div>
+    <div class="album-year">${r.year||'—'}</div>`;
   return card;
 }
 
@@ -1385,6 +1561,16 @@ async function fetchCollection() {
       if(i < total-1) await sleep(DETAIL_DELAY);
     }
 
+    // ── Step 4: Discogs wantlist (quick, no enrichment) ──
+    let wantlist = [];
+    try {
+      setProgress(96,'Fetching Discogs wantlist…');
+      wantlist = await fetchDiscogsWantlist(token);
+    } catch (e) {
+      // If wantlist fails, still allow collection.json to be downloaded
+      wantlist = [];
+    }
+
     setProgress(100,'Done!');
 
     // ── Summary stats ──
@@ -1402,16 +1588,81 @@ async function fetchCollection() {
     // Clear token from input for security
     document.getElementById('tokenInput').value='';
 
-    const blob=new Blob([JSON.stringify(enriched,null,2)],{type:'application/json'});
-    document.getElementById('downloadLink').href=URL.createObjectURL(blob);
+    // Build download blobs
+    const collBlob=new Blob([JSON.stringify(enriched,null,2)],{type:'application/json'});
+    document.getElementById('downloadLink').href=URL.createObjectURL(collBlob);
+
+    const wantBtn = document.getElementById('downloadWantlistLink');
+    if (wantlist.length) {
+      const wantBlob=new Blob([JSON.stringify(wantlist,null,2)],{type:'application/json'});
+      wantBtn.href = URL.createObjectURL(wantBlob);
+      wantBtn.style.display='inline-block';
+    } else {
+      wantBtn.style.display='none';
+    }
+
     document.getElementById('downloadArea').style.display='block';
 
+    // Update in-memory collection for this session
     allRecords=enriched;
     normaliseAllTags(); buildDecades();
     selectedGenres.clear(); pendingGenres.clear(); updateGenreButton();
     applyFilters();
 
+    // Also update in-memory wantlist so the Wantlist tab works immediately
+    if (wantlist.length) {
+      allWantlistRecords = wantlist;
+      normaliseWantlistTags();
+      wantlistLoaded = true;
+    }
+
   } catch(e){ showError(`Error: ${e.message}`); document.getElementById('fetchBtn').disabled=false; }
+}
+
+// Fetch Discogs wantlist pages (no 1001 matching, lighter metadata)
+async function fetchDiscogsWantlist(token){
+  const first = await discogsGet(
+    `https://api.discogs.com/users/zapanda/wants?per_page=100&page=1`,token);
+  const pages = first.pagination?.pages || 1;
+  const allWants = [...(first.wants||[])];
+
+  for (let p=2; p<=pages; p++){
+    const pg = await discogsGet(
+      `https://api.discogs.com/users/zapanda/wants?per_page=100&page=${p}`,token);
+    allWants.push(...(pg.wants||[]));
+    await sleep(PAGE_DELAY);
+  }
+
+  const mapped = allWants.map(item => {
+    const basic = item.basic_information || {};
+    let fmt='';
+    for(const f of (basic.formats||[])){
+      const n=(f.name||'').toLowerCase();
+      if(n.includes('vinyl')){fmt='Vinyl';break}
+      if(n.includes('cd')){fmt='CD';break}
+      if(n.includes('cassette')){fmt='Cassette';break}
+    }
+    if(!fmt) fmt=(basic.formats||[])[0]?.name||'';
+
+    const artist=(basic.artists||[]).map(a=>a.name.replace(/ \(\d+\)$/,'')).join(', ');
+
+    return {
+      id: basic.id,
+      artist,
+      title: basic.title,
+      year: basic.year || null,
+      thumb: basic.thumb || '',
+      cover_image: basic.cover_image || '',
+      genres: (basic.genres||[]).map(normTag),
+      styles: (basic.styles||[]).map(normTag),
+      label: (basic.labels||[])[0]?.name || '',
+      format: fmt,
+      country: basic.country || '',
+      date_added: item.date_added || null,
+    };
+  });
+
+  return mapped;
 }
 
 // Fetch a Discogs URL with auth. Handles 429 rate-limit responses by waiting
