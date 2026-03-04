@@ -196,6 +196,56 @@ select:focus,.search-input:focus{border-color:var(--accent)}
   grid-template-columns:repeat(auto-fill,minmax(168px,1fr));
   gap:20px;
 }
+
+/* List view */
+.album-list{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.album-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 10px;
+  border-radius:var(--radius-sm);
+  background:var(--surface);
+  cursor:pointer;
+  animation:fadeUp .25s ease both;
+}
+.album-row-thumb{
+  width:46px;
+  height:46px;
+  border-radius:8px;
+  object-fit:cover;
+  flex-shrink:0;
+  background:var(--surface2);
+}
+.album-row-thumb.placeholder{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.album-row-main{
+  flex:1;
+  min-width:0;
+}
+.album-row-title{
+  font-size:13px;
+  font-weight:500;
+  color:var(--text);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.album-row-meta{
+  font-size:11px;
+  color:var(--text-dim);
+  margin-top:1px;
+}
+.album-row-rating{
+  margin-left:8px;
+}
 .album-card{cursor:pointer;animation:fadeUp .25s ease both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
@@ -336,6 +386,7 @@ select:focus,.search-input:focus{border-color:var(--accent)}
   z-index:200;display:flex;align-items:center;justify-content:center;
   padding:24px;opacity:0;pointer-events:none;
   transition:opacity .2s;backdrop-filter:blur(8px);
+  overflow-y:auto;
 }
 .modal-overlay.open{opacity:1;pointer-events:all}
 
@@ -607,15 +658,85 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 
 /* ── RESPONSIVE ── */
 @media(max-width:700px){
-  header{padding:0 20px;height:56px;flex-wrap:wrap}
-  .filters-bar{padding:10px 20px}
-  .grid-container,.timeline-container{padding:20px}
+  header{
+    padding:6px 12px;
+    height:auto;
+    flex-wrap:wrap;
+    gap:8px;
+    align-items:flex-start;
+  }
+  .site-title{font-size:15px}
+  .header-count{font-size:11px;padding:2px 8px}
+  .section-switch{
+    order:3;
+    width:auto;
+    justify-content:flex-start;
+  }
+  .view-switch{order:4;width:100%;justify-content:flex-start;margin-top:-4px}
+  .header-right{
+    margin-left:0;
+    margin-top:4px;
+    gap:6px;
+  }
+  .btn-surprise,.btn-update{
+    padding:6px 10px;
+    font-size:11px;
+  }
+
+  .filters-mobile-bar{
+    display:flex;
+  }
+  .filters-bar{
+    display:none;
+    padding:8px 12px;
+  }
+  .filters-bar.open{
+    display:flex;
+  }
+  .filters-bar .search-input{
+    display:none;
+  }
+
+  .grid-container,.timeline-container{padding:16px}
   .album-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px}
   .month-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
   .modal{grid-template-columns:1fr;max-height:95vh}
   .modal-art-col{max-height:320px}
   .modal-art{aspect-ratio:unset;height:220px}
   .modal-no-art{aspect-ratio:unset;height:220px}
+}
+
+/* Mobile filters toggle */
+.filters-mobile-bar{
+  display:none;
+  padding:8px 16px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg2);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.filters-toggle-btn{
+  background:var(--surface);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:var(--radius-sm);
+  font-family:'Inter',sans-serif;
+  font-size:12px;
+  font-weight:500;
+  cursor:pointer;
+}
+.filters-mobile-search{
+  flex:1;
+  background:var(--surface);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:var(--radius-sm);
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  outline:none;
 }
 </style>
 </head>
@@ -639,6 +760,10 @@ select:focus,.search-input:focus{border-color:var(--accent)}
       <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1.5"/><rect x="9" y="1" width="6" height="6" rx="1.5"/><rect x="1" y="9" width="6" height="6" rx="1.5"/><rect x="9" y="9" width="6" height="6" rx="1.5"/></svg>
       Grid
     </button>
+    <button class="view-btn" id="btnList" onclick="switchView('list')">
+      <svg viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="2" width="12" height="2.2" rx="1"/><rect x="2" y="6.9" width="12" height="2.2" rx="1"/><rect x="2" y="11.8" width="12" height="2.2" rx="1"/></svg>
+      List
+    </button>
     <button class="view-btn" id="btnTimeline" onclick="switchView('timeline')">
       <svg viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="2" width="14" height="2.5" rx="1.25"/><rect x="1" y="6.75" width="10" height="2.5" rx="1.25"/><rect x="1" y="11.5" width="12" height="2.5" rx="1.25"/></svg>
       Timeline
@@ -653,6 +778,11 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     <button class="btn-update" onclick="openUpdateModal()">↻ Update</button>
   </div>
 </header>
+
+<div class="filters-mobile-bar">
+  <button class="filters-toggle-btn" onclick="toggleFiltersMobile()">Filters</button>
+  <input class="filters-mobile-search" type="text" id="searchInputMobile" placeholder="Search…" oninput="syncMobileSearch(this.value)">
+</div>
 
 <div class="filters-bar">
   <div class="filter-group">
@@ -788,7 +918,7 @@ let filteredRecords = [];
 let allWantlistRecords = [];
 let filteredWantlistRecords = [];
 let currentSection = 'collection';
-let currentView = 'grid';
+let currentView = (window.innerWidth <= 700) ? 'list' : 'timeline';
 let selectedGenres = new Set();
 let pendingGenres  = new Set();
 let genreLogic = 'OR';
@@ -871,6 +1001,18 @@ function showWantlistFirstRunState() {
   document.getElementById('filterCount').textContent = `0 in wantlist`;
 }
 
+function toggleFiltersMobile() {
+  const bar=document.querySelector('.filters-bar');
+  if (!bar) return;
+  bar.classList.toggle('open');
+}
+
+function syncMobileSearch(value) {
+  const desktop=document.getElementById('searchInput');
+  if (desktop) desktop.value=value;
+  applyFilters();
+}
+
 // ── VIEW / SECTION SWITCHER ───────────────────────────────
 function switchSection(section) {
   if (currentSection === section) return;
@@ -880,8 +1022,9 @@ function switchSection(section) {
   document.getElementById('btnSectionCollection').classList.toggle('active', isCollection);
   document.getElementById('btnSectionWantlist').classList.toggle('active', !isCollection);
 
-  document.getElementById('viewSwitch').style.display = isCollection ? 'flex' : 'none';
-  document.getElementById('gridView').style.display = isCollection && currentView === 'grid' ? 'block' : 'none';
+  document.getElementById('viewSwitch').style.display = 'flex';
+  const isGridLike = currentView === 'grid' || currentView === 'list';
+  document.getElementById('gridView').style.display = isCollection && isGridLike ? 'block' : 'none';
   document.getElementById('timelineView').style.display = isCollection && currentView === 'timeline' ? 'block' : 'none';
   document.getElementById('wantlistView').style.display = isCollection ? 'none' : 'block';
 
@@ -893,14 +1036,24 @@ function switchSection(section) {
 }
 
 function switchView(v) {
-  if (currentSection !== 'collection') return;
   currentView = v;
   document.getElementById('btnGrid').classList.toggle('active', v === 'grid');
+  document.getElementById('btnList').classList.toggle('active', v === 'list');
   document.getElementById('btnTimeline').classList.toggle('active', v === 'timeline');
-  document.getElementById('gridView').style.display = v === 'grid' ? 'block' : 'none';
-  document.getElementById('timelineView').style.display = v === 'timeline' ? 'block' : 'none';
-  // sort for timeline always by date added
-  if (v === 'timeline') renderTimeline();
+  if (currentSection === 'collection') {
+    document.getElementById('gridView').style.display = (v === 'grid' || v === 'list') ? 'block' : 'none';
+    document.getElementById('timelineView').style.display = v === 'timeline' ? 'block' : 'none';
+    if (v === 'timeline') renderTimeline();
+    else if (v === 'grid') renderGrid();
+    else if (v === 'list') renderList();
+  } else {
+    // wantlist: only grid/list are meaningful
+    document.getElementById('gridView').style.display = 'none';
+    document.getElementById('timelineView').style.display = 'none';
+    document.getElementById('wantlistView').style.display = 'block';
+    if (v === 'list') renderWantlistList();
+    else renderWantlistGrid();
+  }
 }
 
 // ── STARS ─────────────────────────────────────────────────
@@ -969,6 +1122,7 @@ function applyFilters() {
   document.getElementById('filterCount').textContent = shown<total ? `${shown} of ${total}` : `${total} records`;
 
   if (currentView==='grid') renderGrid();
+  else if (currentView==='list') renderList();
   else renderTimeline();
 }
 
@@ -1012,13 +1166,16 @@ function applyWantlistFilters() {
   document.getElementById('headerCount').textContent = `${total} in wantlist`;
   document.getElementById('filterCount').textContent = shown<total ? `${shown} of ${total}` : `${total} in wantlist`;
 
-  renderWantlistGrid();
+  if (currentView === 'list') renderWantlistList();
+  else renderWantlistGrid();
 }
 
 function clearFilters() {
   ['filterFormat','filterDecade','filterRating','filterList'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('filterSort').value='date_added';
   document.getElementById('searchInput').value='';
+  const mobileSearch=document.getElementById('searchInputMobile');
+  if (mobileSearch) mobileSearch.value='';
   selectedGenres.clear(); pendingGenres.clear();
   updateGenreButton();
   applyFilters();
@@ -1038,6 +1195,19 @@ function renderGrid() {
   document.getElementById('mainContent').appendChild(grid);
 }
 
+function renderList() {
+  if (!filteredRecords.length) {
+    document.getElementById('mainContent').innerHTML =
+      `<div class="empty-state"><h3>Nothing found</h3><p>Try adjusting your filters.</p></div>`;
+    return;
+  }
+  const list = document.createElement('div');
+  list.className = 'album-list';
+  filteredRecords.forEach((r,i) => list.appendChild(makeListRow(r,i)));
+  document.getElementById('mainContent').innerHTML = '';
+  document.getElementById('mainContent').appendChild(list);
+}
+
 function renderWantlistGrid() {
   if (!filteredWantlistRecords.length) {
     document.getElementById('wantlistContent').innerHTML =
@@ -1049,6 +1219,19 @@ function renderWantlistGrid() {
   filteredWantlistRecords.forEach((r,i) => grid.appendChild(makeWantlistCard(r,i)));
   document.getElementById('wantlistContent').innerHTML = '';
   document.getElementById('wantlistContent').appendChild(grid);
+}
+
+function renderWantlistList() {
+  if (!filteredWantlistRecords.length) {
+    document.getElementById('wantlistContent').innerHTML =
+      `<div class="empty-state"><h3>Nothing found</h3><p>Try adjusting your filters.</p></div>`;
+    return;
+  }
+  const list = document.createElement('div');
+  list.className = 'album-list';
+  filteredWantlistRecords.forEach((r,i) => list.appendChild(makeWantlistListRow(r,i)));
+  document.getElementById('wantlistContent').innerHTML = '';
+  document.getElementById('wantlistContent').appendChild(list);
 }
 
 function makeCard(r, i, small=false) {
@@ -1079,6 +1262,32 @@ function makeCard(r, i, small=false) {
   return card;
 }
 
+function makeListRow(r, i) {
+  const row = document.createElement('div');
+  row.className = 'album-row';
+  row.style.animationDelay = `${Math.min(i*0.012,0.25)}s`;
+  row.onclick = () => openDetail(r);
+
+  const img = r.cover_image||r.thumb;
+  const thumb = img
+    ? `<img class="album-row-thumb" src="${img}" alt="${esc(r.title)}" loading="lazy" onerror="this.style.display='none'">`
+    : `<div class="album-row-thumb placeholder"><div class="no-art-disc"><div class="no-art-hole"></div></div></div>`;
+
+  row.innerHTML = `
+    ${thumb}
+    <div class="album-row-main">
+      <div class="album-row-title">${esc(r.artist)} – ${esc(r.title)}</div>
+      <div class="album-row-meta">
+        <span>${r.year || '—'}</span>
+        <span>• ${esc(r.format||'?')}</span>
+      </div>
+    </div>
+    <div class="album-row-rating">
+      ${renderStars(r.my_rating??null)}
+    </div>`;
+  return row;
+}
+
 function makeWantlistCard(r, i) {
   const card = document.createElement('div');
   card.className = 'album-card';
@@ -1099,6 +1308,29 @@ function makeWantlistCard(r, i) {
     <div class="album-title">${esc(r.title)}</div>
     <div class="album-year">${r.year||'—'}</div>`;
   return card;
+}
+
+function makeWantlistListRow(r, i) {
+  const row = document.createElement('div');
+  row.className = 'album-row';
+  row.style.animationDelay = `${Math.min(i*0.012,0.25)}s`;
+  row.onclick = () => openDetail(r);
+
+  const img = r.cover_image||r.thumb;
+  const thumb = img
+    ? `<img class="album-row-thumb" src="${img}" alt="${esc(r.title)}" loading="lazy" onerror="this.style.display='none'">`
+    : `<div class="album-row-thumb placeholder"><div class="no-art-disc"><div class="no-art-hole"></div></div></div>`;
+
+  row.innerHTML = `
+    ${thumb}
+    <div class="album-row-main">
+      <div class="album-row-title">${esc(r.artist)} – ${esc(r.title)}</div>
+      <div class="album-row-meta">
+        <span>${r.year || '—'}</span>
+        <span>• ${esc(r.format||'?')}</span>
+      </div>
+    </div>`;
+  return row;
 }
 
 // ── RENDER TIMELINE ───────────────────────────────────────
