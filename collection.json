@@ -6195,7 +6195,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.5,
+    "global_rating": 3.51,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6kPOXxCYCdXBzEbb9dqE90/fashion-nugget",
     "enriched": true
@@ -10011,7 +10011,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.7,
+    "global_rating": 3.69,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0PMasrHdpaoIRuHuhHp72O/born-in-the-usa",
     "enriched": true
@@ -16380,7 +16380,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.8,
+    "global_rating": 3.81,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/24TAupSNVWSAHL0R7n71vm/bad",
     "enriched": true
@@ -31233,6 +31233,55 @@
     "enriched": true
   },
   {
+    "id": 25040860,
+    "instance_id": 2120454330,
+    "artist": "Saturnus",
+    "title": "The Lighthouse Session",
+    "year": 2022,
+    "thumb": "https://i.discogs.com/tU-hh_np6K0HZKD7KX30zZywbk6xR_KFy8i74WvwXqc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDQw/ODYwLTE2Njc0OTg0/NDYtNTk0OC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/FUoUav7s708fF7AUMUDs4J8cHEiujLlq9mffOiwTx2A/rs:fit/g:sm/q:90/h:519/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDQw/ODYwLTE2Njc0OTg0/NDYtNTk0OC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "doom metal",
+      "acoustic"
+    ],
+    "label": "Prophecy Productions",
+    "format": "CD",
+    "format_full": "CD — EP",
+    "country": "Germany",
+    "date_added": "2026-03-03T14:45:59-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Pretend",
+        "duration": "4:10"
+      },
+      {
+        "position": "2",
+        "title": "All Alone",
+        "duration": "4:38"
+      },
+      {
+        "position": "3",
+        "title": "The Calling",
+        "duration": "5:10"
+      },
+      {
+        "position": "4",
+        "title": "Even Tide (inceptura)",
+        "duration": "5:33"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 26642978,
     "instance_id": 1906775751,
     "artist": "Sermon",
@@ -40199,7 +40248,7 @@
     ],
     "my_rating": 4,
     "my_review": "Massive album. Extremely well produced and written. \n\nSooo much groove and swing in the rhythm section. \nDown picking riff master Hetfield outdid himself on this one. All the riffs are classics at this point. They have punch, power and they hook you instantly. \n\nSolos are melodic and well thought out never too much and always complement the songs. Ver very well put together piece of music.\n\nSome filler (eg Holier than thou or The struggle within), but even that doesn't detract from the overall quality.\n",
-    "global_rating": 3.77,
+    "global_rating": 3.78,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/37lWyRxkf3wQHCOlXM5WfX/metallica",
     "enriched": true

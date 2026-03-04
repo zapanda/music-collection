@@ -15,8 +15,98 @@
     ],
     "label": "A&A Records",
     "format": "CD",
-    "country": "",
-    "date_added": "2023-03-04T19:08:03-08:00"
+    "format_full": "CD — Album",
+    "country": "Romania",
+    "date_added": "2023-03-04T19:08:03-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Exercițiu",
+        "duration": "3:20"
+      },
+      {
+        "position": "2",
+        "title": "Perfect",
+        "duration": "4:15"
+      },
+      {
+        "position": "3",
+        "title": "Dacă Vrei",
+        "duration": "3:14"
+      },
+      {
+        "position": "4",
+        "title": "Acuarelă",
+        "duration": "3:02"
+      },
+      {
+        "position": "5",
+        "title": "Granița-n Raniță",
+        "duration": "3:53"
+      },
+      {
+        "position": "6",
+        "title": "Mă Simt Minunat",
+        "duration": "3:35"
+      },
+      {
+        "position": "7",
+        "title": "Mica Țiganiadă",
+        "duration": "3:49"
+      },
+      {
+        "position": "8",
+        "title": "Sărută-mă",
+        "duration": "2:09"
+      },
+      {
+        "position": "9",
+        "title": "1000 De Chipuri",
+        "duration": "3:18"
+      },
+      {
+        "position": "10",
+        "title": "Chihlimbar",
+        "duration": "4:35"
+      },
+      {
+        "position": "11",
+        "title": "Ploaie În Luna Lui Marte",
+        "duration": "5:15"
+      },
+      {
+        "position": "12",
+        "title": "Mierea",
+        "duration": "3:21"
+      },
+      {
+        "position": "13",
+        "title": "Songul Polițistului",
+        "duration": "3:34"
+      },
+      {
+        "position": "14",
+        "title": "Songul Pușcăriașului",
+        "duration": "2:08"
+      },
+      {
+        "position": "15",
+        "title": "Ochii Tăi",
+        "duration": "2:30"
+      },
+      {
+        "position": "16",
+        "title": "Scrisoare De Bun Rămas",
+        "duration": "2:46"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 11.63,
+    "num_for_sale": 1,
+    "community_rating_avg": 4.33,
+    "community_rating_count": 3,
+    "community_have": 32,
+    "community_want": 6
   },
   {
     "id": 24455792,
@@ -34,8 +124,153 @@
     ],
     "label": "ADA (6)",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-07-22T10:50:32-07:00"
+    "format_full": "Vinyl — LP, Album, Mixed, Reissue",
+    "country": "Worldwide",
+    "date_added": "2023-07-22T10:50:32-07:00",
+    "tracklist": [
+      {
+        "position": "A1a",
+        "title": "Robot Rock",
+        "duration": ""
+      },
+      {
+        "position": "A1b",
+        "title": "Oh Yeah",
+        "duration": ""
+      },
+      {
+        "position": "A2a",
+        "title": "Touch It",
+        "duration": ""
+      },
+      {
+        "position": "A2b",
+        "title": "Technologic",
+        "duration": ""
+      },
+      {
+        "position": "A3a",
+        "title": "Television Rules The Nation",
+        "duration": ""
+      },
+      {
+        "position": "A3b",
+        "title": "Crescendolls",
+        "duration": ""
+      },
+      {
+        "position": "B1a",
+        "title": "Too Long",
+        "duration": ""
+      },
+      {
+        "position": "B1b",
+        "title": "Steam Machine",
+        "duration": ""
+      },
+      {
+        "position": "B2a",
+        "title": "Around The World",
+        "duration": ""
+      },
+      {
+        "position": "B2b",
+        "title": "Harder Better Faster Stronger",
+        "duration": ""
+      },
+      {
+        "position": "B3a",
+        "title": "Burnin'",
+        "duration": ""
+      },
+      {
+        "position": "B3b",
+        "title": "Too Long",
+        "duration": ""
+      },
+      {
+        "position": "C1a",
+        "title": "Face To Face",
+        "duration": ""
+      },
+      {
+        "position": "C1b",
+        "title": "Short Circuit",
+        "duration": ""
+      },
+      {
+        "position": "C2a",
+        "title": "One More Time",
+        "duration": ""
+      },
+      {
+        "position": "C2b",
+        "title": "Aerodynamic",
+        "duration": ""
+      },
+      {
+        "position": "C3a",
+        "title": "Aerodynamic Beats",
+        "duration": ""
+      },
+      {
+        "position": "C3b",
+        "title": "Forget About The World",
+        "duration": ""
+      },
+      {
+        "position": "D1a",
+        "title": "Prime Time Of Your Life",
+        "duration": ""
+      },
+      {
+        "position": "D1b",
+        "title": "Brainwasher",
+        "duration": ""
+      },
+      {
+        "position": "D1c",
+        "title": "Rollin' And Scratchin'",
+        "duration": ""
+      },
+      {
+        "position": "D1d",
+        "title": "Alive",
+        "duration": ""
+      },
+      {
+        "position": "D2a",
+        "title": "Da Funk",
+        "duration": ""
+      },
+      {
+        "position": "D2b",
+        "title": "Daftendirekt",
+        "duration": ""
+      },
+      {
+        "position": "D3a",
+        "title": "Superheroes",
+        "duration": ""
+      },
+      {
+        "position": "D3b",
+        "title": "Human After All",
+        "duration": ""
+      },
+      {
+        "position": "D3c",
+        "title": "Rock'n Roll",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 31.38,
+    "num_for_sale": 90,
+    "community_rating_avg": 4.78,
+    "community_rating_count": 641,
+    "community_have": 10935,
+    "community_want": 1972
   },
   {
     "id": 140098,
@@ -52,8 +287,108 @@
     ],
     "label": "Anticon",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-12-22T05:20:06-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "US",
+    "date_added": "2024-12-22T05:20:06-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Crack Pipes",
+        "duration": "2:21"
+      },
+      {
+        "position": "A2",
+        "title": "Different",
+        "duration": "3:16"
+      },
+      {
+        "position": "A3",
+        "title": "Personal Journalist",
+        "duration": "2:49"
+      },
+      {
+        "position": "A4",
+        "title": "Inherited Scars",
+        "duration": "4:31"
+      },
+      {
+        "position": "B1",
+        "title": "Climb Trees",
+        "duration": "3:53"
+      },
+      {
+        "position": "B2",
+        "title": "Broken Wings",
+        "duration": "3:55"
+      },
+      {
+        "position": "B3",
+        "title": "The Strange Famous Mullet Remover",
+        "duration": "2:35"
+      },
+      {
+        "position": "B4",
+        "title": "Smoke And Mirrors",
+        "duration": "3:09"
+      },
+      {
+        "position": "C1",
+        "title": "Message Sent",
+        "duration": "4:20"
+      },
+      {
+        "position": "C2",
+        "title": "Eviction Notice",
+        "duration": "3:27"
+      },
+      {
+        "position": "C3",
+        "title": "Pitchers Of Silence",
+        "duration": "2:42"
+      },
+      {
+        "position": "C4",
+        "title": "Specialist",
+        "duration": "4:09"
+      },
+      {
+        "position": "C5",
+        "title": "Hopeless",
+        "duration": "1:08"
+      },
+      {
+        "position": "C6",
+        "title": "Kill Ya' Momz",
+        "duration": "1:54"
+      },
+      {
+        "position": "D1",
+        "title": "Black Sweatshirt",
+        "duration": "2:04"
+      },
+      {
+        "position": "D2",
+        "title": "Cup Of Tea",
+        "duration": "2:10"
+      },
+      {
+        "position": "D3",
+        "title": "My Name Is Strange",
+        "duration": "3:17"
+      },
+      {
+        "position": "D4",
+        "title": "Runaways",
+        "duration": "6:07"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 15.29,
+    "num_for_sale": 25,
+    "community_rating_avg": 4.45,
+    "community_rating_count": 134,
+    "community_have": 1285,
+    "community_want": 473
   },
   {
     "id": 29359297,
@@ -70,8 +405,58 @@
     ],
     "label": "Antiq Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:52:00-08:00"
+    "format_full": "Vinyl — LP; Vinyl — LP, Single Sided, Etched; All Media — Album, Limited Edition",
+    "country": "France",
+    "date_added": "2026-03-02T04:52:00-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "De Feu Et D'Acier",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Notre Royaume... En Cendres",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "La Danse Des Pluies",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Au Blason Brûlé",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "La Divine Sorcellerie",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Quand L'Hiver Viendra",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Un Contre Mille",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Par Le Glaive",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": null,
+    "num_for_sale": 0,
+    "community_rating_avg": 4.76,
+    "community_rating_count": 17,
+    "community_have": 147,
+    "community_want": 67
   },
   {
     "id": 24877178,
@@ -89,8 +474,73 @@
     ],
     "label": "Aural Music",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:05:16-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue",
+    "country": "Italy",
+    "date_added": "2026-03-02T04:05:16-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Alba",
+        "duration": "4:35"
+      },
+      {
+        "position": "A2",
+        "title": "Babalon",
+        "duration": "7:18"
+      },
+      {
+        "position": "A3",
+        "title": "Fårö",
+        "duration": "1:31"
+      },
+      {
+        "position": "A4",
+        "title": "The Hour Of The Wolf",
+        "duration": "7:30"
+      },
+      {
+        "position": "B1",
+        "title": "Blood",
+        "duration": "10:25"
+      },
+      {
+        "position": "B2",
+        "title": "Tomba",
+        "duration": "3:56"
+      },
+      {
+        "position": "B3",
+        "title": "New Horns",
+        "duration": "6:26"
+      },
+      {
+        "position": "C1",
+        "title": "Bell Tower",
+        "duration": "3:23"
+      },
+      {
+        "position": "C2",
+        "title": "Outermost",
+        "duration": "8:43"
+      },
+      {
+        "position": "C3",
+        "title": "Confess",
+        "duration": "4:12"
+      },
+      {
+        "position": "D1",
+        "title": "Enoch",
+        "duration": "8:08"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 30.1,
+    "num_for_sale": 12,
+    "community_rating_avg": 4.89,
+    "community_rating_count": 18,
+    "community_have": 259,
+    "community_want": 63
   },
   {
     "id": 378698,
@@ -109,8 +559,113 @@
     ],
     "label": "CBS",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-12-27T14:47:47-08:00"
+    "format_full": "Vinyl — LP, Album, Stereo",
+    "country": "Europe",
+    "date_added": "2024-12-27T14:47:47-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "London Calling",
+        "duration": "3:19"
+      },
+      {
+        "position": "A2",
+        "title": "Brand New Cadillac",
+        "duration": "2:08"
+      },
+      {
+        "position": "A3",
+        "title": "Jimmy Jazz",
+        "duration": "3:54"
+      },
+      {
+        "position": "A4",
+        "title": "Hateful",
+        "duration": "2:44"
+      },
+      {
+        "position": "A5",
+        "title": "Rudie Can't Fail",
+        "duration": "3:27"
+      },
+      {
+        "position": "B1",
+        "title": "Spanish Bombs",
+        "duration": "3:19"
+      },
+      {
+        "position": "B2",
+        "title": "The Right Profile",
+        "duration": "3:53"
+      },
+      {
+        "position": "B3",
+        "title": "Lost In The Supermarket",
+        "duration": "3:46"
+      },
+      {
+        "position": "B4",
+        "title": "Clampdown",
+        "duration": "3:47"
+      },
+      {
+        "position": "B5",
+        "title": "The Guns Of Brixton",
+        "duration": "3:08"
+      },
+      {
+        "position": "C1",
+        "title": "Wrong 'Em Boyo",
+        "duration": "3:10"
+      },
+      {
+        "position": "C2",
+        "title": "Death Or Glory",
+        "duration": "3:55"
+      },
+      {
+        "position": "C3",
+        "title": "Koka Kola",
+        "duration": "1:48"
+      },
+      {
+        "position": "C4",
+        "title": "The Card Cheat",
+        "duration": "3:49"
+      },
+      {
+        "position": "D1",
+        "title": "Lover's Rock",
+        "duration": "4:03"
+      },
+      {
+        "position": "D2",
+        "title": "Four Horsemen",
+        "duration": "2:56"
+      },
+      {
+        "position": "D3",
+        "title": "I'm Not Down",
+        "duration": "3:06"
+      },
+      {
+        "position": "D4",
+        "title": "Revolution Rock",
+        "duration": "5:33"
+      },
+      {
+        "position": "D5",
+        "title": "Train In Vain",
+        "duration": "3:07"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 16.8,
+    "num_for_sale": 144,
+    "community_rating_avg": 4.52,
+    "community_rating_count": 1403,
+    "community_have": 14791,
+    "community_want": 3960
   },
   {
     "id": 1939290,
@@ -127,8 +682,138 @@
     ],
     "label": "Century Media",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-02-22T04:36:03-08:00"
+    "format_full": "Vinyl — LP, Album; Vinyl — 7\"; CD — Album; All Media — Limited Edition",
+    "country": "Germany",
+    "date_added": "2024-02-22T04:36:03-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "As Horizons End",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "I Remain",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "First Light",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Frailty",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Faith Divides Us - Death Unites Us",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "The Rise Of Denial",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Living With Scars",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Last Regret",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Universal Dream",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "In Truth",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Cardinal Zero",
+        "duration": ""
+      },
+      {
+        "position": "C",
+        "title": "Faith Divides Us - Death Unites Us (Lost In Prague Orchestra Mix)",
+        "duration": "4:17"
+      },
+      {
+        "position": "D",
+        "title": "Last Regret (Lost In Prague Orchestra Mix)",
+        "duration": "4:20"
+      },
+      {
+        "position": "CD-1",
+        "title": "As Horizons End",
+        "duration": "5:26"
+      },
+      {
+        "position": "CD-2",
+        "title": "I Remain",
+        "duration": "4:09"
+      },
+      {
+        "position": "CD-3",
+        "title": "First Light",
+        "duration": "5:00"
+      },
+      {
+        "position": "CD-4",
+        "title": "Frailty",
+        "duration": "4:25"
+      },
+      {
+        "position": "CD-5",
+        "title": "Faith Divides Us - Death Unites Us",
+        "duration": "4:21"
+      },
+      {
+        "position": "CD-6",
+        "title": "The Rise Of Denial",
+        "duration": "4:47"
+      },
+      {
+        "position": "CD-7",
+        "title": "Living With Scars",
+        "duration": "4:23"
+      },
+      {
+        "position": "CD-8",
+        "title": "Last Regret",
+        "duration": "4:24"
+      },
+      {
+        "position": "CD-9",
+        "title": "Universal Dream",
+        "duration": "4:17"
+      },
+      {
+        "position": "CD-10",
+        "title": "In Truth",
+        "duration": "4:50"
+      },
+      {
+        "position": "CD-11",
+        "title": "Cardinal Zero",
+        "duration": "4:28"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 63.39,
+    "num_for_sale": 8,
+    "community_rating_avg": 4.53,
+    "community_rating_count": 80,
+    "community_have": 690,
+    "community_want": 276
   },
   {
     "id": 24018581,
@@ -148,8 +833,73 @@
     ],
     "label": "Code666",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:56:15-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Italy",
+    "date_added": "2026-03-02T04:56:15-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Ceasuri Rele",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Țesarul De Lumini",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Primul Om",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Cunoașterea Tăcută",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Înarborat",
+        "duration": ""
+      },
+      {
+        "position": "C6",
+        "title": "Dedesuptul",
+        "duration": ""
+      },
+      {
+        "position": "C7",
+        "title": "Norilor",
+        "duration": ""
+      },
+      {
+        "position": "C8",
+        "title": "De Piatră",
+        "duration": ""
+      },
+      {
+        "position": "D9",
+        "title": "Cel Din Urmă Vis",
+        "duration": ""
+      },
+      {
+        "position": "D10",
+        "title": "Hora Soarelui",
+        "duration": ""
+      },
+      {
+        "position": "D11",
+        "title": "Al Doilea Om",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.4,
+    "num_for_sale": 1,
+    "community_rating_avg": 4.78,
+    "community_rating_count": 9,
+    "community_have": 91,
+    "community_want": 75
   },
   {
     "id": 24564872,
@@ -168,8 +918,83 @@
     ],
     "label": "Columbia",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-08-09T17:03:47-07:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue, Remastered, Stereo",
+    "country": "Europe",
+    "date_added": "2025-08-09T17:03:47-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Them Bones",
+        "duration": "2:30"
+      },
+      {
+        "position": "A2",
+        "title": "Dam That River",
+        "duration": "3:09"
+      },
+      {
+        "position": "A3",
+        "title": "Rain When I Die",
+        "duration": "6:02"
+      },
+      {
+        "position": "B1",
+        "title": "Down In A Hole",
+        "duration": "5:37"
+      },
+      {
+        "position": "B2",
+        "title": "Sickman",
+        "duration": "5:31"
+      },
+      {
+        "position": "B3",
+        "title": "Rooster",
+        "duration": "6:15"
+      },
+      {
+        "position": "C1",
+        "title": "Junkhead",
+        "duration": "5:09"
+      },
+      {
+        "position": "C2",
+        "title": "Dirt",
+        "duration": "5:17"
+      },
+      {
+        "position": "C3",
+        "title": "Godsmack",
+        "duration": "3:51"
+      },
+      {
+        "position": "C4",
+        "title": "Untitled",
+        "duration": "0:43"
+      },
+      {
+        "position": "D1",
+        "title": "Hate To Feel",
+        "duration": "5:17"
+      },
+      {
+        "position": "D2",
+        "title": "Angry Chair",
+        "duration": "4:48"
+      },
+      {
+        "position": "D3",
+        "title": "Would?",
+        "duration": "3:27"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 31.38,
+    "num_for_sale": 189,
+    "community_rating_avg": 4.74,
+    "community_rating_count": 911,
+    "community_have": 12370,
+    "community_want": 997
   },
   {
     "id": 14773940,
@@ -188,8 +1013,53 @@
     ],
     "label": "Debemur Morti Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:07:55-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Repress",
+    "country": "France",
+    "date_added": "2026-03-02T04:07:55-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Love Exchange Failure",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Poisonous Flowers Of Violence",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Dead Heart Confession",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Shelter",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "No Cure For Pain",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Surfaces And Depths",
+        "duration": ""
+      },
+      {
+        "position": "D",
+        "title": "Uncanny Delusions",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 46.51,
+    "num_for_sale": 6,
+    "community_rating_avg": 4.74,
+    "community_rating_count": 38,
+    "community_have": 314,
+    "community_want": 161
   },
   {
     "id": 30933321,
@@ -207,8 +1077,53 @@
     ],
     "label": "Debemur Morti Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-12-22T02:36:18-08:00"
+    "format_full": "Vinyl — 12\", 45 RPM, Album, Limited Edition, Stereo",
+    "country": "France",
+    "date_added": "2024-12-22T02:36:18-08:00",
+    "tracklist": [
+      {
+        "position": "AI",
+        "title": "To Flow Through Ashen Hearts",
+        "duration": "7:07"
+      },
+      {
+        "position": "AII",
+        "title": "The Dawn Is Hollow",
+        "duration": "7:33"
+      },
+      {
+        "position": "BIII",
+        "title": "Further Opening The Wounds",
+        "duration": "7:57"
+      },
+      {
+        "position": "BIV",
+        "title": "Transfiguration In And Out Of Worlds",
+        "duration": "8:32"
+      },
+      {
+        "position": "CV",
+        "title": "To See Death Just Once",
+        "duration": "8:24"
+      },
+      {
+        "position": "CVI",
+        "title": "Undying As An Apparition",
+        "duration": "9:33"
+      },
+      {
+        "position": "DVII",
+        "title": "Cutting The Throat Of God",
+        "duration": "8:42"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.88,
+    "num_for_sale": 21,
+    "community_rating_avg": 4.72,
+    "community_rating_count": 82,
+    "community_have": 1330,
+    "community_want": 212
   },
   {
     "id": 32485896,
@@ -226,8 +1141,58 @@
     ],
     "label": "Debemur Morti Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-08-09T16:59:57-07:00"
+    "format_full": "Vinyl — LP; Vinyl — LP, Single Sided; All Media — Album",
+    "country": "France",
+    "date_added": "2025-08-09T16:59:57-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Die Das Wilde Wetter Fängt",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Senkrechte Welten",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Felsensang",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Todesbiwak",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Der Wahnsinn Dort Im Abgrund",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Zurück Zur Roten Fluh",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Grausig Ist Der Blick",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Alptraum",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 15.47,
+    "num_for_sale": 16,
+    "community_rating_avg": 4.64,
+    "community_rating_count": 36,
+    "community_have": 519,
+    "community_want": 94
   },
   {
     "id": 16216374,
@@ -244,8 +1209,58 @@
     ],
     "label": "Debemur Morti Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T03:44:50-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue; Vinyl — LP, Single Sided, Album, Reissue",
+    "country": "France",
+    "date_added": "2026-03-02T03:44:50-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Épopée - Par Le Sang Versé",
+        "duration": "9:10"
+      },
+      {
+        "position": "A2",
+        "title": "La Sorcière Du Bois Lunerive",
+        "duration": "10:02"
+      },
+      {
+        "position": "A3",
+        "title": "L'Étrange Clairière : Partie I",
+        "duration": "2:02"
+      },
+      {
+        "position": "B1",
+        "title": "L'Étrange Clairière : Partie II",
+        "duration": "9:41"
+      },
+      {
+        "position": "B2",
+        "title": "La Dernière Chevauchée",
+        "duration": "9:39"
+      },
+      {
+        "position": "B3",
+        "title": "Le Sous-Bois, À Trois Lieues Du Château",
+        "duration": "2:39"
+      },
+      {
+        "position": "C1",
+        "title": "Passage Dans Les Douves",
+        "duration": "6:38"
+      },
+      {
+        "position": "C2",
+        "title": "La Fronde Des Anges",
+        "duration": "8:33"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 69.77,
+    "num_for_sale": 7,
+    "community_rating_avg": 4.84,
+    "community_rating_count": 31,
+    "community_have": 307,
+    "community_want": 229
   },
   {
     "id": 1055571,
@@ -260,8 +1275,88 @@
     "styles": [],
     "label": "Definitive Jux",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-06-26T16:16:29-07:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "US",
+    "date_added": "2023-06-26T16:16:29-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Keep Off The Lawn",
+        "duration": "3:45"
+      },
+      {
+        "position": "A2",
+        "title": "None Shall Pass",
+        "duration": "4:03"
+      },
+      {
+        "position": "A3",
+        "title": "Catacomb Kids",
+        "duration": "4:07"
+      },
+      {
+        "position": "A4",
+        "title": "Bring Back Pluto",
+        "duration": "4:29"
+      },
+      {
+        "position": "B1",
+        "title": "Fumes",
+        "duration": "5:00"
+      },
+      {
+        "position": "B2",
+        "title": "Getaway Car",
+        "duration": "3:15"
+      },
+      {
+        "position": "B3",
+        "title": "39 Thieves",
+        "duration": "4:15"
+      },
+      {
+        "position": "B4",
+        "title": "The Harbor Is Yours",
+        "duration": "3:58"
+      },
+      {
+        "position": "C1",
+        "title": "Citronella",
+        "duration": "4:53"
+      },
+      {
+        "position": "C2",
+        "title": "Gun For The Whole Family",
+        "duration": "3:53"
+      },
+      {
+        "position": "C3",
+        "title": "Five Fingers",
+        "duration": "4:06"
+      },
+      {
+        "position": "D1",
+        "title": "No City",
+        "duration": "4:28"
+      },
+      {
+        "position": "D2",
+        "title": "Dark Heart News",
+        "duration": "3:59"
+      },
+      {
+        "position": "D3",
+        "title": "Coffee",
+        "duration": "4:08"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 4.3,
+    "num_for_sale": 23,
+    "community_rating_avg": 4.44,
+    "community_rating_count": 179,
+    "community_have": 1433,
+    "community_want": 1422
   },
   {
     "id": 24682019,
@@ -276,8 +1371,98 @@
     "styles": [],
     "label": "Fat Possum Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-06-28T08:58:06-07:00"
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "US",
+    "date_added": "2023-06-28T08:58:06-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Fantastic Damage",
+        "duration": "3:22"
+      },
+      {
+        "position": "A2",
+        "title": "Squeegee Man Shooting",
+        "duration": "4:24"
+      },
+      {
+        "position": "A3",
+        "title": "Deep Space 9mm",
+        "duration": "3:47"
+      },
+      {
+        "position": "A4",
+        "title": "Tuned Mass Damper",
+        "duration": "4:05"
+      },
+      {
+        "position": "A5",
+        "title": "Dead Disnee",
+        "duration": "3:53"
+      },
+      {
+        "position": "B6",
+        "title": "DeLorean",
+        "duration": "5:33"
+      },
+      {
+        "position": "B7",
+        "title": "Truancy",
+        "duration": "5:04"
+      },
+      {
+        "position": "B8",
+        "title": "The Nang, The Front, The Bush & The Shit",
+        "duration": "5:37"
+      },
+      {
+        "position": "C9",
+        "title": "Accidents Don't Happen",
+        "duration": "4:50"
+      },
+      {
+        "position": "C10",
+        "title": "Stepfather Factory",
+        "duration": "4:11"
+      },
+      {
+        "position": "C11",
+        "title": "T.O.J.",
+        "duration": "4:32"
+      },
+      {
+        "position": "C12",
+        "title": "Dr. Hellno And The Praying Mantus",
+        "duration": "4:39"
+      },
+      {
+        "position": "D13",
+        "title": "Lazerfaces' Warning",
+        "duration": "4:36"
+      },
+      {
+        "position": "D14",
+        "title": "Innocent Leader",
+        "duration": "2:21"
+      },
+      {
+        "position": "D15",
+        "title": "Constellation Funk",
+        "duration": "4:58"
+      },
+      {
+        "position": "D16",
+        "title": "Blood",
+        "duration": "4:26"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 21.49,
+    "num_for_sale": 47,
+    "community_rating_avg": 4.64,
+    "community_rating_count": 69,
+    "community_have": 1341,
+    "community_want": 266
   },
   {
     "id": 10157097,
@@ -295,8 +1480,68 @@
     ],
     "label": "Fysisk Format",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-03-06T16:20:42-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "Norway",
+    "date_added": "2023-03-06T16:20:42-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Crtl + Art + Delete",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Cult Drugs",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Quitters Don't Smoke",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Nervous Laughter",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Gangsigns",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "You Can't Sit With Us",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "The Secret Impresses No One",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "White Skin//Tanned Teeth",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Initiation Tape # 1",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "[The World Covered In] Purple Shrouds",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 151.16,
+    "num_for_sale": 1,
+    "community_rating_avg": 4.19,
+    "community_rating_count": 21,
+    "community_have": 340,
+    "community_want": 196
   },
   {
     "id": 1095269,
@@ -317,8 +1562,113 @@
     ],
     "label": "Genius CD",
     "format": "CD",
-    "country": "",
-    "date_added": "2025-12-12T17:38:53-08:00"
+    "format_full": "CD — Album",
+    "country": "Romania",
+    "date_added": "2025-12-12T17:38:53-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Empire Of Vampires",
+        "duration": "4:29"
+      },
+      {
+        "position": "2.1",
+        "title": "Tamara",
+        "duration": ""
+      },
+      {
+        "position": "2.2",
+        "title": "Would You Follow Me Some Day...?",
+        "duration": ""
+      },
+      {
+        "position": "3.1",
+        "title": "Mica Țiganiadă",
+        "duration": ""
+      },
+      {
+        "position": "3.2",
+        "title": "Strunga",
+        "duration": ""
+      },
+      {
+        "position": "3.3",
+        "title": "Nunta",
+        "duration": ""
+      },
+      {
+        "position": "3.4",
+        "title": "Running",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "Andri Popa",
+        "duration": "2:59"
+      },
+      {
+        "position": "5.1",
+        "title": "De-a Lungul...",
+        "duration": ""
+      },
+      {
+        "position": "5.2",
+        "title": "Sârba-n Căruță",
+        "duration": ""
+      },
+      {
+        "position": "5.3",
+        "title": "Ciocârlia",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "Vasiliscul Și Aspida",
+        "duration": "2:57"
+      },
+      {
+        "position": "7",
+        "title": "Sirena",
+        "duration": "4:52"
+      },
+      {
+        "position": "8",
+        "title": "Balaurul",
+        "duration": "4:06"
+      },
+      {
+        "position": "9",
+        "title": "Stars Dance",
+        "duration": "4:04"
+      },
+      {
+        "position": "10",
+        "title": "Wanting To Be Free ...",
+        "duration": "4:48"
+      },
+      {
+        "position": "11",
+        "title": "Pasărea Calandrinon",
+        "duration": "4:39"
+      },
+      {
+        "position": "12",
+        "title": "Pasărea Roc(k)-And Roll",
+        "duration": "4:11"
+      },
+      {
+        "position": "13",
+        "title": "Negru Vodă",
+        "duration": "11:11"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 11.63,
+    "num_for_sale": 2,
+    "community_rating_avg": 4.44,
+    "community_rating_count": 9,
+    "community_have": 54,
+    "community_want": 35
   },
   {
     "id": 4100552,
@@ -338,8 +1688,58 @@
     ],
     "label": "Grau",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:00:56-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Repress",
+    "country": "Germany",
+    "date_added": "2026-03-02T04:00:56-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Limbs",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Falling Snow",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "This White Mountain On Which You Will Die",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Fire Above, Ice Below",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Not Unlike The Waves",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Our Fortress Is Burning",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Bloodbirds",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "The Grain",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 63.95,
+    "num_for_sale": 17,
+    "community_rating_avg": 4.73,
+    "community_rating_count": 182,
+    "community_have": 1262,
+    "community_want": 512
   },
   {
     "id": 5828931,
@@ -356,8 +1756,33 @@
     ],
     "label": "Iron Bonehead Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:23:58-08:00"
+    "format_full": "Vinyl — 12\", 45 RPM, EP, Limited Edition, Repress",
+    "country": "Germany",
+    "date_added": "2026-03-02T04:23:58-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "C.M.E.",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Entranced By The Wolfshook ",
+        "duration": ""
+      },
+      {
+        "position": "B",
+        "title": "The Great Unifier",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 8.14,
+    "num_for_sale": 30,
+    "community_rating_avg": 4.58,
+    "community_rating_count": 136,
+    "community_have": 1621,
+    "community_want": 146
   },
   {
     "id": 15405750,
@@ -376,8 +1801,63 @@
     ],
     "label": "Kings Of Stonerpunk Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-03-06T16:19:09-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue, Repress",
+    "country": "Norway",
+    "date_added": "2023-03-06T16:19:09-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Impending Doom",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Last Night (Was a Real Massacre)",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Walker Texas Danger",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Crocsodile Dundee",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Genocidal Tendencies",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Five Finger Fuckhead",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Here Goes Nothing",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Retaliation",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Immortal Space (The Stoner Anthem)",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 44.34,
+    "num_for_sale": 2,
+    "community_rating_avg": 5,
+    "community_rating_count": 4,
+    "community_have": 75,
+    "community_want": 21
   },
   {
     "id": 5346422,
@@ -396,8 +1876,73 @@
     ],
     "label": "MediaPro Music",
     "format": "CD",
-    "country": "",
-    "date_added": "2025-10-03T17:02:51-07:00"
+    "format_full": "CD — Album",
+    "country": "Romania",
+    "date_added": "2025-10-03T17:02:51-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Pentru Servă Și Teren",
+        "duration": "0:20"
+      },
+      {
+        "position": "2",
+        "title": "Calatis 2000",
+        "duration": "2:48"
+      },
+      {
+        "position": "3",
+        "title": "Tot Ska",
+        "duration": "2:26"
+      },
+      {
+        "position": "4",
+        "title": "Duminica",
+        "duration": "3:21"
+      },
+      {
+        "position": "5",
+        "title": "Moșu",
+        "duration": "2:15"
+      },
+      {
+        "position": "6",
+        "title": "Și Bogații Plâng",
+        "duration": "3:51"
+      },
+      {
+        "position": "7",
+        "title": "Cafea Cu Parfum De Femeie",
+        "duration": "2:41"
+      },
+      {
+        "position": "8",
+        "title": "Manelita",
+        "duration": "2:01"
+      },
+      {
+        "position": "9",
+        "title": "Casa Ta",
+        "duration": "2:52"
+      },
+      {
+        "position": "10",
+        "title": "Star De Cinema(tograf)",
+        "duration": "3:08"
+      },
+      {
+        "position": "11",
+        "title": "Ne Vom Întâlni",
+        "duration": "4:23"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 327.03,
+    "num_for_sale": 1,
+    "community_rating_avg": 4,
+    "community_rating_count": 2,
+    "community_have": 8,
+    "community_want": 13
   },
   {
     "id": 33667065,
@@ -419,8 +1964,53 @@
     ],
     "label": "Metal Blade Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-08-09T16:58:29-07:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "Europe",
+    "date_added": "2025-08-09T16:58:29-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Void Meridian",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "At Races",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Fire On The Roof",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Immolation",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "The Dress",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Reveal",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Thicker Blood",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 11.63,
+    "num_for_sale": 7,
+    "community_rating_avg": 4.84,
+    "community_rating_count": 51,
+    "community_have": 596,
+    "community_want": 129
   },
   {
     "id": 2179533,
@@ -438,8 +2028,78 @@
     ],
     "label": "Music On Vinyl",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-02-24T18:05:01-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Repress",
+    "country": "Europe",
+    "date_added": "2023-02-24T18:05:01-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Testify",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Guerrilla Radio",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Calm Like A Bomb",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Mic Check",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Sleep Now In The Fire",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Born Of A Broken Man",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Born As Ghosts",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Maria",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Voice Of The Voiceless",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "New Millennium Homes",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Ashes In The Fall",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "War Within A Breath",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 36.03,
+    "num_for_sale": 29,
+    "community_rating_avg": 4.55,
+    "community_rating_count": 483,
+    "community_have": 5629,
+    "community_want": 1585
   },
   {
     "id": 31184230,
@@ -459,8 +2119,43 @@
     ],
     "label": "Ninja Tune",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-08-09T17:07:31-07:00"
+    "format_full": "Vinyl — 12\", 45 RPM, EP",
+    "country": "UK",
+    "date_added": "2025-08-09T17:07:31-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Horizon",
+        "duration": "0:42"
+      },
+      {
+        "position": "A2",
+        "title": "Mahal",
+        "duration": "3:21"
+      },
+      {
+        "position": "A3",
+        "title": "Orb",
+        "duration": "4:54"
+      },
+      {
+        "position": "B1",
+        "title": "Snake Oil",
+        "duration": "4:55"
+      },
+      {
+        "position": "B2",
+        "title": "Black Sand",
+        "duration": "4:38"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 19.69,
+    "num_for_sale": 70,
+    "community_rating_avg": 4.75,
+    "community_rating_count": 234,
+    "community_have": 3187,
+    "community_want": 728
   },
   {
     "id": 19524739,
@@ -477,8 +2172,43 @@
     ],
     "label": "Not On Label (Musk Ox Self-released)",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-12-22T05:52:32-08:00"
+    "format_full": "Vinyl — LP",
+    "country": "Canada",
+    "date_added": "2024-12-22T05:52:32-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Inheritance (Part 1 - Premonition)",
+        "duration": "5:55"
+      },
+      {
+        "position": "B1",
+        "title": "Inheritance (Part 2 - Hindsight)",
+        "duration": "17:31"
+      },
+      {
+        "position": "C1",
+        "title": "Memorium",
+        "duration": "6:01"
+      },
+      {
+        "position": "C2",
+        "title": "Ritual",
+        "duration": "11:18"
+      },
+      {
+        "position": "D1",
+        "title": "Weightless",
+        "duration": "7:10"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 73.1,
+    "num_for_sale": 1,
+    "community_rating_avg": 5,
+    "community_rating_count": 2,
+    "community_have": 28,
+    "community_want": 30
   },
   {
     "id": 4909764,
@@ -495,8 +2225,73 @@
     ],
     "label": "Nuclear Blast",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-01-27T03:42:47-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "US",
+    "date_added": "2026-01-27T03:42:47-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "1985",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Thrasher's Abattoir\t",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Cadaver Pouch Conveyor System\t",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "A Congealed Clot Of Blood\t",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "The Master Butcher's Apron\t",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Noncompliance To ASTM F 899-12 Standard\t",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "The Granulating Dark Satanic Mills\t",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Unfit For Human Consumption\t",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "316L Grade Surgical Steel\t",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Captive Bolt Pistol\t",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Mount Of Execution\t",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 17.2,
+    "num_for_sale": 7,
+    "community_rating_avg": 4.31,
+    "community_rating_count": 67,
+    "community_have": 727,
+    "community_want": 186
   },
   {
     "id": 25797823,
@@ -513,8 +2308,58 @@
     ],
     "label": "Osmose Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-03-02T04:17:13-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue, Repress",
+    "country": "Europe",
+    "date_added": "2026-03-02T04:17:13-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Unsilent Storms In The North Abyss",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "A Sign For The Norse Hordes To Ride",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "The Sun No Longer Rises",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Frozen By Icewinds",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Storming Through Red Clouds And Holocaustwinds",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Eternal Years On The Path To The Cemetary Gates",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "title": "As The Eternity Opens",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "title": "Pure Holocaust",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 29.24,
+    "num_for_sale": 7,
+    "community_rating_avg": 4.87,
+    "community_rating_count": 31,
+    "community_have": 354,
+    "community_want": 127
   },
   {
     "id": 12750156,
@@ -531,8 +2376,48 @@
     ],
     "label": "Osmose Productions",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-03-07T16:10:02-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue, Repress",
+    "country": "Europe",
+    "date_added": "2023-03-07T16:10:02-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Withstand The Fall Of Time",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Solarfall",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Tragedies Blows At Horizon",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Where Dark And Light Don't Differ",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "At The Heart Of Winter",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Years Of Silent Sorrow \t",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 51.16,
+    "num_for_sale": 4,
+    "community_rating_avg": 4.55,
+    "community_rating_count": 11,
+    "community_have": 65,
+    "community_want": 155
   },
   {
     "id": 21132019,
@@ -554,8 +2439,118 @@
     ],
     "label": "Ostgut Ton",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-01-13T06:25:53-08:00"
+    "format_full": "Vinyl — 12\", Compilation, Stereo",
+    "country": "Germany",
+    "date_added": "2025-01-13T06:25:53-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Rimba7",
+        "duration": "5:26"
+      },
+      {
+        "position": "A2",
+        "title": "Champu Princess",
+        "duration": "6:36"
+      },
+      {
+        "position": "B1",
+        "title": "An Ode To Audre",
+        "duration": "6:05"
+      },
+      {
+        "position": "B2",
+        "title": "Session 2",
+        "duration": "7:36"
+      },
+      {
+        "position": "C1",
+        "title": "Temple Of Love",
+        "duration": "9:53"
+      },
+      {
+        "position": "C2",
+        "title": "Años Perros",
+        "duration": "7:29"
+      },
+      {
+        "position": "D1",
+        "title": "9/8 Gumbo",
+        "duration": "6:46"
+      },
+      {
+        "position": "D2",
+        "title": "A Friend Of A Friend",
+        "duration": "6:09"
+      },
+      {
+        "position": "D3",
+        "title": "The Call",
+        "duration": "5:36"
+      },
+      {
+        "position": "E1",
+        "title": "Untitled 15+1",
+        "duration": "7:20"
+      },
+      {
+        "position": "E2",
+        "title": "Ever Given",
+        "duration": "10:14"
+      },
+      {
+        "position": "F1",
+        "title": "Reset Walking",
+        "duration": "4:51"
+      },
+      {
+        "position": "F2",
+        "title": "Iteration",
+        "duration": "5:36"
+      },
+      {
+        "position": "F3",
+        "title": "One Final Thing (Not Zero)",
+        "duration": "5:01"
+      },
+      {
+        "position": "G1",
+        "title": "B-Section",
+        "duration": "6:31"
+      },
+      {
+        "position": "H1",
+        "title": "Fontane",
+        "duration": "6:42"
+      },
+      {
+        "position": "H2",
+        "title": "Ride Out The Wave",
+        "duration": "6:43"
+      },
+      {
+        "position": "I1",
+        "title": "Labskaus",
+        "duration": "6:09"
+      },
+      {
+        "position": "I2",
+        "title": "Cigarette Glow",
+        "duration": "6:23"
+      },
+      {
+        "position": "J1",
+        "title": "Remember The Future",
+        "duration": "6:33"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 0.35,
+    "num_for_sale": 11,
+    "community_rating_avg": 4.67,
+    "community_rating_count": 36,
+    "community_have": 285,
+    "community_want": 295
   },
   {
     "id": 27812061,
@@ -579,8 +2574,93 @@
     ],
     "label": "Owsla",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-12-25T05:36:48-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "USA & Canada",
+    "date_added": "2024-12-25T05:36:48-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Leave Me Like This",
+        "duration": "3:08"
+      },
+      {
+        "position": "A2",
+        "title": "Ratata",
+        "duration": "2:06"
+      },
+      {
+        "position": "A3",
+        "title": "Tears",
+        "duration": "3:05"
+      },
+      {
+        "position": "A4",
+        "title": "Rumble",
+        "duration": "2:26"
+      },
+      {
+        "position": "B1",
+        "title": "Butterflies",
+        "duration": "3:15"
+      },
+      {
+        "position": "B2",
+        "title": "Inhale Exhale",
+        "duration": "3:25"
+      },
+      {
+        "position": "B3",
+        "title": "A Street I Know",
+        "duration": "3:35"
+      },
+      {
+        "position": "B4",
+        "title": "Xena",
+        "duration": "4:11"
+      },
+      {
+        "position": "C1",
+        "title": "Too Bizarre (Juked)",
+        "duration": "3:28"
+      },
+      {
+        "position": "C2",
+        "title": "Hydrate",
+        "duration": "3:36"
+      },
+      {
+        "position": "C3",
+        "title": "Warped Tour '05",
+        "duration": "0:48"
+      },
+      {
+        "position": "C4",
+        "title": "Good Space",
+        "duration": "2:12"
+      },
+      {
+        "position": "D1",
+        "title": "Supersonic (My Existence)",
+        "duration": "2:45"
+      },
+      {
+        "position": "D2",
+        "title": "Hazel Theme",
+        "duration": "1:51"
+      },
+      {
+        "position": "D3",
+        "title": "Still Here (With The Ones That I Came With)",
+        "duration": "5:03"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 13.75,
+    "num_for_sale": 43,
+    "community_rating_avg": 4.67,
+    "community_rating_count": 263,
+    "community_have": 3471,
+    "community_want": 937
   },
   {
     "id": 10315981,
@@ -597,8 +2677,78 @@
     ],
     "label": "Parlophone",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-03-06T01:23:04-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2025-03-06T01:23:04-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Be Quick Or Be Dead",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "From Here To Eternity",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Afraid To Shoot Strangers",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Fear Is The Key",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Childhood's End",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Wasting Love",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "The Fugitive",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Chains Of Misery",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "The Apparition",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Judas Be My Guide",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Weekend Warrior",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Fear Of The Dark",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 23.26,
+    "num_for_sale": 150,
+    "community_rating_avg": 4.58,
+    "community_rating_count": 1082,
+    "community_have": 11905,
+    "community_want": 1385
   },
   {
     "id": 6367043,
@@ -619,8 +2769,98 @@
     ],
     "label": "Parlophone",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-03-23T18:28:07-07:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Repress",
+    "country": "Europe",
+    "date_added": "2023-03-23T18:28:07-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Daftendirekt",
+        "duration": "2:44"
+      },
+      {
+        "position": "A2",
+        "title": "WDPK 83.7 FM",
+        "duration": "0:28"
+      },
+      {
+        "position": "A3",
+        "title": "Revolution 909",
+        "duration": "5:26"
+      },
+      {
+        "position": "A4",
+        "title": "Da Funk",
+        "duration": "5:28"
+      },
+      {
+        "position": "A5",
+        "title": "Phœnix",
+        "duration": "4:55"
+      },
+      {
+        "position": "B6",
+        "title": "Fresh",
+        "duration": "4:03"
+      },
+      {
+        "position": "B7",
+        "title": "Around The World",
+        "duration": "7:07"
+      },
+      {
+        "position": "B8",
+        "title": "Rollin' & Scratchin'",
+        "duration": "7:26"
+      },
+      {
+        "position": "C9",
+        "title": "Teachers",
+        "duration": "2:52"
+      },
+      {
+        "position": "C10",
+        "title": "High Fidelity",
+        "duration": "6:00"
+      },
+      {
+        "position": "C11",
+        "title": "Rock'n Roll",
+        "duration": "7:32"
+      },
+      {
+        "position": "C12",
+        "title": "Oh Yeah",
+        "duration": "2:00"
+      },
+      {
+        "position": "D13",
+        "title": "Burnin'",
+        "duration": "6:53"
+      },
+      {
+        "position": "D14",
+        "title": "Indo Silver Club",
+        "duration": "4:32"
+      },
+      {
+        "position": "D15",
+        "title": "Alive",
+        "duration": "5:15"
+      },
+      {
+        "position": "D16",
+        "title": "Funk Ad",
+        "duration": "0:50"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 30.58,
+    "num_for_sale": 32,
+    "community_rating_avg": 4.63,
+    "community_rating_count": 761,
+    "community_have": 6321,
+    "community_want": 2464
   },
   {
     "id": 3961344,
@@ -637,8 +2877,58 @@
     ],
     "label": "Peaceville",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-03-05T09:05:38-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "UK",
+    "date_added": "2024-03-05T09:05:38-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Kneel Till Doomsday",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Poorest Waltz",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "A Tapestry Scorned",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Like A Perpetual Funeral",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "A Map Of All Our Failures",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Hail Odysseus",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Within The Presence Of Absence",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Abandoned As Christ",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 39.37,
+    "num_for_sale": 8,
+    "community_rating_avg": 4.61,
+    "community_rating_count": 74,
+    "community_have": 670,
+    "community_want": 170
   },
   {
     "id": 6127323,
@@ -655,8 +2945,58 @@
     ],
     "label": "Peaceville",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-02-24T17:35:53-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Europe",
+    "date_added": "2023-02-24T17:35:53-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "The Dreadful Hours",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Raven And The Rose",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Le Figlie Della Tempesta",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Black Heart Romance",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "A Cruel Taste Of Winter",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "My Hope, The Destroyer",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "The Deepest Of All Hearts",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "The Return To The Beautiful",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.88,
+    "num_for_sale": 14,
+    "community_rating_avg": 4.61,
+    "community_rating_count": 85,
+    "community_have": 811,
+    "community_want": 283
   },
   {
     "id": 26765768,
@@ -675,8 +3015,63 @@
     ],
     "label": "Peaceville",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-08-01T14:45:44-07:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "Europe",
+    "date_added": "2023-08-01T14:45:44-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Et Smelter",
+        "duration": "10:19"
+      },
+      {
+        "position": "A2",
+        "title": "Tankespinnerens Smerte",
+        "duration": "7:43"
+      },
+      {
+        "position": "B1",
+        "title": "Interstellar Nexus",
+        "duration": "8:01"
+      },
+      {
+        "position": "B2",
+        "title": "It Does Not Follow",
+        "duration": "8:23"
+      },
+      {
+        "position": "B3",
+        "title": "Voyager",
+        "duration": "1:46"
+      },
+      {
+        "position": "C1",
+        "title": "Halow",
+        "duration": "9:38"
+      },
+      {
+        "position": "C2",
+        "title": "Det Tomme Kalde Mørke",
+        "duration": "7:35"
+      },
+      {
+        "position": "D1",
+        "title": "Abyss Perihelion Transit",
+        "duration": "10:59"
+      },
+      {
+        "position": "D2",
+        "title": "Requiem Aeternum",
+        "duration": "5:12"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.39,
+    "num_for_sale": 28,
+    "community_rating_avg": 4.83,
+    "community_rating_count": 108,
+    "community_have": 1253,
+    "community_want": 248
   },
   {
     "id": 33052227,
@@ -696,8 +3091,78 @@
     ],
     "label": "pgLang",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-03-06T01:20:09-08:00"
+    "format_full": "Vinyl — LP, Album",
+    "country": "UK & Europe",
+    "date_added": "2025-03-06T01:20:09-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Wacced Out Murals",
+        "duration": "5:17"
+      },
+      {
+        "position": "A2",
+        "title": "Squabble Up",
+        "duration": "2:38"
+      },
+      {
+        "position": "A3",
+        "title": "Luther",
+        "duration": "2:58"
+      },
+      {
+        "position": "A4",
+        "title": "Man At The Garden",
+        "duration": "3:53"
+      },
+      {
+        "position": "A5",
+        "title": "Hey Now",
+        "duration": "3:38"
+      },
+      {
+        "position": "A6",
+        "title": "Reincarnated",
+        "duration": "4:36"
+      },
+      {
+        "position": "B1",
+        "title": "TV Off",
+        "duration": "3:41"
+      },
+      {
+        "position": "B2",
+        "title": "Dodger Blue",
+        "duration": "2:11"
+      },
+      {
+        "position": "B3",
+        "title": "Peekaboo",
+        "duration": "2:36"
+      },
+      {
+        "position": "B4",
+        "title": "Heart Pt. 6",
+        "duration": "4:52"
+      },
+      {
+        "position": "B5",
+        "title": "GNX",
+        "duration": "3:14"
+      },
+      {
+        "position": "B6",
+        "title": "Gloria",
+        "duration": "4:48"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 32.56,
+    "num_for_sale": 46,
+    "community_rating_avg": 4.51,
+    "community_rating_count": 833,
+    "community_have": 10529,
+    "community_want": 3234
   },
   {
     "id": 12004382,
@@ -715,8 +3180,143 @@
     ],
     "label": "Pink Floyd Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-03-03T17:46:00-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered; Box Set",
+    "country": "Europe",
+    "date_added": "2023-03-03T17:46:00-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Shine On You Crazy Diamond",
+        "duration": "13:30"
+      },
+      {
+        "position": "A2",
+        "title": "Astronomy Domine",
+        "duration": "5:25"
+      },
+      {
+        "position": "A3",
+        "title": "What Do You Want From Me",
+        "duration": "4:10"
+      },
+      {
+        "position": "B1",
+        "title": "Learning To Fly",
+        "duration": "5:06"
+      },
+      {
+        "position": "B2",
+        "title": "Keep Talking",
+        "duration": "6:56"
+      },
+      {
+        "position": "B3",
+        "title": "Coming Back To Life",
+        "duration": "6:31"
+      },
+      {
+        "position": "C1",
+        "title": "Hey You",
+        "duration": "4:50"
+      },
+      {
+        "position": "C2",
+        "title": "A Great Day For Freedom",
+        "duration": "4:20"
+      },
+      {
+        "position": "C3",
+        "title": "Sorrow",
+        "duration": "10:30"
+      },
+      {
+        "position": "D1",
+        "title": "High Hopes",
+        "duration": "7:50"
+      },
+      {
+        "position": "D2",
+        "title": "Another Brick In The Wall (Part Two)",
+        "duration": "6:50"
+      },
+      {
+        "position": "D3",
+        "title": "One Of These Days",
+        "duration": "6:51"
+      },
+      {
+        "position": "E1",
+        "title": "Speak To Me",
+        "duration": "2:28"
+      },
+      {
+        "position": "E2",
+        "title": "Breathe",
+        "duration": "2:40"
+      },
+      {
+        "position": "E3",
+        "title": "On The Run",
+        "duration": "3:41"
+      },
+      {
+        "position": "E4",
+        "title": "Time",
+        "duration": "6:48"
+      },
+      {
+        "position": "F1",
+        "title": "The Great Gig In The Sky",
+        "duration": "5:51"
+      },
+      {
+        "position": "F2",
+        "title": "Money",
+        "duration": "8:46"
+      },
+      {
+        "position": "G1",
+        "title": "Us And Them",
+        "duration": "7:08"
+      },
+      {
+        "position": "G2",
+        "title": "Any Colour You Like",
+        "duration": "3:19"
+      },
+      {
+        "position": "G3",
+        "title": "Brain Damage",
+        "duration": "4:02"
+      },
+      {
+        "position": "G4",
+        "title": "Eclipse",
+        "duration": "1:38"
+      },
+      {
+        "position": "H1",
+        "title": "Wish You Were Here",
+        "duration": "5:40"
+      },
+      {
+        "position": "H2",
+        "title": "Comfortably Numb",
+        "duration": "9:10"
+      },
+      {
+        "position": "H3",
+        "title": "Run Like Hell",
+        "duration": "7:58"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 91.36,
+    "num_for_sale": 109,
+    "community_rating_avg": 4.84,
+    "community_rating_count": 1398,
+    "community_have": 11166,
+    "community_want": 2182
   },
   {
     "id": 11088399,
@@ -734,8 +3334,153 @@
     ],
     "label": "Roadrunner Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-02-24T17:46:38-08:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2023-02-24T17:46:38-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Roots Bloody Roots",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Attitude",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Cut-Throat",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Ratamahatta",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Breed Apart",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Straighthate",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Spit",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Lookaway",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Dusted",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Born Stubborn",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Jasco",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Itsári",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "title": "Ambush",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Endangered Species",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Dictatorshit",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Ratamahatta (2 Meter Sessions)",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "title": "Roots Bloody Roots (2 Meter Sessions)",
+        "duration": ""
+      },
+      {
+        "position": "C5",
+        "title": "Attitude (2 Meter Sessions)",
+        "duration": ""
+      },
+      {
+        "position": "C6",
+        "title": "Kaiowas (Take 1, Previously Unreleased)",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Procreation (Of The Wicked)",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Roots Bloody Roots (Demo)",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Attitude (Instrumental Rough Mix)",
+        "duration": ""
+      },
+      {
+        "position": "D4",
+        "title": "Cutthroat (Instrumental Rough Mix)",
+        "duration": ""
+      },
+      {
+        "position": "D5",
+        "title": "Dictatorshit (Instrumental Rough Mix)",
+        "duration": ""
+      },
+      {
+        "position": "D6",
+        "title": "Untitled (Demo)",
+        "duration": ""
+      },
+      {
+        "position": "D7",
+        "title": "R.D.P. (Demo)",
+        "duration": ""
+      },
+      {
+        "position": "D8",
+        "title": "Dusted (Demo)",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 25.8,
+    "num_for_sale": 56,
+    "community_rating_avg": 4.61,
+    "community_rating_count": 412,
+    "community_have": 4880,
+    "community_want": 859
   },
   {
     "id": 33934431,
@@ -752,8 +3497,58 @@
     ],
     "label": "Season Of Mist",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2026-01-27T03:43:42-08:00"
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue",
+    "country": "Worldwide",
+    "date_added": "2026-01-27T03:43:42-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Crown Of Horns",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Slit Your Guts",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Graves Of The Fathers",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Dead And Dripping",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Benedictine Convulsions",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Phobophile",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "title": "Lichmistress ",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "title": "Orgiastic Disembowelment ",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.88,
+    "num_for_sale": 4,
+    "community_rating_avg": 4.77,
+    "community_rating_count": 22,
+    "community_have": 316,
+    "community_want": 103
   },
   {
     "id": 428062,
@@ -770,8 +3565,48 @@
     ],
     "label": "United Artists Records",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2024-02-16T03:25:16-08:00"
+    "format_full": "Vinyl — LP, Album, Stereo",
+    "country": "US",
+    "date_added": "2024-02-16T03:25:16-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "The Cisco Kid",
+        "duration": "4:35"
+      },
+      {
+        "position": "A2",
+        "title": "Where Was You At",
+        "duration": "3:25"
+      },
+      {
+        "position": "A3",
+        "title": "City, Country, City",
+        "duration": "13:18"
+      },
+      {
+        "position": "B1",
+        "title": "Four Cornered Room",
+        "duration": "8:30"
+      },
+      {
+        "position": "B2",
+        "title": "The World Is A Ghetto",
+        "duration": "10:10"
+      },
+      {
+        "position": "B3",
+        "title": "Beetles In The Bog",
+        "duration": "3:51"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 2.32,
+    "num_for_sale": 100,
+    "community_rating_avg": 4.32,
+    "community_rating_count": 675,
+    "community_have": 9792,
+    "community_want": 2362
   },
   {
     "id": 34400824,
@@ -789,8 +3624,48 @@
     ],
     "label": "Willowtip",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2025-08-09T17:01:17-07:00"
+    "format_full": "Vinyl — LP",
+    "country": "US",
+    "date_added": "2025-08-09T17:01:17-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "A Vinculis Soluta I",
+        "duration": "7:19"
+      },
+      {
+        "position": "2",
+        "title": "A Vinculis Soluta II",
+        "duration": "8:19"
+      },
+      {
+        "position": "3",
+        "title": "Catechesis I",
+        "duration": "7:20"
+      },
+      {
+        "position": "4",
+        "title": "Catechesis II",
+        "duration": "6:32"
+      },
+      {
+        "position": "5",
+        "title": "Catechesis III",
+        "duration": "5:16"
+      },
+      {
+        "position": "6",
+        "title": "Catechesis IV",
+        "duration": "6:16"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": null,
+    "num_for_sale": 0,
+    "community_rating_avg": 4,
+    "community_rating_count": 1,
+    "community_have": 20,
+    "community_want": 12
   },
   {
     "id": 34762490,
@@ -808,8 +3683,68 @@
     ],
     "label": "Wolf Mountain Productions",
     "format": "CD",
-    "country": "",
-    "date_added": "2025-08-10T03:42:59-07:00"
+    "format_full": "CD — Album",
+    "country": "USA & Europe",
+    "date_added": "2025-08-10T03:42:59-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Dusk (Eulogy)",
+        "duration": "1:02"
+      },
+      {
+        "position": "2",
+        "title": "Wardrums At Dawn On The Day Of My Death",
+        "duration": "4:54"
+      },
+      {
+        "position": "3",
+        "title": "The Dying Breath Of A Sacred Stag",
+        "duration": "7:44"
+      },
+      {
+        "position": "4",
+        "title": "The Earth Is Weeping",
+        "duration": "3:38"
+      },
+      {
+        "position": "5",
+        "title": "God Of Black Blood",
+        "duration": "5:51"
+      },
+      {
+        "position": "6",
+        "title": "Traversing The Forest Of Eternal Dark",
+        "duration": "3:38"
+      },
+      {
+        "position": "7",
+        "title": "Tears Of The Dawn",
+        "duration": "9:17"
+      },
+      {
+        "position": "8",
+        "title": "Like Wind Through The Reeds Making Waves Like Water",
+        "duration": "2:48"
+      },
+      {
+        "position": "9",
+        "title": "And He Became The Burning Stars...",
+        "duration": "9:50"
+      },
+      {
+        "position": "10",
+        "title": "Fleshbound ",
+        "duration": "4:03"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 17.28,
+    "num_for_sale": 3,
+    "community_rating_avg": 4.72,
+    "community_rating_count": 32,
+    "community_have": 293,
+    "community_want": 85
   },
   {
     "id": 10471009,
@@ -829,7 +3764,132 @@
     ],
     "label": "XL Recordings",
     "format": "Vinyl",
-    "country": "",
-    "date_added": "2023-08-11T16:18:50-07:00"
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered; Vinyl — LP, Compilation",
+    "country": "Europe",
+    "date_added": "2023-08-11T16:18:50-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Airbag",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Paranoid Android",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Subterranean Homesick Alien",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Exit Music (For A Film)",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Let Down",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Karma Police",
+        "duration": ""
+      },
+      {
+        "position": "C7",
+        "title": "Fitter Happier",
+        "duration": ""
+      },
+      {
+        "position": "C8",
+        "title": "Electioneering",
+        "duration": ""
+      },
+      {
+        "position": "C9",
+        "title": "Climbing Up The Walls",
+        "duration": ""
+      },
+      {
+        "position": "C10",
+        "title": "No Surprises",
+        "duration": ""
+      },
+      {
+        "position": "D11",
+        "title": "Lucky",
+        "duration": ""
+      },
+      {
+        "position": "D12",
+        "title": "The Tourist",
+        "duration": ""
+      },
+      {
+        "position": "E13",
+        "title": "I Promise",
+        "duration": ""
+      },
+      {
+        "position": "E14",
+        "title": "Man Of War",
+        "duration": ""
+      },
+      {
+        "position": "E15",
+        "title": "Lift",
+        "duration": ""
+      },
+      {
+        "position": "E16",
+        "title": "Lull",
+        "duration": ""
+      },
+      {
+        "position": "E17",
+        "title": "Meeting In The Aisle",
+        "duration": ""
+      },
+      {
+        "position": "F18",
+        "title": "Melatonin",
+        "duration": ""
+      },
+      {
+        "position": "F19",
+        "title": "A Reminder",
+        "duration": ""
+      },
+      {
+        "position": "F20",
+        "title": "Polyethylene (Parts 1 & 2)",
+        "duration": ""
+      },
+      {
+        "position": "F21",
+        "title": "Pearly*",
+        "duration": ""
+      },
+      {
+        "position": "F22",
+        "title": "Palo Alto",
+        "duration": ""
+      },
+      {
+        "position": "F23",
+        "title": "How I Made My Millions",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.88,
+    "num_for_sale": 99,
+    "community_rating_avg": 4.82,
+    "community_rating_count": 1658,
+    "community_have": 15598,
+    "community_want": 2957
   }
 ]
