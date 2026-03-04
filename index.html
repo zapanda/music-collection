@@ -681,6 +681,38 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 
 .error-text{color:var(--red);font-size:12px;margin-top:12px;display:none}
 
+/* Mobile filters toggle — hidden on desktop, shown inside media query below */
+.filters-mobile-bar{
+  display:none;
+  padding:8px 16px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg2);
+  align-items:center;
+  gap:8px;
+}
+.filters-toggle-btn{
+  background:var(--surface);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:var(--radius-sm);
+  font-family:'Inter',sans-serif;
+  font-size:12px;
+  font-weight:500;
+  cursor:pointer;
+}
+.filters-mobile-search{
+  flex:1;
+  background:var(--surface);
+  color:var(--text);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:var(--radius-sm);
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  outline:none;
+}
+
 /* ── RESPONSIVE ── */
 @media(max-width:700px){
   header{
@@ -735,37 +767,6 @@ select:focus,.search-input:focus{border-color:var(--accent)}
   .modal-art-link{font-size:11px;padding:6px 10px}
 }
 
-/* Mobile filters toggle */
-.filters-mobile-bar{
-  display:none;
-  padding:8px 16px;
-  border-bottom:1px solid var(--border);
-  background:var(--bg2);
-  align-items:center;
-  gap:8px;
-}
-.filters-toggle-btn{
-  background:var(--surface);
-  color:var(--text);
-  border:1px solid var(--border);
-  padding:6px 10px;
-  border-radius:var(--radius-sm);
-  font-family:'Inter',sans-serif;
-  font-size:12px;
-  font-weight:500;
-  cursor:pointer;
-}
-.filters-mobile-search{
-  flex:1;
-  background:var(--surface);
-  color:var(--text);
-  border:1px solid var(--border);
-  padding:6px 10px;
-  border-radius:var(--radius-sm);
-  font-family:'Inter',sans-serif;
-  font-size:13px;
-  outline:none;
-}
 </style>
 </head>
 <body>
