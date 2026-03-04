@@ -681,6 +681,18 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 
 .error-text{color:var(--red);font-size:12px;margin-top:12px;display:none}
 
+/* ── WANTLIST ENRICHMENT ── */
+.wantlist-price-badge{
+  font-size:10px;font-weight:600;letter-spacing:.02em;
+  margin-top:4px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;
+}
+.wantlist-price{color:var(--green)}
+.wantlist-forsale{color:var(--text-dim)}
+.wantlist-nosale{color:var(--red);font-style:italic}
+.wantlist-community{font-size:10px;color:var(--text-dim);margin-top:2px}
+.wantlist-community span{color:var(--star)}
+.album-row-price{font-size:11px;color:var(--green);font-weight:600;flex-shrink:0;margin-left:8px}
+
 /* Mobile filters toggle — hidden on desktop, shown inside media query below */
 .filters-mobile-bar{
   display:none;
@@ -921,6 +933,12 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     <p>Fetches your Discogs collection (and wantlist) and merges it with your ratings from 1001albumsgenerator. Your token is only used during this session.</p>
     <label for="tokenInput">Discogs User Token</label>
     <input class="token-input" type="password" id="tokenInput" placeholder="Paste your token here…">
+    <div class="enrich-wantlist-opt" style="display:flex;align-items:center;gap:9px;margin-bottom:20px">
+      <input type="checkbox" id="enrichWantlistCheck" style="width:15px;height:15px;accent-color:var(--accent);cursor:pointer;flex-shrink:0">
+      <label for="enrichWantlistCheck" style="font-size:12px;color:var(--text-mid);cursor:pointer;line-height:1.5">
+        Enrich wantlist <span style="color:var(--text-dim)">(fetches pricing, availability &amp; ratings per item — adds ~1 min per 50 records)</span>
+      </label>
+    </div>
     <div class="update-actions">
       <button class="btn-fetch" id="fetchBtn" onclick="fetchCollection()">Fetch &amp; Merge</button>
       <button class="btn-cancel" onclick="closeUpdateModal()">Cancel</button>
@@ -1343,6 +1361,22 @@ function makeWantlistCard(r, i) {
     ? `<img class="album-thumb" src="${img}" alt="${esc(r.title)}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=no-art><div class=no-art-disc><div class=no-art-hole></div></div></div>'">`
     : `<div class="no-art"><div class="no-art-disc"><div class="no-art-hole"></div></div></div>`;
 
+  // Price / availability badge
+  let priceBadge = '';
+  if (r.enriched) {
+    const priceStr = r.lowest_price != null ? `<span class="wantlist-price">€${Number(r.lowest_price).toFixed(2)}</span>` : '';
+    const saleStr  = r.num_for_sale > 0
+      ? `<span class="wantlist-forsale">${r.num_for_sale} for sale</span>`
+      : `<span class="wantlist-nosale">none for sale</span>`;
+    priceBadge = `<div class="wantlist-price-badge">${priceStr}${saleStr}</div>`;
+  }
+
+  // Community rating
+  let commBadge = '';
+  if (r.community_rating_avg) {
+    commBadge = `<div class="wantlist-community">★ <span>${Number(r.community_rating_avg).toFixed(2)}</span> <span style="color:var(--text-dim)">(${r.community_rating_count||0})</span></div>`;
+  }
+
   card.innerHTML = `
     <div class="album-thumb-wrap">
       ${thumb}
@@ -1350,7 +1384,8 @@ function makeWantlistCard(r, i) {
     </div>
     <div class="album-artist">${esc(r.artist)}</div>
     <div class="album-title">${esc(r.title)}</div>
-    <div class="album-year">${r.year||'—'}</div>`;
+    <div class="album-year">${r.year||'—'}</div>
+    ${priceBadge}${commBadge}`;
   return card;
 }
 
@@ -1365,6 +1400,15 @@ function makeWantlistListRow(r, i) {
     ? `<img class="album-row-thumb" src="${img}" alt="${esc(r.title)}" loading="lazy" onerror="this.style.display='none'">`
     : `<div class="album-row-thumb placeholder"><div class="no-art-disc"><div class="no-art-hole"></div></div></div>`;
 
+  let priceHtml = '';
+  if (r.enriched) {
+    if (r.lowest_price != null && r.num_for_sale > 0) {
+      priceHtml = `<div class="album-row-price">€${Number(r.lowest_price).toFixed(2)}</div>`;
+    } else if (r.num_for_sale === 0) {
+      priceHtml = `<div class="album-row-price" style="color:var(--text-dim)">—</div>`;
+    }
+  }
+
   row.innerHTML = `
     ${thumb}
     <div class="album-row-main">
@@ -1372,8 +1416,10 @@ function makeWantlistListRow(r, i) {
       <div class="album-row-meta">
         <span>${r.year || '—'}</span>
         <span>• ${esc(r.format||'?')}</span>
+        ${r.community_rating_avg ? `<span>• ★ ${Number(r.community_rating_avg).toFixed(2)}</span>` : ''}
       </div>
-    </div>`;
+    </div>
+    ${priceHtml}`;
   return row;
 }
 
@@ -1538,6 +1584,30 @@ function openDetail(r) {
     trackHtml = `<div class="modal-divider"></div><div class="modal-tracklist-label">Tracklist</div><ul class="tracklist">${items}</ul>`;
   }
 
+  // Wantlist marketplace info (only shown if enriched)
+  let marketplaceHtml = '';
+  if (r.enriched) {
+    const priceStr = r.lowest_price != null
+      ? `<span style="color:var(--green);font-weight:600">€${Number(r.lowest_price).toFixed(2)}</span> lowest`
+      : `<span style="color:var(--text-dim)">no price data</span>`;
+    const saleStr = r.num_for_sale > 0
+      ? `<span style="color:var(--text)">${r.num_for_sale}</span> for sale`
+      : `<span style="color:var(--red)">none for sale</span>`;
+    const haveWant = (r.community_have || r.community_want)
+      ? `<span style="color:var(--text-dim)">${r.community_have||0} have · ${r.community_want||0} want</span>` : '';
+    const commRating = r.community_rating_avg
+      ? `★ ${Number(r.community_rating_avg).toFixed(2)} <span style="color:var(--text-dim)">(${r.community_rating_count||0} ratings)</span>` : '';
+
+    marketplaceHtml = `
+      <div class="modal-divider"></div>
+      <div class="modal-info-grid">
+        <div class="info-item"><div class="info-item-label">Lowest Price</div><div class="info-item-value">${priceStr}</div></div>
+        <div class="info-item"><div class="info-item-label">For Sale</div><div class="info-item-value">${saleStr}</div></div>
+        ${commRating ? `<div class="info-item"><div class="info-item-label">Community Rating</div><div class="info-item-value" style="color:var(--star)">${commRating}</div></div>` : ''}
+        ${haveWant ? `<div class="info-item"><div class="info-item-label">Have / Want</div><div class="info-item-value">${haveWant}</div></div>` : ''}
+      </div>`;
+  }
+
   metaCol.innerHTML = `
     <div class="modal-format-badge">${esc(r.format_full||r.format||'')}</div>
     <div class="modal-artist">${esc(r.artist)}</div>
@@ -1547,8 +1617,9 @@ function openDetail(r) {
       <div class="info-item"><div class="info-item-label">Year</div><div class="info-item-value">${r.year||'—'}</div></div>
       <div class="info-item"><div class="info-item-label">Label</div><div class="info-item-value">${esc(r.label||'—')}</div></div>
       <div class="info-item"><div class="info-item-label">Pressing</div><div class="info-item-value">${esc(r.country||'—')}</div></div>
-      <div class="info-item"><div class="info-item-label">Added</div><div class="info-item-value">${dateAdded}</div></div>
+      <div class="info-item"><div class="info-item-label">Added to wantlist</div><div class="info-item-value">${dateAdded}</div></div>
     </div>
+    ${marketplaceHtml}
     ${trackHtml}`;
 
   document.getElementById('detailOverlay').classList.add('open');
@@ -1673,6 +1744,7 @@ function openUpdateModal() {
   ['progressArea','downloadArea','matchStats','errorText'].forEach(id=>document.getElementById(id).style.display='none');
   document.getElementById('progressFill').style.width='0%';
   document.getElementById('fetchBtn').disabled=false;
+  document.getElementById('enrichWantlistCheck').checked=false;
 }
 function closeUpdateModal(){ document.getElementById('updateOverlay').classList.remove('open'); }
 
@@ -1840,13 +1912,18 @@ async function fetchCollection() {
       if(i < total-1) await sleep(DETAIL_DELAY);
     }
 
-    // ── Step 4: Discogs wantlist (quick, no enrichment) ──
+    // ── Step 4: Discogs wantlist ──
     let wantlist = [];
     try {
-      setProgress(96,'Fetching Discogs wantlist…');
-      wantlist = await fetchDiscogsWantlist(token);
+      const enrichWantlist = document.getElementById('enrichWantlistCheck').checked;
+      const wantlistMsg = enrichWantlist
+        ? 'Fetching &amp; enriching wantlist (this may take a while)…'
+        : 'Fetching Discogs wantlist…';
+      setProgress(96, enrichWantlist
+        ? 'Fetching wantlist pages…'
+        : 'Fetching Discogs wantlist…');
+      wantlist = await fetchDiscogsWantlist(token, enrichWantlist);
     } catch (e) {
-      // If wantlist fails, still allow collection.json to be downloaded
       wantlist = [];
     }
 
@@ -1898,8 +1975,8 @@ async function fetchCollection() {
   } catch(e){ showError(`Error: ${e.message}`); document.getElementById('fetchBtn').disabled=false; }
 }
 
-// Fetch Discogs wantlist pages (no 1001 matching, lighter metadata)
-async function fetchDiscogsWantlist(token){
+// Fetch Discogs wantlist pages, optionally enriching each record with full release details
+async function fetchDiscogsWantlist(token, enrich=false){
   const first = await discogsGet(
     `https://api.discogs.com/users/zapanda/wants?per_page=100&page=1`,token);
   const pages = first.pagination?.pages || 1;
@@ -1922,24 +1999,65 @@ async function fetchDiscogsWantlist(token){
       if(n.includes('cassette')){fmt='Cassette';break}
     }
     if(!fmt) fmt=(basic.formats||[])[0]?.name||'';
-
     const artist=(basic.artists||[]).map(a=>a.name.replace(/ \(\d+\)$/,'')).join(', ');
-
     return {
-      id: basic.id,
-      artist,
-      title: basic.title,
-      year: basic.year || null,
-      thumb: basic.thumb || '',
+      id: basic.id, artist, title: basic.title,
+      year: basic.year || null, thumb: basic.thumb || '',
       cover_image: basic.cover_image || '',
       genres: (basic.genres||[]).map(normTag),
       styles: (basic.styles||[]).map(normTag),
       label: (basic.labels||[])[0]?.name || '',
-      format: fmt,
+      format: fmt, format_full: '',
       country: basic.country || '',
       date_added: item.date_added || null,
+      tracklist: [], enriched: false,
+      lowest_price: null, num_for_sale: null,
+      community_rating_avg: null, community_rating_count: null,
+      community_have: null, community_want: null,
     };
   });
+
+  if (!enrich) return mapped;
+
+  // ── Enrich each wantlist record with full release details ──
+  const total = mapped.length;
+  for (let i=0; i<total; i++){
+    const r = mapped[i];
+    const pct = 97 + Math.round((i/total)*2); // progress 97→99%
+    const remaining = Math.round(((total-i)*DETAIL_DELAY)/60000);
+    setProgress(pct, `Enriching wantlist ${i+1} of ${total}${remaining>0?` — ~${remaining} min remaining`:'…'}`);
+
+    for (let attempt=0; attempt<=RETRY_DELAYS.length; attempt++){
+      try {
+        const rel = await discogsGet(`https://api.discogs.com/releases/${r.id}`, token);
+
+        r.tracklist = (rel.tracklist||[])
+          .filter(t=>t.type_==='track'||!t.type_)
+          .map(t=>({position:t.position, title:t.title, duration:t.duration||''}));
+        r.country      = rel.country || r.country;
+        r.format_full  = (rel.formats||[]).map(f=>{
+          let s=f.name||'';
+          if(f.descriptions?.length) s+=' — '+f.descriptions.join(', ');
+          return s;
+        }).join('; ');
+        r.lowest_price         = rel.lowest_price ?? null;
+        r.num_for_sale         = rel.num_for_sale ?? 0;
+        r.community_rating_avg   = rel.community?.rating?.average ?? null;
+        r.community_rating_count = rel.community?.rating?.count ?? null;
+        r.community_have       = rel.community?.have ?? null;
+        r.community_want       = rel.community?.want ?? null;
+        r.enriched = true;
+        break;
+      } catch(e) {
+        if (attempt < RETRY_DELAYS.length) {
+          await sleep(RETRY_DELAYS[attempt]);
+        }
+        // if all retries fail, leave enriched:false and move on
+      }
+    }
+
+    if (i < total-1) await sleep(DETAIL_DELAY);
+  }
 
   return mapped;
 }
