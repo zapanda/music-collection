@@ -152,7 +152,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.26,
+    "global_rating": 3.25,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/3ADELRoZ4I8WLE7clLU7La/o",
     "enriched": true
@@ -4461,7 +4461,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.15,
+    "global_rating": 3.14,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6vW9ZDllNv87WHXS3XTjlM/permission-to-land",
     "enriched": true
@@ -4934,7 +4934,7 @@
         "duration": "3:55"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
     "global_rating": 3.45,
     "list_source": "book",
@@ -12693,7 +12693,7 @@
     ],
     "my_rating": 2,
     "my_review": "",
-    "global_rating": 2.88,
+    "global_rating": 2.87,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4pk3tltFMVlT06MLJfmWTT/picture-book",
     "enriched": true
@@ -15296,7 +15296,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.65,
+    "global_rating": 3.64,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/10v912xgTZbjAtYfyKWJCS/highway-to-hell",
     "enriched": true
@@ -19296,6 +19296,162 @@
     "enriched": true
   },
   {
+    "id": 5788969,
+    "instance_id": 2121056403,
+    "artist": "Devin Townsend",
+    "title": "The Retinal Circus",
+    "year": 2013,
+    "thumb": "https://i.discogs.com/ZYORooD4PyKa-crl_5bZRlSf_Z__x80zGceAvmJHWSk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3ODg5/NjktMTYzODUyNDM2/NC04NjA5LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/LOhdYRxvhNkyywzU7NAe7KwNM8vfe64uR8Tw3hjJMiQ/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3ODg5/NjktMTYzODUyNDM2/NC04NjA5LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "prog rock",
+      "heavy metal",
+      "thrash",
+      "hard rock"
+    ],
+    "label": "Inside Out Music",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-05T14:16:51-08:00",
+    "tracklist": [
+      {
+        "position": "1-1",
+        "title": "Effervescent! - True North",
+        "duration": "6:24"
+      },
+      {
+        "position": "1-2",
+        "title": "Lucky Animals",
+        "duration": "3:34"
+      },
+      {
+        "position": "1-3",
+        "title": "Planet Of The Apes",
+        "duration": "11:02"
+      },
+      {
+        "position": "1-4",
+        "title": "Truth",
+        "duration": "3:59"
+      },
+      {
+        "position": "1-5",
+        "title": "War",
+        "duration": "6:09"
+      },
+      {
+        "position": "1-6",
+        "title": "Soul Driven",
+        "duration": "1:09"
+      },
+      {
+        "position": "1-7",
+        "title": "Planet Smasher",
+        "duration": "6:20"
+      },
+      {
+        "position": "1-8",
+        "title": "Babysong",
+        "duration": "5:31"
+      },
+      {
+        "position": "1-9",
+        "title": "Vampolka",
+        "duration": "1:37"
+      },
+      {
+        "position": "1-10",
+        "title": "Vampira",
+        "duration": "3:43"
+      },
+      {
+        "position": "1-11",
+        "title": "Addicted!",
+        "duration": "5:33"
+      },
+      {
+        "position": "1-12",
+        "title": "Color Your World",
+        "duration": "9:49"
+      },
+      {
+        "position": "1-13",
+        "title": "The Greys",
+        "duration": "4:55"
+      },
+      {
+        "position": "2-1",
+        "title": "Hyperdrive",
+        "duration": "4:44"
+      },
+      {
+        "position": "2-2",
+        "title": "Ih-Ah!",
+        "duration": "3:58"
+      },
+      {
+        "position": "2-3",
+        "title": "Where We Belong",
+        "duration": "4:19"
+      },
+      {
+        "position": "2-4",
+        "title": "Detox",
+        "duration": "6:04"
+      },
+      {
+        "position": "2-5",
+        "title": "Bend It Like Bender!",
+        "duration": "3:37"
+      },
+      {
+        "position": "2-6",
+        "title": "Life",
+        "duration": "4:53"
+      },
+      {
+        "position": "2-7",
+        "title": "Kingdom",
+        "duration": "5:10"
+      },
+      {
+        "position": "2-8",
+        "title": "Juular",
+        "duration": "4:00"
+      },
+      {
+        "position": "2-9",
+        "title": "Love?",
+        "duration": "5:24"
+      },
+      {
+        "position": "2-10",
+        "title": "Colonial Boy",
+        "duration": "2:58"
+      },
+      {
+        "position": "2-11",
+        "title": "Grace",
+        "duration": "6:53"
+      },
+      {
+        "position": "2-12",
+        "title": "Little Pig",
+        "duration": "7:30"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 16102489,
     "instance_id": 2116627409,
     "artist": "Devin Townsend",
@@ -20128,7 +20284,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.73,
+    "global_rating": 3.74,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4piJq7R3gjUOxnYs6lDCTg/hot-fuss",
     "enriched": true
@@ -21383,7 +21539,7 @@
         "duration": "4:10"
       }
     ],
-    "my_rating": 2,
+    "my_rating": 4,
     "my_review": "",
     "global_rating": 3.7,
     "list_source": "book",
@@ -24321,6 +24477,70 @@
     "enriched": true
   },
   {
+    "id": 36590419,
+    "instance_id": 2123010396,
+    "artist": "Messa",
+    "title": "The Spin",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/Z4WyzCdVWBzb4cl63WzGoHVrG9_C8mpt8TlA_QRgD7Q/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTkw/NDE5LTE3NzE4NTk5/MzYtNzIzMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/XWUaU4DPJSaIU3ZUP2gRSJq3coXvKtZSweuTHggyA5M/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTkw/NDE5LTE3NzE4NTk5/MzYtNzIzMC5qcGVn.jpeg",
+    "genres": [
+      "rock",
+      "blues"
+    ],
+    "styles": [
+      "doom metal"
+    ],
+    "label": "Metal Blade Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album",
+    "country": "Europe",
+    "date_added": "2026-03-11T07:21:27-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Void Meridian",
+        "duration": "4:28"
+      },
+      {
+        "position": "A2",
+        "title": "At Races",
+        "duration": "5:59"
+      },
+      {
+        "position": "A3",
+        "title": "Fire On The Roof",
+        "duration": "4:32"
+      },
+      {
+        "position": "A4",
+        "title": "Immolation",
+        "duration": "4:46"
+      },
+      {
+        "position": "B1",
+        "title": "The Dress",
+        "duration": "8:14"
+      },
+      {
+        "position": "B2",
+        "title": "Reveal",
+        "duration": "4:54"
+      },
+      {
+        "position": "B3",
+        "title": "Thicker Blood",
+        "duration": "8:44"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 106443,
     "instance_id": 1639097867,
     "artist": "Ace Of Base",
@@ -25122,7 +25342,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.61,
+    "global_rating": 3.62,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1Dh27pjT3IEdiRG9Se5uQn/origin-of-symmetry",
     "enriched": true
@@ -26271,7 +26491,7 @@
         "duration": "5:41"
       }
     ],
-    "my_rating": 2,
+    "my_rating": 3,
     "my_review": "",
     "global_rating": 2.39,
     "list_source": "book",
@@ -29206,6 +29426,64 @@
     "enriched": true
   },
   {
+    "id": 35588995,
+    "instance_id": 2123010146,
+    "artist": "Immortal",
+    "title": "At The Heart Of Winter",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/kFLb4Erqdy5gsVEE0hGEEIkw3kiuo15a2v3sGJI-Y2E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTg4/OTk1LTE3NjI0NjA4/MzEtNjUxOC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/u79zzTUnzl98zhA0zoa_6tiBUIvq1kq6E22NvNP_jLU/rs:fit/g:sm/q:90/h:599/w:533/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTg4/OTk1LTE3NjI0NjA4/MzEtNjUxOC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Osmose Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue, Repress",
+    "country": "France",
+    "date_added": "2026-03-11T07:20:31-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Withstand The Fall Of Time",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Solarfall",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Tragedies Blows At Horizon",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Where Dark And Light Don't Differ",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "At The Heart Of Winter",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Years Of Silent Sorrow",
+        "duration": ""
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 646550,
     "instance_id": 1951322196,
     "artist": "Roxette",
@@ -31991,7 +32269,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.23,
+    "global_rating": 3.24,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5CZR6ljD0x9fTiS4mh9wMp/only-by-the-night",
     "enriched": true
@@ -34354,9 +34632,9 @@
         "duration": "8:20"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.77,
+    "global_rating": 2.76,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -34709,9 +34987,9 @@
         "duration": "8:21"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.77,
+    "global_rating": 2.76,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -36090,7 +36368,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.02,
+    "global_rating": 3.01,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2vERrKmV1XeTlGczwqs9ZU/barton-hollow",
     "enriched": true
@@ -38186,6 +38464,153 @@
     "enriched": true
   },
   {
+    "id": 29817817,
+    "instance_id": 2123010271,
+    "artist": "Messa",
+    "title": "Close",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/Ub-1LhO8Dudll84SJTx166z7byuPX89WaXTDLb-1bho/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5ODE3/ODE3LTE3MTU5NTA2/MTUtNzE5Ni5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/zTMOqclSn-7ZO4Zk7TSjhdt4KUbkYUyvjkXZu9HGbt4/rs:fit/g:sm/q:90/h:478/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5ODE3/ODE3LTE3MTU5NTA2/MTUtNzE5Ni5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "doom metal"
+    ],
+    "label": "Svart Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Repress",
+    "country": "UK & Europe",
+    "date_added": "2026-03-11T07:21:00-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Suspended ",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Dark Horse",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Orphalese",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Rubedo",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Hollow",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Pilgrim",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "0=2",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "If You Want Her To Be Taken",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Leffotrak",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Serving Him",
+        "duration": ""
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 33260775,
+    "instance_id": 2123009872,
+    "artist": "Havukruunu",
+    "title": "Tavastland",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/atKYs0bJpqwus1_PvKKpGrlwpBLD0t5RZaak2IN60lg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjYw/Nzc1LTE3NDA2NzQx/MTItNDY5Ni5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/O6juOYLazeDXc2sG_OzvasHpkDTe260JD1rf4GimzIQ/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjYw/Nzc1LTE3NDA2NzQx/MTItNDY5Ni5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "viking metal"
+    ],
+    "label": "Svart Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition",
+    "country": "Finland",
+    "date_added": "2026-03-11T07:19:34-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Kuolematon Laulunhenki",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Yönsynty",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Havukruunu Ja Talvenvarjo",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Tavastland",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Kuoleman Oma",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Unissakävijä",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Kun Veri Sekoittuu Lumeen",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "De Miseriis Fennorum",
+        "duration": ""
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 7303203,
     "instance_id": 2052603475,
     "artist": "Led Zeppelin",
@@ -40248,7 +40673,7 @@
     ],
     "my_rating": 4,
     "my_review": "Massive album. Extremely well produced and written. \n\nSooo much groove and swing in the rhythm section. \nDown picking riff master Hetfield outdid himself on this one. All the riffs are classics at this point. They have punch, power and they hook you instantly. \n\nSolos are melodic and well thought out never too much and always complement the songs. Ver very well put together piece of music.\n\nSome filler (eg Holier than thou or The struggle within), but even that doesn't detract from the overall quality.\n",
-    "global_rating": 3.78,
+    "global_rating": 3.77,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/37lWyRxkf3wQHCOlXM5WfX/metallica",
     "enriched": true
@@ -40886,7 +41311,7 @@
     "label": "Vertigo",
     "format": "Vinyl",
     "format_full": "Vinyl — LP, Album, Stereo",
-    "country": "Netherlands",
+    "country": "Germany",
     "date_added": "2025-05-02T08:00:53-07:00",
     "tracklist": [
       {
@@ -43028,7 +43453,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.36,
+    "global_rating": 3.35,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6yWMN087PgSimbcVmHLEwG/aenima",
     "enriched": true
@@ -43866,7 +44291,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.5,
+    "global_rating": 3.49,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6x2n6wj3WvkRi8J8gxEcF0/1984",
     "enriched": true
@@ -44436,7 +44861,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 4.45,
+    "global_rating": 4.46,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/63k57x0qOkUWEMR0dkMivh/rumours",
     "enriched": true
@@ -44521,7 +44946,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.63,
+    "global_rating": 3.62,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7DdEbYFPKTZ8KB4z6L4UnQ/van-halen",
     "enriched": true
@@ -45284,7 +45709,7 @@
     "label": "XL Recordings",
     "format": "CD",
     "format_full": "CD — Album, Reissue; CD — Compilation, Stereo; All Media — Remastered",
-    "country": "UK & Europe",
+    "country": "Europe",
     "date_added": "2024-01-05T14:55:23-08:00",
     "tracklist": [
       {
