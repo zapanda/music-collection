@@ -34364,6 +34364,75 @@
     "enriched": true
   },
   {
+    "id": 507593,
+    "instance_id": 2123042020,
+    "artist": "Opeth",
+    "title": "Ghost Reveries",
+    "year": 2005,
+    "thumb": "https://i.discogs.com/qvVGBicSDJ146AqkeJUeyXqYLgTHzs37bOTB0bleRtw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNzU5/My0xNjY5OTA3Mzk2/LTc3NzAuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/BbCoh30P2B3vpKR7KnbIcHeW79xKQChGaoaG6YLq6Qs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNzU5/My0xNjY5OTA3Mzk2/LTc3NzAuanBlZw.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "progressive metal",
+      "death metal"
+    ],
+    "label": "Roadrunner Records",
+    "format": "CD",
+    "format_full": "CD — HDCD, Album",
+    "country": "Europe",
+    "date_added": "2026-03-11T09:04:25-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Ghost Of Perdition",
+        "duration": "10:29"
+      },
+      {
+        "position": "2",
+        "title": "The Baying Of The Hounds",
+        "duration": "10:41"
+      },
+      {
+        "position": "3",
+        "title": "Beneath The Mire",
+        "duration": "7:57"
+      },
+      {
+        "position": "4",
+        "title": "Atonement",
+        "duration": "6:28"
+      },
+      {
+        "position": "5",
+        "title": "Reverie/Harlequin Forest",
+        "duration": "11:39"
+      },
+      {
+        "position": "6",
+        "title": "Hours Of Wealth",
+        "duration": "5:20"
+      },
+      {
+        "position": "7",
+        "title": "The Grand Conjuration",
+        "duration": "10:21"
+      },
+      {
+        "position": "8",
+        "title": "Isolation Years",
+        "duration": "3:51"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 11894111,
     "instance_id": 2078339331,
     "artist": "Sepultura",

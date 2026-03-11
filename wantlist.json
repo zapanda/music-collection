@@ -265,12 +265,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 31.38,
-    "num_for_sale": 90,
+    "lowest_price": 32.33,
+    "num_for_sale": 84,
     "community_rating_avg": 4.78,
-    "community_rating_count": 641,
-    "community_have": 10935,
-    "community_want": 1972
+    "community_rating_count": 645,
+    "community_have": 10953,
+    "community_want": 1981
   },
   {
     "id": 140098,
@@ -383,11 +383,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 15.29,
-    "num_for_sale": 25,
+    "lowest_price": 15.7,
+    "num_for_sale": 26,
     "community_rating_avg": 4.45,
     "community_rating_count": 134,
-    "community_have": 1285,
+    "community_have": 1286,
     "community_want": 473
   },
   {
@@ -536,10 +536,10 @@
     ],
     "enriched": true,
     "lowest_price": 30.1,
-    "num_for_sale": 12,
+    "num_for_sale": 11,
     "community_rating_avg": 4.89,
     "community_rating_count": 18,
-    "community_have": 259,
+    "community_have": 262,
     "community_want": 63
   },
   {
@@ -661,11 +661,64 @@
     ],
     "enriched": true,
     "lowest_price": 16.8,
-    "num_for_sale": 144,
+    "num_for_sale": 142,
     "community_rating_avg": 4.52,
-    "community_rating_count": 1403,
-    "community_have": 14791,
-    "community_want": 3960
+    "community_rating_count": 1405,
+    "community_have": 14813,
+    "community_want": 3972
+  },
+  {
+    "id": 19623619,
+    "artist": "Blood Incantation",
+    "title": "Starspawn",
+    "year": 2021,
+    "thumb": "https://i.discogs.com/iBscqdCQpMm33Ew0ij2qatptvKPasWuN-H5K6oLmZ3c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjIz/NjE5LTE2NTQ5NjAx/MTItOTEyNy5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/ItC3bPkwACQgz8c8INiUtBCybmO-hGXayGkipPD9qak/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjIz/NjE5LTE2NTQ5NjAx/MTItOTEyNy5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Century Media",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Europe",
+    "date_added": "2026-03-11T08:29:39-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Vitrification Of Blood (Part 1)",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Chaoplasm",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Hidden Species (Vitrification Of Blood Part 2)",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Meticulous Soul Devourment",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Starspawn",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.88,
+    "num_for_sale": 3,
+    "community_rating_avg": 4.47,
+    "community_rating_count": 83,
+    "community_have": 1249,
+    "community_want": 175
   },
   {
     "id": 1939290,
@@ -808,12 +861,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 63.39,
+    "lowest_price": 65.02,
     "num_for_sale": 8,
     "community_rating_avg": 4.53,
     "community_rating_count": 80,
-    "community_have": 690,
-    "community_want": 276
+    "community_have": 691,
+    "community_want": 279
   },
   {
     "id": 24018581,
@@ -990,11 +1043,11 @@
     ],
     "enriched": true,
     "lowest_price": 31.38,
-    "num_for_sale": 189,
+    "num_for_sale": 179,
     "community_rating_avg": 4.74,
-    "community_rating_count": 911,
-    "community_have": 12370,
-    "community_want": 997
+    "community_rating_count": 926,
+    "community_have": 12441,
+    "community_want": 1000
   },
   {
     "id": 14773940,
@@ -1059,7 +1112,7 @@
     "community_rating_avg": 4.74,
     "community_rating_count": 38,
     "community_have": 314,
-    "community_want": 161
+    "community_want": 162
   },
   {
     "id": 30933321,
@@ -1122,8 +1175,8 @@
     "num_for_sale": 21,
     "community_rating_avg": 4.72,
     "community_rating_count": 82,
-    "community_have": 1330,
-    "community_want": 212
+    "community_have": 1334,
+    "community_want": 213
   },
   {
     "id": 32485896,
@@ -1189,10 +1242,10 @@
     "enriched": true,
     "lowest_price": 15.47,
     "num_for_sale": 16,
-    "community_rating_avg": 4.64,
-    "community_rating_count": 36,
-    "community_have": 519,
-    "community_want": 94
+    "community_rating_avg": 4.65,
+    "community_rating_count": 37,
+    "community_have": 524,
+    "community_want": 98
   },
   {
     "id": 16216374,
@@ -1356,7 +1409,7 @@
     "community_rating_avg": 4.44,
     "community_rating_count": 179,
     "community_have": 1433,
-    "community_want": 1422
+    "community_want": 1424
   },
   {
     "id": 24682019,
@@ -1457,11 +1510,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 21.49,
+    "lowest_price": 20.64,
     "num_for_sale": 47,
     "community_rating_avg": 4.64,
     "community_rating_count": 69,
-    "community_have": 1341,
+    "community_have": 1347,
     "community_want": 266
   },
   {
@@ -1540,7 +1593,7 @@
     "num_for_sale": 1,
     "community_rating_avg": 4.19,
     "community_rating_count": 21,
-    "community_have": 340,
+    "community_have": 341,
     "community_want": 196
   },
   {
@@ -1663,8 +1716,8 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 11.63,
-    "num_for_sale": 2,
+    "lowest_price": 23.59,
+    "num_for_sale": 1,
     "community_rating_avg": 4.44,
     "community_rating_count": 9,
     "community_have": 54,
@@ -1738,8 +1791,8 @@
     "num_for_sale": 17,
     "community_rating_avg": 4.73,
     "community_rating_count": 182,
-    "community_have": 1262,
-    "community_want": 512
+    "community_have": 1265,
+    "community_want": 511
   },
   {
     "id": 5828931,
@@ -1781,7 +1834,7 @@
     "num_for_sale": 30,
     "community_rating_avg": 4.58,
     "community_rating_count": 136,
-    "community_have": 1621,
+    "community_have": 1622,
     "community_want": 146
   },
   {
@@ -1852,7 +1905,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 44.34,
+    "lowest_price": 45.54,
     "num_for_sale": 2,
     "community_rating_avg": 5,
     "community_rating_count": 4,
@@ -2006,11 +2059,11 @@
     ],
     "enriched": true,
     "lowest_price": 11.63,
-    "num_for_sale": 7,
-    "community_rating_avg": 4.84,
-    "community_rating_count": 51,
-    "community_have": 596,
-    "community_want": 129
+    "num_for_sale": 9,
+    "community_rating_avg": 4.85,
+    "community_rating_count": 52,
+    "community_have": 598,
+    "community_want": 130
   },
   {
     "id": 2179533,
@@ -2095,11 +2148,218 @@
     ],
     "enriched": true,
     "lowest_price": 36.03,
-    "num_for_sale": 29,
+    "num_for_sale": 28,
     "community_rating_avg": 4.55,
-    "community_rating_count": 483,
-    "community_have": 5629,
-    "community_want": 1585
+    "community_rating_count": 484,
+    "community_have": 5634,
+    "community_want": 1589
+  },
+  {
+    "id": 27782469,
+    "artist": "Havukruunu",
+    "title": "Havulinnaan",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/hXNJwZTgBs9FjQtfk9TupAfgte4Ri13hJiiSFhOMb1k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Nzgy/NDY5LTE2OTAzMTg3/ODItNDE5OS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/yn6FYI81ZtJ8doZYRUkTIC_rkRqRkLo2lMwv8A2n6DU/rs:fit/g:sm/q:90/h:571/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Nzgy/NDY5LTE2OTAzMTg3/ODItNDE5OS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "atmospheric black metal",
+      "black metal"
+    ],
+    "label": "Naturmacht Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Germany",
+    "date_added": "2026-03-11T08:28:54-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Talven Mustat Tuulet",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Kuvastaja",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Rautalintu",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Aavevalo",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Terhen",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Uni Kuin Unho",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Tuuletar",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Havulinnaan",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 43,
+    "num_for_sale": 2,
+    "community_rating_avg": 4.5,
+    "community_rating_count": 14,
+    "community_have": 242,
+    "community_want": 39
+  },
+  {
+    "id": 27732216,
+    "artist": "Havukruunu",
+    "title": "Kelle Surut Soi",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/7divcz6eoWu_uxndUtHV-faD_Zzkrc5Ik8zPTPoD2Ss/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzMy/MjE2LTE2ODk4NzE1/NjYtODk0My5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/YTeMualHfOUF2jjEd0oWrNoYIRtl4Hqmyb8t6m68f2c/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzMy/MjE2LTE2ODk4NzE1/NjYtODk0My5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "viking metal"
+    ],
+    "label": "Naturmacht Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Germany",
+    "date_added": "2026-03-11T08:27:55-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Jo Näkyvi Pohjan Portit",
+        "duration": "7:14"
+      },
+      {
+        "position": "A2",
+        "title": "Vainovalkeat",
+        "duration": "5:34"
+      },
+      {
+        "position": "A3",
+        "title": "Noidanhauta",
+        "duration": "7:02"
+      },
+      {
+        "position": "A4",
+        "title": "Vainajain Valo",
+        "duration": "4:49"
+      },
+      {
+        "position": "B1",
+        "title": "Vaeltaja",
+        "duration": "5:49"
+      },
+      {
+        "position": "B2",
+        "title": "Myrskynkutsuja",
+        "duration": "6:50"
+      },
+      {
+        "position": "B3",
+        "title": "Verikuu",
+        "duration": "6:18"
+      },
+      {
+        "position": "B4",
+        "title": "Kelle Surut Soi",
+        "duration": "7:58"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 47.19,
+    "num_for_sale": 2,
+    "community_rating_avg": 4.64,
+    "community_rating_count": 11,
+    "community_have": 241,
+    "community_want": 61
+  },
+  {
+    "id": 27782649,
+    "artist": "Havukruunu",
+    "title": "Uinuos Syömein Sota",
+    "year": 2023,
+    "thumb": "https://i.discogs.com/wKUojpUL0sd_LiNjvNv8r9I6z-yXFueDSf7YWX88kmQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Nzgy/NjQ5LTE2OTAzNzI0/NzYtOTUwMi5wbmc.jpeg",
+    "cover_image": "https://i.discogs.com/6EUnnKQzsOh3g1gSnIBtBr_bE_Y6kBgh_Wt5HWj13w4/rs:fit/g:sm/q:90/h:572/w:571/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Nzgy/NjQ5LTE2OTAzNzI0/NzYtOTUwMi5wbmc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "viking metal"
+    ],
+    "label": "Naturmacht Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue",
+    "country": "Germany",
+    "date_added": "2026-03-08T14:11:38-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Uinuos Syömein Sota = Languish, Thou War Of My Heart",
+        "duration": "5:47"
+      },
+      {
+        "position": "A2",
+        "title": "Kunnes Varjot Saa = Until Shadows Rise",
+        "duration": "5:00"
+      },
+      {
+        "position": "A3",
+        "title": "Ja Viimein On Yö = And Thus Befalls The Night",
+        "duration": "4:44"
+      },
+      {
+        "position": "A4",
+        "title": "Pohjolan Tytär = The Frightening Daughter Of Boreal Mists",
+        "duration": "6:03"
+      },
+      {
+        "position": "B1",
+        "title": "Kuin Öinen Meri = (Mysterious) Like The Nightly Sea",
+        "duration": "5:54"
+      },
+      {
+        "position": "B2",
+        "title": "Jumalten Hämär = (An Internal) Twilight Of The Gods",
+        "duration": "1:23"
+      },
+      {
+        "position": "B3",
+        "title": "Vähiin Päivät Käy = The Wane Of My Days ",
+        "duration": "9:09"
+      },
+      {
+        "position": "B4",
+        "title": "Tähti-Yö Ja Hevoiset = Bespangled Star-Night And Haras",
+        "duration": "8:31"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 40.7,
+    "num_for_sale": 2,
+    "community_rating_avg": 4.64,
+    "community_rating_count": 14,
+    "community_have": 255,
+    "community_want": 70
   },
   {
     "id": 31184230,
@@ -2151,11 +2411,11 @@
     ],
     "enriched": true,
     "lowest_price": 19.69,
-    "num_for_sale": 70,
+    "num_for_sale": 72,
     "community_rating_avg": 4.75,
-    "community_rating_count": 234,
-    "community_have": 3187,
-    "community_want": 728
+    "community_rating_count": 239,
+    "community_have": 3211,
+    "community_want": 730
   },
   {
     "id": 19524739,
@@ -2209,6 +2469,237 @@
     "community_rating_count": 2,
     "community_have": 28,
     "community_want": 30
+  },
+  {
+    "id": 31262497,
+    "artist": "In Flames",
+    "title": "Colony",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/-1tVp2TbFQs2vh_S0ek8ZCrq1ix2Egmzb4ziA1oMyhA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjYy/NDk3LTE3MjEzOTA2/NDAtNTExNS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/anOTRlZtaCCCNJVBeiIC0XfQjZF0xhED1Rzo7FmyyQs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjYy/NDk3LTE3MjEzOTA2/NDAtNTExNS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "melodic death metal"
+    ],
+    "label": "Nuclear Blast Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2026-03-11T08:25:27-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Embody The Invisible",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Ordinary Story",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Scorn",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Colony",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Zombie Inc.",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Pallar Anders Visa",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Coerced Coexistence",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Resin",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Behind Space '99",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Insipid 2000",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "The New Word",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Man Made God",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 36.12,
+    "num_for_sale": 40,
+    "community_rating_avg": 4.63,
+    "community_rating_count": 104,
+    "community_have": 1778,
+    "community_want": 133
+  },
+  {
+    "id": 34111672,
+    "artist": "In Flames",
+    "title": "Clayman",
+    "year": 2025,
+    "thumb": "https://i.discogs.com/afFxjIhwgDzGwoBii51CMcyR1IrQ--rTQ3EL3VjU-yo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MTEx/NjcyLTE3Njk3NzAy/MTItNDU5NC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/68vhdfwMsfU-958UVNYxiWCDv3ocwl9zQC6xKo2VPPI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MTEx/NjcyLTE3Njk3NzAy/MTItNDU5NC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal",
+      "melodic death metal"
+    ],
+    "label": "Nuclear Blast Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered",
+    "country": "USA & Europe",
+    "date_added": "2026-03-11T08:26:28-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Bullet Ride",
+        "duration": "4:40"
+      },
+      {
+        "position": "A2",
+        "title": "Pinball Map",
+        "duration": "4:08"
+      },
+      {
+        "position": "A3",
+        "title": "Only For The Weak",
+        "duration": "4:55"
+      },
+      {
+        "position": "A4",
+        "title": "... As The Future Repeats Today",
+        "duration": "3:27"
+      },
+      {
+        "position": "A5",
+        "title": "Square Nothing",
+        "duration": "3:56"
+      },
+      {
+        "position": "B1",
+        "title": "Clayman",
+        "duration": "3:29"
+      },
+      {
+        "position": "B2",
+        "title": "Satellites And Astronauts",
+        "duration": "5:00"
+      },
+      {
+        "position": "B3",
+        "title": "Brush The Dust Away",
+        "duration": "3:18"
+      },
+      {
+        "position": "B4",
+        "title": "Swim",
+        "duration": "3:14"
+      },
+      {
+        "position": "B5",
+        "title": "Suburban Me",
+        "duration": "3:36"
+      },
+      {
+        "position": "B6",
+        "title": "Another Day In Quicksand",
+        "duration": "3:58"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 27.5,
+    "num_for_sale": 20,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 97,
+    "community_have": 1239,
+    "community_want": 105
+  },
+  {
+    "id": 14311707,
+    "artist": "Alcest",
+    "title": "Spiritual Instinct",
+    "year": 2019,
+    "thumb": "https://i.discogs.com/p_JHRsqF3CaSYo5uLgGcnDBfv_6FJ474gZqWJXCNVO8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzEx/NzA3LTE2NzE4MjE5/NzMtOTM1OC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/CFXppuG9748OIn4hG7mnIypfHPojXwcHoTNDNxmvu6c/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzEx/NzA3LTE2NzE4MjE5/NzMtOTM1OC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "post metal",
+      "blackgaze"
+    ],
+    "label": "Nuclear Blast",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition",
+    "country": "Europe",
+    "date_added": "2026-03-11T08:24:42-07:00",
+    "tracklist": [
+      {
+        "position": "AI",
+        "title": "Les Jardins De Minuit",
+        "duration": ""
+      },
+      {
+        "position": "AII",
+        "title": "Protection",
+        "duration": ""
+      },
+      {
+        "position": "AIII",
+        "title": "Sapphire",
+        "duration": ""
+      },
+      {
+        "position": "BIV",
+        "title": "L'Île Des Morts",
+        "duration": ""
+      },
+      {
+        "position": "BV",
+        "title": "Le Miroir",
+        "duration": ""
+      },
+      {
+        "position": "BVI",
+        "title": "Spiritual Instinct",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 28.35,
+    "num_for_sale": 17,
+    "community_rating_avg": 4.55,
+    "community_rating_count": 160,
+    "community_have": 1884,
+    "community_want": 335
   },
   {
     "id": 4909764,
@@ -2291,7 +2782,70 @@
     "community_rating_avg": 4.31,
     "community_rating_count": 67,
     "community_have": 727,
-    "community_want": 186
+    "community_want": 187
+  },
+  {
+    "id": 29696971,
+    "artist": "Immortal",
+    "title": "Damned In Black",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/gowrTUG2anfnUT_5J2865lkE0WytIx3dhV-wY9hBAYk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Njk2/OTcxLTE3MDcwNzEy/NjktNTUxMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/Kt2h48z8jlvE-8jAIwP28GeoRFrWzfndMrtZbwiGHU0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Njk2/OTcxLTE3MDcwNzEy/NjktNTUxMC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Osmose Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue",
+    "country": "Europe",
+    "date_added": "2026-03-06T18:32:26-08:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Triumph",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Wrath From Above",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Against The Tide (In The Arctic World)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "My Dimension",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "The Darkness That Embrace Me",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "In Our Mystic Visions Blest",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Damned In Black",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 23.26,
+    "num_for_sale": 9,
+    "community_rating_avg": 4.75,
+    "community_rating_count": 16,
+    "community_have": 221,
+    "community_want": 45
   },
   {
     "id": 25797823,
@@ -2358,8 +2912,8 @@
     "num_for_sale": 7,
     "community_rating_avg": 4.87,
     "community_rating_count": 31,
-    "community_have": 354,
-    "community_want": 127
+    "community_have": 353,
+    "community_want": 128
   },
   {
     "id": 12750156,
@@ -2546,11 +3100,11 @@
     ],
     "enriched": true,
     "lowest_price": 0.35,
-    "num_for_sale": 11,
-    "community_rating_avg": 4.67,
-    "community_rating_count": 36,
-    "community_have": 285,
-    "community_want": 295
+    "num_for_sale": 9,
+    "community_rating_avg": 4.65,
+    "community_rating_count": 37,
+    "community_have": 286,
+    "community_want": 297
   },
   {
     "id": 27812061,
@@ -2655,12 +3209,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 13.75,
-    "num_for_sale": 43,
+    "lowest_price": 14.16,
+    "num_for_sale": 37,
     "community_rating_avg": 4.67,
-    "community_rating_count": 263,
-    "community_have": 3471,
-    "community_want": 937
+    "community_rating_count": 264,
+    "community_have": 3480,
+    "community_want": 943
   },
   {
     "id": 10315981,
@@ -2743,12 +3297,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 23.26,
-    "num_for_sale": 150,
+    "lowest_price": 24.08,
+    "num_for_sale": 146,
     "community_rating_avg": 4.58,
-    "community_rating_count": 1082,
-    "community_have": 11905,
-    "community_want": 1385
+    "community_rating_count": 1090,
+    "community_have": 11937,
+    "community_want": 1386
   },
   {
     "id": 6367043,
@@ -2856,11 +3410,11 @@
     ],
     "enriched": true,
     "lowest_price": 30.58,
-    "num_for_sale": 32,
+    "num_for_sale": 31,
     "community_rating_avg": 4.63,
     "community_rating_count": 761,
-    "community_have": 6321,
-    "community_want": 2464
+    "community_have": 6323,
+    "community_want": 2469
   },
   {
     "id": 3961344,
@@ -2992,10 +3546,10 @@
     ],
     "enriched": true,
     "lowest_price": 34.88,
-    "num_for_sale": 14,
-    "community_rating_avg": 4.61,
-    "community_rating_count": 85,
-    "community_have": 811,
+    "num_for_sale": 13,
+    "community_rating_avg": 4.62,
+    "community_rating_count": 86,
+    "community_have": 812,
     "community_want": 283
   },
   {
@@ -3067,11 +3621,11 @@
     ],
     "enriched": true,
     "lowest_price": 34.39,
-    "num_for_sale": 28,
+    "num_for_sale": 29,
     "community_rating_avg": 4.83,
-    "community_rating_count": 108,
-    "community_have": 1253,
-    "community_want": 248
+    "community_rating_count": 109,
+    "community_have": 1258,
+    "community_want": 249
   },
   {
     "id": 33052227,
@@ -3158,11 +3712,11 @@
     ],
     "enriched": true,
     "lowest_price": 32.56,
-    "num_for_sale": 46,
+    "num_for_sale": 48,
     "community_rating_avg": 4.51,
-    "community_rating_count": 833,
-    "community_have": 10529,
-    "community_want": 3234
+    "community_rating_count": 849,
+    "community_have": 10612,
+    "community_want": 3256
   },
   {
     "id": 12004382,
@@ -3314,9 +3868,67 @@
     "lowest_price": 91.36,
     "num_for_sale": 109,
     "community_rating_avg": 4.84,
-    "community_rating_count": 1398,
-    "community_have": 11166,
-    "community_want": 2182
+    "community_rating_count": 1401,
+    "community_have": 11183,
+    "community_want": 2185
+  },
+  {
+    "id": 36600199,
+    "artist": "Slagmaur",
+    "title": "Hulders Ritual",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/HA-hFZ21KeebF6Yrz6P1ZAEzWCkDDl6G75X3SPQlZe8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjAw/MTk5LTE3NzE5NDgx/NzItODQ2OS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/igK3SShTe-i7DJKMjHY_JmPOA3viQ6PfJWuRjQEFXRE/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjAw/MTk5LTE3NzE5NDgx/NzItODQ2OS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Prophecy Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Stereo",
+    "country": "Germany",
+    "date_added": "2026-03-08T14:10:41-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Ritual Dogs",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Wildkatze",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Huldergeist",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Hexen Herjer",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Warlok",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Rathkings",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 37.21,
+    "num_for_sale": 5,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 5,
+    "community_have": 60,
+    "community_want": 6
   },
   {
     "id": 11088399,
@@ -3475,12 +4087,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 25.8,
-    "num_for_sale": 56,
+    "lowest_price": 25.58,
+    "num_for_sale": 57,
     "community_rating_avg": 4.61,
-    "community_rating_count": 412,
-    "community_have": 4880,
-    "community_want": 859
+    "community_rating_count": 414,
+    "community_have": 4892,
+    "community_want": 861
   },
   {
     "id": 33934431,
@@ -3544,10 +4156,10 @@
     ],
     "enriched": true,
     "lowest_price": 34.88,
-    "num_for_sale": 4,
-    "community_rating_avg": 4.77,
-    "community_rating_count": 22,
-    "community_have": 316,
+    "num_for_sale": 6,
+    "community_rating_avg": 4.79,
+    "community_rating_count": 24,
+    "community_have": 327,
     "community_want": 103
   },
   {
@@ -3601,12 +4213,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 2.32,
-    "num_for_sale": 100,
+    "lowest_price": 2.58,
+    "num_for_sale": 98,
     "community_rating_avg": 4.32,
-    "community_rating_count": 675,
-    "community_have": 9792,
-    "community_want": 2362
+    "community_rating_count": 676,
+    "community_have": 9807,
+    "community_want": 2368
   },
   {
     "id": 34400824,
@@ -3743,8 +4355,8 @@
     "num_for_sale": 3,
     "community_rating_avg": 4.72,
     "community_rating_count": 32,
-    "community_have": 293,
-    "community_want": 85
+    "community_have": 295,
+    "community_want": 86
   },
   {
     "id": 10471009,
@@ -3886,10 +4498,10 @@
     ],
     "enriched": true,
     "lowest_price": 34.88,
-    "num_for_sale": 99,
+    "num_for_sale": 96,
     "community_rating_avg": 4.82,
-    "community_rating_count": 1658,
-    "community_have": 15598,
-    "community_want": 2957
+    "community_rating_count": 1664,
+    "community_have": 15632,
+    "community_want": 2966
   }
 ]
