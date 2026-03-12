@@ -1918,9 +1918,7 @@ async function fetchCollection() {
     try {
       const enrichWantlist = document.getElementById('enrichWantlistCheck').checked;
       setProgress(96, enrichWantlist ? 'Fetching wantlist pages…' : 'Fetching Discogs wantlist…');
-      console.log('[Wantlist] Starting fetch, enrich=', enrichWantlist);
       wantlist = await fetchDiscogsWantlist(token, enrichWantlist);
-      console.log('[Wantlist] Fetched', wantlist.length, 'items');
     } catch (e) {
       wantlistError = e.message || 'Unknown error';
       console.error('[Wantlist] Fetch failed:', e);
@@ -1985,10 +1983,8 @@ async function fetchCollection() {
 
 // Fetch Discogs wantlist pages, optionally enriching each record with full release details
 async function fetchDiscogsWantlist(token, enrich=false){
-  console.log('[Wantlist] Fetching page 1…');
   const first = await discogsGet(
     `https://api.discogs.com/users/zapanda/wants?per_page=100&page=1`,token);
-  console.log('[Wantlist] Page 1 response:', first);
   const pages = first.pagination?.pages || 1;
   const allWants = [...(first.wants||[])];
 
