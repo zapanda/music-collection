@@ -101,7 +101,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 11.63,
+    "lowest_price": 11.49,
     "num_for_sale": 1,
     "community_rating_avg": 4.33,
     "community_rating_count": 3,
@@ -265,12 +265,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 32.33,
-    "num_for_sale": 84,
+    "lowest_price": 31.67,
+    "num_for_sale": 81,
     "community_rating_avg": 4.78,
-    "community_rating_count": 645,
-    "community_have": 10953,
-    "community_want": 1981
+    "community_rating_count": 652,
+    "community_have": 10966,
+    "community_want": 1983
   },
   {
     "id": 140098,
@@ -383,7 +383,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 15.7,
+    "lowest_price": 15.47,
     "num_for_sale": 26,
     "community_rating_avg": 4.45,
     "community_rating_count": 134,
@@ -535,12 +535,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 30.1,
+    "lowest_price": 30.45,
     "num_for_sale": 11,
     "community_rating_avg": 4.89,
     "community_rating_count": 18,
     "community_have": 262,
-    "community_want": 63
+    "community_want": 62
   },
   {
     "id": 378698,
@@ -660,12 +660,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 16.8,
-    "num_for_sale": 142,
+    "lowest_price": 16.61,
+    "num_for_sale": 141,
     "community_rating_avg": 4.52,
     "community_rating_count": 1405,
-    "community_have": 14813,
-    "community_want": 3972
+    "community_have": 14821,
+    "community_want": 3976
   },
   {
     "id": 19623619,
@@ -713,11 +713,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
+    "lowest_price": 34.48,
     "num_for_sale": 3,
     "community_rating_avg": 4.47,
     "community_rating_count": 83,
-    "community_have": 1249,
+    "community_have": 1251,
     "community_want": 175
   },
   {
@@ -861,7 +861,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 65.02,
+    "lowest_price": 64.12,
     "num_for_sale": 8,
     "community_rating_avg": 4.53,
     "community_rating_count": 80,
@@ -947,7 +947,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.4,
+    "lowest_price": 34.8,
     "num_for_sale": 1,
     "community_rating_avg": 4.78,
     "community_rating_count": 9,
@@ -1042,12 +1042,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 31.38,
-    "num_for_sale": 179,
+    "lowest_price": 31.03,
+    "num_for_sale": 181,
     "community_rating_avg": 4.74,
-    "community_rating_count": 926,
-    "community_have": 12441,
-    "community_want": 1000
+    "community_rating_count": 930,
+    "community_have": 12476,
+    "community_want": 998
   },
   {
     "id": 14773940,
@@ -1107,7 +1107,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 46.51,
+    "lowest_price": 45.98,
     "num_for_sale": 6,
     "community_rating_avg": 4.74,
     "community_rating_count": 38,
@@ -1171,7 +1171,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
+    "lowest_price": 34.48,
     "num_for_sale": 21,
     "community_rating_avg": 4.72,
     "community_rating_count": 82,
@@ -1240,12 +1240,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 15.47,
+    "lowest_price": 15.65,
     "num_for_sale": 16,
     "community_rating_avg": 4.65,
     "community_rating_count": 37,
-    "community_have": 524,
-    "community_want": 98
+    "community_have": 525,
+    "community_want": 97
   },
   {
     "id": 16216374,
@@ -1308,11 +1308,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 69.77,
+    "lowest_price": 68.97,
     "num_for_sale": 7,
     "community_rating_avg": 4.84,
     "community_rating_count": 31,
-    "community_have": 307,
+    "community_have": 308,
     "community_want": 229
   },
   {
@@ -1404,12 +1404,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 4.3,
+    "lowest_price": 4.35,
     "num_for_sale": 23,
     "community_rating_avg": 4.44,
     "community_rating_count": 179,
     "community_have": 1433,
-    "community_want": 1424
+    "community_want": 1423
   },
   {
     "id": 24682019,
@@ -1510,12 +1510,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 20.64,
-    "num_for_sale": 47,
+    "lowest_price": 21.74,
+    "num_for_sale": 49,
     "community_rating_avg": 4.64,
     "community_rating_count": 69,
-    "community_have": 1347,
-    "community_want": 266
+    "community_have": 1349,
+    "community_want": 268
   },
   {
     "id": 10157097,
@@ -1589,12 +1589,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 151.16,
+    "lowest_price": 149.43,
     "num_for_sale": 1,
     "community_rating_avg": 4.19,
     "community_rating_count": 21,
     "community_have": 341,
-    "community_want": 196
+    "community_want": 197
   },
   {
     "id": 1095269,
@@ -1716,11 +1716,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 23.59,
+    "lowest_price": 23.18,
     "num_for_sale": 1,
     "community_rating_avg": 4.44,
     "community_rating_count": 9,
-    "community_have": 54,
+    "community_have": 55,
     "community_want": 35
   },
   {
@@ -1787,12 +1787,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 63.95,
+    "lowest_price": 63.22,
     "num_for_sale": 17,
     "community_rating_avg": 4.73,
     "community_rating_count": 182,
     "community_have": 1265,
-    "community_want": 511
+    "community_want": 512
   },
   {
     "id": 5828931,
@@ -1830,11 +1830,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 8.14,
+    "lowest_price": 8.05,
     "num_for_sale": 30,
     "community_rating_avg": 4.58,
     "community_rating_count": 136,
-    "community_have": 1622,
+    "community_have": 1623,
     "community_want": 146
   },
   {
@@ -1905,7 +1905,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 45.54,
+    "lowest_price": 44.85,
     "num_for_sale": 2,
     "community_rating_avg": 5,
     "community_rating_count": 4,
@@ -1990,7 +1990,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 327.03,
+    "lowest_price": 323.28,
     "num_for_sale": 1,
     "community_rating_avg": 4,
     "community_rating_count": 2,
@@ -2058,11 +2058,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 11.63,
-    "num_for_sale": 9,
+    "lowest_price": 11.49,
+    "num_for_sale": 11,
     "community_rating_avg": 4.85,
     "community_rating_count": 52,
-    "community_have": 598,
+    "community_have": 600,
     "community_want": 130
   },
   {
@@ -2147,12 +2147,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 36.03,
-    "num_for_sale": 28,
+    "lowest_price": 35.62,
+    "num_for_sale": 29,
     "community_rating_avg": 4.55,
-    "community_rating_count": 484,
-    "community_have": 5634,
-    "community_want": 1589
+    "community_rating_count": 485,
+    "community_have": 5637,
+    "community_want": 1591
   },
   {
     "id": 27782469,
@@ -2216,7 +2216,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 43,
+    "lowest_price": 43.5,
     "num_for_sale": 2,
     "community_rating_avg": 4.5,
     "community_rating_count": 14,
@@ -2285,7 +2285,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 47.19,
+    "lowest_price": 47.74,
     "num_for_sale": 2,
     "community_rating_avg": 4.64,
     "community_rating_count": 11,
@@ -2354,7 +2354,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 40.7,
+    "lowest_price": 40.23,
     "num_for_sale": 2,
     "community_rating_avg": 4.64,
     "community_rating_count": 14,
@@ -2410,12 +2410,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 19.69,
-    "num_for_sale": 72,
+    "lowest_price": 19.92,
+    "num_for_sale": 71,
     "community_rating_avg": 4.75,
-    "community_rating_count": 239,
-    "community_have": 3211,
-    "community_want": 730
+    "community_rating_count": 243,
+    "community_have": 3234,
+    "community_want": 735
   },
   {
     "id": 19524739,
@@ -2463,7 +2463,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 73.1,
+    "lowest_price": 73.95,
     "num_for_sale": 1,
     "community_rating_avg": 5,
     "community_rating_count": 2,
@@ -2551,11 +2551,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 36.12,
-    "num_for_sale": 40,
+    "lowest_price": 35.57,
+    "num_for_sale": 39,
     "community_rating_avg": 4.63,
-    "community_rating_count": 104,
-    "community_have": 1778,
+    "community_rating_count": 105,
+    "community_have": 1783,
     "community_want": 133
   },
   {
@@ -2635,11 +2635,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 27.5,
-    "num_for_sale": 20,
-    "community_rating_avg": 4.8,
-    "community_rating_count": 97,
-    "community_have": 1239,
+    "lowest_price": 27.82,
+    "num_for_sale": 22,
+    "community_rating_avg": 4.81,
+    "community_rating_count": 98,
+    "community_have": 1245,
     "community_want": 105
   },
   {
@@ -2694,12 +2694,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 28.35,
-    "num_for_sale": 17,
+    "lowest_price": 27.92,
+    "num_for_sale": 16,
     "community_rating_avg": 4.55,
     "community_rating_count": 160,
-    "community_have": 1884,
-    "community_want": 335
+    "community_have": 1885,
+    "community_want": 334
   },
   {
     "id": 4909764,
@@ -2777,8 +2777,8 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 17.2,
-    "num_for_sale": 7,
+    "lowest_price": 17.4,
+    "num_for_sale": 6,
     "community_rating_avg": 4.31,
     "community_rating_count": 67,
     "community_have": 727,
@@ -2840,7 +2840,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 23.26,
+    "lowest_price": 22.99,
     "num_for_sale": 9,
     "community_rating_avg": 4.75,
     "community_rating_count": 16,
@@ -2908,11 +2908,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 29.24,
+    "lowest_price": 29.58,
     "num_for_sale": 7,
     "community_rating_avg": 4.87,
     "community_rating_count": 31,
-    "community_have": 353,
+    "community_have": 354,
     "community_want": 128
   },
   {
@@ -2966,7 +2966,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 51.16,
+    "lowest_price": 50.57,
     "num_for_sale": 4,
     "community_rating_avg": 4.55,
     "community_rating_count": 11,
@@ -3099,12 +3099,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 0.35,
+    "lowest_price": 0.34,
     "num_for_sale": 9,
     "community_rating_avg": 4.65,
     "community_rating_count": 37,
     "community_have": 286,
-    "community_want": 297
+    "community_want": 296
   },
   {
     "id": 27812061,
@@ -3209,12 +3209,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 14.16,
+    "lowest_price": 13.91,
     "num_for_sale": 37,
     "community_rating_avg": 4.67,
     "community_rating_count": 264,
-    "community_have": 3480,
-    "community_want": 943
+    "community_have": 3485,
+    "community_want": 945
   },
   {
     "id": 10315981,
@@ -3297,11 +3297,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 24.08,
-    "num_for_sale": 146,
+    "lowest_price": 24.36,
+    "num_for_sale": 143,
     "community_rating_avg": 4.58,
-    "community_rating_count": 1090,
-    "community_have": 11937,
+    "community_rating_count": 1092,
+    "community_have": 11959,
     "community_want": 1386
   },
   {
@@ -3409,12 +3409,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 30.58,
+    "lowest_price": 30.23,
     "num_for_sale": 31,
     "community_rating_avg": 4.63,
     "community_rating_count": 761,
     "community_have": 6323,
-    "community_want": 2469
+    "community_want": 2473
   },
   {
     "id": 3961344,
@@ -3477,7 +3477,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 39.37,
+    "lowest_price": 38.92,
     "num_for_sale": 8,
     "community_rating_avg": 4.61,
     "community_rating_count": 74,
@@ -3545,7 +3545,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
+    "lowest_price": 34.48,
     "num_for_sale": 13,
     "community_rating_avg": 4.62,
     "community_rating_count": 86,
@@ -3620,11 +3620,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.39,
+    "lowest_price": 34.79,
     "num_for_sale": 29,
     "community_rating_avg": 4.83,
     "community_rating_count": 109,
-    "community_have": 1258,
+    "community_have": 1261,
     "community_want": 249
   },
   {
@@ -3711,12 +3711,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 32.56,
+    "lowest_price": 32.18,
     "num_for_sale": 48,
     "community_rating_avg": 4.51,
-    "community_rating_count": 849,
-    "community_have": 10612,
-    "community_want": 3256
+    "community_rating_count": 857,
+    "community_have": 10642,
+    "community_want": 3262
   },
   {
     "id": 12004382,
@@ -3865,12 +3865,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 91.36,
-    "num_for_sale": 109,
+    "lowest_price": 92.42,
+    "num_for_sale": 112,
     "community_rating_avg": 4.84,
-    "community_rating_count": 1401,
-    "community_have": 11183,
-    "community_want": 2185
+    "community_rating_count": 1402,
+    "community_have": 11194,
+    "community_want": 2190
   },
   {
     "id": 36600199,
@@ -3923,11 +3923,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 37.21,
+    "lowest_price": 36.78,
     "num_for_sale": 5,
-    "community_rating_avg": 4.8,
-    "community_rating_count": 5,
-    "community_have": 60,
+    "community_rating_avg": 5,
+    "community_rating_count": 6,
+    "community_have": 71,
     "community_want": 6
   },
   {
@@ -4087,11 +4087,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 25.58,
-    "num_for_sale": 57,
+    "lowest_price": 22.99,
+    "num_for_sale": 60,
     "community_rating_avg": 4.61,
-    "community_rating_count": 414,
-    "community_have": 4892,
+    "community_rating_count": 415,
+    "community_have": 4905,
     "community_want": 861
   },
   {
@@ -4155,12 +4155,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
+    "lowest_price": 34.48,
     "num_for_sale": 6,
     "community_rating_avg": 4.79,
     "community_rating_count": 24,
     "community_have": 327,
-    "community_want": 103
+    "community_want": 104
   },
   {
     "id": 428062,
@@ -4213,11 +4213,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 2.58,
-    "num_for_sale": 98,
+    "lowest_price": 2.61,
+    "num_for_sale": 97,
     "community_rating_avg": 4.32,
     "community_rating_count": 676,
-    "community_have": 9807,
+    "community_have": 9818,
     "community_want": 2368
   },
   {
@@ -4351,8 +4351,8 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 17.28,
-    "num_for_sale": 3,
+    "lowest_price": 10.43,
+    "num_for_sale": 4,
     "community_rating_avg": 4.72,
     "community_rating_count": 32,
     "community_have": 295,
@@ -4497,11 +4497,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
-    "num_for_sale": 96,
+    "lowest_price": 34.48,
+    "num_for_sale": 95,
     "community_rating_avg": 4.82,
-    "community_rating_count": 1664,
-    "community_have": 15632,
-    "community_want": 2966
+    "community_rating_count": 1667,
+    "community_have": 15645,
+    "community_want": 2974
   }
 ]

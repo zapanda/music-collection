@@ -8436,6 +8436,81 @@
     "enriched": true
   },
   {
+    "id": 2201650,
+    "instance_id": 2124125038,
+    "artist": "Negură Bunget",
+    "title": "Vîrstele Pamîntului",
+    "year": 2010,
+    "thumb": "https://i.discogs.com/MTpMjpx6qbyXB3tVXNzxwgA_eXNKfeYDHEuUKoNJHhQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDE2/NTAtMTI2OTUyMzU5/NC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/JRDxLMSeLpFW-LMqGs-pWFf3dVuqibCDbUKVCHADD7s/rs:fit/g:sm/q:90/h:436/w:448/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDE2/NTAtMTI2OTUyMzU5/NC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "avantgarde",
+      "atmospheric black metal"
+    ],
+    "label": "Code666",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Italy",
+    "date_added": "2026-03-14T11:00:44-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Pămînt",
+        "duration": "6:58"
+      },
+      {
+        "position": "2",
+        "title": "Dacia Hiperboreană",
+        "duration": "8:52"
+      },
+      {
+        "position": "3",
+        "title": "Umbra",
+        "duration": "3:31"
+      },
+      {
+        "position": "4",
+        "title": "Ochiul Inimii",
+        "duration": "8:04"
+      },
+      {
+        "position": "5",
+        "title": "Chei De Rouă",
+        "duration": "5:51"
+      },
+      {
+        "position": "6",
+        "title": "Țara De Dincolo De Negură",
+        "duration": "5:54"
+      },
+      {
+        "position": "7",
+        "title": "Jar",
+        "duration": "4:28"
+      },
+      {
+        "position": "8",
+        "title": "Arborele Lumii",
+        "duration": "7:37"
+      },
+      {
+        "position": "9",
+        "title": "Întoarcerea Amurgului",
+        "duration": "8:21"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 7529139,
     "instance_id": 1578055528,
     "artist": "Judas Priest",
@@ -9683,7 +9758,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.47,
+    "global_rating": 3.46,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/58NXIEYqmq5dQHg9nV9duM/dirt",
     "enriched": true
@@ -10974,6 +11049,75 @@
     "enriched": true
   },
   {
+    "id": 32455578,
+    "instance_id": 2124209051,
+    "artist": "Aara",
+    "title": "Eiger",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/NrtC0i6Ev2MEIID_JmbQbLpDkCF-XgkKykxy_TYgW5M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDU1/NTc4LTE3MzY0ODYz/MDItMTQ1NS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/js2jsJfVe9VVo3Am6FaSyTyfyTD474NSwDxhTzskL58/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDU1/NTc4LTE3MzY0ODYz/MDItMTQ1NS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal",
+      "atmospheric black metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "France",
+    "date_added": "2026-03-14T14:18:04-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Die Das Wilde Wetter Fängt",
+        "duration": "9:24"
+      },
+      {
+        "position": "2",
+        "title": "Senkrechte Welten",
+        "duration": "7:15"
+      },
+      {
+        "position": "3",
+        "title": "Felsensang",
+        "duration": "6:16"
+      },
+      {
+        "position": "4",
+        "title": "Todesbiwak",
+        "duration": "6:25"
+      },
+      {
+        "position": "5",
+        "title": "Der Wahnsinn Dort Im Abgrund",
+        "duration": "5:32"
+      },
+      {
+        "position": "6",
+        "title": "Zurück Zur Roten Fluh",
+        "duration": "6:53"
+      },
+      {
+        "position": "7",
+        "title": "Grausig Ist Der Blick",
+        "duration": "5:34"
+      },
+      {
+        "position": "8",
+        "title": "Alptraum",
+        "duration": "8:04"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 96534,
     "instance_id": 1587172501,
     "artist": "EL-P",
@@ -11713,6 +11857,105 @@
         "position": "17",
         "title": "Something In The Air",
         "duration": "3:54"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 4773739,
+    "instance_id": 2124125606,
+    "artist": "Carcass",
+    "title": "Heartwork",
+    "year": 2013,
+    "thumb": "https://i.discogs.com/McWPEkvFn1TETKvurBYnCzVbIlH7y8_5Jy6U7Ibtrk0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NzM3/MzktMTM3NTA4NzEy/OS0xNTY3LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/gi9eOH3Cv_bLgIMyoyCei3Ogl5pdChLW7M8Jnkchu1A/rs:fit/g:sm/q:90/h:375/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NzM3/MzktMTM3NTA4NzEy/OS0xNTY3LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal",
+      "melodic death metal"
+    ],
+    "label": "Earache",
+    "format": "CD",
+    "format_full": "CD — Album, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2026-03-14T11:02:05-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Buried Dreams",
+        "duration": ""
+      },
+      {
+        "position": "2",
+        "title": "Carnal Forge",
+        "duration": ""
+      },
+      {
+        "position": "3",
+        "title": "No Love Lost",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "Heartwork",
+        "duration": ""
+      },
+      {
+        "position": "5",
+        "title": "Embodiment",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "This Mortal Coil",
+        "duration": ""
+      },
+      {
+        "position": "7",
+        "title": "Arbeit Macht Fleisch",
+        "duration": ""
+      },
+      {
+        "position": "8",
+        "title": "Blind Bleeding The Blind",
+        "duration": ""
+      },
+      {
+        "position": "9",
+        "title": "Doctrinal Expletives",
+        "duration": ""
+      },
+      {
+        "position": "10",
+        "title": "Death Certificate",
+        "duration": ""
+      },
+      {
+        "position": "11",
+        "title": "This Is Your Life ",
+        "duration": ""
+      },
+      {
+        "position": "12",
+        "title": "Rot 'N' Roll",
+        "duration": ""
+      },
+      {
+        "position": "13",
+        "title": "Carnal Forge (Live In Tokyo)",
+        "duration": ""
+      },
+      {
+        "position": "14",
+        "title": "Heartwork (Live In Tokyo)",
+        "duration": ""
       }
     ],
     "my_rating": null,
@@ -17149,7 +17392,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 4.21,
+    "global_rating": 4.2,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5pbjLidJuoty9QUOy6X682/mtv-unplugged-in-new-york",
     "enriched": true
@@ -21090,7 +21333,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.67,
+    "global_rating": 3.66,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5vBZRYu2GLA65nfxBvG1a7/the-joshua-tree",
     "enriched": true
@@ -25342,7 +25585,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.62,
+    "global_rating": 3.63,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1Dh27pjT3IEdiRG9Se5uQn/origin-of-symmetry",
     "enriched": true
@@ -28042,6 +28285,65 @@
     "enriched": true
   },
   {
+    "id": 14312448,
+    "instance_id": 2124124528,
+    "artist": "Alcest",
+    "title": "Spiritual Instinct",
+    "year": 2019,
+    "thumb": "https://i.discogs.com/l5lAGYnv1jLfhoGVEko8ilf8TphhQ5FU8gGpQNwPLVs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzEy/NDQ4LTE3MTY4MzA3/NjQtOTY4OS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/jh_IXJhgAshM7rJGZApxI-QWz_YoPef1oaPLoaN7uYA/rs:fit/g:sm/q:90/h:600/w:543/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzEy/NDQ4LTE3MTY4MzA3/NjQtOTY4OS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "post metal",
+      "blackgaze"
+    ],
+    "label": "Nuclear Blast",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-14T10:59:28-07:00",
+    "tracklist": [
+      {
+        "position": "I",
+        "title": "Les Jardins De Minuit",
+        "duration": "7:53"
+      },
+      {
+        "position": "II",
+        "title": "Protection",
+        "duration": "5:50"
+      },
+      {
+        "position": "III",
+        "title": "Sapphire",
+        "duration": "5:01"
+      },
+      {
+        "position": "IV",
+        "title": "L'île Des Morts",
+        "duration": "9:04"
+      },
+      {
+        "position": "V",
+        "title": "Le Miroir",
+        "duration": "5:31"
+      },
+      {
+        "position": "VI",
+        "title": "Spiritual Instinct",
+        "duration": "7:43"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 15284794,
     "instance_id": 1615342849,
     "artist": "Paradise Lost",
@@ -29474,6 +29776,69 @@
         "position": "B6",
         "title": "Years Of Silent Sorrow",
         "duration": ""
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 394583,
+    "instance_id": 2124124693,
+    "artist": "Immortal",
+    "title": "Damned In Black",
+    "year": 2000,
+    "thumb": "https://i.discogs.com/Z4vtlvbKtOVgtIF_Lars2qAdVAU2ItPv6KG6LPcEhjQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDU4/My0xMzQ5ODY1NzU3/LTk3NTQuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/1m9pDT8HeAXYVp8dIQFYD4fbvgFAj2EwVwA5ZnR8VMQ/rs:fit/g:sm/q:90/h:553/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDU4/My0xMzQ5ODY1NzU3/LTk3NTQuanBlZw.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "black metal"
+    ],
+    "label": "Osmose Productions",
+    "format": "CD",
+    "format_full": "Box Set — Limited Edition; CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-14T10:59:55-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Triumph",
+        "duration": "5:40"
+      },
+      {
+        "position": "2",
+        "title": "Wrath From Above",
+        "duration": "5:45"
+      },
+      {
+        "position": "3",
+        "title": "Against The Tide (In The Arctic World)",
+        "duration": "6:02"
+      },
+      {
+        "position": "4",
+        "title": "My Dimension",
+        "duration": "4:31"
+      },
+      {
+        "position": "5",
+        "title": "The Darkness That Embrace Me",
+        "duration": "4:37"
+      },
+      {
+        "position": "6",
+        "title": "In Our Mystic Visions Blest",
+        "duration": "3:11"
+      },
+      {
+        "position": "7",
+        "title": "Damned In Black",
+        "duration": "6:50"
       }
     ],
     "my_rating": null,
@@ -31297,7 +31662,7 @@
     ],
     "my_rating": 3,
     "my_review": "Pagan poetry is one of the best songs I've ever heard ",
-    "global_rating": 3.16,
+    "global_rating": 3.17,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1emkiMRnLWtWfmCcJapjR1/vespertine",
     "enriched": true
@@ -36437,7 +36802,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.01,
+    "global_rating": 2.99,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2vERrKmV1XeTlGczwqs9ZU/barton-hollow",
     "enriched": true
@@ -37455,7 +37820,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.02,
+    "global_rating": 3.03,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/59GwovfBk0Kp2HJw1G7E5Q/angel-dust",
     "enriched": true
@@ -41431,7 +41796,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.72,
+    "global_rating": 3.73,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/2rCS6Xwx32V27pvgFzLzlT/dire-straits",
     "enriched": true
@@ -42846,6 +43211,107 @@
     "enriched": true
   },
   {
+    "id": 169648,
+    "instance_id": 2124126166,
+    "artist": "Daft Punk",
+    "title": "Discovery",
+    "year": 2001,
+    "thumb": "https://i.discogs.com/QCY1ONPIu8K0emeFlQxUjUIYqKNAsR7gsyzOmX1I0QM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2OTY0/OC0xNTEyNDMzNDgw/LTQyMDAuanBlZw.jpeg",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b2732c25dad9f8fd54652f7ba5df",
+    "genres": [
+      "electronica"
+    ],
+    "styles": [
+      "disco",
+      "house",
+      "electro",
+      "french house"
+    ],
+    "label": "Virgin",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Europe",
+    "date_added": "2026-03-14T11:03:25-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "One More Time",
+        "duration": "5:20"
+      },
+      {
+        "position": "2",
+        "title": "Aerodynamic",
+        "duration": "3:27"
+      },
+      {
+        "position": "3",
+        "title": "Digital Love",
+        "duration": "4:58"
+      },
+      {
+        "position": "4",
+        "title": "Harder, Better, Faster, Stronger",
+        "duration": "3:44"
+      },
+      {
+        "position": "5",
+        "title": "Crescendolls",
+        "duration": "3:31"
+      },
+      {
+        "position": "6",
+        "title": "Nightvision",
+        "duration": "1:44"
+      },
+      {
+        "position": "7",
+        "title": "Superheroes",
+        "duration": "3:57"
+      },
+      {
+        "position": "8",
+        "title": "High Life",
+        "duration": "3:21"
+      },
+      {
+        "position": "9",
+        "title": "Something About Us",
+        "duration": "3:51"
+      },
+      {
+        "position": "10",
+        "title": "Voyager",
+        "duration": "3:47"
+      },
+      {
+        "position": "11",
+        "title": "Veridis Quo",
+        "duration": "5:44"
+      },
+      {
+        "position": "12",
+        "title": "Short Circuit",
+        "duration": "3:26"
+      },
+      {
+        "position": "13",
+        "title": "Face To Face",
+        "duration": "4:00"
+      },
+      {
+        "position": "14",
+        "title": "Too Long",
+        "duration": "10:00"
+      }
+    ],
+    "my_rating": 4,
+    "my_review": "",
+    "global_rating": 3.95,
+    "list_source": "user",
+    "reviews_url": "https://1001albumsgenerator.com/albums/2noRn2Aes5aoNVsU6iWThc/discovery",
+    "enriched": true
+  },
+  {
     "id": 4556151,
     "instance_id": 2073771093,
     "artist": "Sex Pistols",
@@ -43522,7 +43988,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.35,
+    "global_rating": 3.36,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6yWMN087PgSimbcVmHLEwG/aenima",
     "enriched": true
