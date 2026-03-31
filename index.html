@@ -681,6 +681,20 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 
 .error-text{color:var(--red);font-size:12px;margin-top:12px;display:none}
 
+/* ── RYM RATING ── */
+.card-ratings{display:flex;align-items:center;justify-content:space-between;margin-top:3px;min-height:16px}
+.rym-badge{
+  font-size:10px;font-weight:600;letter-spacing:.02em;
+  color:var(--text-mid);background:var(--surface2);
+  border:1px solid var(--border2);
+  padding:2px 6px;border-radius:99px;
+  white-space:nowrap;
+}
+.rym-badge.has-rating{color:#c084fc;border-color:rgba(192,132,252,.35);background:rgba(192,132,252,.08)}
+
+/* List row RYM */
+.album-row-rym{font-size:11px;font-weight:600;color:#c084fc;flex-shrink:0;margin-left:8px;white-space:nowrap}
+
 /* ── WANTLIST ENRICHMENT ── */
 .wantlist-price-badge{
   font-size:10px;font-weight:600;letter-spacing:.02em;
@@ -845,12 +859,24 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     </select>
   </div>
   <div class="filter-group">
-    <span class="filter-label">Rating</span>
+    <span class="filter-label">1001 Rating</span>
     <select id="filterRating" onchange="applyFilters()">
       <option value="">Any rating</option>
       <option value="5">★★★★★ only</option>
       <option value="4">★★★★+ and up</option>
       <option value="3">★★★+ and up</option>
+      <option value="rated">Rated only</option>
+      <option value="unrated">Unrated only</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">RYM Rating</span>
+    <select id="filterRym" onchange="applyFilters()">
+      <option value="">Any</option>
+      <option value="9">9–10</option>
+      <option value="7">7–8</option>
+      <option value="5">5–6</option>
+      <option value="low">Below 5</option>
       <option value="rated">Rated only</option>
       <option value="unrated">Unrated only</option>
     </select>
@@ -868,7 +894,8 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     <span class="filter-label">Sort</span>
     <select id="filterSort" onchange="applyFilters()">
       <option value="date_added">Recently Added</option>
-      <option value="rating_desc">My Rating ↓</option>
+      <option value="rating_desc">1001 Rating ↓</option>
+      <option value="rym_desc">RYM Rating ↓</option>
       <option value="year_asc">Year ↑</option>
       <option value="year_desc">Year ↓</option>
       <option value="artist">Artist A–Z</option>
@@ -966,6 +993,7 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 <script>
 // ── STATE ─────────────────────────────────────────────────
 let allRecords = [];
+let rymLoaded = false;
 let filteredRecords = [];
 let allWantlistRecords = [];
 let filteredWantlistRecords = [];
@@ -989,6 +1017,8 @@ async function init() {
     allRecords = await r.json();
     normaliseAllTags();
     buildDecades();
+    // Fetch RYM CSV in parallel — failure is non-fatal
+    await mergeRymData();
     applyFilters();
   } catch(e) { showFirstRunState(); }
 }
@@ -1023,6 +1053,90 @@ function normaliseWantlistTags() {
     r.genres = [...new Set((r.genres||[]).map(normTag))];
     r.styles = [...new Set((r.styles||[]).map(normTag))];
   }
+}
+
+// ── RYM CSV FETCH & MERGE ─────────────────────────────────
+async function mergeRymData() {
+  try {
+    const resp = await fetch('zapanda-music-export.csv');
+    if (!resp.ok) return;
+    const text = await resp.text();
+    const rymMap = parseRymCsv(text);
+    let matched = 0;
+    for (const r of allRecords) {
+      const rating = findRymMatch(r, rymMap);
+      r.rym_rating = rating ?? null;
+      if (rating !== null) matched++;
+    }
+    rymLoaded = true;
+    console.log(`[RYM] Merged ${matched} ratings from ${rymMap.size} RYM entries`);
+  } catch(e) {
+    console.warn('[RYM] Could not load zapanda-music-export.csv:', e.message);
+  }
+}
+
+function parseRymCsv(text) {
+  const lines = text.split(/\r?\n/);
+  if (lines.length < 2) return new Map();
+  const headers = parseCsvRow(lines[0]).map(h => h.trim().toLowerCase());
+  const iFirst  = headers.indexOf('first name');
+  const iLast   = headers.indexOf('last name');
+  const iTitle  = headers.indexOf('title');
+  const iRating = headers.indexOf('rating');
+  if (iLast === -1 || iTitle === -1 || iRating === -1) return new Map();
+  const map = new Map();
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    const cols   = parseCsvRow(line);
+    const rating = parseFloat(cols[iRating]);
+    if (!rating || isNaN(rating)) continue;
+    const first  = iFirst >= 0 ? (cols[iFirst]||'').trim() : '';
+    const last   = (cols[iLast]||'').trim();
+    const artist = first ? `${first} ${last}` : last;
+    const title  = (cols[iTitle]||'').trim();
+    if (!artist || !title) continue;
+    map.set(norm(artist) + '||' + norm(title), rating);
+  }
+  return map;
+}
+
+function parseCsvRow(line) {
+  const cols = []; let cur = '', inQuote = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (inQuote) {
+      if (ch === '"' && line[i+1] === '"') { cur += '"'; i++; }
+      else if (ch === '"') inQuote = false;
+      else cur += ch;
+    } else {
+      if (ch === '"') inQuote = true;
+      else if (ch === ',') { cols.push(cur); cur = ''; }
+      else cur += ch;
+    }
+  }
+  cols.push(cur);
+  return cols;
+}
+
+function findRymMatch(record, rymMap) {
+  const k1 = norm(record.artist) + '||' + norm(record.title);
+  if (rymMap.has(k1)) return rymMap.get(k1);
+  const tc = record.title.replace(/\s*[\(\[].*?[\)\]]/g,'').trim();
+  const k2 = norm(record.artist) + '||' + norm(tc);
+  if (rymMap.has(k2)) return rymMap.get(k2);
+  const na = norm(record.artist);
+  const wa = new Set(norm(tc).split(' ').filter(Boolean));
+  if (!wa.size) return null;
+  for (const [k, v] of rymMap.entries()) {
+    const [ka, kt] = k.split('||');
+    if (ka !== na) continue;
+    const wb    = new Set(kt.split(' ').filter(Boolean));
+    const inter = [...wa].filter(w => wb.has(w)).length;
+    const union = new Set([...wa, ...wb]).size;
+    if (union > 0 && inter / union >= 0.75) return v;
+  }
+  return null;
 }
 
 function showLoading() {
@@ -1145,6 +1259,7 @@ function applyFilters() {
   const format = document.getElementById('filterFormat').value;
   const decade = document.getElementById('filterDecade').value;
   const rating = document.getElementById('filterRating').value;
+  const rym    = document.getElementById('filterRym').value;
   const list   = document.getElementById('filterList').value;
   const sort   = document.getElementById('filterSort').value;
   const search = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -1157,6 +1272,12 @@ function applyFilters() {
     if (rating==='5') { if ((r.my_rating||0)<5) return false }
     if (rating==='4') { if ((r.my_rating||0)<4) return false }
     if (rating==='3') { if ((r.my_rating||0)<3) return false }
+    if (rym==='rated')   { if (!r.rym_rating) return false }
+    if (rym==='unrated') { if (r.rym_rating)  return false }
+    if (rym==='9')   { if ((r.rym_rating||0)<9)  return false }
+    if (rym==='7')   { if ((r.rym_rating||0)<7||(r.rym_rating||0)>=9) return false }
+    if (rym==='5')   { if ((r.rym_rating||0)<5||(r.rym_rating||0)>=7) return false }
+    if (rym==='low') { if (!r.rym_rating||(r.rym_rating||0)>=5) return false }
     if (list==='book') { if (r.list_source!=='book') return false }
     if (list==='user') { if (r.list_source!=='user') return false }
     if (list==='none') { if (r.list_source)           return false }
@@ -1172,6 +1293,7 @@ function applyFilters() {
   filteredRecords.sort((a,b) => {
     if (sort==='date_added')  return new Date(b.date_added)-new Date(a.date_added);
     if (sort==='rating_desc') return (b.my_rating||0)-(a.my_rating||0);
+    if (sort==='rym_desc')    return (b.rym_rating||0)-(a.rym_rating||0);
     if (sort==='year_asc')    return (a.year||0)-(b.year||0);
     if (sort==='year_desc')   return (b.year||0)-(a.year||0);
     if (sort==='artist')      return (a.artist||'').localeCompare(b.artist||'');
@@ -1233,7 +1355,7 @@ function applyWantlistFilters() {
 }
 
 function clearFilters() {
-  ['filterFormat','filterDecade','filterRating','filterList'].forEach(id=>document.getElementById(id).value='');
+  ['filterFormat','filterDecade','filterRating','filterRym','filterList'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('filterSort').value='date_added';
   document.getElementById('searchInput').value='';
   const mobileSearch=document.getElementById('searchInputMobile');
@@ -1320,7 +1442,10 @@ function makeCard(r, i, small=false) {
     <div class="album-artist">${esc(r.artist)}</div>
     <div class="album-title">${esc(r.title)}</div>
     <div class="album-year">${r.year||'—'}</div>
-    <div class="card-stars">${renderStars(r.my_rating??null)}</div>`;
+    <div class="card-ratings">
+      <div class="card-stars">${renderStars(r.my_rating??null)}</div>
+      ${r.rym_rating != null ? `<div class="rym-badge has-rating">${r.rym_rating}/10</div>` : rymLoaded ? '<div class="rym-badge">—</div>' : ''}
+    </div>`;
   return card;
 }
 
@@ -1346,7 +1471,8 @@ function makeListRow(r, i) {
     </div>
     <div class="album-row-rating">
       ${renderStars(r.my_rating??null)}
-    </div>`;
+    </div>
+    ${r.rym_rating != null ? `<div class="album-row-rym">${r.rym_rating}/10</div>` : ''}`;
   return row;
 }
 
@@ -1558,10 +1684,14 @@ function openDetail(r) {
 
   // Rating
   let ratingHtml='';
-  if (r.my_rating||r.global_rating) {
-    const my = r.my_rating ? `<div class="modal-my-rating"><span class="modal-my-rating-label">My rating</span>${renderStars(r.my_rating)}</div>` : '';
-    const gl  = r.global_rating ? `<div class="modal-global-rating">community <span>${Number(r.global_rating).toFixed(2)}/5</span></div>` : '';
-    ratingHtml = `<div class="modal-rating-block">${my}${gl}</div>`;
+  if (r.my_rating || r.global_rating || r.rym_rating != null) {
+    const my  = r.my_rating
+      ? `<div class="modal-my-rating"><span class="modal-my-rating-label">1001 Rating</span>${renderStars(r.my_rating)}</div>` : '';
+    const gl  = r.global_rating
+      ? `<div class="modal-global-rating">community <span>${Number(r.global_rating).toFixed(2)}/5</span></div>` : '';
+    const rym = r.rym_rating != null
+      ? `<div class="modal-global-rating" style="border-left:1px solid var(--border);padding-left:14px">RYM <span style="color:#c084fc;font-weight:600">${r.rym_rating}/10</span></div>` : '';
+    ratingHtml = `<div class="modal-rating-block">${my}${gl}${rym}</div>`;
   }
 
   // Review
