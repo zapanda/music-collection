@@ -2408,7 +2408,6 @@ document.addEventListener('keydown',e=>{
 });
 
 // ── LISTENING SECTION ─────────────────────────────────────
-const LFM_KEY  = '4075ae45023275c5c8606c17814396f7';
 const LFM_USER = 'boogie220';
 const LFM_BASE = 'https://ws.audioscrobbler.com/2.0/';
 
@@ -2425,13 +2424,22 @@ const LFM_PERIODS = [
   { key:'overall',label:'All Time' },
 ];
 
+function lfmGetKey() {
+  return localStorage.getItem('lf_api_key') || '';
+}
+
 async function lfmGet(params) {
+  const key = lfmGetKey();
+  if (!key) throw new Error('No API key set');
   const url = LFM_BASE + '?' + new URLSearchParams({
-    ...params, api_key: LFM_KEY, user: LFM_USER, format: 'json'
+    ...params, api_key: key, user: LFM_USER, format: 'json'
   });
   const r = await fetch(url);
-  if (!r.ok) throw new Error(`Last.fm ${r.status}`);
-  return r.json();
+  if (r.status === 403) throw new Error('Invalid or unauthorised API key (403) — paste a fresh key in the Listening section');
+  if (!r.ok) throw new Error(`Last.fm error ${r.status}`);
+  const data = await r.json();
+  if (data.error) throw new Error(`Last.fm: ${data.message} (error ${data.error})`);
+  return data;
 }
 
 function lfmLoad() {
@@ -2497,15 +2505,29 @@ function initListening() {
 
 function renderListening() {
   const el = document.getElementById('listeningContent');
+  const hasKey = !!lfmGetKey();
 
   const lastStr = lfmLastFetch
     ? `Last updated: <span>${new Date(lfmLastFetch).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span> · ${lfmScrobbles.length.toLocaleString()} scrobbles cached`
-    : 'No data yet — hit Refresh to fetch your listening history';
+    : 'No data yet — paste your API key and hit Refresh';
 
-  // Period selector HTML
   const periodHtml = LFM_PERIODS.map(p =>
     `<button class="period-btn${p.key===lfmPeriod?' active':''}" onclick="setLfmPeriod('${p.key}')">${p.label}</button>`
   ).join('');
+
+  const keyBlock = !hasKey ? `
+    <div class="lfm-setup">
+      <h3>Last.fm API Key Required</h3>
+      <p>Get a free key at <strong>last.fm/api/account/create</strong> (no secret needed).<br>
+      It's saved in your browser — you only do this once per device.</p>
+      <div style="display:flex;gap:8px;margin-top:16px;justify-content:center;flex-wrap:wrap">
+        <input type="password" id="lfmKeyInput" placeholder="Paste API key here…"
+          style="background:var(--surface);border:1px solid var(--border);color:var(--text);
+                 padding:8px 12px;border-radius:var(--radius-sm);font-family:'Inter',sans-serif;
+                 font-size:13px;width:280px;outline:none">
+        <button onclick="lfmSaveKey()" class="btn-lfm-refresh" style="margin:0">Save key</button>
+      </div>
+    </div>` : '';
 
   el.innerHTML = `
     <div class="listening-header">
@@ -2513,15 +2535,15 @@ function renderListening() {
         <div class="listening-title">Listening Activity</div>
         <div class="listening-subtitle">${lastStr}</div>
       </div>
-      <button class="btn-lfm-refresh" id="btnLfmRefresh" onclick="lfmRefresh()">↻ Refresh</button>
+      <div style="display:flex;gap:8px;align-items:center">
+        ${hasKey ? `<button class="btn-lfm-refresh" style="background:var(--surface);color:var(--text-dim);border:1px solid var(--border)" onclick="lfmChangeKey()" title="Change API key">🔑</button>` : ''}
+        <button class="btn-lfm-refresh" id="btnLfmRefresh" onclick="lfmRefresh()" ${!hasKey?'disabled':''}>↻ Refresh</button>
+      </div>
     </div>
 
-    ${lfmScrobbles.length === 0 ? `
-      <div class="lfm-setup">
-        <h3>No listening data yet</h3>
-        <p>Hit <strong>Refresh</strong> to fetch your Last.fm history for <strong>${LFM_USER}</strong>.<br>
-        Make sure Spotify is connected to Last.fm so your plays are being scrobbled.</p>
-      </div>` : `
+    ${keyBlock}
+
+    ${lfmScrobbles.length > 0 ? `
       <div class="period-selector">${periodHtml}</div>
       <div id="lfmStats"></div>
       <div id="lfmCharts"></div>
@@ -2529,9 +2551,27 @@ function renderListening() {
       <div id="lfmHabits"></div>
       <div id="lfmRecent"></div>
       <div id="lfmCrossover"></div>
-    `}`;
+    ` : hasKey ? `
+      <div class="lfm-setup">
+        <h3>No listening data yet</h3>
+        <p>Hit <strong>Refresh</strong> to fetch your Last.fm history for <strong>${LFM_USER}</strong>.<br>
+        Make sure Spotify is connected to Last.fm so your plays are being scrobbled.</p>
+      </div>` : ''}`;
 
   if (lfmScrobbles.length > 0) renderLfmDashboard();
+}
+
+function lfmSaveKey() {
+  const input = document.getElementById('lfmKeyInput');
+  const key   = (input?.value || '').trim();
+  if (!key) return;
+  localStorage.setItem('lf_api_key', key);
+  renderListening();
+}
+
+function lfmChangeKey() {
+  localStorage.removeItem('lf_api_key');
+  renderListening();
 }
 
 function setLfmPeriod(p) {
