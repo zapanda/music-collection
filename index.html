@@ -707,6 +707,169 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 .wantlist-community span{color:var(--star)}
 .album-row-price{font-size:11px;color:var(--green);font-weight:600;flex-shrink:0;margin-left:8px}
 
+/* ── LISTENING SECTION ── */
+#listeningView{padding:0 24px 48px;max-width:1200px;margin:0 auto}
+
+.listening-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 0 16px;flex-wrap:wrap;gap:10px;
+}
+.listening-header-left{display:flex;flex-direction:column;gap:4px}
+.listening-title{font-size:18px;font-weight:700;color:var(--text)}
+.listening-subtitle{font-size:12px;color:var(--text-dim)}
+.listening-subtitle span{color:var(--text-mid)}
+
+.btn-lfm-refresh{
+  display:flex;align-items:center;gap:7px;
+  background:var(--accent);color:#fff;
+  border:none;border-radius:var(--radius-sm);
+  padding:9px 16px;font-family:'Inter',sans-serif;
+  font-size:13px;font-weight:600;cursor:pointer;
+  transition:opacity .15s;
+}
+.btn-lfm-refresh:hover{opacity:.85}
+.btn-lfm-refresh:disabled{opacity:.45;cursor:default}
+
+.lfm-setup{
+  background:var(--bg2);border:1px solid var(--border);
+  border-radius:12px;padding:32px;text-align:center;
+  margin:32px 0;
+}
+.lfm-setup h3{font-size:16px;font-weight:600;margin-bottom:8px;color:var(--text)}
+.lfm-setup p{font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:0}
+
+/* Period selector */
+.period-selector{
+  display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;
+}
+.period-btn{
+  padding:6px 14px;font-size:12px;font-weight:500;
+  border:1px solid var(--border);border-radius:99px;
+  background:var(--surface);color:var(--text-mid);
+  cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif;
+}
+.period-btn:hover{border-color:var(--border2);color:var(--text)}
+.period-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* Stat pills */
+.listening-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:12px;margin-bottom:24px;
+}
+.stat-pill{
+  background:var(--bg2);border:1px solid var(--border);
+  border-radius:12px;padding:16px 18px;
+}
+.stat-pill-value{font-size:24px;font-weight:700;color:var(--text);line-height:1}
+.stat-pill-label{font-size:11px;color:var(--text-dim);margin-top:4px;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+
+/* Top charts */
+.top-charts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+.chart-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.chart-card-header{
+  padding:14px 16px 10px;border-bottom:1px solid var(--border);
+  font-size:12px;font-weight:600;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--text-dim);
+}
+.chart-item{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.03);
+  cursor:default;transition:background .12s;
+}
+.chart-item:last-child{border-bottom:none}
+.chart-item:hover{background:var(--surface)}
+.chart-rank{
+  font-size:11px;font-weight:700;color:var(--text-dim);
+  width:16px;flex-shrink:0;text-align:right;
+}
+.chart-thumb{
+  width:36px;height:36px;border-radius:4px;object-fit:cover;
+  flex-shrink:0;background:var(--surface2);
+}
+.chart-thumb-placeholder{
+  width:36px;height:36px;border-radius:4px;flex-shrink:0;
+  background:var(--surface2);display:flex;align-items:center;
+  justify-content:center;font-size:14px;color:var(--text-dim);
+}
+.chart-info{flex:1;min-width:0}
+.chart-name{font-size:12px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chart-sub{font-size:11px;color:var(--text-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chart-plays{font-size:11px;font-weight:600;color:var(--text-mid);flex-shrink:0;margin-left:4px}
+
+/* Heatmap */
+.heatmap-card{
+  background:var(--bg2);border:1px solid var(--border);
+  border-radius:12px;padding:18px 20px;margin-bottom:24px;
+}
+.heatmap-card-header{
+  font-size:12px;font-weight:600;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--text-dim);margin-bottom:14px;
+}
+.heatmap-wrap{overflow-x:auto;padding-bottom:4px}
+.heatmap-grid{display:flex;gap:3px}
+.heatmap-col{display:flex;flex-direction:column;gap:3px}
+.heatmap-cell{
+  width:11px;height:11px;border-radius:2px;
+  background:var(--surface2);
+  transition:opacity .1s;cursor:default;
+}
+.heatmap-cell.l1{background:rgba(79,142,247,.25)}
+.heatmap-cell.l2{background:rgba(79,142,247,.5)}
+.heatmap-cell.l3{background:rgba(79,142,247,.75)}
+.heatmap-cell.l4{background:rgba(79,142,247,1)}
+.heatmap-months{display:flex;gap:3px;margin-bottom:4px;padding-left:0}
+.heatmap-month-label{font-size:10px;color:var(--text-dim);white-space:nowrap}
+
+/* Habits */
+.habits-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.habits-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.habits-card-header{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-dim);margin-bottom:14px}
+.bar-chart{display:flex;align-items:flex-end;gap:3px;height:64px}
+.bar-col{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1}
+.bar-fill{width:100%;border-radius:3px 3px 0 0;background:var(--accent);opacity:.7;min-height:2px;transition:height .3s}
+.bar-fill.peak{opacity:1}
+.bar-label{font-size:9px;color:var(--text-dim);white-space:nowrap}
+
+/* Recent tracks */
+.recent-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:24px}
+.recent-card-header{padding:14px 16px 10px;border-bottom:1px solid var(--border);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-dim)}
+.recent-track{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.03);
+}
+.recent-track:last-child{border-bottom:none}
+.recent-track-thumb{width:36px;height:36px;border-radius:4px;object-fit:cover;flex-shrink:0;background:var(--surface2)}
+.recent-track-info{flex:1;min-width:0}
+.recent-track-title{font-size:12px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.recent-track-sub{font-size:11px;color:var(--text-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.recent-track-time{font-size:11px;color:var(--text-dim);flex-shrink:0;margin-left:4px}
+.recent-track.now-playing .recent-track-title{color:var(--accent)}
+.now-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Crossover */
+.crossover-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:24px}
+.crossover-header{padding:14px 16px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.crossover-header-title{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-dim)}
+.crossover-header-stat{font-size:12px;color:var(--text-mid)}
+.crossover-header-stat span{color:var(--accent);font-weight:600}
+.crossover-item{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.03);cursor:pointer;
+  transition:background .12s;
+}
+.crossover-item:last-child{border-bottom:none}
+.crossover-item:hover{background:var(--surface)}
+
+/* Mobile listening */
+@media(max-width:700px){
+  #listeningView{padding:0 12px 32px}
+  .listening-stats{grid-template-columns:repeat(2,1fr)}
+  .top-charts{grid-template-columns:1fr}
+  .habits-grid{grid-template-columns:1fr}
+  .stat-pill-value{font-size:20px}
+}
+
 /* Mobile filters toggle — hidden on desktop, shown inside media query below */
 .filters-mobile-bar{
   display:none;
@@ -807,6 +970,9 @@ select:focus,.search-input:focus{border-color:var(--accent)}
     </button>
     <button class="section-btn" id="btnSectionWantlist" onclick="switchSection('wantlist')">
       Wantlist
+    </button>
+    <button class="section-btn" id="btnSectionListening" onclick="switchSection('listening')">
+      Listening
     </button>
   </div>
 
@@ -911,6 +1077,7 @@ select:focus,.search-input:focus{border-color:var(--accent)}
 <div id="gridView" class="grid-container"><div id="mainContent"></div></div>
 <div id="timelineView" class="timeline-container" style="display:none"><div id="timelineContent"></div></div>
 <div id="wantlistView" class="grid-container" style="display:none"><div id="wantlistContent"></div></div>
+<div id="listeningView" style="display:none"><div id="listeningContent"></div></div>
 
 <!-- GENRE MODAL -->
 <div class="genre-overlay" id="genreOverlay" onclick="closeGenreIfOverlay(event)">
@@ -1185,30 +1352,39 @@ function switchSection(section) {
   currentSection = section;
 
   const isCollection = section === 'collection';
-  document.getElementById('btnSectionCollection').classList.toggle('active', isCollection);
-  document.getElementById('btnSectionWantlist').classList.toggle('active', !isCollection);
+  const isWantlist   = section === 'wantlist';
+  const isListening  = section === 'listening';
 
-  // Timeline is collection-only — hide the button in wantlist
+  document.getElementById('btnSectionCollection').classList.toggle('active', isCollection);
+  document.getElementById('btnSectionWantlist').classList.toggle('active', isWantlist);
+  document.getElementById('btnSectionListening').classList.toggle('active', isListening);
+
+  // View switch and timeline button only relevant for collection/wantlist
+  document.getElementById('viewSwitch').style.display = isListening ? 'none' : 'flex';
   document.getElementById('btnTimeline').style.display = isCollection ? '' : 'none';
 
-  // If timeline was active and we're switching to wantlist, fall back to grid
+  // If timeline was active and we're leaving collection, fall back to grid
   if (!isCollection && currentView === 'timeline') {
     currentView = 'grid';
     document.getElementById('btnGrid').classList.add('active');
     document.getElementById('btnTimeline').classList.remove('active');
   }
 
-  document.getElementById('viewSwitch').style.display = 'flex';
   const isGridLike = currentView === 'grid' || currentView === 'list';
-  document.getElementById('gridView').style.display = isCollection && isGridLike ? 'block' : 'none';
-  document.getElementById('timelineView').style.display = isCollection && currentView === 'timeline' ? 'block' : 'none';
-  document.getElementById('wantlistView').style.display = isCollection ? 'none' : 'block';
+  document.getElementById('gridView').style.display      = isCollection && isGridLike ? 'block' : 'none';
+  document.getElementById('timelineView').style.display  = isCollection && currentView === 'timeline' ? 'block' : 'none';
+  document.getElementById('wantlistView').style.display  = isWantlist ? 'block' : 'none';
+  document.getElementById('listeningView').style.display = isListening ? 'block' : 'none';
 
-  if (isCollection) {
-    applyFilters();
-  } else {
-    initWantlist();
-  }
+  // Hide filters bar when in listening section
+  const filtersBar = document.querySelector('.filters-bar');
+  const mobileBar  = document.querySelector('.filters-mobile-bar');
+  if (filtersBar)  filtersBar.style.display  = isListening ? 'none' : '';
+  if (mobileBar)   mobileBar.style.display   = isListening ? 'none' : '';
+
+  if (isCollection)  applyFilters();
+  else if (isWantlist)  initWantlist();
+  else if (isListening) initListening();
 }
 
 function switchView(v) {
@@ -2230,6 +2406,440 @@ function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').repla
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'){closeDetail();closeUpdateModal();closeGenreModal();}
 });
+
+// ── LISTENING SECTION ─────────────────────────────────────
+const LFM_KEY  = '4075ae45023275c5c8606c17814396f7';
+const LFM_USER = 'boogie220';
+const LFM_BASE = 'https://ws.audioscrobbler.com/2.0/';
+
+let lfmScrobbles   = [];   // full cached scrobble array
+let lfmLastFetch   = null; // ISO string
+let lfmPeriod      = '1month';
+
+const LFM_PERIODS = [
+  { key:'7day',   label:'Week'     },
+  { key:'1month', label:'Month'    },
+  { key:'3month', label:'3 Months' },
+  { key:'6month', label:'6 Months' },
+  { key:'12month',label:'Year'     },
+  { key:'overall',label:'All Time' },
+];
+
+async function lfmGet(params) {
+  const url = LFM_BASE + '?' + new URLSearchParams({
+    ...params, api_key: LFM_KEY, user: LFM_USER, format: 'json'
+  });
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`Last.fm ${r.status}`);
+  return r.json();
+}
+
+function lfmLoad() {
+  try {
+    const raw = localStorage.getItem('lf_scrobbles');
+    if (raw) lfmScrobbles = JSON.parse(raw);
+    lfmLastFetch = localStorage.getItem('lf_last_fetch') || null;
+  } catch(e) { lfmScrobbles = []; }
+}
+
+function lfmSave() {
+  try {
+    localStorage.setItem('lf_scrobbles', JSON.stringify(lfmScrobbles));
+    localStorage.setItem('lf_last_fetch', lfmLastFetch);
+  } catch(e) { console.warn('[LFM] localStorage save failed:', e.message); }
+}
+
+async function lfmRefresh() {
+  const btn = document.getElementById('btnLfmRefresh');
+  btn.disabled = true;
+  btn.textContent = 'Fetching…';
+  try {
+    // Page 1 to get total pages
+    const first = await lfmGet({ method:'user.getRecentTracks', limit:200, page:1 });
+    const total = parseInt(first.recenttracks['@attr']?.totalPages || 1);
+    const tracks = [...(first.recenttracks.track || [])];
+
+    for (let p = 2; p <= total; p++) {
+      btn.textContent = `Fetching ${p}/${total}…`;
+      const pg = await lfmGet({ method:'user.getRecentTracks', limit:200, page:p });
+      tracks.push(...(pg.recenttracks.track || []));
+      await new Promise(r=>setTimeout(r,200));
+    }
+
+    // Filter out the "now playing" entry (no date) and normalise
+    lfmScrobbles = tracks
+      .filter(t => t.date)
+      .map(t => ({
+        artist: t.artist?.['#text'] || t.artist?.name || '',
+        album:  t.album?.['#text']  || '',
+        track:  t.name || '',
+        ts:     parseInt(t.date?.uts || 0),
+        img:    (t.image||[]).find(i=>i.size==='medium')?.['#text'] || '',
+      }));
+
+    lfmLastFetch = new Date().toISOString();
+    lfmSave();
+    renderListening();
+  } catch(e) {
+    console.error('[LFM] Refresh failed:', e);
+    document.getElementById('listeningContent').innerHTML +=
+      `<div style="color:var(--red);padding:12px">Fetch failed: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '↻ Refresh';
+  }
+}
+
+function initListening() {
+  lfmLoad();
+  renderListening();
+}
+
+function renderListening() {
+  const el = document.getElementById('listeningContent');
+
+  const lastStr = lfmLastFetch
+    ? `Last updated: <span>${new Date(lfmLastFetch).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span> · ${lfmScrobbles.length.toLocaleString()} scrobbles cached`
+    : 'No data yet — hit Refresh to fetch your listening history';
+
+  // Period selector HTML
+  const periodHtml = LFM_PERIODS.map(p =>
+    `<button class="period-btn${p.key===lfmPeriod?' active':''}" onclick="setLfmPeriod('${p.key}')">${p.label}</button>`
+  ).join('');
+
+  el.innerHTML = `
+    <div class="listening-header">
+      <div class="listening-header-left">
+        <div class="listening-title">Listening Activity</div>
+        <div class="listening-subtitle">${lastStr}</div>
+      </div>
+      <button class="btn-lfm-refresh" id="btnLfmRefresh" onclick="lfmRefresh()">↻ Refresh</button>
+    </div>
+
+    ${lfmScrobbles.length === 0 ? `
+      <div class="lfm-setup">
+        <h3>No listening data yet</h3>
+        <p>Hit <strong>Refresh</strong> to fetch your Last.fm history for <strong>${LFM_USER}</strong>.<br>
+        Make sure Spotify is connected to Last.fm so your plays are being scrobbled.</p>
+      </div>` : `
+      <div class="period-selector">${periodHtml}</div>
+      <div id="lfmStats"></div>
+      <div id="lfmCharts"></div>
+      <div id="lfmHeatmap"></div>
+      <div id="lfmHabits"></div>
+      <div id="lfmRecent"></div>
+      <div id="lfmCrossover"></div>
+    `}`;
+
+  if (lfmScrobbles.length > 0) renderLfmDashboard();
+}
+
+function setLfmPeriod(p) {
+  lfmPeriod = p;
+  renderListening();
+}
+
+// Filter scrobbles to selected period
+function lfmFilterByPeriod(scrobbles, period) {
+  if (period === 'overall') return scrobbles;
+  const days = { '7day':7,'1month':30,'3month':90,'6month':180,'12month':365 }[period] || 30;
+  const cutoff = (Date.now()/1000) - (days * 86400);
+  return scrobbles.filter(s => s.ts >= cutoff);
+}
+
+function renderLfmDashboard() {
+  const filtered = lfmFilterByPeriod(lfmScrobbles, lfmPeriod);
+  renderLfmStats(filtered);
+  renderLfmCharts(filtered);
+  renderLfmHeatmap();
+  renderLfmHabits(filtered);
+  renderLfmRecent();
+  renderLfmCrossover(filtered);
+}
+
+// ── STATS PILLS ──
+function renderLfmStats(filtered) {
+  const artists = new Set(filtered.map(s=>s.artist.toLowerCase())).size;
+  const albums  = new Set(filtered.map(s=>(s.artist+' — '+s.album).toLowerCase()).filter(k=>!k.startsWith(' —'))).size;
+  const estMins = Math.round(filtered.length * 3.8);
+  const estHrs  = (estMins/60).toFixed(1);
+
+  document.getElementById('lfmStats').innerHTML = `
+    <div class="listening-stats">
+      <div class="stat-pill"><div class="stat-pill-value">${filtered.length.toLocaleString()}</div><div class="stat-pill-label">Scrobbles</div></div>
+      <div class="stat-pill"><div class="stat-pill-value">${artists.toLocaleString()}</div><div class="stat-pill-label">Artists</div></div>
+      <div class="stat-pill"><div class="stat-pill-value">${albums.toLocaleString()}</div><div class="stat-pill-label">Albums</div></div>
+      <div class="stat-pill"><div class="stat-pill-value">~${estHrs}h</div><div class="stat-pill-label">Est. listening time</div></div>
+    </div>`;
+}
+
+// ── TOP CHARTS ──
+function renderLfmCharts(filtered) {
+  // Top albums
+  const albumMap = new Map();
+  for (const s of filtered) {
+    if (!s.album) continue;
+    const k = s.artist + '|||' + s.album;
+    const e = albumMap.get(k) || { artist:s.artist, album:s.album, img:s.img, plays:0 };
+    e.plays++; if (s.img && !e.img) e.img = s.img;
+    albumMap.set(k, e);
+  }
+  const topAlbums = [...albumMap.values()].sort((a,b)=>b.plays-a.plays).slice(0,10);
+
+  // Top artists
+  const artistMap = new Map();
+  for (const s of filtered) {
+    const k = s.artist.toLowerCase();
+    const e = artistMap.get(k) || { artist:s.artist, img:'', plays:0 };
+    e.plays++; if (s.img && !e.img) e.img = s.img;
+    artistMap.set(k, e);
+  }
+  const topArtists = [...artistMap.values()].sort((a,b)=>b.plays-a.plays).slice(0,10);
+
+  // Top tracks
+  const trackMap = new Map();
+  for (const s of filtered) {
+    const k = s.artist + '|||' + s.track;
+    const e = trackMap.get(k) || { artist:s.artist, track:s.track, img:s.img, plays:0 };
+    e.plays++; if (s.img && !e.img) e.img = s.img;
+    trackMap.set(k, e);
+  }
+  const topTracks = [...trackMap.values()].sort((a,b)=>b.plays-a.plays).slice(0,10);
+
+  function makeChartItems(items, nameKey, subKey) {
+    if (!items.length) return `<div style="padding:16px;font-size:12px;color:var(--text-dim)">No data for this period</div>`;
+    return items.map((item,i) => `
+      <div class="chart-item">
+        <div class="chart-rank">${i+1}</div>
+        ${item.img
+          ? `<img class="chart-thumb" src="${esc(item.img)}" loading="lazy" onerror="this.outerHTML='<div class=chart-thumb-placeholder>♪</div>'">`
+          : `<div class="chart-thumb-placeholder">♪</div>`}
+        <div class="chart-info">
+          <div class="chart-name">${esc(item[nameKey])}</div>
+          ${subKey ? `<div class="chart-sub">${esc(item[subKey])}</div>` : ''}
+        </div>
+        <div class="chart-plays">${item.plays}</div>
+      </div>`).join('');
+  }
+
+  document.getElementById('lfmCharts').innerHTML = `
+    <div class="top-charts">
+      <div class="chart-card">
+        <div class="chart-card-header">Top Albums</div>
+        ${makeChartItems(topAlbums,'album','artist')}
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-header">Top Artists</div>
+        ${makeChartItems(topArtists,'artist',null)}
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-header">Top Tracks</div>
+        ${makeChartItems(topTracks,'track','artist')}
+      </div>
+    </div>`;
+}
+
+// ── ACTIVITY HEATMAP (always all-time, 52 weeks) ──
+function renderLfmHeatmap() {
+  // Build a day → count map
+  const dayMap = new Map();
+  for (const s of lfmScrobbles) {
+    const d = new Date(s.ts * 1000);
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    dayMap.set(key, (dayMap.get(key)||0) + 1);
+  }
+
+  const maxCount = Math.max(...dayMap.values(), 1);
+  const today = new Date();
+  // Start from 52 weeks ago, aligned to Monday
+  const startDate = new Date(today);
+  startDate.setDate(today.getDate() - (52*7) - today.getDay() + 1);
+
+  // Build weeks (columns)
+  const weeks = [];
+  let cur = new Date(startDate);
+  while (cur <= today) {
+    const week = [];
+    for (let d=0; d<7; d++) {
+      if (cur > today) { week.push(null); }
+      else {
+        const key = `${cur.getFullYear()}-${String(cur.getMonth()+1).padStart(2,'0')}-${String(cur.getDate()).padStart(2,'0')}`;
+        week.push({ key, count: dayMap.get(key)||0, date: new Date(cur) });
+      }
+      cur.setDate(cur.getDate()+1);
+    }
+    weeks.push(week);
+  }
+
+  // Month labels
+  const months = [];
+  let lastMonth = -1;
+  weeks.forEach((week,wi) => {
+    const firstDay = week.find(d=>d);
+    if (firstDay && firstDay.date.getMonth() !== lastMonth) {
+      months.push({ wi, label: firstDay.date.toLocaleString('en-GB',{month:'short'}) });
+      lastMonth = firstDay.date.getMonth();
+    }
+  });
+
+  // Level 0–4 based on count
+  function level(c) {
+    if (!c) return '';
+    if (c <= maxCount*0.25) return 'l1';
+    if (c <= maxCount*0.5)  return 'l2';
+    if (c <= maxCount*0.75) return 'l3';
+    return 'l4';
+  }
+
+  const monthRow = `<div class="heatmap-months" style="display:flex;gap:0;margin-bottom:4px">` +
+    weeks.map((_, wi) => {
+      const m = months.find(m=>m.wi===wi);
+      return `<div style="width:14px;flex-shrink:0;font-size:10px;color:var(--text-dim)">${m?m.label:''}</div>`;
+    }).join('') + `</div>`;
+
+  const cols = weeks.map(week =>
+    `<div class="heatmap-col">${week.map(day => day
+      ? `<div class="heatmap-cell ${level(day.count)}" title="${day.key}: ${day.count} scrobbles"></div>`
+      : `<div class="heatmap-cell"></div>`
+    ).join('')}</div>`
+  ).join('');
+
+  document.getElementById('lfmHeatmap').innerHTML = `
+    <div class="heatmap-card">
+      <div class="heatmap-card-header">Listening Activity — Last 52 Weeks</div>
+      <div class="heatmap-wrap">
+        ${monthRow}
+        <div class="heatmap-grid">${cols}</div>
+      </div>
+    </div>`;
+}
+
+// ── HABITS ──
+function renderLfmHabits(filtered) {
+  // Hour of day
+  const hourCounts = Array(24).fill(0);
+  for (const s of filtered) {
+    hourCounts[new Date(s.ts*1000).getHours()]++;
+  }
+  const maxHour = Math.max(...hourCounts, 1);
+
+  // Day of week (0=Sun…6=Sat → remap to Mon-first)
+  const dayCounts = Array(7).fill(0);
+  for (const s of filtered) {
+    dayCounts[new Date(s.ts*1000).getDay()]++;
+  }
+  const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const maxDay = Math.max(...dayCounts, 1);
+
+  function makeBar(count, max, label, isPeak) {
+    const h = Math.round((count/max)*56) + 8;
+    return `<div class="bar-col">
+      <div class="bar-fill${isPeak?' peak':''}" style="height:${h}px"></div>
+      <div class="bar-label">${label}</div>
+    </div>`;
+  }
+
+  const maxHourIdx = hourCounts.indexOf(Math.max(...hourCounts));
+  const maxDayIdx  = dayCounts.indexOf(Math.max(...dayCounts));
+
+  const hourBars = hourCounts.map((c,i) =>
+    makeBar(c, maxHour, i%4===0?`${i}h`:'', i===maxHourIdx)).join('');
+  const dayBars  = dayCounts.map((c,i) =>
+    makeBar(c, maxDay, dayNames[i], i===maxDayIdx)).join('');
+
+  document.getElementById('lfmHabits').innerHTML = `
+    <div class="habits-grid">
+      <div class="habits-card">
+        <div class="habits-card-header">Time of Day</div>
+        <div class="bar-chart">${hourBars}</div>
+      </div>
+      <div class="habits-card">
+        <div class="habits-card-header">Day of Week</div>
+        <div class="bar-chart">${dayBars}</div>
+      </div>
+    </div>`;
+}
+
+// ── RECENT TRACKS ──
+function renderLfmRecent() {
+  // Sort by timestamp desc, take last 50
+  const recent = [...lfmScrobbles].sort((a,b)=>b.ts-a.ts).slice(0,50);
+
+  function timeAgo(ts) {
+    const s = Math.floor(Date.now()/1000) - ts;
+    if (s < 60)   return 'just now';
+    if (s < 3600) return `${Math.floor(s/60)}m ago`;
+    if (s < 86400)return `${Math.floor(s/3600)}h ago`;
+    return `${Math.floor(s/86400)}d ago`;
+  }
+
+  const rows = recent.map(s => `
+    <div class="recent-track">
+      ${s.img
+        ? `<img class="recent-track-thumb" src="${esc(s.img)}" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="recent-track-thumb" style="background:var(--surface2)"></div>`}
+      <div class="recent-track-info">
+        <div class="recent-track-title">${esc(s.track)}</div>
+        <div class="recent-track-sub">${esc(s.artist)}${s.album?' · '+esc(s.album):''}</div>
+      </div>
+      <div class="recent-track-time">${timeAgo(s.ts)}</div>
+    </div>`).join('');
+
+  document.getElementById('lfmRecent').innerHTML = `
+    <div class="recent-card">
+      <div class="recent-card-header">Recently Played</div>
+      ${rows || '<div style="padding:16px;font-size:12px;color:var(--text-dim)">No recent tracks</div>'}
+    </div>`;
+}
+
+// ── COLLECTION CROSSOVER ──
+function renderLfmCrossover(filtered) {
+  if (!allRecords.length) return;
+
+  // Build play counts keyed by norm(artist)+'|||'+norm(album)
+  const playMap = new Map();
+  for (const s of filtered) {
+    if (!s.album) continue;
+    const k = norm(s.artist) + '|||' + norm(s.album);
+    playMap.set(k, (playMap.get(k)||0)+1);
+  }
+
+  // Match against collection
+  const matched = [];
+  for (const r of allRecords) {
+    const k1 = norm(r.artist) + '|||' + norm(r.title);
+    if (playMap.has(k1)) { matched.push({r, plays:playMap.get(k1)}); continue; }
+    // strip subtitle
+    const tc = r.title.replace(/\s*[\(\[].*?[\)\]]/g,'').trim();
+    const k2 = norm(r.artist) + '|||' + norm(tc);
+    if (playMap.has(k2)) matched.push({r, plays:playMap.get(k2)});
+  }
+  matched.sort((a,b)=>b.plays-a.plays);
+
+  const rows = matched.slice(0,10).map(({r,plays}) => {
+    const img = r.cover_image||r.thumb;
+    return `
+      <div class="crossover-item" onclick="switchSection('collection');setTimeout(()=>openDetail(${JSON.stringify(r).replace(/"/g,'&quot;')}),50)">
+        ${img
+          ? `<img class="chart-thumb" src="${esc(img)}" loading="lazy" onerror="this.outerHTML='<div class=chart-thumb-placeholder>♪</div>'">`
+          : `<div class="chart-thumb-placeholder">♪</div>`}
+        <div class="chart-info">
+          <div class="chart-name">${esc(r.artist)} — ${esc(r.title)}</div>
+          <div class="chart-sub">${r.year||'—'} · ${esc(r.format||'')}</div>
+        </div>
+        <div class="chart-plays">${plays} play${plays!==1?'s':''}</div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('lfmCrossover').innerHTML = `
+    <div class="crossover-card">
+      <div class="crossover-header">
+        <div class="crossover-header-title">In Your Collection</div>
+        <div class="crossover-header-stat"><span>${matched.length}</span> of ${allRecords.length} albums listened to</div>
+      </div>
+      ${rows || '<div style="padding:16px;font-size:12px;color:var(--text-dim)">No collection matches found</div>'}
+    </div>`;
+}
 
 init();
 </script>
