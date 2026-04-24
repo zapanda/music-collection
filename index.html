@@ -2428,18 +2428,43 @@ function lfmGetKey() {
   return localStorage.getItem('lf_api_key') || '';
 }
 
-async function lfmGet(params) {
-  const key = lfmGetKey();
-  if (!key) throw new Error('No API key set');
-  const url = LFM_BASE + '?' + new URLSearchParams({
-    ...params, api_key: key, user: LFM_USER, format: 'json'
+// Use JSONP to avoid CORS issues with Last.fm API
+function lfmGet(params) {
+  return new Promise((resolve, reject) => {
+    const key = lfmGetKey();
+    if (!key) { reject(new Error('No API key set')); return; }
+
+    const cbName = 'lfmCb_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+    const script = document.createElement('script');
+
+    const timeout = setTimeout(() => {
+      delete window[cbName];
+      script.remove();
+      reject(new Error('Last.fm request timed out'));
+    }, 15000);
+
+    window[cbName] = (data) => {
+      clearTimeout(timeout);
+      delete window[cbName];
+      script.remove();
+      if (data.error) {
+        reject(new Error(`Last.fm: ${data.message} (error ${data.error})`));
+      } else {
+        resolve(data);
+      }
+    };
+
+    const p = new URLSearchParams({
+      ...params, api_key: key, user: LFM_USER, format: 'json', callback: cbName
+    });
+    script.src = LFM_BASE + '?' + p.toString();
+    script.onerror = () => {
+      clearTimeout(timeout);
+      delete window[cbName];
+      reject(new Error('Last.fm request failed — check your API key'));
+    };
+    document.head.appendChild(script);
   });
-  const r = await fetch(url);
-  if (r.status === 403) throw new Error('Invalid or unauthorised API key (403) — paste a fresh key in the Listening section');
-  if (!r.ok) throw new Error(`Last.fm error ${r.status}`);
-  const data = await r.json();
-  if (data.error) throw new Error(`Last.fm: ${data.message} (error ${data.error})`);
-  return data;
 }
 
 function lfmLoad() {
