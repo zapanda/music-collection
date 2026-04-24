@@ -2457,11 +2457,14 @@ function lfmGet(params) {
     const p = new URLSearchParams({
       ...params, api_key: key, user: LFM_USER, format: 'json', callback: cbName
     });
-    script.src = LFM_BASE + '?' + p.toString();
-    script.onerror = () => {
+    const reqUrl = LFM_BASE + '?' + p.toString();
+    console.log('[LFM] Requesting:', reqUrl.replace(key, key.slice(0,4)+'…'));
+    script.src = reqUrl;
+    script.onerror = (e) => {
       clearTimeout(timeout);
       delete window[cbName];
-      reject(new Error('Last.fm request failed — check your API key'));
+      console.error('[LFM] Script load error:', e);
+      reject(new Error('Last.fm JSONP request blocked — try opening the URL in a new tab to diagnose: ' + reqUrl.replace(key, 'YOUR_KEY')));
     };
     document.head.appendChild(script);
   });
