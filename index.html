@@ -2712,8 +2712,7 @@ function renderLfmHeatmap() {
   // Build a day → count map
   const dayMap = new Map();
   for (const s of lfmScrobbles) {
-    const d = new Date(s.ts * 1000);
-    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const key = new Date(s.ts * 1000).toLocaleDateString('sv-SE', {timeZone:'Europe/Berlin'}); // sv-SE gives YYYY-MM-DD
     dayMap.set(key, (dayMap.get(key)||0) + 1);
   }
 
@@ -2784,17 +2783,20 @@ function renderLfmHeatmap() {
 
 // ── HABITS ──
 function renderLfmHabits(filtered) {
-  // Hour of day
+  // Hour of day — explicitly in Europe/Berlin time
   const hourCounts = Array(24).fill(0);
   for (const s of filtered) {
-    hourCounts[new Date(s.ts*1000).getHours()]++;
+    const h = parseInt(new Date(s.ts*1000).toLocaleString('en-GB',{hour:'2-digit',hour12:false,timeZone:'Europe/Berlin'}));
+    hourCounts[isNaN(h) ? 0 : h % 24]++;
   }
   const maxHour = Math.max(...hourCounts, 1);
 
-  // Day of week (0=Sun…6=Sat → remap to Mon-first)
+  // Day of week — explicitly in Europe/Berlin time
   const dayCounts = Array(7).fill(0);
   for (const s of filtered) {
-    dayCounts[new Date(s.ts*1000).getDay()]++;
+    const d = new Date(s.ts*1000).toLocaleDateString('en-GB',{weekday:'short',timeZone:'Europe/Berlin'});
+    const idx = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(d);
+    dayCounts[idx >= 0 ? idx : 0]++;
   }
   const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   const maxDay = Math.max(...dayCounts, 1);
