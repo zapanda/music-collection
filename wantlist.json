@@ -1121,7 +1121,7 @@
     ],
     "enriched": true,
     "lowest_price": 24.41,
-    "num_for_sale": 192,
+    "num_for_sale": 193,
     "community_rating_avg": 4.74,
     "community_rating_count": 1084,
     "community_have": 13290,
@@ -1254,7 +1254,7 @@
     "community_rating_avg": 4.72,
     "community_rating_count": 85,
     "community_have": 1364,
-    "community_want": 221
+    "community_want": 222
   },
   {
     "id": 32485896,
@@ -4430,8 +4430,8 @@
     "lowest_price": 32.56,
     "num_for_sale": 43,
     "community_rating_avg": 4.49,
-    "community_rating_count": 1068,
-    "community_have": 11487,
+    "community_rating_count": 1069,
+    "community_have": 11489,
     "community_want": 3340
   },
   {
