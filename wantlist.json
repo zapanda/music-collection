@@ -124,7 +124,7 @@
     ],
     "label": "ADA (6)",
     "format": "Vinyl",
-    "format_full": "Vinyl — LP, Album, Mixed, Reissue",
+    "format_full": "Vinyl — LP, Album, Mixed, Reissue, Repress",
     "country": "Worldwide",
     "date_added": "2023-07-22T10:50:32-07:00",
     "tracklist": [
@@ -265,12 +265,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 33.72,
-    "num_for_sale": 49,
-    "community_rating_avg": 4.79,
-    "community_rating_count": 676,
-    "community_have": 11086,
-    "community_want": 2064
+    "lowest_price": 29.01,
+    "num_for_sale": 55,
+    "community_rating_avg": 4.78,
+    "community_rating_count": 711,
+    "community_have": 11222,
+    "community_want": 2152
   },
   {
     "id": 140098,
@@ -383,12 +383,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 15.7,
-    "num_for_sale": 23,
-    "community_rating_avg": 4.45,
-    "community_rating_count": 135,
-    "community_have": 1287,
-    "community_want": 476
+    "lowest_price": 15.29,
+    "num_for_sale": 20,
+    "community_rating_avg": 4.46,
+    "community_rating_count": 138,
+    "community_have": 1294,
+    "community_want": 477
   },
   {
     "id": 29359297,
@@ -451,12 +451,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": null,
-    "num_for_sale": 0,
+    "lowest_price": 33.31,
+    "num_for_sale": 1,
     "community_rating_avg": 4.76,
     "community_rating_count": 17,
-    "community_have": 150,
-    "community_want": 69
+    "community_have": 151,
+    "community_want": 77
   },
   {
     "id": 24877178,
@@ -536,11 +536,11 @@
     ],
     "enriched": true,
     "lowest_price": 37.09,
-    "num_for_sale": 7,
+    "num_for_sale": 8,
     "community_rating_avg": 4.89,
     "community_rating_count": 19,
-    "community_have": 270,
-    "community_want": 61
+    "community_have": 282,
+    "community_want": 63
   },
   {
     "id": 378698,
@@ -663,9 +663,9 @@
     "lowest_price": 29.07,
     "num_for_sale": 136,
     "community_rating_avg": 4.53,
-    "community_rating_count": 1418,
-    "community_have": 14959,
-    "community_want": 4015
+    "community_rating_count": 1443,
+    "community_have": 15137,
+    "community_want": 4061
   },
   {
     "id": 19623619,
@@ -714,11 +714,11 @@
     ],
     "enriched": true,
     "lowest_price": 34.88,
-    "num_for_sale": 2,
+    "num_for_sale": 4,
     "community_rating_avg": 4.47,
     "community_rating_count": 85,
-    "community_have": 1259,
-    "community_want": 175
+    "community_have": 1271,
+    "community_want": 176
   },
   {
     "id": 1939290,
@@ -861,11 +861,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 63.39,
+    "lowest_price": 68.6,
     "num_for_sale": 7,
     "community_rating_avg": 4.53,
     "community_rating_count": 80,
-    "community_have": 696,
+    "community_have": 698,
     "community_want": 281
   },
   {
@@ -939,12 +939,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 116.27,
-    "num_for_sale": 7,
+    "lowest_price": 133.26,
+    "num_for_sale": 8,
     "community_rating_avg": 4.67,
     "community_rating_count": 138,
-    "community_have": 925,
-    "community_want": 1163
+    "community_have": 928,
+    "community_want": 1118
   },
   {
     "id": 24018581,
@@ -1025,11 +1025,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.4,
-    "num_for_sale": 1,
-    "community_rating_avg": 4.78,
-    "community_rating_count": 9,
-    "community_have": 93,
+    "lowest_price": null,
+    "num_for_sale": 0,
+    "community_rating_avg": 4.82,
+    "community_rating_count": 11,
+    "community_have": 96,
     "community_want": 75
   },
   {
@@ -1120,12 +1120,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 29.07,
+    "lowest_price": 24.41,
     "num_for_sale": 192,
     "community_rating_avg": 4.74,
-    "community_rating_count": 998,
-    "community_have": 12867,
-    "community_want": 1023
+    "community_rating_count": 1084,
+    "community_have": 13290,
+    "community_want": 1051
   },
   {
     "id": 14773940,
@@ -1185,12 +1185,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 46.51,
-    "num_for_sale": 6,
+    "lowest_price": 40.7,
+    "num_for_sale": 8,
     "community_rating_avg": 4.74,
     "community_rating_count": 38,
     "community_have": 314,
-    "community_want": 164
+    "community_want": 166
   },
   {
     "id": 30933321,
@@ -1249,12 +1249,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
-    "num_for_sale": 20,
+    "lowest_price": 34.87,
+    "num_for_sale": 19,
     "community_rating_avg": 4.72,
     "community_rating_count": 85,
-    "community_have": 1345,
-    "community_want": 217
+    "community_have": 1364,
+    "community_want": 221
   },
   {
     "id": 32485896,
@@ -1318,12 +1318,65 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 15.47,
-    "num_for_sale": 18,
-    "community_rating_avg": 4.66,
-    "community_rating_count": 38,
-    "community_have": 538,
-    "community_want": 103
+    "lowest_price": 29.07,
+    "num_for_sale": 17,
+    "community_rating_avg": 4.75,
+    "community_rating_count": 40,
+    "community_have": 551,
+    "community_want": 110
+  },
+  {
+    "id": 36656671,
+    "artist": "Miserere Luminis",
+    "title": "Sidera",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/JeICtHQs8ARFMddi4a0kxl0XcX-vGLvNAlqATjQlyQ8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjU2/NjcxLTE3NzI0Nzkz/NTctOTY4My5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/0swOD9OkhCMiGiDXHrJ6UMoZGyQff-FE3SmocQ9k0dE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjU2/NjcxLTE3NzI0Nzkz/NTctOTY4My5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "atmospheric black metal"
+    ],
+    "label": "Debemur Morti Productions",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP; Vinyl — LP, Single Sided; All Media — Album, Limited Edition",
+    "country": "France",
+    "date_added": "2026-06-01T02:35:34-07:00",
+    "tracklist": [
+      {
+        "position": "AI",
+        "title": "Les Fleurs De L'Exil",
+        "duration": ""
+      },
+      {
+        "position": "AII",
+        "title": "De Cris & De Cendres",
+        "duration": ""
+      },
+      {
+        "position": "BIII",
+        "title": "Aux Bras Des Vagues & Des Vomissures",
+        "duration": ""
+      },
+      {
+        "position": "BIV",
+        "title": "À La Douleur De L'Aube",
+        "duration": ""
+      },
+      {
+        "position": "CV",
+        "title": "Dans La Voie De Nos Lumières",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": null,
+    "num_for_sale": 0,
+    "community_rating_avg": 4.5,
+    "community_rating_count": 22,
+    "community_have": 168,
+    "community_want": 39
   },
   {
     "id": 16216374,
@@ -1386,12 +1439,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 69.77,
+    "lowest_price": 21.5,
     "num_for_sale": 6,
     "community_rating_avg": 4.84,
     "community_rating_count": 31,
     "community_have": 307,
-    "community_want": 231
+    "community_want": 230
   },
   {
     "id": 1055571,
@@ -1483,11 +1536,11 @@
     ],
     "enriched": true,
     "lowest_price": 4.3,
-    "num_for_sale": 22,
+    "num_for_sale": 23,
     "community_rating_avg": 4.44,
-    "community_rating_count": 179,
-    "community_have": 1438,
-    "community_want": 1425
+    "community_rating_count": 180,
+    "community_have": 1448,
+    "community_want": 1422
   },
   {
     "id": 6053531,
@@ -1567,11 +1620,11 @@
     ],
     "enriched": true,
     "lowest_price": 21.5,
-    "num_for_sale": 15,
-    "community_rating_avg": 4.69,
-    "community_rating_count": 262,
-    "community_have": 2897,
-    "community_want": 458
+    "num_for_sale": 21,
+    "community_rating_avg": 4.7,
+    "community_rating_count": 271,
+    "community_have": 2959,
+    "community_want": 473
   },
   {
     "id": 24682019,
@@ -1673,11 +1726,11 @@
     ],
     "enriched": true,
     "lowest_price": 17.2,
-    "num_for_sale": 49,
-    "community_rating_avg": 4.64,
-    "community_rating_count": 72,
-    "community_have": 1374,
-    "community_want": 269
+    "num_for_sale": 44,
+    "community_rating_avg": 4.67,
+    "community_rating_count": 78,
+    "community_have": 1399,
+    "community_want": 273
   },
   {
     "id": 10157097,
@@ -1751,12 +1804,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 85.96,
-    "num_for_sale": 2,
+    "lowest_price": null,
+    "num_for_sale": 0,
     "community_rating_avg": 4.19,
     "community_rating_count": 21,
-    "community_have": 342,
-    "community_want": 199
+    "community_have": 343,
+    "community_want": 204
   },
   {
     "id": 1095269,
@@ -1882,8 +1935,78 @@
     "num_for_sale": 0,
     "community_rating_avg": 4.44,
     "community_rating_count": 9,
-    "community_have": 55,
+    "community_have": 56,
     "community_want": 36
+  },
+  {
+    "id": 37319118,
+    "artist": "The Silver",
+    "title": "Looking Glass Hymnal Blue",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/p4AyRzeu81xOtwGyi0lNDyVDnv9DrEOnaDcpdmdKhXk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MzE5/MTE4LTE3Nzk5NDYz/NjQtNTI3NS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/aXWQysSvgn2C6OKibJrxqV5EG1LgVyaBA1Gp7hngKw4/rs:fit/g:sm/q:90/h:556/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MzE5/MTE4LTE3Nzk5NDYz/NjQtNTI3NS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "gothic metal",
+      "black metal",
+      "progressive metal"
+    ],
+    "label": "Gilead Media",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Stereo",
+    "country": "US",
+    "date_added": "2026-06-01T02:34:22-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Looking Glass Hymnal Blue",
+        "duration": "6:32"
+      },
+      {
+        "position": "A2",
+        "title": "Two Candles",
+        "duration": "8:57"
+      },
+      {
+        "position": "A3",
+        "title": "Memorias",
+        "duration": "4:19"
+      },
+      {
+        "position": "A4",
+        "title": "Tendrils",
+        "duration": "3:50"
+      },
+      {
+        "position": "B1",
+        "title": "When The Moon Is Three",
+        "duration": "6:30"
+      },
+      {
+        "position": "B2",
+        "title": "The Demon Bridge",
+        "duration": "6:21"
+      },
+      {
+        "position": "B3",
+        "title": "Twilight Of Love",
+        "duration": "3:04"
+      },
+      {
+        "position": "B4",
+        "title": "My Lone Dark Lantern",
+        "duration": "8:36"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": null,
+    "num_for_sale": 0,
+    "community_rating_avg": 4.67,
+    "community_rating_count": 3,
+    "community_have": 51,
+    "community_want": 4
   },
   {
     "id": 4100552,
@@ -1949,11 +2072,11 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 63.95,
-    "num_for_sale": 16,
-    "community_rating_avg": 4.73,
+    "lowest_price": 58.14,
+    "num_for_sale": 20,
+    "community_rating_avg": 4.72,
     "community_rating_count": 184,
-    "community_have": 1267,
+    "community_have": 1270,
     "community_want": 512
   },
   {
@@ -1993,11 +2116,11 @@
     ],
     "enriched": true,
     "lowest_price": 8.14,
-    "num_for_sale": 34,
+    "num_for_sale": 35,
     "community_rating_avg": 4.57,
     "community_rating_count": 139,
-    "community_have": 1629,
-    "community_want": 147
+    "community_have": 1641,
+    "community_want": 146
   },
   {
     "id": 15405750,
@@ -2067,7 +2190,7 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 45.54,
+    "lowest_price": 44.34,
     "num_for_sale": 2,
     "community_rating_avg": 5,
     "community_rating_count": 4,
@@ -2220,12 +2343,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 9.3,
-    "num_for_sale": 12,
-    "community_rating_avg": 4.85,
-    "community_rating_count": 55,
-    "community_have": 642,
-    "community_want": 128
+    "lowest_price": 11.63,
+    "num_for_sale": 17,
+    "community_rating_avg": 4.84,
+    "community_rating_count": 61,
+    "community_have": 692,
+    "community_want": 131
   },
   {
     "id": 2179533,
@@ -2309,12 +2432,86 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 32.98,
-    "num_for_sale": 29,
+    "lowest_price": 36.03,
+    "num_for_sale": 27,
     "community_rating_avg": 4.55,
-    "community_rating_count": 490,
-    "community_have": 5669,
-    "community_want": 1592
+    "community_rating_count": 491,
+    "community_have": 5704,
+    "community_want": 1595
+  },
+  {
+    "id": 37268667,
+    "artist": "Draconian",
+    "title": "In Somnolent Ruin",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/eog2h1ZmLEXaoyRTJ-qbBHuIquYEPIBcoNKOPP2Rytk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MjY4/NjY3LTE3NzgzNDcz/MDEtOTgzNS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/vRwryn-36TINdgE4Ees1_OW-unFMU84Ny4AlqXTRciI/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MjY4/NjY3LTE3NzgzNDcz/MDEtOTgzNS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "gothic metal",
+      "doom metal"
+    ],
+    "label": "Napalm Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album",
+    "country": "USA & Europe",
+    "date_added": "2026-06-01T02:36:41-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I Welcome Thy Arrow",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Monochrome Blade",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Anima",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "The Face Of God",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "I Gave You Wings Asteria",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Beneath The Tranquil Sea",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Cold Heavens",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Misanthrope River",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Lethe",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 17.53,
+    "num_for_sale": 14,
+    "community_rating_avg": 4.57,
+    "community_rating_count": 14,
+    "community_have": 127,
+    "community_want": 14
   },
   {
     "id": 27782469,
@@ -2378,12 +2575,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 46.51,
+    "lowest_price": 27.52,
     "num_for_sale": 3,
-    "community_rating_avg": 4.5,
+    "community_rating_avg": 4.43,
     "community_rating_count": 14,
     "community_have": 243,
-    "community_want": 39
+    "community_want": 37
   },
   {
     "id": 27732216,
@@ -2449,10 +2646,10 @@
     "enriched": true,
     "lowest_price": 47.19,
     "num_for_sale": 2,
-    "community_rating_avg": 4.64,
+    "community_rating_avg": 4.55,
     "community_rating_count": 11,
-    "community_have": 241,
-    "community_want": 59
+    "community_have": 242,
+    "community_want": 57
   },
   {
     "id": 27782649,
@@ -2518,10 +2715,10 @@
     "enriched": true,
     "lowest_price": 40.7,
     "num_for_sale": 3,
-    "community_rating_avg": 4.64,
+    "community_rating_avg": 4.57,
     "community_rating_count": 14,
-    "community_have": 254,
-    "community_want": 68
+    "community_have": 256,
+    "community_want": 65
   },
   {
     "id": 31184230,
@@ -2572,12 +2769,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 28.27,
-    "num_for_sale": 60,
-    "community_rating_avg": 4.76,
-    "community_rating_count": 269,
-    "community_have": 3436,
-    "community_want": 756
+    "lowest_price": 20.63,
+    "num_for_sale": 84,
+    "community_rating_avg": 4.75,
+    "community_rating_count": 295,
+    "community_have": 3626,
+    "community_want": 784
   },
   {
     "id": 19524739,
@@ -2630,7 +2827,7 @@
     "community_rating_avg": 5,
     "community_rating_count": 2,
     "community_have": 28,
-    "community_want": 30
+    "community_want": 29
   },
   {
     "id": 31262497,
@@ -2713,12 +2910,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 29.07,
-    "num_for_sale": 39,
+    "lowest_price": 25.58,
+    "num_for_sale": 38,
     "community_rating_avg": 4.62,
-    "community_rating_count": 113,
-    "community_have": 1832,
-    "community_want": 139
+    "community_rating_count": 117,
+    "community_have": 1903,
+    "community_want": 142
   },
   {
     "id": 34111672,
@@ -2797,12 +2994,90 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 27.5,
-    "num_for_sale": 29,
-    "community_rating_avg": 4.79,
-    "community_rating_count": 107,
-    "community_have": 1325,
-    "community_want": 116
+    "lowest_price": 23.26,
+    "num_for_sale": 37,
+    "community_rating_avg": 4.81,
+    "community_rating_count": 113,
+    "community_have": 1441,
+    "community_want": 124
+  },
+  {
+    "id": 36249493,
+    "artist": "Immolation",
+    "title": "Descent",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/d-yr-wcQjCO7WcHU2mRyd1hlnKFPLXcTxqfIxhG6Ea4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjQ5/NDkzLTE3Nzc0MjY3/ODgtNTE4Mi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/SS7oaGOGtCUHcQVnil-QGPrc3kgI2a9NksYzMDPFtcg/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjQ5/NDkzLTE3Nzc0MjY3/ODgtNTE4Mi5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Nuclear Blast Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album",
+    "country": "US",
+    "date_added": "2026-06-01T02:38:14-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "These Vengeful Winds",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Ephemeral Curse",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "God's Last Breath",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Adversary",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Attrition",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Bend Towards The Dark",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "title": "Host",
+        "duration": ""
+      },
+      {
+        "position": "B8",
+        "title": "False Ascent",
+        "duration": ""
+      },
+      {
+        "position": "B9",
+        "title": "Banished",
+        "duration": ""
+      },
+      {
+        "position": "B10",
+        "title": "Descent",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 34.38,
+    "num_for_sale": 5,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 41,
+    "community_have": 405,
+    "community_want": 53
   },
   {
     "id": 14311707,
@@ -2856,12 +3131,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 29.07,
-    "num_for_sale": 15,
-    "community_rating_avg": 4.56,
-    "community_rating_count": 162,
-    "community_have": 1901,
-    "community_want": 339
+    "lowest_price": 2.19,
+    "num_for_sale": 20,
+    "community_rating_avg": 4.55,
+    "community_rating_count": 164,
+    "community_have": 1913,
+    "community_want": 351
   },
   {
     "id": 4909764,
@@ -2940,74 +3215,11 @@
     ],
     "enriched": true,
     "lowest_price": 17.2,
-    "num_for_sale": 7,
+    "num_for_sale": 4,
     "community_rating_avg": 4.31,
     "community_rating_count": 67,
-    "community_have": 730,
+    "community_have": 733,
     "community_want": 186
-  },
-  {
-    "id": 29696971,
-    "artist": "Immortal",
-    "title": "Damned In Black",
-    "year": 2024,
-    "thumb": "https://i.discogs.com/gowrTUG2anfnUT_5J2865lkE0WytIx3dhV-wY9hBAYk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Njk2/OTcxLTE3MDcwNzEy/NjktNTUxMC5qcGVn.jpeg",
-    "cover_image": "https://i.discogs.com/Kt2h48z8jlvE-8jAIwP28GeoRFrWzfndMrtZbwiGHU0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Njk2/OTcxLTE3MDcwNzEy/NjktNTUxMC5qcGVn.jpeg",
-    "genres": [
-      "rock"
-    ],
-    "styles": [
-      "black metal"
-    ],
-    "label": "Osmose Productions",
-    "format": "Vinyl",
-    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue",
-    "country": "Europe",
-    "date_added": "2026-03-06T18:32:26-08:00",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Triumph",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Wrath From Above",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Against The Tide (In The Arctic World)",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "My Dimension",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "The Darkness That Embrace Me",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "In Our Mystic Visions Blest",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Damned In Black",
-        "duration": ""
-      }
-    ],
-    "enriched": true,
-    "lowest_price": 25.58,
-    "num_for_sale": 10,
-    "community_rating_avg": 4.76,
-    "community_rating_count": 17,
-    "community_have": 223,
-    "community_want": 46
   },
   {
     "id": 25797823,
@@ -3070,12 +3282,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 43.97,
-    "num_for_sale": 6,
+    "lowest_price": 42.81,
+    "num_for_sale": 7,
     "community_rating_avg": 4.87,
     "community_rating_count": 31,
-    "community_have": 356,
-    "community_want": 135
+    "community_have": 357,
+    "community_want": 133
   },
   {
     "id": 12750156,
@@ -3130,10 +3342,10 @@
     "enriched": true,
     "lowest_price": 51.16,
     "num_for_sale": 4,
-    "community_rating_avg": 4.55,
-    "community_rating_count": 11,
-    "community_have": 66,
-    "community_want": 155
+    "community_rating_avg": 4.58,
+    "community_rating_count": 12,
+    "community_have": 67,
+    "community_want": 158
   },
   {
     "id": 21132019,
@@ -3261,12 +3473,95 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 93.02,
+    "lowest_price": 103.8,
     "num_for_sale": 7,
-    "community_rating_avg": 4.65,
-    "community_rating_count": 37,
-    "community_have": 288,
-    "community_want": 302
+    "community_rating_avg": 4.64,
+    "community_rating_count": 39,
+    "community_have": 291,
+    "community_want": 314
+  },
+  {
+    "id": 36944394,
+    "artist": "Luna Amară",
+    "title": "Asfalt (Redux)",
+    "year": 2026,
+    "thumb": "https://i.discogs.com/Tytfhj6vcU5D2ow_HqTVAn0WXAuSI99OpMOb-nJDH9k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTQ0/Mzk0LTE3NzUxNTc3/NjgtNDcxNi5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/VU1ig4qjOj_LLBxl16PdhxMH4mxmjh-bUFTB-hGUZpM/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTQ0/Mzk0LTE3NzUxNTc3/NjgtNDcxNi5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "alternative rock"
+    ],
+    "label": "Overground Music",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Remastered",
+    "country": "Romania",
+    "date_added": "2026-05-01T15:22:10-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Gri Dorian",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Oras",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Asfalt",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Ego Nr. 4",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Roșu Aprins",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Mara",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Dizident",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Folclor",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Stare De Grație",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Tanagra Noise",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Ciudat",
+        "duration": ""
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 46.51,
+    "num_for_sale": 1,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 5,
+    "community_have": 35,
+    "community_want": 6
   },
   {
     "id": 27812061,
@@ -3371,12 +3666,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 19.35,
-    "num_for_sale": 48,
-    "community_rating_avg": 4.65,
-    "community_rating_count": 276,
-    "community_have": 3586,
-    "community_want": 973
+    "lowest_price": 20.64,
+    "num_for_sale": 47,
+    "community_rating_avg": 4.68,
+    "community_rating_count": 296,
+    "community_have": 3687,
+    "community_want": 1001
   },
   {
     "id": 10463981,
@@ -3494,12 +3789,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 38.26,
-    "num_for_sale": 93,
+    "lowest_price": 41.86,
+    "num_for_sale": 87,
     "community_rating_avg": 4.73,
-    "community_rating_count": 389,
-    "community_have": 5051,
-    "community_want": 574
+    "community_rating_count": 402,
+    "community_have": 5129,
+    "community_want": 593
   },
   {
     "id": 10315981,
@@ -3583,11 +3878,11 @@
     ],
     "enriched": true,
     "lowest_price": 24.08,
-    "num_for_sale": 139,
-    "community_rating_avg": 4.58,
-    "community_rating_count": 1120,
-    "community_have": 12166,
-    "community_want": 1403
+    "num_for_sale": 125,
+    "community_rating_avg": 4.59,
+    "community_rating_count": 1159,
+    "community_have": 12439,
+    "community_want": 1433
   },
   {
     "id": 6367043,
@@ -3695,11 +3990,89 @@
     ],
     "enriched": true,
     "lowest_price": 30.58,
-    "num_for_sale": 32,
-    "community_rating_avg": 4.62,
+    "num_for_sale": 33,
+    "community_rating_avg": 4.63,
     "community_rating_count": 769,
-    "community_have": 6343,
-    "community_want": 2502
+    "community_have": 6359,
+    "community_want": 2526
+  },
+  {
+    "id": 30180056,
+    "artist": "Cymande",
+    "title": "Cymande",
+    "year": 2024,
+    "thumb": "https://i.discogs.com/zuMAyWapHcZFz1Yp5xO4KBEJo_G7m8wPL3vnN1qWIWw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMTgw/MDU2LTE3MTE0NzMx/NTItNTAxNS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/GvzycXMsCDmjwLYlKjPMOMfriMIBLlxXJmlWnupt_2w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMTgw/MDU2LTE3MTE0NzMx/NTItNTAxNS5qcGVn.jpeg",
+    "genres": [
+      "rock",
+      "reggae",
+      "funk / soul"
+    ],
+    "styles": [
+      "blues rock",
+      "roots reggae",
+      "soul",
+      "afrobeat"
+    ],
+    "label": "Partisan Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue, Remastered",
+    "country": "Europe",
+    "date_added": "2026-04-27T06:15:30-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Zion I",
+        "duration": "3:28"
+      },
+      {
+        "position": "A2",
+        "title": "One More",
+        "duration": "3:04"
+      },
+      {
+        "position": "A3",
+        "title": "Getting It Back",
+        "duration": "4:17"
+      },
+      {
+        "position": "A4",
+        "title": "Listen",
+        "duration": "4:39"
+      },
+      {
+        "position": "A5",
+        "title": "Rickshaw",
+        "duration": "5:52"
+      },
+      {
+        "position": "B1",
+        "title": "Dove",
+        "duration": "10:53"
+      },
+      {
+        "position": "B2",
+        "title": "Bra",
+        "duration": "5:04"
+      },
+      {
+        "position": "B3",
+        "title": "The Message",
+        "duration": "4:19"
+      },
+      {
+        "position": "B4",
+        "title": "Rastafarian Folk Song",
+        "duration": "3:09"
+      }
+    ],
+    "enriched": true,
+    "lowest_price": 21.72,
+    "num_for_sale": 77,
+    "community_rating_avg": 4.62,
+    "community_rating_count": 146,
+    "community_have": 2082,
+    "community_want": 607
   },
   {
     "id": 3862417,
@@ -3753,11 +4126,11 @@
     ],
     "enriched": true,
     "lowest_price": 20.93,
-    "num_for_sale": 42,
+    "num_for_sale": 43,
     "community_rating_avg": 4.66,
-    "community_rating_count": 533,
-    "community_have": 5992,
-    "community_want": 1394
+    "community_rating_count": 537,
+    "community_have": 6022,
+    "community_want": 1403
   },
   {
     "id": 3961344,
@@ -3820,80 +4193,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 39.26,
-    "num_for_sale": 7,
+    "lowest_price": 38.22,
+    "num_for_sale": 9,
     "community_rating_avg": 4.61,
     "community_rating_count": 74,
-    "community_have": 674,
-    "community_want": 169
-  },
-  {
-    "id": 4577704,
-    "artist": "Darkthrone",
-    "title": "Transilvanian Hunger",
-    "year": 2013,
-    "thumb": "https://i.discogs.com/2SIQY8xKYJn0JWZ4pEV_EL6DhyYaG81_qxh50MXkB_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzc3/MDQtMTY1NjQwOTcy/MS03OTc0LmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/ryl14UGYSdpg2tDfinlCnjY0qcwPIhMWMQ81sgFxucs/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzc3/MDQtMTY1NjQwOTcy/MS03OTc0LmpwZWc.jpeg",
-    "genres": [
-      "rock"
-    ],
-    "styles": [
-      "black metal"
-    ],
-    "label": "Peaceville",
-    "format": "Vinyl",
-    "format_full": "Vinyl — LP, Album, Reissue, Remastered",
-    "country": "UK",
-    "date_added": "2026-03-28T18:27:28-07:00",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Transilvanian Hunger",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Over Fjell Og Gjennom Torner",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Skald Av Satans Sol",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "Slottet I Det Fjerne",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Graven Takeheimens Saler",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "I En Hall Med Flesk Og Mjød",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "As Flittermice As Satans Spys",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "En As I Dype Skogen",
-        "duration": ""
-      }
-    ],
-    "enriched": true,
-    "lowest_price": 9.16,
-    "num_for_sale": 79,
-    "community_rating_avg": 4.61,
-    "community_rating_count": 666,
-    "community_have": 7674,
-    "community_want": 1569
+    "community_have": 677,
+    "community_want": 167
   },
   {
     "id": 6127323,
@@ -3956,12 +4261,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 34.88,
-    "num_for_sale": 11,
-    "community_rating_avg": 4.63,
-    "community_rating_count": 87,
-    "community_have": 821,
-    "community_want": 286
+    "lowest_price": 25.8,
+    "num_for_sale": 15,
+    "community_rating_avg": 4.64,
+    "community_rating_count": 88,
+    "community_have": 823,
+    "community_want": 290
   },
   {
     "id": 26765768,
@@ -4032,11 +4337,11 @@
     ],
     "enriched": true,
     "lowest_price": 34.39,
-    "num_for_sale": 31,
+    "num_for_sale": 28,
     "community_rating_avg": 4.83,
-    "community_rating_count": 109,
-    "community_have": 1273,
-    "community_want": 250
+    "community_rating_count": 111,
+    "community_have": 1295,
+    "community_want": 253
   },
   {
     "id": 33052227,
@@ -4122,12 +4427,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 29.07,
-    "num_for_sale": 41,
-    "community_rating_avg": 4.51,
-    "community_rating_count": 949,
-    "community_have": 11037,
-    "community_want": 3311
+    "lowest_price": 32.56,
+    "num_for_sale": 43,
+    "community_rating_avg": 4.49,
+    "community_rating_count": 1068,
+    "community_have": 11487,
+    "community_want": 3340
   },
   {
     "id": 12004382,
@@ -4277,11 +4582,11 @@
     ],
     "enriched": true,
     "lowest_price": 91.36,
-    "num_for_sale": 104,
+    "num_for_sale": 94,
     "community_rating_avg": 4.84,
-    "community_rating_count": 1440,
-    "community_have": 11332,
-    "community_want": 2220
+    "community_rating_count": 1469,
+    "community_have": 11467,
+    "community_want": 2268
   },
   {
     "id": 36600199,
@@ -4335,11 +4640,11 @@
     ],
     "enriched": true,
     "lowest_price": 37.21,
-    "num_for_sale": 7,
-    "community_rating_avg": 4.89,
-    "community_rating_count": 9,
-    "community_have": 106,
-    "community_want": 8
+    "num_for_sale": 3,
+    "community_rating_avg": 4.9,
+    "community_rating_count": 10,
+    "community_have": 116,
+    "community_want": 9
   },
   {
     "id": 11088399,
@@ -4498,12 +4803,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 32.56,
-    "num_for_sale": 55,
-    "community_rating_avg": 4.6,
-    "community_rating_count": 424,
-    "community_have": 5010,
-    "community_want": 869
+    "lowest_price": 20.62,
+    "num_for_sale": 56,
+    "community_rating_avg": 4.61,
+    "community_rating_count": 452,
+    "community_have": 5157,
+    "community_want": 880
   },
   {
     "id": 36861454,
@@ -4572,12 +4877,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 21.47,
-    "num_for_sale": 6,
-    "community_rating_avg": 4.89,
-    "community_rating_count": 9,
-    "community_have": 124,
-    "community_want": 19
+    "lowest_price": 27.52,
+    "num_for_sale": 5,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 20,
+    "community_have": 187,
+    "community_want": 26
   },
   {
     "id": 36679591,
@@ -4650,10 +4955,10 @@
     "enriched": true,
     "lowest_price": null,
     "num_for_sale": 0,
-    "community_rating_avg": 4.33,
-    "community_rating_count": 3,
-    "community_have": 40,
-    "community_want": 11
+    "community_rating_avg": 4.2,
+    "community_rating_count": 5,
+    "community_have": 62,
+    "community_want": 17
   },
   {
     "id": 428062,
@@ -4707,11 +5012,11 @@
     ],
     "enriched": true,
     "lowest_price": 2.58,
-    "num_for_sale": 88,
+    "num_for_sale": 89,
     "community_rating_avg": 4.33,
-    "community_rating_count": 683,
-    "community_have": 9915,
-    "community_want": 2392
+    "community_rating_count": 693,
+    "community_have": 10034,
+    "community_want": 2412
   },
   {
     "id": 34400824,
@@ -4769,8 +5074,8 @@
     "num_for_sale": 0,
     "community_rating_avg": 4,
     "community_rating_count": 1,
-    "community_have": 20,
-    "community_want": 12
+    "community_have": 22,
+    "community_want": 13
   },
   {
     "id": 34762490,
@@ -4844,12 +5149,12 @@
       }
     ],
     "enriched": true,
-    "lowest_price": 10.31,
-    "num_for_sale": 4,
-    "community_rating_avg": 4.72,
-    "community_rating_count": 32,
-    "community_have": 317,
-    "community_want": 85
+    "lowest_price": 17.19,
+    "num_for_sale": 2,
+    "community_rating_avg": 4.73,
+    "community_rating_count": 33,
+    "community_have": 328,
+    "community_want": 92
   },
   {
     "id": 10471009,
@@ -4991,10 +5296,10 @@
     ],
     "enriched": true,
     "lowest_price": 34.88,
-    "num_for_sale": 105,
+    "num_for_sale": 111,
     "community_rating_avg": 4.82,
-    "community_rating_count": 1705,
-    "community_have": 15809,
-    "community_want": 2997
+    "community_rating_count": 1743,
+    "community_have": 15988,
+    "community_want": 3028
   }
 ]
