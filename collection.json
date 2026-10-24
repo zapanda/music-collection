@@ -77,7 +77,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.04,
+    "global_rating": 3.03,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4j0BDfrtgQeMLA4RaSCch4/la-revancha-del-tango",
     "enriched": true
@@ -152,7 +152,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.23,
+    "global_rating": 3.21,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/3ADELRoZ4I8WLE7clLU7La/o",
     "enriched": true
@@ -265,10 +265,10 @@
       "pop"
     ],
     "styles": [
-      "rnb/swing",
       "pop rap",
       "electro",
-      "ballad"
+      "ballad",
+      "contemporary r&b"
     ],
     "label": "A&M Records",
     "format": "CD",
@@ -718,7 +718,7 @@
         "duration": "3:16"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "fresh tendrils",
     "global_rating": 3.64,
     "list_source": "book",
@@ -737,9 +737,7 @@
       "rock"
     ],
     "styles": [
-      "new wave",
-      "art rock",
-      "soft rock"
+      "new wave"
     ],
     "label": "A&M Records",
     "format": "Vinyl",
@@ -872,7 +870,7 @@
       },
       {
         "position": "9",
-        "title": "You Can't Always Get What You Want (Version 2)",
+        "title": "You Can't Always Get What You Want",
         "duration": "7:28"
       }
     ],
@@ -1143,7 +1141,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.95,
+    "global_rating": 3.98,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2noRn2Aes5aoNVsU6iWThc/discovery",
     "enriched": true
@@ -1353,7 +1351,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.64,
+    "global_rating": 3.65,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0Oq3mWfexhsjUh0aNNBB5u/good-kid-m-a-a-d-city",
     "enriched": true
@@ -2144,9 +2142,9 @@
         "duration": "2:58"
       }
     ],
-    "my_rating": 4,
+    "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.87,
+    "global_rating": 3.86,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/17k01Y7uKSVOrnyEZPOqKR/american-iv-the-man-comes-around",
     "enriched": true
@@ -2512,7 +2510,6 @@
     ],
     "styles": [
       "psychedelic rock",
-      "merseybeat",
       "pop rock"
     ],
     "label": "Apple Records",
@@ -2859,8 +2856,8 @@
     "artist": "Vaya Con Dios",
     "title": "Vaya Con Dios",
     "year": 1989,
-    "thumb": "https://i.discogs.com/HZvKEGhB5noaE9QHAGV2fcdq_uSBjPr72AQAG5WfYl8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTIz/NTItMTc0MjMxNzA5/OC0zMzY4LmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/lA7_2m0h5MCmT9ny7FyZy8SwPxV_M-A52lrRb6qcUMY/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTIz/NTItMTc0MjMxNzA5/OC0zMzY4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/N3TayzKNpszWeXT-J_BewK2HDx9oZn53s9jcENcohfk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTIz/NTItMTc4NzA0NjAy/NC0zMDQ3LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/Mm2UtBFCZlkNqGZ2ohQA9obJUTDP64yRK3P9NsoC9U0/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTIz/NTItMTc4NzA0NjAy/NC0zMDQ3LmpwZWc.jpeg",
     "genres": [
       "jazz",
       "rock"
@@ -3137,8 +3134,7 @@
       "rock"
     ],
     "styles": [
-      "art rock",
-      "folk rock"
+      "art rock"
     ],
     "label": "Arista",
     "format": "Vinyl",
@@ -3179,7 +3175,7 @@
     ],
     "my_rating": 4,
     "my_review": "meh",
-    "global_rating": 3.31,
+    "global_rating": 3.3,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7xg7u99lilTCPbaRfnYuy6/horses",
     "enriched": true
@@ -3710,7 +3706,8 @@
     ],
     "styles": [
       "hard rock",
-      "blues rock"
+      "blues rock",
+      "heavy metal"
     ],
     "label": "ATCO Records",
     "format": "CD",
@@ -3989,7 +3986,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 4.1,
+    "global_rating": 4.09,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/70lQYZtypdCALtFVlQAcvx/led-zeppelin-ii",
     "enriched": true
@@ -4380,9 +4377,88 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.94,
+    "global_rating": 3.93,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1u5BsuBK45mLwrbqdASN3g/led-zeppelin-iii",
+    "enriched": true
+  },
+  {
+    "id": 14552125,
+    "instance_id": 2166387142,
+    "artist": "Kaleo",
+    "title": "A/B",
+    "year": 2016,
+    "thumb": "https://i.discogs.com/b3RCBU_OxN6fuH4BCZBXmLwkrbJ0Yti5Md5n9qIJqFw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTUy/MTI1LTE1NzY5MTkx/OTktNTk5OC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/BfJHbvuOxrD0tvq79NHtCeuR8wS_SF4SitFXggRZ_bU/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTUy/MTI1LTE1NzY5MTkx/OTktNTk5OC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "alternative rock",
+      "blues rock"
+    ],
+    "label": "Atlantic",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album",
+    "country": "Europe",
+    "date_added": "2026-07-22T09:51:02-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "No Good",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Way Down We Go",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Broken Bones",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Glass House",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Hot Blood",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "All The Pretty Girls",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Automobile",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Vor Í Vaglaskógi",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Save Yourself",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "I Can't Go On Without You",
+        "duration": ""
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
     "enriched": true
   },
   {
@@ -4394,7 +4470,6 @@
     "thumb": "https://i.discogs.com/acdQzxSzIs_UsTXOyQVte24WJ6_91pCJkBDQ5bvNXEQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MjU4/MzE4LTE2ODU2NDcz/NzAtMTg3My5qcGVn.jpeg",
     "cover_image": "https://i.scdn.co/image/ab67616d0000b273cfc0369fca487d12600962ec",
     "genres": [
-      "metal",
       "rock"
     ],
     "styles": [
@@ -4461,7 +4536,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.13,
+    "global_rating": 3.12,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6vW9ZDllNv87WHXS3XTjlM/permission-to-land",
     "enriched": true
@@ -5134,8 +5209,8 @@
     "artist": "Metallica",
     "title": "Ride The Lightning",
     "year": 2016,
-    "thumb": "https://i.discogs.com/fvnKLj9Quhi54jpGld1vZ2CIFAYZbyLRLjILnmRyHPY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MTc2/MjktMTc3ODM0NjE2/MS05MTY2LmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/uGKZLjZV6nC4IhvqzVVJWh15geuuust_sxOMCH6UnQg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MTc2/MjktMTc3ODM0NjE2/MS05MTY2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/cMZnjyJXu9nwQ0blNYDRTNUwoheLlvrtIfmNP5a5Qfk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MTc2/MjktMTQ2NTIzNTgy/Ni03MTc0LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/lHcnyeMozIqNd8uNUMA4QSHg9Nj1oD-x-ap-Do1F5lY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MTc2/MjktMTQ2NTIzNTgy/Ni03MTc0LmpwZWc.jpeg",
     "genres": [
       "rock"
     ],
@@ -5985,7 +6060,6 @@
     ],
     "styles": [
       "conscious",
-      "cut updj",
       "jazz funk"
     ],
     "label": "Capitol Records",
@@ -6195,7 +6269,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.49,
+    "global_rating": 3.48,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6kPOXxCYCdXBzEbb9dqE90/fashion-nugget",
     "enriched": true
@@ -6816,7 +6890,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.11,
+    "global_rating": 3.1,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3gUw30X6A7WEGcRdv1nFr9/im-your-man",
     "enriched": true
@@ -7021,7 +7095,6 @@
     ],
     "styles": [
       "singer songwriter",
-      "soft rock",
       "acoustic"
     ],
     "label": "CBS",
@@ -7083,7 +7156,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.32,
+    "global_rating": 3.31,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6yskFQZNlLYhkchAxELHi6/nebraska",
     "enriched": true
@@ -7791,7 +7864,6 @@
     ],
     "styles": [
       "art rock",
-      "soft rock",
       "pop rock"
     ],
     "label": "Charisma",
@@ -8380,7 +8452,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.93,
+    "global_rating": 3.98,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/49MNmJhZQewjt06rpwp6QR/mezzanine",
     "enriched": true
@@ -9143,7 +9215,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.11,
+    "global_rating": 3.1,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3gUw30X6A7WEGcRdv1nFr9/im-your-man",
     "enriched": true
@@ -9161,7 +9233,6 @@
     ],
     "styles": [
       "singer songwriter",
-      "soft rock",
       "pop rock"
     ],
     "label": "Columbia",
@@ -9316,7 +9387,8 @@
     ],
     "styles": [
       "conscious",
-      "boom bap"
+      "boom bap",
+      "hardcore hip hop"
     ],
     "label": "Columbia",
     "format": "CD",
@@ -9805,7 +9877,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.61,
+    "global_rating": 3.62,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0o1uFxZ1VTviqvNaYkTJek/the-freewheelin-bob-dylan",
     "enriched": true
@@ -9903,7 +9975,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.46,
+    "global_rating": 3.47,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/58NXIEYqmq5dQHg9nV9duM/dirt",
     "enriched": true
@@ -10159,7 +10231,6 @@
     ],
     "styles": [
       "singer songwriter",
-      "soft rock",
       "pop rock"
     ],
     "label": "Columbia",
@@ -10447,7 +10518,8 @@
     ],
     "styles": [
       "boom bap",
-      "conscious"
+      "conscious",
+      "neo soul"
     ],
     "label": "Columbia",
     "format": "CD",
@@ -10860,7 +10932,7 @@
     ],
     "my_rating": 4,
     "my_review": "Let's keep it on the level\nWhen I walked away from you\nI turned my back on the devil\nTurned my back on the angel, too\n\nThey oughta give my heart a medal\nFor letting go of you.\nWhen I turned my back on the devil\nTurned my back on the angel, too\n\nAt first I thought you would need to be in the mood to listen to this. But this album just stopped me in my tracks no matter what I was doing. There's something about Cohen that just grabs me and makes me listen. The coolest dude ever. \n \nThe lyrics and that amazing growling voice hit so hard. The melodies are heartbreaking. Instrumentation is surprisingly varied for each song, but it's never too much. Just enough to complement and amplify the song and the words. \n\nWhat a way to go, Mr Cohen.\n\nStand outs: \nYou want it darker, On the level, Leaving the table, Traveling light, Treaty (both versions)",
-    "global_rating": 3.32,
+    "global_rating": 3.31,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3jeTB3j3QmUs8SPIVleHtU/you-want-it-darker",
     "enriched": true
@@ -11489,7 +11561,7 @@
         "duration": "6:47"
       }
     ],
-    "my_rating": 4,
+    "my_rating": 3,
     "my_review": "",
     "global_rating": 4.37,
     "list_source": "book",
@@ -11731,7 +11803,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.73,
+    "global_rating": 3.72,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/2PXlvqTzGBNetlGct7L5e6/whatever-people-say-i-am-thats-what-im-not",
     "enriched": true
@@ -12195,7 +12267,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.22,
+    "global_rating": 3.23,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1pFUGy3ABpLRRE3oNMPbDb/little-earthquakes",
     "enriched": true
@@ -12303,7 +12375,7 @@
     "styles": [
       "doom metal",
       "folk rock",
-      "prog rock",
+      "progressive rock",
       "black metal"
     ],
     "label": "Eisenwald",
@@ -12360,7 +12432,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.02,
+    "global_rating": 3,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/0bhc2vyixLmIPfBj4raglZ/the-mantle",
     "enriched": true
@@ -13133,10 +13205,8 @@
       "rock"
     ],
     "styles": [
-      "new wave",
-      "soft rock",
-      "rhythm blues",
-      "ballad"
+      "ballad",
+      "blue eyed soul"
     ],
     "label": "Elektra",
     "format": "Vinyl",
@@ -13215,10 +13285,8 @@
     ],
     "styles": [
       "new wave",
-      "art rock",
       "pop rock",
-      "power pop",
-      "soft rock"
+      "power pop"
     ],
     "label": "Elektra",
     "format": "Vinyl",
@@ -13851,7 +13919,8 @@
       "pop"
     ],
     "styles": [
-      "pop rock"
+      "pop rock",
+      "ballad"
     ],
     "label": "EMI",
     "format": "CD",
@@ -13958,67 +14027,13 @@
     "enriched": true
   },
   {
-    "id": 10011058,
-    "instance_id": 1579307215,
-    "artist": "Pink Floyd",
-    "title": "Animals",
-    "year": 1994,
-    "thumb": "https://i.discogs.com/KlPFnleRAQUjahfelzCgCbIIrsGd6R-0Zp_nIKpPCFE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDEx/MDU4LTE0OTAxMDUz/MzItOTg4MC5qcGVn.jpeg",
-    "cover_image": "https://i.discogs.com/lah50o_3lzQQA3kSjg9X9j91TbSVjplLgUaYnx-BYww/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDEx/MDU4LTE0OTAxMDUz/MzItOTg4MC5qcGVn.jpeg",
-    "genres": [
-      "rock"
-    ],
-    "styles": [
-      "psychedelic rock",
-      "prog rock"
-    ],
-    "label": "EMI United Kingdom",
-    "format": "CD",
-    "format_full": "CD — Album, Misprint",
-    "country": "UK & Europe",
-    "date_added": "2024-01-28T08:29:59-08:00",
-    "tracklist": [
-      {
-        "position": "1",
-        "title": "Pigs On The Wing 1",
-        "duration": "1:25"
-      },
-      {
-        "position": "2",
-        "title": "Dogs",
-        "duration": "17:04"
-      },
-      {
-        "position": "3",
-        "title": "Pigs (Three Different Ones)",
-        "duration": "11:22"
-      },
-      {
-        "position": "4",
-        "title": "Sheep",
-        "duration": "10:24"
-      },
-      {
-        "position": "5",
-        "title": "Pigs On The Wing 2",
-        "duration": "1:25"
-      }
-    ],
-    "my_rating": null,
-    "my_review": "",
-    "global_rating": null,
-    "list_source": null,
-    "reviews_url": "",
-    "enriched": true
-  },
-  {
     "id": 6552352,
     "instance_id": 1579302013,
     "artist": "Pink Floyd",
     "title": "The Division Bell",
     "year": 1994,
-    "thumb": "https://i.discogs.com/VArUVGpedpnlNMl3KiNsb-llj_tOU4kKmbaBmJs7z54/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTIz/NTItMTQ4NTg3NzI4/Mi05MzAwLmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/s7WWCsil_LeJYESCqM72cAGvQrjS6R3Rhnv8tPxcKso/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTIz/NTItMTQ4NTg3NzI4/Mi05MzAwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/xLIo6cQ3vwJ3NCeKnqpWcJaqhoo4o_TCCtOuWm7OUvE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTIz/NTItMTQyMTg0MDc3/OC0xNzY3LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/qKrbEIJer1FCfxc2cXmgJBwORU7pew9wOhp4QV9Tqzo/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTIz/NTItMTQyMTg0MDc3/OC0xNzY3LmpwZWc.jpeg",
     "genres": [
       "rock"
     ],
@@ -14096,6 +14111,60 @@
     "enriched": true
   },
   {
+    "id": 10011058,
+    "instance_id": 1579307215,
+    "artist": "Pink Floyd",
+    "title": "Animals",
+    "year": 1994,
+    "thumb": "https://i.discogs.com/KlPFnleRAQUjahfelzCgCbIIrsGd6R-0Zp_nIKpPCFE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDEx/MDU4LTE0OTAxMDUz/MzItOTg4MC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/lah50o_3lzQQA3kSjg9X9j91TbSVjplLgUaYnx-BYww/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDEx/MDU4LTE0OTAxMDUz/MzItOTg4MC5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "psychedelic rock",
+      "prog rock"
+    ],
+    "label": "EMI United Kingdom",
+    "format": "CD",
+    "format_full": "CD — Album, Misprint, Reissue",
+    "country": "Europe",
+    "date_added": "2024-01-28T08:29:59-08:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Pigs On The Wing 1",
+        "duration": "1:25"
+      },
+      {
+        "position": "2",
+        "title": "Dogs",
+        "duration": "17:04"
+      },
+      {
+        "position": "3",
+        "title": "Pigs (Three Different Ones)",
+        "duration": "11:22"
+      },
+      {
+        "position": "4",
+        "title": "Sheep",
+        "duration": "10:24"
+      },
+      {
+        "position": "5",
+        "title": "Pigs On The Wing 2",
+        "duration": "1:25"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 1699680,
     "instance_id": 2006449920,
     "artist": "Robert Palmer",
@@ -14116,7 +14185,7 @@
     ],
     "label": "EMI United Kingdom",
     "format": "CD",
-    "format_full": "CD — Compilation",
+    "format_full": "CD — Compilation, Stereo",
     "country": "Europe",
     "date_added": "2025-04-23T13:40:34-07:00",
     "tracklist": [
@@ -14801,8 +14870,7 @@
     "styles": [
       "psychedelic rock",
       "art rock",
-      "symphonic rock",
-      "prog rock"
+      "progressive rock"
     ],
     "label": "EMI",
     "format": "Vinyl",
@@ -15092,7 +15160,6 @@
     ],
     "styles": [
       "hard rock",
-      "soft rock",
       "pop rock",
       "arena rock"
     ],
@@ -15163,7 +15230,8 @@
     ],
     "styles": [
       "alternative rock",
-      "funk metal"
+      "funk metal",
+      "alternative metal"
     ],
     "label": "Epic Associated",
     "format": "Vinyl",
@@ -15495,7 +15563,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.72,
+    "global_rating": 3.69,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4qUMByJ3Pk94BFnCmGaUPS/blizzard-of-ozz",
     "enriched": true
@@ -15513,7 +15581,6 @@
     ],
     "styles": [
       "hard rock",
-      "soft rock",
       "pop rock",
       "arena rock"
     ],
@@ -15800,7 +15867,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.64,
+    "global_rating": 3.62,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/10v912xgTZbjAtYfyKWJCS/highway-to-hell",
     "enriched": true
@@ -15817,7 +15884,8 @@
       "rock"
     ],
     "styles": [
-      "pop rock"
+      "pop rock",
+      "hard rock"
     ],
     "label": "Epic",
     "format": "CD",
@@ -15878,7 +15946,7 @@
     ],
     "my_rating": 4,
     "my_review": "Outstanding! I love Jim Steinman's over the top, theatrical way of writing. It's like listening to a movie. A silly one, granted, but the experience is always dramatic and such a thrill ride.\n\nTo be honest, the album could have had white noise after the title track and my score would have been the same.\n\nAbsolute beast: Bat out of hell\nAlso awesome: You took the words tight out of my mouth",
-    "global_rating": 3.42,
+    "global_rating": 3.41,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0elHWyUbF2KLuHl8GjlzEM/bat-out-of-hell",
     "enriched": true
@@ -15895,7 +15963,8 @@
       "rock"
     ],
     "styles": [
-      "pop rock"
+      "pop rock",
+      "hard rock"
     ],
     "label": "Epic",
     "format": "Vinyl",
@@ -15936,7 +16005,7 @@
     ],
     "my_rating": 4,
     "my_review": "Outstanding! I love Jim Steinman's over the top, theatrical way of writing. It's like listening to a movie. A silly one, granted, but the experience is always dramatic and such a thrill ride.\n\nTo be honest, the album could have had white noise after the title track and my score would have been the same.\n\nAbsolute beast: Bat out of hell\nAlso awesome: You took the words tight out of my mouth",
-    "global_rating": 3.42,
+    "global_rating": 3.41,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0elHWyUbF2KLuHl8GjlzEM/bat-out-of-hell",
     "enriched": true
@@ -16701,7 +16770,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.72,
+    "global_rating": 3.69,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4qUMByJ3Pk94BFnCmGaUPS/blizzard-of-ozz",
     "enriched": true
@@ -17707,7 +17776,9 @@
     ],
     "styles": [
       "grunge",
-      "acoustic"
+      "acoustic",
+      "live",
+      "alternative rock"
     ],
     "label": "Geffen Records",
     "format": "CD",
@@ -17788,7 +17859,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 4.2,
+    "global_rating": 4.19,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5pbjLidJuoty9QUOy6X682/mtv-unplugged-in-new-york",
     "enriched": true
@@ -18347,7 +18418,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.71,
+    "global_rating": 3.7,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3I9Z1nDCL4E0cP62flcbI5/appetite-for-destruction",
     "enriched": true
@@ -18560,7 +18631,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.48,
+    "global_rating": 3.45,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/3G36754KQVLyGuskraEAVA/portishead",
     "enriched": true
@@ -18646,6 +18717,85 @@
     "global_rating": null,
     "list_source": null,
     "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 1526433,
+    "instance_id": 2166616722,
+    "artist": "Portishead",
+    "title": "Dummy",
+    "year": 1994,
+    "thumb": "https://i.discogs.com/y94oLxrPbe0x7ZHAyos9cYI5eZtpv1Kx3ukYV8WWS0A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjY0/MzMtMTQ0ODYxMDQz/NC03Nzk5LmpwZWc.jpeg",
+    "cover_image": "https://i.scdn.co/image/b72a514a7a7ba3cd9084192ca6dbe96ec69845bc",
+    "genres": [
+      "electronica"
+    ],
+    "styles": [
+      "trip hop",
+      "downtempo"
+    ],
+    "label": "Go! Beat",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Reissue, Stereo",
+    "country": "Europe",
+    "date_added": "2026-07-23T06:05:43-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Mysterons",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Sour Times",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Strangers",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "It Could Be Sweet",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Wandering Star",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Numb",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Roads",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Pedestal",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Biscuit",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Glory Box",
+        "duration": ""
+      }
+    ],
+    "my_rating": 4,
+    "my_review": "",
+    "global_rating": 3.71,
+    "list_source": "book",
+    "reviews_url": "https://1001albumsgenerator.com/albums/3gxOtUSRzweDWBKlpj7cG6/dummy",
     "enriched": true
   },
   {
@@ -18958,9 +19108,7 @@
     ],
     "styles": [
       "art rock",
-      "psychedelic rock",
-      "symphonic rock",
-      "prog rock"
+      "progressive rock"
     ],
     "label": "Harvest",
     "format": "CD",
@@ -19101,7 +19249,7 @@
     ],
     "my_rating": 5,
     "my_review": "",
-    "global_rating": 4.13,
+    "global_rating": 4.12,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/33p78EyTp6esCBodi24Pzx/the-wall",
     "enriched": true
@@ -19120,8 +19268,7 @@
     "styles": [
       "psychedelic rock",
       "art rock",
-      "symphonic rock",
-      "prog rock"
+      "progressive rock"
     ],
     "label": "Harvest",
     "format": "Vinyl",
@@ -19445,8 +19592,7 @@
     ],
     "styles": [
       "britpop",
-      "indie rock",
-      "madchester"
+      "indie rock"
     ],
     "label": "Helter Skelter",
     "format": "CD",
@@ -19517,7 +19663,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.85,
+    "global_rating": 3.86,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0PTVq4kaAAuROnfvfA7bHG/whats-the-story-morning-glory",
     "enriched": true
@@ -19527,16 +19673,16 @@
     "instance_id": 1931257239,
     "artist": "Burial",
     "title": "Untrue",
-    "year": 2016,
+    "year": 2007,
     "thumb": "https://i.discogs.com/Z0H2fvGITSm2IOX3NewuF68tX36-MkMnTnTAphZHTMs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzMTIw/MDItMTY2ODgyMTg0/OS03ODQ5LmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/sIGbTInZNGrqPtOdsVBmUnlRdYGyR27IYXjgH_0waFk/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzMTIw/MDItMTY2ODgyMTg0/OS03ODQ5LmpwZWc.jpeg",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b2730ea5498497e5bdcdb59a687a",
     "genres": [
-      "electronic"
+      "electronica"
     ],
     "styles": [
       "abstract",
-      "uk garage",
       "dubstep",
+      "uk garage",
       "ambient",
       "bass music"
     ],
@@ -19612,11 +19758,11 @@
         "duration": "4:57"
       }
     ],
-    "my_rating": null,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": null,
-    "list_source": null,
-    "reviews_url": "",
+    "global_rating": 3.1,
+    "list_source": "user",
+    "reviews_url": "https://1001albumsgenerator.com/albums/1oLxSFO8bJwsU2OmZY4cdU/untrue",
     "enriched": true
   },
   {
@@ -19631,7 +19777,9 @@
       "electronic"
     ],
     "styles": [
-      "ambient"
+      "ambient",
+      "sound collage",
+      "abstract"
     ],
     "label": "Hyperdub",
     "format": "Vinyl",
@@ -20925,7 +21073,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.73,
+    "global_rating": 3.72,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4piJq7R3gjUOxnYs6lDCTg/hot-fuss",
     "enriched": true
@@ -21071,7 +21219,7 @@
       "soul"
     ],
     "styles": [
-      "rhythm blues"
+      "rhythm and blues"
     ],
     "label": "Island Records",
     "format": "CD",
@@ -21172,7 +21320,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 4.02,
+    "global_rating": 4.03,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6GJCGWfI95aeRsdtVB52vc/back-to-black",
     "enriched": true
@@ -21664,8 +21812,7 @@
       "rock"
     ],
     "styles": [
-      "pop rock",
-      "synth pop"
+      "pop rock"
     ],
     "label": "Island Records",
     "format": "Vinyl",
@@ -21729,9 +21876,9 @@
         "duration": "5:14"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.67,
+    "global_rating": 3.66,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5vBZRYu2GLA65nfxBvG1a7/the-joshua-tree",
     "enriched": true
@@ -21749,7 +21896,11 @@
     ],
     "styles": [
       "alternative rock",
-      "pop rock"
+      "pop rock",
+      "synth pop",
+      "downtempo",
+      "acoustic",
+      "ballad"
     ],
     "label": "Island Records",
     "format": "CD",
@@ -21820,7 +21971,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.3,
+    "global_rating": 3.29,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3hErePSImi79vYHrSmypGw/achtung-baby",
     "enriched": true
@@ -22568,9 +22719,7 @@
       "soft rock",
       "pop rock",
       "african",
-      "afrobeat",
-      "zydeco",
-      "rhythm blues"
+      "afrobeat"
     ],
     "label": "Legacy",
     "format": "CD",
@@ -22666,12 +22815,14 @@
     "instance_id": 1336085423,
     "artist": "Depeche Mode",
     "title": "Songs Of Faith And Devotion",
-    "year": 2016,
+    "year": 1993,
     "thumb": "https://i.discogs.com/fD_cONs7QMV5hN3y-v6GKayZtekSV-GaACG1kFBPY58/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODA2/NzAtMTQ3ODczMDk4/My02NDY5LmpwZWc.jpeg",
-    "cover_image": "https://i.discogs.com/M8lm5SYKkav2ewb5ucN2unNhsqp6_4FehwL1FI1Veks/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODA2/NzAtMTQ3ODczMDk4/My02NDY5LmpwZWc.jpeg",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273572699cddec1b88f5f437a28",
     "genres": [
-      "electronic",
-      "rock"
+      "electronica",
+      "rock",
+      "funk",
+      "soul"
     ],
     "styles": [
       "alternative rock",
@@ -22734,11 +22885,11 @@
         "duration": ""
       }
     ],
-    "my_rating": null,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": null,
-    "list_source": null,
-    "reviews_url": "",
+    "global_rating": 3.37,
+    "list_source": "user",
+    "reviews_url": "https://1001albumsgenerator.com/albums/1nL4JmG7eih4iCfo8VxWH3/songs-of-faith-and-devotion",
     "enriched": true
   },
   {
@@ -22949,7 +23100,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.82,
+    "global_rating": 2.72,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/0EmgzguOzsDNC8yZzxK8Zi/rite-here-rite-now",
     "enriched": true
@@ -23478,8 +23629,7 @@
     "styles": [
       "downtempo",
       "ambient",
-      "experimental",
-      "dub"
+      "experimental"
     ],
     "label": "Matador",
     "format": "Vinyl",
@@ -23530,7 +23680,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.85,
+    "global_rating": 2.88,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2Q7l5NR9ZY8gfkkTtBnlBt/psychic",
     "enriched": true
@@ -24935,7 +25085,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.57,
+    "global_rating": 3.56,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6p6RTnoHCJMnMx2jcK4oGu/kick",
     "enriched": true
@@ -25117,6 +25267,79 @@
     "enriched": true
   },
   {
+    "id": 2801071,
+    "instance_id": 2196784598,
+    "artist": "Bolt Thrower",
+    "title": "Those Once Loyal",
+    "year": 2005,
+    "thumb": "https://i.discogs.com/BfdxbkoRhnClGrwWChIhQJwOewHsNRpdWHu8OPPVil4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDEw/NzEtMTMwMTYyNDQw/Ni5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/-gPYeirxz14WIzXaN1tNNRmwslGduRUNy-TUTBh2Pdc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDEw/NzEtMTMwMTYyNDQw/Ni5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Metal Blade Records",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Germany",
+    "date_added": "2026-10-22T12:02:36-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "At First Light",
+        "duration": "4:38"
+      },
+      {
+        "position": "2",
+        "title": "Entrenched",
+        "duration": "3:41"
+      },
+      {
+        "position": "3",
+        "title": "The Killchain",
+        "duration": "4:41"
+      },
+      {
+        "position": "4",
+        "title": "Granite Wall",
+        "duration": "4:03"
+      },
+      {
+        "position": "5",
+        "title": "Those Once Loyal",
+        "duration": "4:14"
+      },
+      {
+        "position": "6",
+        "title": "Anti-Tank (Dead Armour)",
+        "duration": "4:15"
+      },
+      {
+        "position": "7",
+        "title": "Last Stand Of Humanity",
+        "duration": "3:10"
+      },
+      {
+        "position": "8",
+        "title": "Salvo",
+        "duration": "5:18"
+      },
+      {
+        "position": "9",
+        "title": "When Cannons Fade",
+        "duration": "5:27"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 36590419,
     "instance_id": 2123010396,
     "artist": "Messa",
@@ -25133,7 +25356,7 @@
     ],
     "label": "Metal Blade Records",
     "format": "Vinyl",
-    "format_full": "Vinyl — LP, Album",
+    "format_full": "Vinyl — LP, Album, Limited Edition, Reissue",
     "country": "Europe",
     "date_added": "2026-03-11T07:21:27-07:00",
     "tracklist": [
@@ -25979,7 +26202,8 @@
       "rock"
     ],
     "styles": [
-      "alternative rock"
+      "alternative rock",
+      "progressive rock"
     ],
     "label": "Motor Music",
     "format": "CD",
@@ -26045,7 +26269,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.52,
+    "global_rating": 3.55,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1Dh27pjT3IEdiRG9Se5uQn/origin-of-symmetry",
     "enriched": true
@@ -26741,7 +26965,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.18,
+    "global_rating": 3.1,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1UdCT7t0rfNPu5Bn957U8r/silent-shout",
     "enriched": true
@@ -26751,16 +26975,17 @@
     "instance_id": 1711435930,
     "artist": "Depeche Mode",
     "title": "Songs Of Faith And Devotion Live",
-    "year": 2020,
+    "year": 1993,
     "thumb": "https://i.discogs.com/RYoXSDl5Y134McvsQKPFjcxlum8_3Pbnm_PI_yj5ohk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjQ2/ODM2LTE1ODg2MjQ1/NjUtNzQyNy5qcGVn.jpeg",
-    "cover_image": "https://i.discogs.com/qsQwXJCo_BkgDAPh1svTxIvEYj_qleoj11-0F7O4sKU/rs:fit/g:sm/q:90/h:540/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjQ2/ODM2LTE1ODg2MjQ1/NjUtNzQyNy5qcGVn.jpeg",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273572699cddec1b88f5f437a28",
     "genres": [
-      "electronic",
-      "rock"
+      "electronica",
+      "rock",
+      "funk",
+      "soul"
     ],
     "styles": [
       "alternative rock",
-      "new wave",
       "synth pop"
     ],
     "label": "Mute (2)",
@@ -26820,11 +27045,11 @@
         "duration": ""
       }
     ],
-    "my_rating": null,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": null,
-    "list_source": null,
-    "reviews_url": "",
+    "global_rating": 3.37,
+    "list_source": "user",
+    "reviews_url": "https://1001albumsgenerator.com/albums/1nL4JmG7eih4iCfo8VxWH3/songs-of-faith-and-devotion",
     "enriched": true
   },
   {
@@ -27105,7 +27330,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.37,
+    "global_rating": 3.38,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5Yyx661Ksxl2pmRUuGLzw3/music-for-the-masses",
     "enriched": true
@@ -27123,10 +27348,8 @@
       "rock"
     ],
     "styles": [
-      "hard rock",
       "experimental",
-      "industrial",
-      "military"
+      "industrial"
     ],
     "label": "Mute",
     "format": "CD",
@@ -27197,7 +27420,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.39,
+    "global_rating": 2.4,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3706Kd7JanLR1mzDYrEiqm/opus-dei",
     "enriched": true
@@ -27781,7 +28004,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.37,
+    "global_rating": 3.38,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5Yyx661Ksxl2pmRUuGLzw3/music-for-the-masses",
     "enriched": true
@@ -29832,6 +30055,104 @@
     "enriched": true
   },
   {
+    "id": 7431734,
+    "instance_id": 2164834254,
+    "artist": "In Flames",
+    "title": "The Jester Race ~ Black-Ash Inheritance",
+    "year": null,
+    "thumb": "https://i.discogs.com/KDFv7hBtTN6R_NUPrjr_F8JmP_EnwSQqwXFIVyrb_6w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MzE3/MzQtMTQ0MTQwNzU2/Ny05MzM1LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/0sIrer8KA7v2dVP2Ndt8g9bS-vlnmeZh1M4jUDtxyHk/rs:fit/g:sm/q:90/h:539/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MzE3/MzQtMTQ0MTQwNzU2/Ny05MzM1LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Nuclear Blast",
+    "format": "CD",
+    "format_full": "CD — Compilation, Repress",
+    "country": "Germany",
+    "date_added": "2026-07-17T13:03:34-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Moonshield",
+        "duration": "5:02"
+      },
+      {
+        "position": "2",
+        "title": "The Jester's Dance",
+        "duration": "2:07"
+      },
+      {
+        "position": "3",
+        "title": "Artifacts Of The Black Rain",
+        "duration": "3:15"
+      },
+      {
+        "position": "4",
+        "title": "Graveland",
+        "duration": "2:46"
+      },
+      {
+        "position": "5",
+        "title": "Lord Hypnos",
+        "duration": "4:00"
+      },
+      {
+        "position": "6",
+        "title": "Dead Eternity",
+        "duration": "5:00"
+      },
+      {
+        "position": "7",
+        "title": "The Jester Race",
+        "duration": "4:50"
+      },
+      {
+        "position": "8",
+        "title": "December Flower",
+        "duration": "4:10"
+      },
+      {
+        "position": "9",
+        "title": "Wayfaerer",
+        "duration": "4:39"
+      },
+      {
+        "position": "10",
+        "title": "Dead God In Me",
+        "duration": "4:15"
+      },
+      {
+        "position": "11",
+        "title": "Goliaths Disarm Their Davids",
+        "duration": "4:55"
+      },
+      {
+        "position": "12",
+        "title": "Gyroscope",
+        "duration": "3:23"
+      },
+      {
+        "position": "13",
+        "title": "Acoustic Medley",
+        "duration": "2:33"
+      },
+      {
+        "position": "14",
+        "title": "Behind Space - Live",
+        "duration": "3:36"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 4105057,
     "instance_id": 2086998304,
     "artist": "Therion",
@@ -30378,8 +30699,8 @@
     "artist": "Roxette",
     "title": "Look Sharp!",
     "year": 1989,
-    "thumb": "https://i.discogs.com/k8USMnLvjicJuCvrhovZu1dQSvDzh24Ss_OLqa3lswc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NjU1/MC0xNTEzMjU4NDYy/LTM3NDkuanBlZw.jpeg",
-    "cover_image": "https://i.discogs.com/IYAc8dGLMiYRX71SPA8QlrZNsyCrnPy7i3hMds6XZnk/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NjU1/MC0xNTEzMjU4NDYy/LTM3NDkuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/u_SMv9H51ziugnKhRfhwwuSkQ3pcSpKXn8KK6uWjq7I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NjU1/MC0xNzkwMzI5ODY3/LTgyMzkuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/cjr4flmKONdpKUknMUk7R7A6ydoEGkWfZdhUmmvOEF0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NjU1/MC0xNzkwMzI5ODY3/LTgyMzkuanBlZw.jpeg",
     "genres": [
       "electronic",
       "rock",
@@ -30996,7 +31317,8 @@
       "trip hop",
       "pop rap",
       "pop rock",
-      "downtempo"
+      "downtempo",
+      "alternative rock"
     ],
     "label": "Parlophone",
     "format": "CD",
@@ -31082,7 +31404,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.96,
+    "global_rating": 4.01,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/0bUTHlWbkSQysoM3VsWldT/demon-days",
     "enriched": true
@@ -31661,7 +31983,8 @@
     "styles": [
       "psychedelic rock",
       "art rock",
-      "pop rock"
+      "pop rock",
+      "progressive rock"
     ],
     "label": "Pink Floyd Records",
     "format": "CD",
@@ -31810,9 +32133,7 @@
     ],
     "styles": [
       "art rock",
-      "psychedelic rock",
-      "symphonic rock",
-      "prog rock"
+      "progressive rock"
     ],
     "label": "Pink Floyd Records",
     "format": "Vinyl",
@@ -31953,7 +32274,7 @@
     ],
     "my_rating": 5,
     "my_review": "",
-    "global_rating": 4.13,
+    "global_rating": 4.12,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/33p78EyTp6esCBodi24Pzx/the-wall",
     "enriched": true
@@ -32025,8 +32346,7 @@
     "styles": [
       "psychedelic rock",
       "art rock",
-      "symphonic rock",
-      "prog rock"
+      "progressive rock"
     ],
     "label": "Pink Floyd Records",
     "format": "Vinyl",
@@ -32269,8 +32589,6 @@
       "electronica"
     ],
     "styles": [
-      "pop rock",
-      "trip hop",
       "abstract",
       "experimental",
       "ambient"
@@ -32344,7 +32662,7 @@
     ],
     "my_rating": 3,
     "my_review": "Pagan poetry is one of the best songs I've ever heard ",
-    "global_rating": 3.18,
+    "global_rating": 3.19,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1emkiMRnLWtWfmCcJapjR1/vespertine",
     "enriched": true
@@ -32761,7 +33079,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.96,
+    "global_rating": 2.95,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/56pR0SwZfVQFSIVWzM1eow/fever-ray",
     "enriched": true
@@ -33250,7 +33568,8 @@
     ],
     "styles": [
       "southern rock",
-      "indie rock"
+      "indie rock",
+      "alternative rock"
     ],
     "label": "RCA",
     "format": "CD",
@@ -33316,7 +33635,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.23,
+    "global_rating": 3.22,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5CZR6ljD0x9fTiS4mh9wMp/only-by-the-night",
     "enriched": true
@@ -33897,7 +34216,8 @@
     ],
     "styles": [
       "emo",
-      "pop punk"
+      "pop punk",
+      "alternative rock"
     ],
     "label": "Reprise Records",
     "format": "CD",
@@ -33978,7 +34298,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.54,
+    "global_rating": 3.52,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/0FZK97MXMm5mUQ8mtudjuK/the-black-parade",
     "enriched": true
@@ -34669,6 +34989,100 @@
         "position": "11",
         "title": "Jaguar God",
         "duration": "7:57"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
+    "id": 3202716,
+    "instance_id": 2192631149,
+    "artist": "Mastodon",
+    "title": "The Hunter",
+    "year": 2011,
+    "thumb": "https://i.discogs.com/rtpLsDtU51pJY9q3DzwSBU-KIeahxCWfNGVTkVSE0eI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMDI3/MTYtMTY0ODEzNTM0/Ni00OTE5LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/8l4PCdnoD8dRBLoexV-7I5eh0SXHjfVwEHwyglkDQWY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMDI3/MTYtMTY0ODEzNTM0/Ni00OTE5LmpwZWc.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "sludge metal",
+      "prog rock"
+    ],
+    "label": "Reprise Records",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album",
+    "country": "Europe",
+    "date_added": "2026-10-10T04:05:33-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Black Tongue",
+        "duration": "3:27"
+      },
+      {
+        "position": "A2",
+        "title": "Curl Of The Burl",
+        "duration": "3:40"
+      },
+      {
+        "position": "A3",
+        "title": "Blasteroid",
+        "duration": "2:36"
+      },
+      {
+        "position": "A4",
+        "title": "Stargasm",
+        "duration": "4:40"
+      },
+      {
+        "position": "A5",
+        "title": "Octopus Has No Friends",
+        "duration": "3:49"
+      },
+      {
+        "position": "A6",
+        "title": "All The Heavy Lifting",
+        "duration": "4:31"
+      },
+      {
+        "position": "A7",
+        "title": "The Hunter",
+        "duration": "5:18"
+      },
+      {
+        "position": "B1",
+        "title": "Dry Bone Valley",
+        "duration": "4:00"
+      },
+      {
+        "position": "B2",
+        "title": "Thickening",
+        "duration": "4:31"
+      },
+      {
+        "position": "B3",
+        "title": "Creature Lives",
+        "duration": "4:41"
+      },
+      {
+        "position": "B4",
+        "title": "Spectrelight",
+        "duration": "3:10"
+      },
+      {
+        "position": "B5",
+        "title": "Bedazzled Fingernails",
+        "duration": "3:08"
+      },
+      {
+        "position": "B6",
+        "title": "The Sparrow",
+        "duration": "5:32"
       }
     ],
     "my_rating": null,
@@ -35703,10 +36117,8 @@
       "metal"
     ],
     "styles": [
-      "death metal",
       "nu metal",
-      "heavy metal",
-      "thrash"
+      "groove metal"
     ],
     "label": "Roadrunner Records",
     "format": "CD",
@@ -35797,7 +36209,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.78,
+    "global_rating": 2.79,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5JjnPCfpp6redrkKpXZAs8/roots",
     "enriched": true
@@ -35815,9 +36227,8 @@
     ],
     "styles": [
       "death metal",
-      "thrash metal",
-      "progressive metal",
-      "technical death metal"
+      "thrash",
+      "progressive metal"
     ],
     "label": "Roadrunner Records",
     "format": "CD",
@@ -35873,7 +36284,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.8,
+    "global_rating": 2.82,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -36170,9 +36581,8 @@
     ],
     "styles": [
       "death metal",
-      "thrash metal",
-      "progressive metal",
-      "technical death metal"
+      "thrash",
+      "progressive metal"
     ],
     "label": "Roadrunner Records",
     "format": "Vinyl",
@@ -36228,7 +36638,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 2.8,
+    "global_rating": 2.82,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/4YACrpVtdpoFocBPBeLbzO/symbolic",
     "enriched": true
@@ -36246,7 +36656,6 @@
     ],
     "styles": [
       "death metal",
-      "nu metal",
       "thrash"
     ],
     "label": "Roadrunner Records",
@@ -36323,7 +36732,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.74,
+    "global_rating": 2.73,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7hgWmH16eu70yqrg5Pc3SM/arise",
     "enriched": true
@@ -37102,8 +37511,8 @@
       "rock"
     ],
     "styles": [
-      "stoner rock",
-      "heavy metal"
+      "heavy metal",
+      "hard rock"
     ],
     "label": "Sanctuary",
     "format": "CD",
@@ -37607,7 +38016,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 2.97,
+    "global_rating": 2.95,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2vERrKmV1XeTlGczwqs9ZU/barton-hollow",
     "enriched": true
@@ -37699,6 +38108,92 @@
     "enriched": true
   },
   {
+    "id": 1268001,
+    "instance_id": 1995140622,
+    "artist": "Talking Heads",
+    "title": "Fear Of Music",
+    "year": 1979,
+    "thumb": "https://i.discogs.com/s8itFWdVxdyf0vDnk6Hj9g7sipZP1Pe5k2AlbVLCT94/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjgw/MDEtMTcxMTI3NTMw/OC00NjQxLmpwZWc.jpeg",
+    "cover_image": "https://i.scdn.co/image/89a94e9dcc3988dea066f3094fb0a1eb8ba3b850",
+    "genres": [
+      "rock",
+      "punk"
+    ],
+    "styles": [
+      "post punk",
+      "new wave",
+      "art rock"
+    ],
+    "label": "Sire",
+    "format": "Vinyl",
+    "format_full": "Vinyl — LP, Album, Stereo",
+    "country": "Germany",
+    "date_added": "2025-04-13T11:31:38-07:00",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I Zimbra",
+        "duration": "3:06"
+      },
+      {
+        "position": "A2",
+        "title": "Mind",
+        "duration": "4:09"
+      },
+      {
+        "position": "A3",
+        "title": "Paper",
+        "duration": "2:36"
+      },
+      {
+        "position": "A4",
+        "title": "Cities",
+        "duration": "4:10"
+      },
+      {
+        "position": "A5",
+        "title": "Life Durning Wartime",
+        "duration": "3:35"
+      },
+      {
+        "position": "A6",
+        "title": "Memories Can't Wait",
+        "duration": "3:32"
+      },
+      {
+        "position": "B1",
+        "title": "Air",
+        "duration": "3:33"
+      },
+      {
+        "position": "B2",
+        "title": "Heaven",
+        "duration": "3:57"
+      },
+      {
+        "position": "B3",
+        "title": "Animals",
+        "duration": "3:26"
+      },
+      {
+        "position": "B4",
+        "title": "Electric Guitar",
+        "duration": "2:59"
+      },
+      {
+        "position": "B5",
+        "title": "Drugs",
+        "duration": "5:10"
+      }
+    ],
+    "my_rating": 3,
+    "my_review": "",
+    "global_rating": 3.47,
+    "list_source": "book",
+    "reviews_url": "https://1001albumsgenerator.com/albums/5dVZpNJraoqCo3BssinMoo/fear-of-music",
+    "enriched": true
+  },
+  {
     "id": 555870,
     "instance_id": 2103779731,
     "artist": "Talking Heads",
@@ -37708,7 +38203,8 @@
     "cover_image": "https://i.scdn.co/image/ef66af2631b8a3a8f118407be6bb6685836ae42f",
     "genres": [
       "electronica",
-      "rock"
+      "rock",
+      "punk"
     ],
     "styles": [
       "new wave",
@@ -37846,91 +38342,6 @@
     "enriched": true
   },
   {
-    "id": 1268001,
-    "instance_id": 1995140622,
-    "artist": "Talking Heads",
-    "title": "Fear Of Music",
-    "year": 1979,
-    "thumb": "https://i.discogs.com/s8itFWdVxdyf0vDnk6Hj9g7sipZP1Pe5k2AlbVLCT94/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjgw/MDEtMTcxMTI3NTMw/OC00NjQxLmpwZWc.jpeg",
-    "cover_image": "https://i.scdn.co/image/89a94e9dcc3988dea066f3094fb0a1eb8ba3b850",
-    "genres": [
-      "rock"
-    ],
-    "styles": [
-      "post punk",
-      "new wave",
-      "art rock"
-    ],
-    "label": "Sire",
-    "format": "Vinyl",
-    "format_full": "Vinyl — LP, Album, Stereo",
-    "country": "Germany",
-    "date_added": "2025-04-13T11:31:38-07:00",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "I Zimbra",
-        "duration": "3:06"
-      },
-      {
-        "position": "A2",
-        "title": "Mind",
-        "duration": "4:09"
-      },
-      {
-        "position": "A3",
-        "title": "Paper",
-        "duration": "2:36"
-      },
-      {
-        "position": "A4",
-        "title": "Cities",
-        "duration": "4:10"
-      },
-      {
-        "position": "A5",
-        "title": "Life During Wartime",
-        "duration": "3:35"
-      },
-      {
-        "position": "A6",
-        "title": "Memories Can't Wait",
-        "duration": "3:32"
-      },
-      {
-        "position": "B1",
-        "title": "Air",
-        "duration": "3:33"
-      },
-      {
-        "position": "B2",
-        "title": "Heaven",
-        "duration": "3:57"
-      },
-      {
-        "position": "B3",
-        "title": "Animals",
-        "duration": "3:26"
-      },
-      {
-        "position": "B4",
-        "title": "Electric Guitar",
-        "duration": "2:59"
-      },
-      {
-        "position": "B5",
-        "title": "Drugs",
-        "duration": "5:10"
-      }
-    ],
-    "my_rating": 3,
-    "my_review": "",
-    "global_rating": 3.47,
-    "list_source": "book",
-    "reviews_url": "https://1001albumsgenerator.com/albums/5dVZpNJraoqCo3BssinMoo/fear-of-music",
-    "enriched": true
-  },
-  {
     "id": 681547,
     "instance_id": 1352649015,
     "artist": "Talking Heads",
@@ -37940,7 +38351,8 @@
     "cover_image": "https://i.scdn.co/image/ef66af2631b8a3a8f118407be6bb6685836ae42f",
     "genres": [
       "electronica",
-      "rock"
+      "rock",
+      "punk"
     ],
     "styles": [
       "new wave",
@@ -38544,7 +38956,8 @@
       "hard rock",
       "alternative rock",
       "nu metal",
-      "funk metal"
+      "funk metal",
+      "alternative metal"
     ],
     "label": "Slash",
     "format": "CD",
@@ -38625,7 +39038,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.04,
+    "global_rating": 3.05,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/59GwovfBk0Kp2HJw1G7E5Q/angel-dust",
     "enriched": true
@@ -40042,9 +40455,9 @@
         "duration": "4:43"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.9,
+    "global_rating": 3.89,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1lZahjeu4AhPkg9JARZr5F/physical-graffiti",
     "enriched": true
@@ -40149,7 +40562,7 @@
     ],
     "styles": [
       "progressive metal",
-      "prog rock",
+      "progressive rock",
       "post metal"
     ],
     "label": "Tool Dissectional",
@@ -40206,7 +40619,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.09,
+    "global_rating": 3.1,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/7acEciVtnuTzmwKptkjth5/fear-inoculum",
     "enriched": true
@@ -40397,7 +40810,7 @@
     "artist": "Def Leppard",
     "title": "Hysteria",
     "year": 1987,
-    "thumb": "https://i.discogs.com/2EVhQEwILx5UuoF9X2gkevxuXczhpBblv0zKHwgcdn0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjg4/NDUzLTE1NDgzNTk5/NzEtMTQ3MC5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/KVq4O69Jzuyj1_CUkfVbZYr-e6hSSw6B8iUKuEjAuwo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjg4/NDUzLTE1NjA4NTY3/ODYtMTU4Ni5qcGVn.jpeg",
     "cover_image": "https://i.scdn.co/image/ab67616d0000b27343511b8c20112757edddc7ba",
     "genres": [
       "rock"
@@ -40475,7 +40888,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.2,
+    "global_rating": 3.19,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/1ja2qzCrh6bZykcojbZs82/hysteria",
     "enriched": true
@@ -40737,8 +41150,8 @@
     "artist": "Rammstein",
     "title": "Rosenrot",
     "year": 2005,
-    "thumb": "https://i.discogs.com/5ZjT73YXli9Bd7qrpYXlssycAC3ECZPIbg7_-nnhmSM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDgx/MC0xMzk5NzAwMDMy/LTg2NzEuanBlZw.jpeg",
-    "cover_image": "https://i.discogs.com/MIH3Lkf7Sl6im9pJuJwkj3TLRyr4aLUcr7Ts24Tv508/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDgx/MC0xMzk5NzAwMDMy/LTg2NzEuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/c8XQZgvCsq2JFDnA97fjPmIW1yzQwsPfT3J3etm3pO4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDgx/MC0xMTUyMzMzODgx/LmpwZWc.jpeg",
+    "cover_image": "https://i.discogs.com/LF9992TeEuqzNK5cQ19w7HLAtFfpUDHI7sSgBtgDUGk/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDgx/MC0xMTUyMzMzODgx/LmpwZWc.jpeg",
     "genres": [
       "rock"
     ],
@@ -40749,7 +41162,7 @@
     "label": "Universal Music",
     "format": "CD",
     "format_full": "CD — Album, Stereo",
-    "country": "Germany",
+    "country": "Europe",
     "date_added": "2024-01-27T07:43:10-08:00",
     "tracklist": [
       {
@@ -41554,7 +41967,7 @@
       "soul"
     ],
     "styles": [
-      "rhythm blues"
+      "rhythm and blues"
     ],
     "label": "Universal Records",
     "format": "Vinyl",
@@ -41620,7 +42033,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 4.02,
+    "global_rating": 4.03,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6GJCGWfI95aeRsdtVB52vc/back-to-black",
     "enriched": true
@@ -41936,7 +42349,8 @@
     ],
     "styles": [
       "thrash",
-      "heavy metal"
+      "heavy metal",
+      "hard rock"
     ],
     "label": "Vertigo",
     "format": "CD",
@@ -42292,8 +42706,8 @@
     ],
     "styles": [
       "heavy metal",
-      "symphonic metal",
-      "thrash"
+      "thrash",
+      "live"
     ],
     "label": "Vertigo",
     "format": "CD",
@@ -42569,8 +42983,8 @@
       "rock"
     ],
     "styles": [
-      "stoner rock",
-      "heavy metal"
+      "heavy metal",
+      "hard rock"
     ],
     "label": "Vertigo",
     "format": "Vinyl",
@@ -42638,7 +43052,6 @@
       "rock"
     ],
     "styles": [
-      "soft rock",
       "blues rock",
       "classic rock"
     ],
@@ -43324,10 +43737,12 @@
     "thumb": "https://i.discogs.com/4Pzv0Gtaf5Teco79Zmi07qCMPBm1o4OXsjdWw08Miy0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyODM2/NTItMTQ1ODU5NjUy/NS05MDUzLmpwZWc.jpeg",
     "cover_image": "https://i.discogs.com/pqDpLddfaDSfNWgvVnolDjVJNrkiV7KhFdgddOtj5Y8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyODM2/NTItMTQ1ODU5NjUy/NS05MDUzLmpwZWc.jpeg",
     "genres": [
-      "rock"
+      "rock",
+      "pop"
     ],
     "styles": [
-      "indie rock"
+      "pop rock",
+      "acoustic"
     ],
     "label": "Vertigo",
     "format": "CD",
@@ -44206,7 +44621,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.95,
+    "global_rating": 3.98,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/2noRn2Aes5aoNVsU6iWThc/discovery",
     "enriched": true
@@ -44312,7 +44727,6 @@
     ],
     "styles": [
       "art rock",
-      "soft rock",
       "pop rock"
     ],
     "label": "Virgin",
@@ -44493,7 +44907,6 @@
     ],
     "styles": [
       "art rock",
-      "soft rock",
       "pop rock",
       "synth pop"
     ],
@@ -44783,7 +45196,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.86,
+    "global_rating": 3.85,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3i3imP9g6gCc6VzeeyduXZ/sticky-fingers",
     "enriched": true
@@ -44801,7 +45214,7 @@
     ],
     "styles": [
       "nu metal",
-      "prog rock",
+      "progressive rock",
       "alternative metal"
     ],
     "label": "Volcano (2)",
@@ -44888,7 +45301,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.41,
+    "global_rating": 3.42,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/6yWMN087PgSimbcVmHLEwG/aenima",
     "enriched": true
@@ -44905,8 +45318,9 @@
       "metal"
     ],
     "styles": [
-      "prog rock",
-      "hard rock"
+      "progressive rock",
+      "hard rock",
+      "progressive metal"
     ],
     "label": "Volcano (2)",
     "format": "CD",
@@ -44972,7 +45386,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.28,
+    "global_rating": 3.29,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1fvWYcbjuycyHpzNPH1Vfk/10000-days",
     "enriched": true
@@ -45057,7 +45471,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.37,
+    "global_rating": 3.36,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5LMGAYhn2ywaxGZdtmXGpw/eliminator",
     "enriched": true
@@ -45256,7 +45670,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.08,
+    "global_rating": 3.07,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6BqoNCQsupSaLBkl8u1uME/shaka-zulu",
     "enriched": true
@@ -45341,7 +45755,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.37,
+    "global_rating": 3.36,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/5LMGAYhn2ywaxGZdtmXGpw/eliminator",
     "enriched": true
@@ -45352,7 +45766,7 @@
     "artist": "R.E.M.",
     "title": "Automatic For The People",
     "year": 1992,
-    "thumb": "https://i.discogs.com/hx22FiqSq0ksEoJAMBSQMwmZEeRKMqXJIkXnzP_viYA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTg4/OS0xMTU5NjEyMDYz/LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/QZCalVONHv1r_sOZ-MxAgv_lBxMT_OyPs5Xav9YF14M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTg4/OS0xNTQxNDQzODQy/LTQwMjYuanBlZw.jpeg",
     "cover_image": "https://i.scdn.co/image/b58510fd507d689a50bd1a5616beb40df3847e95",
     "genres": [
       "rock"
@@ -45566,7 +45980,7 @@
     "label": "Warner Bros. Records",
     "format": "CD",
     "format_full": "CD — Album, Reissue",
-    "country": "Germany",
+    "country": "Europe",
     "date_added": "2024-01-27T07:16:49-08:00",
     "tracklist": [
       {
@@ -45726,7 +46140,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.49,
+    "global_rating": 3.48,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6x2n6wj3WvkRi8J8gxEcF0/1984",
     "enriched": true
@@ -46052,7 +46466,7 @@
     "label": "Warner Bros. Records",
     "format": "Vinyl",
     "format_full": "Vinyl — LP, Album, Stereo",
-    "country": "UK & Europe",
+    "country": "Europe",
     "date_added": "2025-02-12T03:35:00-08:00",
     "tracklist": [
       {
@@ -46108,7 +46522,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.08,
+    "global_rating": 3.07,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6BqoNCQsupSaLBkl8u1uME/shaka-zulu",
     "enriched": true
@@ -46381,7 +46795,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.62,
+    "global_rating": 3.61,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7DdEbYFPKTZ8KB4z6L4UnQ/van-halen",
     "enriched": true
@@ -46405,9 +46819,7 @@
       "soft rock",
       "pop rock",
       "african",
-      "afrobeat",
-      "zydeco",
-      "rhythm blues"
+      "afrobeat"
     ],
     "label": "Warner Bros. Records",
     "format": "Vinyl",
@@ -46969,7 +47381,6 @@
     ],
     "styles": [
       "acoustic",
-      "piano blues",
       "neo soul"
     ],
     "label": "XL Recordings",
@@ -47054,8 +47465,7 @@
     ],
     "styles": [
       "ballad",
-      "neo soul",
-      "piano blues"
+      "neo soul"
     ],
     "label": "XL Recordings",
     "format": "CD",
@@ -47121,7 +47531,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.38,
+    "global_rating": 3.37,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6TVfiWmo8KtflUAmkK9gGF/25",
     "enriched": true
@@ -47373,8 +47783,7 @@
     ],
     "styles": [
       "ballad",
-      "neo soul",
-      "piano blues"
+      "neo soul"
     ],
     "label": "XL Recordings (2)",
     "format": "Vinyl",
@@ -47440,7 +47849,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.38,
+    "global_rating": 3.37,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/6TVfiWmo8KtflUAmkK9gGF/25",
     "enriched": true
@@ -47458,8 +47867,9 @@
     ],
     "styles": [
       "breakbeat",
-      "breaks",
-      "big beat"
+      "big beat",
+      "electro",
+      "techno"
     ],
     "label": "XL Recordings",
     "format": "CD",
@@ -47620,7 +48030,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.84,
+    "global_rating": 3.83,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/0rRNLpdA8nA8Sm8Fk490b9/elephant",
     "enriched": true
@@ -47698,9 +48108,9 @@
         "duration": "3:52"
       }
     ],
-    "my_rating": 3,
+    "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.07,
+    "global_rating": 3.06,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/04moHShgS3I0ErPt2mTAtd/music-for-the-jilted-generation",
     "enriched": true
@@ -47819,7 +48229,7 @@
     ],
     "styles": [
       "progressive metal",
-      "prog rock",
+      "progressive rock",
       "heavy metal"
     ],
     "label": "Zomba",
@@ -47896,7 +48306,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.46,
+    "global_rating": 3.44,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/5l5m1hnH4punS1GQXgEi3T/lateralus",
     "enriched": true
