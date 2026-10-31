@@ -720,7 +720,7 @@
     ],
     "my_rating": 4,
     "my_review": "fresh tendrils",
-    "global_rating": 3.64,
+    "global_rating": 3.65,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4ePl0meknOkJ892O9yszEY/superunknown",
     "enriched": true
@@ -7326,8 +7326,8 @@
     "artist": "Blood Incantation",
     "title": "Starspawn",
     "year": 2024,
-    "thumb": "https://i.discogs.com/LB_nTfv3AtEHDqotkNWa1FHPvUVCCTnwtPkEBopn4co/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjEw/NTUyLTE3MTgzODUx/NTctMzA2MS5qcGVn.jpeg",
-    "cover_image": "https://i.discogs.com/jFytsACyljFoWKDU_4YilOeRQjnVBSfkV-s5Fn134g0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjEw/NTUyLTE3MTgzODUx/NTctMzA2MS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/csOGCsOU7t3q8uoSodWLfRfDguGZ-4_r0LIgc9uIy0E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjEw/NTUyLTE3OTI4Nzgy/MjAtNTMwMC5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/Bws2CrE7ARNHjm-gCTmUfDcgXqFex42jOlDGgtSg4vQ/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjEw/NTUyLTE3OTI4Nzgy/MjAtNTMwMC5qcGVn.jpeg",
     "genres": [
       "rock"
     ],
@@ -7336,34 +7336,34 @@
     ],
     "label": "Century Media",
     "format": "CD",
-    "format_full": "CD — Album",
+    "format_full": "CD — Album, Reissue, Repress",
     "country": "Europe",
     "date_added": "2026-06-17T10:33:38-07:00",
     "tracklist": [
       {
         "position": "1",
         "title": "Vitrification Of Blood (Part 1)",
-        "duration": ""
+        "duration": "13:12"
       },
       {
         "position": "2",
         "title": "Chaoplasm",
-        "duration": ""
+        "duration": "5:36"
       },
       {
         "position": "3",
         "title": "Hidden Species (Vitrification Of Blood Part 2)",
-        "duration": ""
+        "duration": "7:01"
       },
       {
         "position": "4",
-        "title": "\tMeticulous Soul Devourment",
-        "duration": ""
+        "title": "Meticulous Soul Devourment",
+        "duration": "4:15"
       },
       {
         "position": "5",
         "title": "Starspawn",
-        "duration": ""
+        "duration": "4:20"
       }
     ],
     "my_rating": null,
@@ -9449,7 +9449,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.61,
+    "global_rating": 3.62,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/3kEtdS2pH6hKcMU9Wioob1/illmatic",
     "enriched": true
@@ -10615,7 +10615,7 @@
     ],
     "my_rating": 4,
     "my_review": "\n",
-    "global_rating": 3.69,
+    "global_rating": 3.68,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7m1r9h3wfPRm3Iv8uvq9vQ/the-score",
     "enriched": true
@@ -12183,6 +12183,89 @@
     "enriched": true
   },
   {
+    "id": 13079699,
+    "instance_id": 2198802571,
+    "artist": "Bolt Thrower",
+    "title": "The IVth Crusade",
+    "year": 2019,
+    "thumb": "https://i.discogs.com/pMblTfZgdnQhFWkLFbn9hnfic5ygpfxtkV14Ifb6ogA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDc5/Njk5LTE3NTQ4MDY1/MjEtNjkwMS5qcGVn.jpeg",
+    "cover_image": "https://i.discogs.com/vbwZrF2E49M3Hw5IlZ07iBmZu9VGSI5-JPa2CVQBxn8/rs:fit/g:sm/q:90/h:544/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDc5/Njk5LTE3NTQ4MDY1/MjEtNjkwMS5qcGVn.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "death metal"
+    ],
+    "label": "Earache",
+    "format": "CD",
+    "format_full": "CD — Album, Reissue, Remastered, Stereo",
+    "country": "Europe",
+    "date_added": "2026-10-28T10:29:53-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "The IVth Crusade",
+        "duration": "4:59"
+      },
+      {
+        "position": "2",
+        "title": "Icon",
+        "duration": "4:10"
+      },
+      {
+        "position": "3",
+        "title": "Embers",
+        "duration": "5:18"
+      },
+      {
+        "position": "4",
+        "title": "Where Next To Conquer",
+        "duration": "3:50"
+      },
+      {
+        "position": "5",
+        "title": "As The World Burns",
+        "duration": "5:25"
+      },
+      {
+        "position": "6",
+        "title": "This Time It's War",
+        "duration": "5:50"
+      },
+      {
+        "position": "7",
+        "title": "Ritual",
+        "duration": "4:30"
+      },
+      {
+        "position": "8",
+        "title": "Spearhead",
+        "duration": "6:47"
+      },
+      {
+        "position": "9",
+        "title": "Celestial Sanctuary",
+        "duration": "4:37"
+      },
+      {
+        "position": "10",
+        "title": "Dying Creed",
+        "duration": "4:17"
+      },
+      {
+        "position": "11",
+        "title": "Through The Ages (Outro)",
+        "duration": "3:46"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 5360728,
     "instance_id": 2051980570,
     "artist": "Tori Amos",
@@ -13267,7 +13350,7 @@
     ],
     "my_rating": 2,
     "my_review": "",
-    "global_rating": 2.87,
+    "global_rating": 2.86,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/4pk3tltFMVlT06MLJfmWTT/picture-book",
     "enriched": true
@@ -21082,7 +21165,7 @@
     "id": 10948563,
     "instance_id": 1541808163,
     "artist": "The Cranberries",
-    "title": "Stars: The Best Of 1992-2002",
+    "title": "Stars (The Best Of 1992-2002)",
     "year": 2002,
     "thumb": "https://i.discogs.com/x0eKHalZBHpn7-PDKYXMbw7So8K6bjAd_GNVwXoQwHw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTQ4/NTYzLTE1NjA1NDQ1/OTMtMzAxMy5qcGVn.jpeg",
     "cover_image": "https://i.discogs.com/FbxEunLGNkoHYlhWtQby6kG0mgnNeJ5iKKB704JYGpc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTQ4/NTYzLTE1NjA1NDQ1/OTMtMzAxMy5qcGVn.jpeg",
@@ -21406,7 +21489,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.13,
+    "global_rating": 3.14,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/18JyZd2XLdT2rmekw6EwoS/third",
     "enriched": true
@@ -26965,7 +27048,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.1,
+    "global_rating": 3.11,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1UdCT7t0rfNPu5Bn957U8r/silent-shout",
     "enriched": true
@@ -29503,6 +29586,84 @@
     "enriched": true
   },
   {
+    "id": 381932,
+    "instance_id": 2198802441,
+    "artist": "In Flames",
+    "title": "The Jester Race",
+    "year": 1996,
+    "thumb": "https://i.discogs.com/F8vbQTwe1cFBZH2G_e2wFjwbnEhd5-KljuH6y2HzGFQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTkz/Mi0xNTMyMjA2OTY4/LTYwNDUuanBlZw.jpeg",
+    "cover_image": "https://i.discogs.com/4_UGeRbDd5nYcfr_B0AkcF6LppqA35jGpZvz9NBhbyU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTkz/Mi0xNTMyMjA2OTY4/LTYwNDUuanBlZw.jpeg",
+    "genres": [
+      "rock"
+    ],
+    "styles": [
+      "melodic death metal"
+    ],
+    "label": "Nuclear Blast",
+    "format": "CD",
+    "format_full": "CD — Album",
+    "country": "Germany",
+    "date_added": "2026-10-28T10:29:29-07:00",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Moonshield",
+        "duration": "5:01"
+      },
+      {
+        "position": "2",
+        "title": "The Jester's Dance",
+        "duration": "2:09"
+      },
+      {
+        "position": "3",
+        "title": "Artifacts Of The Black Rain",
+        "duration": "3:14"
+      },
+      {
+        "position": "4",
+        "title": "Graveland",
+        "duration": "2:46"
+      },
+      {
+        "position": "5",
+        "title": "Lord Hypnos",
+        "duration": "4:01"
+      },
+      {
+        "position": "6",
+        "title": "Dead Eternity",
+        "duration": "5:01"
+      },
+      {
+        "position": "7",
+        "title": "The Jester Race",
+        "duration": "4:51"
+      },
+      {
+        "position": "8",
+        "title": "December Flower",
+        "duration": "4:10"
+      },
+      {
+        "position": "9",
+        "title": "Wayfaerer",
+        "duration": "4:41"
+      },
+      {
+        "position": "10",
+        "title": "Dead God In Me",
+        "duration": "4:15"
+      }
+    ],
+    "my_rating": null,
+    "my_review": "",
+    "global_rating": null,
+    "list_source": null,
+    "reviews_url": "",
+    "enriched": true
+  },
+  {
     "id": 2452030,
     "instance_id": 1602553426,
     "artist": "Nightwish",
@@ -31099,7 +31260,7 @@
     "artist": "Radiohead",
     "title": "The Bends",
     "year": 1995,
-    "thumb": "https://i.discogs.com/YMA_29QvE_9mVDYlFwLS1cP8qPr68YPHKmIwuQ-j2D8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODEx/Ni0xNTg4ODgzOTM2/LTgyNDcuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/9CfFWM2fg1eaO5F8bZYY8INRLFp02eVkhOddaTFIBHU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2ODEx/Ni0xNzkzMTY0NjYw/LTM1MTQuanBlZw.jpeg",
     "cover_image": "https://i.scdn.co/image/5930ff2ec8be19a6d76ef1e1d181d4ed4803c0fc",
     "genres": [
       "rock"
@@ -32115,7 +32276,7 @@
     ],
     "my_rating": 4,
     "my_review": "",
-    "global_rating": 3.3,
+    "global_rating": 3.29,
     "list_source": "user",
     "reviews_url": "https://1001albumsgenerator.com/albums/1uSpngQgBBgwRFYS5sOdqI/pulse",
     "enriched": true
@@ -42823,7 +42984,7 @@
     ],
     "my_rating": 3,
     "my_review": "",
-    "global_rating": 3.26,
+    "global_rating": 3.25,
     "list_source": "book",
     "reviews_url": "https://1001albumsgenerator.com/albums/7HcHPb1P9mubh0vyDdawAv/sandm",
     "enriched": true
